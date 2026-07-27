@@ -4,573 +4,2379 @@
     "group": "Market",
     "label": "Price",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Price reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "market_cap",
     "group": "Market",
     "label": "Market cap",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Market cap reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "liquidity",
     "group": "Market",
     "label": "Liquidity",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Liquidity reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "initial_liquidity",
     "group": "Market",
     "label": "Initial liquidity",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Initial liquidity reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "history_highest_market_cap",
     "group": "Market",
     "label": "History highest market cap",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "History highest market cap reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "total_supply",
     "group": "Market",
     "label": "Total supply",
     "unit": "Tokens",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Total supply reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "volume",
     "group": "Market",
     "label": "Volume · ranking window",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Volume in the ranking window reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "volume_24h",
     "group": "Market",
     "label": "Volume 24 hours",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Volume 24 hours reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": 86400,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "buys",
     "group": "Market",
     "label": "Buys · ranking window",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Buys in the ranking window reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "sells",
     "group": "Market",
     "label": "Sells · ranking window",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Sells in the ranking window reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "swaps",
     "group": "Market",
     "label": "Swaps · ranking window",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Swaps in the ranking window reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "buys_24h",
     "group": "Market",
     "label": "Buys 24 hours",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Buys 24 hours reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": 86400,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "sells_24h",
     "group": "Market",
     "label": "Sells 24 hours",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Sells 24 hours reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": 86400,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "price_change_percent",
     "group": "Market",
     "label": "Price change · ranking window",
     "unit": "Raw scale",
-    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Price change in the ranking window reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": -1,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "price_change_percent1m",
     "group": "Market",
     "label": "Price change · 1 minute",
     "unit": "Raw scale",
-    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Price change in the 1 minute reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": -1,
+    "maximum": null,
+    "window_seconds": 60,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "price_change_percent5m",
     "group": "Market",
     "label": "Price change · 5 minutes",
     "unit": "Raw scale",
-    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Price change in the 5 minutes reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": -1,
+    "maximum": null,
+    "window_seconds": 300,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "price_change_percent1h",
     "group": "Market",
     "label": "Price change · 1 hour",
     "unit": "Raw scale",
-    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Price change in the 1 hour reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": -1,
+    "maximum": null,
+    "window_seconds": 3600,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "gas_fee",
     "group": "Market",
     "label": "Gas fee",
     "unit": "Source denomination",
-    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Gas fee reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "rank",
     "group": "Market",
     "label": "Rank",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Positive source rank; no cross-source ranking equivalence is implied.",
+    "description": "Rank reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 1,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "holder_count",
     "group": "Holders",
     "label": "Holder count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Holder count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "top_10_holder_rate",
     "group": "Holders",
     "label": "Top 10 holder rate",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Top 10 holder rate reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "creator_balance_rate",
     "group": "Holders",
     "label": "Creator balance rate",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Creator balance rate reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "dev_team_hold_rate",
     "group": "Holders",
     "label": "Dev team hold rate",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Dev team hold rate reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "rat_trader_amount_rate",
     "group": "Holders",
     "label": "Flagged trader amount ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Flagged trader amount ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "bluechip_owner_percentage",
     "group": "Holders",
     "label": "Blue-chip ownership",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Blue-chip ownership reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "sniper_count",
     "group": "Holders",
     "label": "Sniper count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Sniper count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "smart_degen_count",
     "group": "Holders",
     "label": "Smart trader count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Smart trader count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "renowned_count",
     "group": "Holders",
     "label": "Recognized trader count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Recognized trader count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "bundler_rate",
     "group": "Holders",
     "label": "Bundler rate",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Bundler rate reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "top70_sniper_hold_rate",
     "group": "Holders",
     "label": "Top70 sniper hold rate",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Top70 sniper hold rate reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "bot_degen_count",
     "group": "Holders",
     "label": "Bot trader count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Bot trader count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "bot_degen_rate",
     "group": "Holders",
     "label": "Bot trader ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Bot trader ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "buy_tax",
     "group": "Risk",
     "label": "Buy tax",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Buy tax reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "sell_tax",
     "group": "Risk",
     "label": "Sell tax",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Sell tax reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_honeypot",
     "group": "Risk",
     "label": "Is honeypot",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is honeypot reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_wash_trading",
     "group": "Risk",
     "label": "Is wash trading",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is wash trading reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "renounced_mint",
     "group": "Risk",
     "label": "Renounced mint",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Renounced mint reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "renounced_freeze_account",
     "group": "Risk",
     "label": "Renounced freeze account",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Renounced freeze account reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "burn_ratio",
     "group": "Risk",
     "label": "Burn ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Burn ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "burn_status",
     "group": "Risk",
     "label": "Burn status",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Burn status reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "dev_token_burn_amount",
     "group": "Risk",
     "label": "Dev token burn amount",
     "unit": "Tokens",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.",
+    "description": "Dev token burn amount reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "dev_token_burn_ratio",
     "group": "Risk",
     "label": "Dev token burn ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Dev token burn ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "rug_ratio",
     "group": "Risk",
     "label": "Source rug ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Source rug ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "entrapment_ratio",
     "group": "Risk",
     "label": "Source entrapment ratio",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Source entrapment ratio reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_renounced",
     "group": "Risk",
     "label": "Is renounced",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is renounced reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_open_source",
     "group": "Risk",
     "label": "Is open source",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is open source reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "lock_percent",
     "group": "Risk",
     "label": "Lock percent",
     "unit": "Raw scale",
-    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+    "note": "Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.",
+    "description": "Lock percent reported by the source adapter.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "launchpad",
     "group": "Lifecycle",
     "label": "Launchpad",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Launchpad reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "launchpad_platform",
     "group": "Lifecycle",
     "label": "Launchpad platform",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Launchpad platform reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "launchpad_status",
     "group": "Lifecycle",
     "label": "Launchpad status",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Launchpad status reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "created_timestamp",
     "group": "Lifecycle",
     "label": "Created timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "Created timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "creation_timestamp",
     "group": "Lifecycle",
     "label": "Creation timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "Creation timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "open_timestamp",
     "group": "Lifecycle",
     "label": "Open timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "Open timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "complete_timestamp",
     "group": "Lifecycle",
     "label": "Complete timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "Complete timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "pool_type",
     "group": "Lifecycle",
     "label": "Pool type code",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Pool type code reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "pool_type_str",
     "group": "Lifecycle",
     "label": "Pool type str",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Pool type str reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "exchange",
     "group": "Lifecycle",
     "label": "Exchange",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Exchange reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "creator",
     "group": "Lifecycle",
     "label": "Creator",
     "unit": "Address",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Address syntax must match the observation chain. No ownership, affiliation, contract-code or on-chain lookup is implied.",
+    "description": "Creator reported by the source adapter.",
+    "kind": "address",
+    "allowed_units": [
+      "address",
+      "Address"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "creator_token_status",
     "group": "Lifecycle",
     "label": "Creator token status",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Creator token status reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "creator_close",
     "group": "Lifecycle",
     "label": "Creator close",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Creator close reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "launch_quote_address",
     "group": "Lifecycle",
     "label": "Launch quote address",
     "unit": "Address",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Address syntax must match the observation chain. No ownership, affiliation, contract-code or on-chain lookup is implied.",
+    "description": "Launch quote address reported by the source adapter.",
+    "kind": "address",
+    "allowed_units": [
+      "address",
+      "Address"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "migrated_pool_exchange",
     "group": "Lifecycle",
     "label": "Migrated pool exchange",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Migrated pool exchange reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_username",
     "group": "Social",
     "label": "Twitter username",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Twitter username reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter",
     "group": "Social",
     "label": "X reference",
     "unit": "Source value",
-    "note": "Reported by the launch source. No independent affiliation validation."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "X reference reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_handle",
     "group": "Social",
     "label": "X handle",
     "unit": "Source value",
-    "note": "Reported by the launch source. No independent affiliation validation."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "X handle reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "website",
     "group": "Social",
     "label": "Website",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Website reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "telegram",
     "group": "Social",
     "label": "Telegram",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Telegram reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_change_flag",
     "group": "Social",
     "label": "Twitter change flag",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Twitter change flag reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_rename_count",
     "group": "Social",
     "label": "Twitter rename count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Twitter rename count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_del_post_token_count",
     "group": "Social",
     "label": "Twitter del post token count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Twitter del post token count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_create_token_count",
     "group": "Social",
     "label": "Twitter create token count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Twitter create token count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "twitter_dup",
     "group": "Social",
     "label": "Twitter dup",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Twitter dup reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "telegram_dup",
     "group": "Social",
     "label": "Telegram dup",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Telegram dup reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "website_dup",
     "group": "Social",
     "label": "Website dup",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Website dup reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "square_mentions",
     "group": "Social",
     "label": "Square mentions",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Square mentions reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "visiting_count",
     "group": "Social",
     "label": "Visiting count",
     "unit": "Count",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "A nonnegative whole-number source count; it does not identify individual participants or transactions.",
+    "description": "Visiting count reported by the source adapter.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "hot_level",
     "group": "Social",
     "label": "Source hot level",
     "unit": "Source value",
-    "note": "Reported by the source. No independent validation or JEV assessment."
+    "note": "Source-supplied text. No independent truth, affiliation or availability verification is implied.",
+    "description": "Source hot level reported by the source adapter.",
+    "kind": "text",
+    "allowed_units": [
+      "text",
+      "source_value",
+      "Source value"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_show_alert",
     "group": "Social",
     "label": "Is show alert",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is show alert reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_og",
     "group": "Social",
     "label": "Is og",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is og reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "is_token_live",
     "group": "Social",
     "label": "Is token live",
     "unit": "Source flag",
-    "note": "Raw source flag; zero or false does not establish that a token is safe."
+    "note": "Explicit source-reported boolean. A false flag alone is not a security guarantee.",
+    "description": "Is token live reported by the source adapter.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "start_live_timestamp",
     "group": "Social",
     "label": "Start live timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "Start live timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
   },
   {
     "key": "end_live_timestamp",
     "group": "Social",
     "label": "End live timestamp",
     "unit": "UTC",
-    "note": "Source event time. Zero means no usable event time, not January 1970."
+    "note": "Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.",
+    "description": "End live timestamp reported by the source adapter.",
+    "kind": "timestamp",
+    "allowed_units": [
+      "UTC",
+      "unix_seconds",
+      "unix_milliseconds"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review"
+  },
+  {
+    "key": "circulating_supply",
+    "group": "Market",
+    "label": "Circulating supply",
+    "unit": "tokens",
+    "description": "Source-reported circulating supply, separate from total supply and FDV.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "fdv",
+    "group": "Market",
+    "label": "Fully diluted valuation",
+    "unit": "USD",
+    "description": "Source-reported fully diluted valuation. It is not substituted for circulating market capitalization.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "buy_volume",
+    "group": "Market",
+    "label": "Buy volume",
+    "unit": "USD",
+    "description": "Aggregate buy-side volume over the explicitly declared window.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "sell_volume",
+    "group": "Market",
+    "label": "Sell volume",
+    "unit": "USD",
+    "description": "Aggregate sell-side volume over the explicitly declared window.",
+    "kind": "number",
+    "allowed_units": [
+      "USD",
+      "native"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "unique_buyers",
+    "group": "Market",
+    "label": "Unique buyers",
+    "unit": "count",
+    "description": "Distinct buying addresses within the declared source window; not an independently identified person count.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "unique_sellers",
+    "group": "Market",
+    "label": "Unique sellers",
+    "unit": "count",
+    "description": "Distinct selling addresses within the declared source window; not an independently identified person count.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "quote_reserve",
+    "group": "Market",
+    "label": "Quote reserve",
+    "unit": "tokens",
+    "description": "Pool quote-asset reserve. The adapter must bind the quote asset; this value is not automatically USD.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "base_reserve",
+    "group": "Market",
+    "label": "Base reserve",
+    "unit": "tokens",
+    "description": "Pool base-token reserve from the source capture; no executable depth guarantee is implied.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "price_impact_bps",
+    "group": "Market",
+    "label": "Quoted price impact",
+    "unit": "bps",
+    "description": "Source-reported nonnegative price-impact magnitude in basis points for a separately archived quote, size and route.",
+    "kind": "number",
+    "allowed_units": [
+      "bps"
+    ],
+    "minimum": 0,
+    "maximum": 10000,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "top_1_holder_rate",
+    "group": "Holders",
+    "label": "Largest holder share",
+    "unit": "ratio",
+    "description": "Share attributed to the largest holder under the source denominator and exclusion rules.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "insider_hold_rate",
+    "group": "Holders",
+    "label": "Source-tagged insider share",
+    "unit": "ratio",
+    "description": "Holder share tagged as insider-related by the source; the label is not independent attribution.",
+    "kind": "number",
+    "allowed_units": [
+      "ratio",
+      "percent",
+      "%"
+    ],
+    "minimum": 0,
+    "maximum": 1,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "holder_count_change",
+    "group": "Holders",
+    "label": "Holder count change",
+    "unit": "count",
+    "description": "Signed change in an aggregate holder count across the declared window, not identified joins or exits.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": true,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "creator_token_balance",
+    "group": "Holders",
+    "label": "Creator token balance",
+    "unit": "tokens",
+    "description": "Token balance attributed to the creator address by the source.",
+    "kind": "number",
+    "allowed_units": [
+      "tokens",
+      "Tokens"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "mint_authority",
+    "group": "Risk",
+    "label": "Mint authority",
+    "unit": "address",
+    "description": "Source-reported Solana mint authority address. An absent authority must be expressed through an explicit source flag, not an invented address.",
+    "kind": "address",
+    "allowed_units": [
+      "address",
+      "Address"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "freeze_authority",
+    "group": "Risk",
+    "label": "Freeze authority",
+    "unit": "address",
+    "description": "Source-reported Solana freeze authority address. Syntactic validity does not establish current authority.",
+    "kind": "address",
+    "allowed_units": [
+      "address",
+      "Address"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "transfer_paused",
+    "group": "Risk",
+    "label": "Transfers paused",
+    "unit": "boolean",
+    "description": "Source-reported transfer-pause state; false is not a general transferability guarantee.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "sell_simulation_success",
+    "group": "Risk",
+    "label": "Sell simulation succeeded",
+    "unit": "boolean",
+    "description": "Result reported for a separately archived sell simulation. It does not prove a real fill or future sellability.",
+    "kind": "boolean",
+    "allowed_units": [
+      "boolean",
+      "Source flag"
+    ],
+    "minimum": null,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "block_number",
+    "group": "Lifecycle",
+    "label": "EVM block number",
+    "unit": "count",
+    "description": "Source observation block number, without an implied finality or canonical-chain guarantee.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "slot",
+    "group": "Lifecycle",
+    "label": "Solana slot",
+    "unit": "count",
+    "description": "Source observation slot, without an implied finality guarantee.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
+  },
+  {
+    "key": "twitter_follower_count",
+    "group": "Social",
+    "label": "X follower count",
+    "unit": "count",
+    "description": "Source-reported follower count for the associated profile; association is not verified affiliation.",
+    "kind": "integer",
+    "allowed_units": [
+      "count",
+      "Count"
+    ],
+    "minimum": 0,
+    "maximum": null,
+    "window_seconds": null,
+    "requires_window": false,
+    "chains": [
+      "robinhood",
+      "bsc",
+      "solana"
+    ],
+    "missing_rule": "optional_absent; supplied_null_requires_review",
+    "note": "Optional adapter input. Catalog support does not mean this field is collected or independently verified."
   }
 ]

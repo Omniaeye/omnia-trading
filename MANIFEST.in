@@ -1,0 +1,6 @@
+include README.md CHANGELOG.md SECURITY.md CONTRIBUTING.md THIRD_PARTY_NOTICES.md .env.example
+recursive-include docs *.md *.json
+recursive-include examples *.jsonl
+recursive-include tests *.py *.jsonl *.md
+recursive-include tools *.py
+recursive-include assets *.png

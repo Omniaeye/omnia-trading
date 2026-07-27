@@ -1,4 +1,4 @@
 # Copyright 2026 OMNIA EYE Corporation.
 # SPDX-License-Identifier: Apache-2.0
 """OMNIA Trading evidence and decision contracts."""
-__version__ = "0.1.0"
+__version__ = "0.2.0"

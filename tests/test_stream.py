@@ -1,3 +1,5 @@
+# Copyright 2026 OMNIA EYE Corporation.
+# SPDX-License-Identifier: Apache-2.0
 import io
 import json
 import os
@@ -35,11 +37,12 @@ class StreamTests(unittest.TestCase):
             finally:
                 ledger.close()
         rows = [json.loads(line) for line in out.getvalue().splitlines()]
-        self.assertEqual(count, 3)
+        self.assertEqual(count, 2)
         self.assertEqual(len(rows), 4)
         self.assertEqual(rows[1]['error_code'], 'INPUT_TOO_LARGE')
         self.assertIn('schema', rows[2])
-        self.assertEqual(rows[3]['error_code'], 'RECORD_LIMIT')
+        self.assertEqual(rows[3]['status'], 'paused')
+        self.assertEqual(source.readline(), data)
 
     def test_utf8_error_does_not_expose_input(self):
         out = io.StringIO()

@@ -13,3 +13,9 @@
 References guide implementation decisions. They do not transfer a paper's
 benchmark results to this repository or imply endorsement by its authors.
 Evaluate the actual task, languages, checkpoint and input distribution separately.
+
+## Operational contracts
+
+- [SQLite transactions](https://www.sqlite.org/lang_transaction.html): keep model inference outside write transactions.
+- [Git trailers](https://git-scm.com/docs/git-interpret-trailers): preserve subjects and body text; recognize terminal attribution blocks conservatively.
+- [OpenTelemetry traces](https://opentelemetry.io/docs/concepts/signals/traces/): associate source references, assessments and timings across consumers.

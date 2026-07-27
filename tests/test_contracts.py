@@ -1,3 +1,5 @@
+# Copyright 2026 OMNIA EYE Corporation.
+# SPDX-License-Identifier: Apache-2.0
 import unittest
 from helpers import event, datapoint
 from omnia_trading.contracts import normalize
@@ -7,8 +9,8 @@ from omnia_trading.catalog import BY_KEY, GROUPS, PARAMETERS
 
 class ContractTests(unittest.TestCase):
     def test_catalog_covers_five_groups_without_duplicate_keys(self):
-        self.assertEqual(len(PARAMETERS), 82)
-        self.assertEqual(len(BY_KEY), 82)
+        self.assertEqual(len(PARAMETERS), 102)
+        self.assertEqual(len(BY_KEY), 102)
         self.assertEqual(set(GROUPS), {x['group'] for x in PARAMETERS})
 
     def test_chain_and_contract_are_identity(self):

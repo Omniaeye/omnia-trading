@@ -8,6 +8,7 @@ import hashlib
 import os
 import re
 import importlib.metadata
+from copy import deepcopy
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -27,9 +28,11 @@ class Settings:
     database: str = "var/omnia/decisions.sqlite3"
 
     def __post_init__(self):
-        if not re.fullmatch(r"[0-9a-f]{40}", self.revision):
+        if not isinstance(self.revision, str) or not re.fullmatch(r"[0-9a-f]{40}", self.revision):
             raise ValueError("OMNIA_LAYA_REVISION must be an immutable 40-character Hub commit")
         limits = {"english": 512, "typed-decisions": 1024, "multilingual": 8192}
+        if any(type(value) is not int for value in (self.threads, self.max_len, self.head_max_len, self.max_bytes)):
+            raise ValueError("runtime budgets must be integers")
         if self.model not in limits or self.device not in {"cpu", "cuda", "mps"}:
             raise ValueError("unsupported model or device")
         if not 1 <= self.threads <= 64 or not 128 <= self.max_len <= limits[self.model]:
@@ -37,7 +40,7 @@ class Settings:
         if not 32 <= self.head_max_len < self.max_len or not 1024 <= self.max_bytes <= 1048576:
             raise ValueError("invalid head or byte budget")
         probability(self.min_probability)
-        if not self.database.strip():
+        if not isinstance(self.database, str) or not self.database.strip():
             raise ValueError("database path is required")
 
     @classmethod
@@ -97,8 +100,11 @@ class LocalLaya:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.router = None
+        self._manifest = None
 
     def manifest(self):
+        if self._manifest is not None:
+            return deepcopy(self._manifest)
         import laya
         root = Path(laya.__file__).resolve().parent
         fingerprint = hashlib.sha256()
@@ -111,12 +117,13 @@ class LocalLaya:
         config = asdict(self.settings)
         for key in ("database", "max_bytes", "min_probability"):
             config.pop(key)
-        return {"backend": "laya.local", "laya_version": laya.__version__,
+        self._manifest = {"backend": "laya.local", "laya_version": laya.__version__,
                 "runtime_sha256": fingerprint.hexdigest(), "integration_sha256": integration.hexdigest(),
                 "configuration": config,
                 "dependencies": {name: importlib.metadata.version(name) for name in ("torch", "transformers", "numpy")},
                 "precision": {name: os.environ.get(name, "") for name in
                               ("LAYA_CPU_AMP", "LAYA_CUDA_AMP", "LAYA_MPS_AMP_MIN_ROWS")}}
+        return deepcopy(self._manifest)
 
     def __call__(self, state, questions):
         if self.router is None:

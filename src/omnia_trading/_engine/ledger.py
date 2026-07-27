@@ -10,6 +10,7 @@ import json
 import math
 import sqlite3
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
@@ -56,7 +57,7 @@ def validate_request(request: dict, max_bytes: int = 65_536) -> None:
     if not isinstance(evidence, list) or not 1 <= len(evidence) <= 64:
         raise ValueError("one to 64 evidence identifiers are required")
     for item in evidence:
-        text(item)
+        text(item, 2048)
     questions = request["questions"]
     if not isinstance(questions, dict) or not 1 <= len(questions) <= 16:
         raise ValueError("one to 16 questions are required")
@@ -135,26 +136,77 @@ def validate_answers(raw: dict, questions: dict) -> dict:
 
 
 class DecisionLedger:
-    """Serialize local decisions, cache successful records and retain failure types.
+    """Durable decisions with short transactions and expiring inference claims.
 
-    The SQLite transaction covers inference. This deliberately permits one active
-    decision per ledger, including across processes; busy callers fail after the
-    configured SQLite timeout. Use separate ledgers for independent workers.
+    Each worker owns a connection. Model work never holds a database transaction.
+    An expired claim permits recovery after process death; the ownership check
+    prevents the previous worker from publishing a late, conflicting result.
     """
 
-    def __init__(self, path: str | Path, *, busy_timeout: float = 30):
+    def __init__(self, path: str | Path, *, busy_timeout: float = 30, lease_seconds: float = 300):
         if not math.isfinite(busy_timeout) or not 0 < busy_timeout <= 300:
             raise ValueError("invalid SQLite timeout")
+        if not math.isfinite(lease_seconds) or not 1 <= lease_seconds <= 3600:
+            raise ValueError("invalid inference lease")
+        self.wait_seconds = busy_timeout
+        self.lease_seconds = lease_seconds
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(path, timeout=busy_timeout)
+        self.db = sqlite3.connect(path, timeout=busy_timeout, isolation_level=None)
         self.db.execute("PRAGMA journal_mode=WAL")
         self.db.execute("CREATE TABLE IF NOT EXISTS decisions (key TEXT PRIMARY KEY, record TEXT NOT NULL)")
         self.db.execute("CREATE TABLE IF NOT EXISTS failures (key TEXT NOT NULL, kind TEXT NOT NULL, occurred_at TEXT NOT NULL)")
+        self.db.execute("CREATE TABLE IF NOT EXISTS claims (key TEXT PRIMARY KEY, owner TEXT NOT NULL, expires REAL NOT NULL)")
+        self.db.execute("CREATE TABLE IF NOT EXISTS assessments (key TEXT PRIMARY KEY, record TEXT NOT NULL)")
         self.db.commit()
 
     def close(self) -> None:
         self.db.close()
+
+    def record_assessment(self, record: dict) -> dict:
+        """Persist the product outcome separately from cached model answers."""
+        record = copy.deepcopy(record)
+        text(record.get("schema"), 100)
+        if "assessment_id" in record:
+            raise ValueError("assessment identity is assigned by the ledger")
+        key = digest(record)
+        result = {**record, "assessment_id": key}
+        self.db.execute("INSERT OR IGNORE INTO assessments VALUES (?,?)", (key, canonical(result)))
+        return result
+
+    def get_assessment(self, assessment_id: str) -> dict | None:
+        row = self.db.execute("SELECT record FROM assessments WHERE key=?", (text(assessment_id, 64),)).fetchone()
+        return json.loads(row[0]) if row else None
+
+    def _cached(self, key: str) -> dict | None:
+        row = self.db.execute("SELECT record FROM decisions WHERE key=?", (key,)).fetchone()
+        return {**json.loads(row[0]), "cache_hit": True} if row else None
+
+    def _claim(self, key: str, owner: str) -> dict | None:
+        deadline = time.monotonic() + self.wait_seconds
+        while True:
+            cached = self._cached(key)
+            if cached:
+                return cached
+            self.db.execute("BEGIN IMMEDIATE")
+            try:
+                cached = self._cached(key)
+                if cached:
+                    self.db.commit()
+                    return cached
+                instant = time.time()
+                self.db.execute("DELETE FROM claims WHERE key=? AND expires<=?", (key, instant))
+                cursor = self.db.execute("INSERT OR IGNORE INTO claims VALUES (?,?,?)",
+                                         (key, owner, instant + self.lease_seconds))
+                self.db.commit()
+                if cursor.rowcount:
+                    return None
+            except Exception:
+                self.db.rollback()
+                raise
+            if time.monotonic() >= deadline:
+                raise TimeoutError("inference claim is busy")
+            time.sleep(min(.02, max(0, deadline - time.monotonic())))
 
     def decide(self, request: dict, predict: Callable, *, manifest: dict,
                min_probability: float = 0.8, max_bytes: int = 65_536) -> dict:
@@ -171,12 +223,11 @@ class DecisionLedger:
                     "state_serialization": json.dumps(request["state"], ensure_ascii=False, allow_nan=False),
                     "engine": manifest, "min_probability": floor}
         key = digest(identity)
-        self.db.execute("BEGIN IMMEDIATE")
+        owner = uuid.uuid4().hex
         try:
-            row = self.db.execute("SELECT record FROM decisions WHERE key=?", (key,)).fetchone()
-            if row:
-                self.db.commit()
-                return {**json.loads(row[0]), "cache_hit": True}
+            cached = self._claim(key, owner)
+            if cached:
+                return cached
             started = time.perf_counter()
             response = predict(copy.deepcopy(request["state"]), copy.deepcopy(request["questions"]))
             answers = validate_answers(response, request["questions"])
@@ -191,12 +242,23 @@ class DecisionLedger:
                 "answers": answers, "processed_at": datetime.now(timezone.utc).isoformat(),
                 "inference_ms": round((time.perf_counter() - started) * 1000, 3),
             }
+            self.db.execute("BEGIN IMMEDIATE")
+            claim = self.db.execute("SELECT owner, expires FROM claims WHERE key=?", (key,)).fetchone()
+            if not claim or claim[0] != owner or claim[1] <= time.time():
+                raise TimeoutError("inference claim expired; result requires replay")
             self.db.execute("INSERT INTO decisions VALUES (?,?)", (key, canonical(record)))
+            self.db.execute("DELETE FROM claims WHERE key=? AND owner=?", (key, owner))
             self.db.commit()
             return {**record, "cache_hit": False}
         except Exception as error:
             self.db.rollback()
-            self.db.execute("INSERT INTO failures VALUES (?,?,?)",
-                            (key, type(error).__name__, datetime.now(timezone.utc).isoformat()))
-            self.db.commit()
+            try:
+                self.db.execute("BEGIN IMMEDIATE")
+                self.db.execute("DELETE FROM claims WHERE key=? AND owner=?", (key, owner))
+                self.db.execute("INSERT INTO failures VALUES (?,?,?)",
+                                (key, type(error).__name__, datetime.now(timezone.utc).isoformat()))
+                self.db.commit()
+            except sqlite3.Error:
+                self.db.rollback()
+                raise DecisionError("decision failed; failure storage unavailable; retain input for retry") from None
             raise DecisionError("decision failed; inspect the failure type in the private ledger") from None

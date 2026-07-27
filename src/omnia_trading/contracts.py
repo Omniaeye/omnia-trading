@@ -19,6 +19,8 @@ def timestamp(value):
 
 
 def normalize(event, max_bytes=65536):
+    if type(max_bytes) is not int or max_bytes < 1:
+        raise ValueError('invalid_byte_limit')
     if not isinstance(event, dict) or set(event) != {'id', 'source', 'observed_at', 'identity', 'fields'}:
         raise ValueError('invalid_observation_fields')
     if len(json.dumps(event, ensure_ascii=False, allow_nan=False).encode()) > max_bytes:
@@ -37,8 +39,13 @@ def normalize(event, max_bytes=65536):
         value = field['value']
         if value is not None and type(value) not in (bool, int, float, str):
             raise ValueError('invalid_scalar')
-        if type(value) in (int, float) and not math.isfinite(value):
-            raise ValueError('nonfinite_value')
+        if type(value) in (int, float):
+            try:
+                finite = math.isfinite(value)
+            except OverflowError:
+                finite = False
+            if not finite:
+                raise ValueError('nonfinite_value')
         if isinstance(value, str) and len(value) > 2048:
             raise ValueError('value_too_long')
         for name, size in (('unit', 64), ('evidence', 512)):

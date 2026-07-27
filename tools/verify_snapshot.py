@@ -1,3 +1,5 @@
+# Copyright 2026 OMNIA EYE Corporation.
+# SPDX-License-Identifier: Apache-2.0
 """Verify that the bundled shared integration matches its reviewed manifest."""
 from pathlib import Path
 import hashlib

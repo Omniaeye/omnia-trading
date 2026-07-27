@@ -27,7 +27,7 @@ def identity(value):
     if not isinstance(value, dict) or set(value) != {'chain', 'network_id', 'contract', 'pool'}:
         raise ValueError('invalid_identity_fields')
     chain = value['chain']
-    if chain not in {'robinhood', 'bsc', 'solana'}:
+    if not isinstance(chain, str) or chain not in {'robinhood', 'bsc', 'solana'}:
         raise ValueError('unsupported_chain')
     network = value['network_id']
     if not isinstance(network, str) or not re.fullmatch(r'[A-Za-z0-9._-]{1,96}', network):

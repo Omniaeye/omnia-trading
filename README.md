@@ -1,70 +1,73 @@
 <p align="center"><img src="assets/eye.png" width="112" alt="OMNIA EYE" /></p>
 <h1 align="center">OMNIA TRADING</h1>
-<p align="center"><strong>Every parameter. One traceable assessment.</strong></p>
+<p align="center"><strong>Source observations. Explicit checks. Traceable assessments.</strong></p>
 <p align="center">JEV decision integration · Evidence-first infrastructure</p>
-<p align="center"><a href="#quickstart">Quickstart</a> · <a href="docs/API.md">API</a> · <a href="docs/ARCHITECTURE.md">Architecture</a> · <a href="docs/OPERATIONS.md">Operations</a> · <a href="docs/RESEARCH.md">Research</a></p>
-<p align="center"><a href=".github/workflows/checks.yml"><img alt="Product checks" src="https://github.com/Omniaeye/omnia-trading/actions/workflows/checks.yml/badge.svg" /></a> <a href="LICENSE"><img alt="Apache-2.0" src="https://img.shields.io/badge/license-Apache_2.0-63d6bc" /></a></p>
+<p align="center"><a href="#quickstart">Quickstart</a> · <a href="docs/API.md">API</a> · <a href="docs/PARAMETERS.md">Parameters</a> · <a href="docs/OPERATIONS.md">Operations</a></p>
+<p align="center"><a href=".github/workflows/checks.yml"><img alt="Product checks" src="https://github.com/Omniaeye/omnia-trading/actions/workflows/checks.yml/badge.svg" /></a></p>
 
 ---
 
-Connect market observations to an inspectable decision record. Identify the network and contract, preserve every parameter, evaluate the available evidence and keep policy checks separate from model answers.
+Turn a source observation into an inspectable data-quality assessment. OMNIA Trading validates asset identity, field semantics, units, windows and freshness; assesses bounded groups with a local typed model; and stores the final policy result with its evidence references.
 
-| Parameter family | Definitions | Examples |
+The package supports **102 optional input definitions**. This is the adapter contract, not a claim that a provider supplies every field. Missing optional fields do not imply zero, safety, or collection coverage.
+
+| Family | Definitions | Examples |
 | --- | ---: | --- |
-| Market | 19 | Price, market cap, liquidity, volume, buys, sells and windows |
-| Holders | 13 | Holder count, concentration, creator exposure and participant metrics |
-| Risk | 15 | Source-reported taxes, permissions, honeypot, burns and locks |
-| Lifecycle | 15 | Creation times, pool stage, launch platform, creator and migration |
-| Social | 20 | Profiles, website, Telegram, attention and source-status fields |
-| **Total** | **82** | **[Full parameter catalog](docs/PARAMETERS.md)** |
-
-Each observation declares its actual fields. A catalog definition does not imply
-that every source supplies it for every token.
-
+| Market | 28 | Price, market cap, liquidity, supply, side volumes and explicit windows |
+| Holders | 17 | Counts, concentration, creator balance and source-tagged exposure |
+| Risk | 19 | Taxes, source flags, authority addresses and reported simulation results |
+| Lifecycle | 17 | Event times, launch state, creator, block number and slot |
+| Social | 21 | Source-linked profiles, attention, follower count and status fields |
+| **Total** | **102** | **[Executable parameter catalog](docs/PARAMETERS.md)** |
 
 ## Decision path
 
 ```text
-Market observation --> Network and contract --> Units and freshness --> Group assessments --> Policy disposition --> Evidence record
+Source observation -> Identity and shape -> Field semantics and policy
+                   -> Bounded model assessments -> Freshness recheck
+                   -> Durable final assessment
 ```
 
-## Identity before interpretation
+Supported network families are **Robinhood Chain, BSC and Solana**. Identity includes an explicit network identifier, contract or mint, and optional pool. EVM addresses are normalized; Solana addresses preserve case and must decode to 32 bytes. The adapter owns network-ID binding and source provenance. The library performs no RPC lookup or affiliation verification.
 
-Supported network families: **Robinhood Chain, BSC and Solana**. Every input carries
-an explicit network identifier, contract or mint, and optional pool. EVM addresses
-are normalized; Solana addresses preserve case and are checked as 32-byte Base58
-values. A ticker never merges two assets. The source adapter owns network-ID binding;
-the library performs no RPC lookup or chain-discovery request.
+Every field carries a value, unit, window, observation time and evidence reference. Unknown or semantically invalid supplied values remain visible and require review. A negative holder count, ambiguous currency, missing aggregate window, invalid creator address or zero event timestamp cannot be promoted by a confident model answer.
 
-Each datapoint carries its value, unit, window, observation time and evidence ID.
-Unknowns stay unknown. A rolling buy count moving from 100 to 180 is a change in
-an aggregate, not proof of 80 individually identified trades.
+## Policy and interpretation
 
-## Policy controls the boundary
-
-Default checks require a USD market cap of at least 30,000, USD liquidity of at least
-10,000 and observations no older than 120 seconds. All three are configurable.
-Missing or ambiguous inputs require review. A source-reported honeypot flag triggers
-`skip`; a false flag alone is not a security guarantee.
-
-Every populated parameter group receives a separate bounded assessment. A group
-that exceeds the selected checkpoint budget produces an explicit failure for review;
-content is not silently shortened. See [decision flow](docs/ARCHITECTURE.md).
+Defaults require market cap of at least **USD 30,000**, liquidity of at least **USD 10,000**, an explicit honeypot boolean, and observations no older than **120 seconds**. The age and monetary thresholds are configurable. No optional field is treated as required merely because it appears in the catalog.
 
 | Disposition | Meaning |
 | --- | --- |
-| `candidate` | Configured data checks passed and all supplied groups were assessed as usable |
-| `review` | Missing, stale, inconsistent or uncertain evidence needs attention |
-| `skip` | A deterministic market or reported-risk condition rejects this observation |
+| `candidate` | Deterministic checks passed and every supplied batch received an accepted `usable` answer |
+| `review` | Missing, ambiguous, stale, inconsistent or unassessed evidence needs attention |
+| `skip` | A well-formed market value is below policy or the source reports a honeypot |
 
-`candidate` is a data-policy result, not a buy signal. Records carry
-`execution_authorized: false`. Signing, order placement and risk authorization
-belong to a separate executor; this package receives no wallet keys.
+A rejecting condition takes precedence conservatively; all other detected reasons remain in the record. For example, stale low liquidity produces `skip` with both the freshness and threshold reasons. A false honeypot flag alone never establishes safety.
 
+`candidate` is a data-policy outcome. It is not an investment recommendation, buy signal, security certification, or execution permission. Every assessment carries **`execution_authorized: false`**. Collection, strategy, position limits, transaction simulation, signing and execution remain outside this package.
+
+## Bounded assessments
+
+Each populated family is partitioned into stable batches of at most **four fields**. Every supplied field appears once in `assessment_batches`; split groups use keys such as `Market:part1`. Small groups retain `Market`, `Risk`, and the other family names.
+
+The two-field Market plus one-field Risk example plans two model assessments. The union of all 102 definitions plans 28, although some definitions apply to different chains and should not be supplied together as valid input. Cache hits reuse answers. Long field values can still exceed the selected checkpoint's token budget: the affected batch is explicitly failed and the final result requires review. There is no silent truncation or guarantee that arbitrary content fits the default 512-token checkpoint.
+
+## Descriptive metrics
+
+The package can derive `buy_share`, `net_buy_volume`, `liquidity_to_market_cap` and `circulating_supply_fraction` when their required inputs have compatible units and the same source evidence, observation time and window. Denominators must be positive. Each metric retains its formula and input references.
+
+These are calculations over reported aggregates. A rolling buy count changing from 100 to 180 does not prove 80 individually identified trades. Quote reserves, reported price impact and sell-simulation flags do not establish an executable price or a real fill.
 
 ## Quickstart
 
-Python 3.10 or newer. Install the product and its pinned local inference dependency:
+Python 3.10 or newer. Inspect contracts without installing model dependencies:
+
+```bash
+python -m pip install .
+omnia-trading --catalog
+```
+
+For local inference, install the pinned runtime and set the reviewed English checkpoint revision:
 
 ```bash
 git clone https://github.com/Omniaeye/omnia-trading.git
@@ -82,28 +85,19 @@ $env:OMNIA_LAYA_REVISION = '55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851'
 omnia-trading --input examples/input.jsonl
 ```
 
-Install with `python -m pip install .` when consuming contracts without local
-inference. The optional runtime loads only when an item needs model evaluation.
-Repeated identical requests reuse recorded decisions. The included input is a
-small contract example; replace it with source observations from your adapter.
-The Trading example uses a dated observation, so freshness checks will require review when it is replayed later.
+The included observation is a dated contract example. Ordinary replay applies current-time freshness and therefore requires review once it expires. Use your adapter's fresh observations for current assessment; use the Python API's explicit `now` only for intentional historical replay.
 
-## Inspect every decision
+At a clean batch limit, the CLI emits a paused boundary with `next_offset_bytes` for files. Resume the same immutable input using the returned byte offset:
 
-Each model record includes source and evidence IDs, input and question fingerprints,
-the pinned checkpoint, runtime source hashes, model answers, probability gates,
-processing time and cache status. Raw input text is not persisted in that ledger.
-Keep source archives separately and protect the ledger as application data.
+```bash
+omnia-trading --input observations.jsonl --offset-bytes 12345
+```
 
-| Read next | Purpose |
-| --- | --- |
-| [API](docs/API.md) | Input fields, output semantics and callable interface |
-| [Architecture](docs/ARCHITECTURE.md) | Deterministic checks, model boundary and replay |
-| [Operations](docs/OPERATIONS.md) | Environment, limits, failures and recovery |
-| [Validation](docs/VALIDATION.md) | Executed checks and inference evidence |
-| [Research](docs/RESEARCH.md) | Primary sources behind the design |
+See [Operations](docs/OPERATIONS.md) for configuration, output boundaries, failure recovery and storage ownership.
 
-## Build and verify
+## Inspect and verify
+
+Final `candidate`, `review` and `skip` outcomes are persisted separately from model-answer cache records. Each includes an assessment ID, observation hash, source and evidence references, policy configuration, catalog fingerprint, evaluation clock, expiry, batch coverage and explicit failures. An old cached answer can participate in a new, time-dependent policy assessment. Source archives remain caller-owned.
 
 ```bash
 python -m pip install -e . ruff==0.16.8
@@ -112,7 +106,16 @@ ruff check src tests tools
 python tools/verify_snapshot.py
 ```
 
-Both products share the reviewed [OMNIA Laya](https://github.com/Omniaeye/omnia-laya)
-integration and connect to the [multichain evidence field](https://github.com/Omniaeye/data-stream-multichain).
-The product code is original OMNIA work. Laya remains the attributed local decision
-engine. [Apache-2.0](LICENSE) · [Notices](THIRD_PARTY_NOTICES.md) · [Security](SECURITY.md)
+Contract and recovery tests establish implementation behavior. They do not establish task accuracy, investment performance, throughput or production readiness. Task-specific calibration and reviewed source datasets remain necessary; see [Validation](docs/VALIDATION.md).
+
+| Documentation | Purpose |
+| --- | --- |
+| [API](docs/API.md) | Input, output, replay and integration examples |
+| [Parameters](docs/PARAMETERS.md) | Types, units, bounds, windows and chain applicability |
+| [Architecture](docs/ARCHITECTURE.md) | Deterministic checks, model batches and durable evidence |
+| [Operations](docs/OPERATIONS.md) | Configuration, recovery, concurrency and deployment limits |
+| [Research](docs/RESEARCH.md) | Primary sources and their evidential limits |
+
+The product code is original OMNIA work. [OMNIA Laya](https://github.com/Omniaeye/omnia-laya) supplies the attributed local decision integration; [the multichain evidence field](https://github.com/Omniaeye/data-stream-multichain) is a related source project, not an embedded live collector.
+
+[Apache-2.0](LICENSE) · [Notices](THIRD_PARTY_NOTICES.md) · [Security](SECURITY.md)

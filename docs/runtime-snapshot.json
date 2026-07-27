@@ -3,7 +3,19 @@
   "revision": "256eaf39550291dec7378d5a20078cc0d500e852",
   "paths": {
     "__init__.py": "082677a288ba44a705e93f07c9d4e2784dbc0d4eeb1d0f75fb7c9d288f62bdbe",
+    "ledger.py": "3f8fabeae7d77b81a5a6f52cd2170e3f89a8e84a148d2b781d9459fe2cc57b02",
+    "runtime.py": "167f86aae078ee147a508c5e765391d15a5b6437a0baf675ba8995e76b3f2c3e"
+  },
+  "upstream_paths": {
+    "__init__.py": "082677a288ba44a705e93f07c9d4e2784dbc0d4eeb1d0f75fb7c9d288f62bdbe",
     "ledger.py": "6827d2923c76238e57e4a1e7dba2f62c17b4c89996af25af6a95c4891860a24e",
     "runtime.py": "087bb5ddbac4c18bb2ed61a59aeb41e32191620b3f01e48d7e26403730e10bda"
-  }
+  },
+  "product_patch_version": "0.2.0",
+  "modifications": [
+    "Short transactions and expiring inference ownership claims",
+    "Durable final product assessments",
+    "2048-character evidence references",
+    "Per-process model manifest cache"
+  ]
 }
