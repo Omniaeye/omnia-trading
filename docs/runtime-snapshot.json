@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/Omniaeye/omnia-laya",
+  "revision": "256eaf39550291dec7378d5a20078cc0d500e852",
+  "paths": {
+    "__init__.py": "082677a288ba44a705e93f07c9d4e2784dbc0d4eeb1d0f75fb7c9d288f62bdbe",
+    "ledger.py": "6827d2923c76238e57e4a1e7dba2f62c17b4c89996af25af6a95c4891860a24e",
+    "runtime.py": "087bb5ddbac4c18bb2ed61a59aeb41e32191620b3f01e48d7e26403730e10bda"
+  }
+}
