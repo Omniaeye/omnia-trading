@@ -1,0 +1,576 @@
+[
+  {
+    "key": "price",
+    "group": "Market",
+    "label": "Price",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "market_cap",
+    "group": "Market",
+    "label": "Market cap",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "liquidity",
+    "group": "Market",
+    "label": "Liquidity",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "initial_liquidity",
+    "group": "Market",
+    "label": "Initial liquidity",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "history_highest_market_cap",
+    "group": "Market",
+    "label": "History highest market cap",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "total_supply",
+    "group": "Market",
+    "label": "Total supply",
+    "unit": "Tokens",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "volume",
+    "group": "Market",
+    "label": "Volume · ranking window",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "volume_24h",
+    "group": "Market",
+    "label": "Volume 24 hours",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "buys",
+    "group": "Market",
+    "label": "Buys · ranking window",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "sells",
+    "group": "Market",
+    "label": "Sells · ranking window",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "swaps",
+    "group": "Market",
+    "label": "Swaps · ranking window",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "buys_24h",
+    "group": "Market",
+    "label": "Buys 24 hours",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "sells_24h",
+    "group": "Market",
+    "label": "Sells 24 hours",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "price_change_percent",
+    "group": "Market",
+    "label": "Price change · ranking window",
+    "unit": "Raw scale",
+    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+  },
+  {
+    "key": "price_change_percent1m",
+    "group": "Market",
+    "label": "Price change · 1 minute",
+    "unit": "Raw scale",
+    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+  },
+  {
+    "key": "price_change_percent5m",
+    "group": "Market",
+    "label": "Price change · 5 minutes",
+    "unit": "Raw scale",
+    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+  },
+  {
+    "key": "price_change_percent1h",
+    "group": "Market",
+    "label": "Price change · 1 hour",
+    "unit": "Raw scale",
+    "note": "Source documentation conflicts between percentage and ratio. Value retained without conversion or percent suffix."
+  },
+  {
+    "key": "gas_fee",
+    "group": "Market",
+    "label": "Gas fee",
+    "unit": "Source denomination",
+    "note": "Currency denomination has not been normalized. Ranking-window fields have no confirmed duration in this capture."
+  },
+  {
+    "key": "rank",
+    "group": "Market",
+    "label": "Rank",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "holder_count",
+    "group": "Holders",
+    "label": "Holder count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "top_10_holder_rate",
+    "group": "Holders",
+    "label": "Top 10 holder rate",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "creator_balance_rate",
+    "group": "Holders",
+    "label": "Creator balance rate",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "dev_team_hold_rate",
+    "group": "Holders",
+    "label": "Dev team hold rate",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "rat_trader_amount_rate",
+    "group": "Holders",
+    "label": "Flagged trader amount ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "bluechip_owner_percentage",
+    "group": "Holders",
+    "label": "Blue-chip ownership",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "sniper_count",
+    "group": "Holders",
+    "label": "Sniper count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "smart_degen_count",
+    "group": "Holders",
+    "label": "Smart trader count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "renowned_count",
+    "group": "Holders",
+    "label": "Recognized trader count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "bundler_rate",
+    "group": "Holders",
+    "label": "Bundler rate",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "top70_sniper_hold_rate",
+    "group": "Holders",
+    "label": "Top70 sniper hold rate",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "bot_degen_count",
+    "group": "Holders",
+    "label": "Bot trader count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "bot_degen_rate",
+    "group": "Holders",
+    "label": "Bot trader ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "buy_tax",
+    "group": "Risk",
+    "label": "Buy tax",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "sell_tax",
+    "group": "Risk",
+    "label": "Sell tax",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "is_honeypot",
+    "group": "Risk",
+    "label": "Is honeypot",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "is_wash_trading",
+    "group": "Risk",
+    "label": "Is wash trading",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "renounced_mint",
+    "group": "Risk",
+    "label": "Renounced mint",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "renounced_freeze_account",
+    "group": "Risk",
+    "label": "Renounced freeze account",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "burn_ratio",
+    "group": "Risk",
+    "label": "Burn ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "burn_status",
+    "group": "Risk",
+    "label": "Burn status",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "dev_token_burn_amount",
+    "group": "Risk",
+    "label": "Dev token burn amount",
+    "unit": "Tokens",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "dev_token_burn_ratio",
+    "group": "Risk",
+    "label": "Dev token burn ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "rug_ratio",
+    "group": "Risk",
+    "label": "Source rug ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "entrapment_ratio",
+    "group": "Risk",
+    "label": "Source entrapment ratio",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "is_renounced",
+    "group": "Risk",
+    "label": "Is renounced",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "is_open_source",
+    "group": "Risk",
+    "label": "Is open source",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "lock_percent",
+    "group": "Risk",
+    "label": "Lock percent",
+    "unit": "Raw scale",
+    "note": "Source scale retained. Not converted to a percentage or interpreted as a probability."
+  },
+  {
+    "key": "launchpad",
+    "group": "Lifecycle",
+    "label": "Launchpad",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "launchpad_platform",
+    "group": "Lifecycle",
+    "label": "Launchpad platform",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "launchpad_status",
+    "group": "Lifecycle",
+    "label": "Launchpad status",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "created_timestamp",
+    "group": "Lifecycle",
+    "label": "Created timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  },
+  {
+    "key": "creation_timestamp",
+    "group": "Lifecycle",
+    "label": "Creation timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  },
+  {
+    "key": "open_timestamp",
+    "group": "Lifecycle",
+    "label": "Open timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  },
+  {
+    "key": "complete_timestamp",
+    "group": "Lifecycle",
+    "label": "Complete timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  },
+  {
+    "key": "pool_type",
+    "group": "Lifecycle",
+    "label": "Pool type code",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "pool_type_str",
+    "group": "Lifecycle",
+    "label": "Pool type str",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "exchange",
+    "group": "Lifecycle",
+    "label": "Exchange",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "creator",
+    "group": "Lifecycle",
+    "label": "Creator",
+    "unit": "Address",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "creator_token_status",
+    "group": "Lifecycle",
+    "label": "Creator token status",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "creator_close",
+    "group": "Lifecycle",
+    "label": "Creator close",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "launch_quote_address",
+    "group": "Lifecycle",
+    "label": "Launch quote address",
+    "unit": "Address",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "migrated_pool_exchange",
+    "group": "Lifecycle",
+    "label": "Migrated pool exchange",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter_username",
+    "group": "Social",
+    "label": "Twitter username",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter",
+    "group": "Social",
+    "label": "X reference",
+    "unit": "Source value",
+    "note": "Reported by the launch source. No independent affiliation validation."
+  },
+  {
+    "key": "twitter_handle",
+    "group": "Social",
+    "label": "X handle",
+    "unit": "Source value",
+    "note": "Reported by the launch source. No independent affiliation validation."
+  },
+  {
+    "key": "website",
+    "group": "Social",
+    "label": "Website",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "telegram",
+    "group": "Social",
+    "label": "Telegram",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter_change_flag",
+    "group": "Social",
+    "label": "Twitter change flag",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "twitter_rename_count",
+    "group": "Social",
+    "label": "Twitter rename count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter_del_post_token_count",
+    "group": "Social",
+    "label": "Twitter del post token count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter_create_token_count",
+    "group": "Social",
+    "label": "Twitter create token count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "twitter_dup",
+    "group": "Social",
+    "label": "Twitter dup",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "telegram_dup",
+    "group": "Social",
+    "label": "Telegram dup",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "website_dup",
+    "group": "Social",
+    "label": "Website dup",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "square_mentions",
+    "group": "Social",
+    "label": "Square mentions",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "visiting_count",
+    "group": "Social",
+    "label": "Visiting count",
+    "unit": "Count",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "hot_level",
+    "group": "Social",
+    "label": "Source hot level",
+    "unit": "Source value",
+    "note": "Reported by the source. No independent validation or JEV assessment."
+  },
+  {
+    "key": "is_show_alert",
+    "group": "Social",
+    "label": "Is show alert",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "is_og",
+    "group": "Social",
+    "label": "Is og",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "is_token_live",
+    "group": "Social",
+    "label": "Is token live",
+    "unit": "Source flag",
+    "note": "Raw source flag; zero or false does not establish that a token is safe."
+  },
+  {
+    "key": "start_live_timestamp",
+    "group": "Social",
+    "label": "Start live timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  },
+  {
+    "key": "end_live_timestamp",
+    "group": "Social",
+    "label": "End live timestamp",
+    "unit": "UTC",
+    "note": "Source event time. Zero means no usable event time, not January 1970."
+  }
+]
