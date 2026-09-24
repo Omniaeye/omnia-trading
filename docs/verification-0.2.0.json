@@ -1,0 +1,38 @@
+{
+  "product": "omnia-trading",
+  "version": "0.2.0",
+  "verified_at": "2026-09-25T23:58:10.060842+00:00",
+  "python": "3.14.5",
+  "platform": "win32",
+  "unit_tests_passed": 62,
+  "contract_vectors": 400,
+  "checks": {
+    "ruff": "passed",
+    "runtime_snapshot": "passed",
+    "sdist": "passed",
+    "wheel": "passed",
+    "installed_imports": "passed"
+  },
+  "new_model_inference_run": false,
+  "source_sha256": {
+    "src/omnia_trading/__init__.py": "b5ffb4f4ef5489ae5ed7a0a6199e1dadc5e26f4630792974f21de19186ba00c3",
+    "src/omnia_trading/__main__.py": "e3aa504b0455be9bb3215837d6541b42b79e833c29e01e43c83a0a2ae36cb62a",
+    "src/omnia_trading/_engine/__init__.py": "082677a288ba44a705e93f07c9d4e2784dbc0d4eeb1d0f75fb7c9d288f62bdbe",
+    "src/omnia_trading/_engine/ledger.py": "3f8fabeae7d77b81a5a6f52cd2170e3f89a8e84a148d2b781d9459fe2cc57b02",
+    "src/omnia_trading/_engine/runtime.py": "167f86aae078ee147a508c5e765391d15a5b6437a0baf675ba8995e76b3f2c3e",
+    "src/omnia_trading/catalog.py": "45c9393c72815982589fb56f8bfffb0e0bfa19dd84c1c4439fbbde71b8b9bf2f",
+    "src/omnia_trading/cli.py": "730eebb44f1e5e1d53f20d3160ee286217fa5800f75012af1981c4088b5f6ddc",
+    "src/omnia_trading/config.py": "23dbc6e053301e01ea2b8912c03662f75482306c958ebd1261a8b65dd0794b99",
+    "src/omnia_trading/contracts.py": "95a8251b74646f3d89e54094b5e1dee7ed323419125c3a4bb05a9a270352095c",
+    "src/omnia_trading/features.py": "10759ca06b7c7fb579f03288e1c58dba06c501e86d49a4d544ea0f8593361262",
+    "src/omnia_trading/identity.py": "3d0a18e0d027d261634069fda94329a9e632247691f1bf8ebfbb03c0281b7da7",
+    "src/omnia_trading/pipeline.py": "bb5f03d26c3b78f3f52aacac094110f47a8caecf14bbd88a34e5497ae1d2ac90",
+    "src/omnia_trading/policy.py": "57c32444021d8e2f81833e248f5c6beea4504be560e7a855412a3cee870dfa5e",
+    "src/omnia_trading/questions.py": "5610b18b4a043389ee863ca56fc6c735c519db58397a1a62cce3e27f433cf66a",
+    "src/omnia_trading/stream.py": "a7c63b6c5d1961b92ef92d00b47c6f5ab5a8d8af84a98bd36228f9fa741111be",
+    "src/omnia_trading/validation.py": "e578dd0cf486e3a9c24387dd73ec95c055c05b75875cdb62ce31de0b6dc67859",
+    "src/omnia_trading/parameters.json": "8265e384be94c3338f9f0812e7de9e2b9b055be91e270802b5ade001b9a7e83b"
+  },
+  "scope": "Contract, policy, persistence, concurrency, packaging and recovery verification; no model-quality or throughput benchmark.",
+  "source_hash_format": "SHA-256 of canonical Git file bytes; UTF-8/LF per .gitattributes"
+}
