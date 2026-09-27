@@ -11,19 +11,28 @@ from ._engine.ledger import DecisionLedger
 from ._engine.runtime import LocalLaya
 
 
-def run_stream(source, output, config, ledger, backend):
+def run_stream(source, output, config, ledger, backend, *, strategy=False):
+    from .strategy import process_strategy
+    processor = process_strategy if strategy else process
     return consume(source, output, limit=config.max_records, max_bytes=config.runtime.max_bytes,
-                   ledger=ledger, process=lambda event: process(
+                   ledger=ledger, process=lambda event: processor(
                        event, ledger, backend, min_probability=config.runtime.min_probability,
-                       max_bytes=config.runtime.max_bytes, policy=config.policy()))
+                       max_bytes=config.runtime.max_bytes, **({'data_policy': config.policy()} if strategy else {'policy': config.policy()})))
 
 
 def main():
     parser = argparse.ArgumentParser(description='OMNIA Trading decision processing')
     parser.add_argument('--catalog', action='store_true', help='Print the executable parameter catalog without loading a model')
+    parser.add_argument('--strategy', action='store_true', help='Read observation, context and strategy_policy envelopes')
+    parser.add_argument('--strategy-policy', action='store_true', help='Print default strategy limits without loading a model')
     parser.add_argument('--input', default='-', help='JSONL file or - for stdin')
     parser.add_argument('--offset-bytes', type=int, default=0, help='Resume a file at a previous batch byte offset')
     args = parser.parse_args()
+    if args.strategy_policy:
+        from dataclasses import asdict
+        from .strategy_contracts import ACTIONS, StrategyPolicy
+        print(json.dumps({'actions': ACTIONS, 'policy': asdict(StrategyPolicy())}, indent=2))
+        return 0
     if args.catalog:
         from .catalog import PARAMETERS, CATALOG_VERSION, CATALOG_SHA256
         print(json.dumps({'schema': CATALOG_VERSION, 'sha256': CATALOG_SHA256, 'parameters': PARAMETERS}, ensure_ascii=False, indent=2))
@@ -38,7 +47,7 @@ def main():
         source = sys.stdin.buffer if args.input == '-' else open(args.input, 'rb')
         if args.offset_bytes:
             source.seek(args.offset_bytes)
-        return 1 if run_stream(source, sys.stdout, config, ledger, backend) else 0
+        return 1 if run_stream(source, sys.stdout, config, ledger, backend, strategy=args.strategy) else 0
     except Exception as error:
         print(json.dumps({'status': 'failed', 'error_code': type(error).__name__}), file=sys.stderr)
         return 2
