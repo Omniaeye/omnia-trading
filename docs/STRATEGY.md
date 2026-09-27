@@ -64,9 +64,9 @@ All ratios use fractions: 0.10 means 10%. Source fields may use explicit percent
 | `max_position_usd` | 500 | Positive, no larger than the portfolio limit |
 | `max_portfolio_exposure_usd` | 5000 | Positive total exposure limit |
 | `min_buy_share` | 0.60 | Greater than 0 and at most 1 |
-| `flow_window_seconds` | 300 | Integer 1â€“2,592,000 |
+| `flow_window_seconds` | 300 | Integer 1-2,592,000 |
 | `max_top_10_holder_ratio` | 0.50 | Greater than 0 and at most 1 |
-| `max_tax_ratio` | 0.05 | 0â€“1; applied to supplied taxes |
+| `max_tax_ratio` | 0.05 | 0-1; applied to supplied taxes |
 | `stop_loss_ratio` | 0.10 | Greater than 0 and less than 1 |
 | `profit_trigger_ratio` | 0.25 | Positive partial-exit return |
 | `take_profit_ratio` | 0.50 | Greater than the partial-profit trigger |

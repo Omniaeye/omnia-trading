@@ -1,15 +1,15 @@
 <p align="center"><img src="assets/eye.png" width="112" alt="OMNIA EYE" /></p>
 <h1 align="center">OMNIA TRADING</h1>
 <p align="center"><strong>Market intelligence. Position decisions.</strong></p>
-<p align="center">Powered by JEV/LAYA Â· Robinhood Chain Â· BSC Â· Solana</p>
-<p align="center"><a href="#decisions">Decisions</a> Â· <a href="#quickstart">Quickstart</a> Â· <a href="docs/STRATEGY.md">Strategy</a> Â· <a href="docs/PARAMETERS.md">Parameters</a> Â· <a href="docs/API.md">API</a></p>
+<p align="center">Powered by JEV/LAYA &middot; Robinhood Chain &middot; BSC &middot; Solana</p>
+<p align="center"><a href="#decisions">Decisions</a> &middot; <a href="#quickstart">Quickstart</a> &middot; <a href="docs/STRATEGY.md">Strategy</a> &middot; <a href="docs/PARAMETERS.md">Parameters</a> &middot; <a href="docs/API.md">API</a></p>
 <p align="center"><a href="https://github.com/Omniaeye/omnia-trading/actions/workflows/checks.yml"><img alt="Product checks" src="https://github.com/Omniaeye/omnia-trading/actions/workflows/checks.yml/badge.svg" /></a></p>
 
 ---
 
 OMNIA Trading evaluates market observations and turns them into position decisions. JEV/LAYA assesses the evidence. Configurable rules control entry conditions, exposure, profit-taking and downside thresholds.
 
-**SKIP Â· BUY Â· HOLD Â· HOLD BAG Â· PROFIT Â· TP Â· SL**
+**SKIP &middot; BUY &middot; HOLD &middot; HOLD BAG &middot; PROFIT &middot; TP &middot; SL**
 
 The Python package combines **102 source parameter definitions**, typed model assessments, position snapshots and a persistent decision ledger. Every result identifies the observation, position, policy and evidence used.
 
@@ -30,18 +30,23 @@ The API uses `HOLD_BAG`; interfaces can display **HOLD BAG**. A return is measur
 ## From observation to decision
 
 ```text
-Market observations â”€â”€â–º Identity, units, windows and freshness
-                                      â”‚
-                                      â–¼
-                             JEV/LAYA data assessment
-                                      â”‚
-Account and position â”€â”€â–º Strategy checks: risk Â· flow Â· ownership
-                                      â”‚
-                                      â–¼
-                          Entry, exposure and exit rules
-                                      â”‚
-                                      â–¼
-                          Decision + sizing + evidence
+Market observations
+        |
+        v
+Identity, units, windows and freshness
+        |
+        v
+JEV/LAYA data assessment
+        |
+        v
+Strategy checks <----- Account and position
+(risk, flow, ownership)
+        |
+        v
+Entry, exposure and exit rules
+        |
+        v
+Decision + sizing + evidence
 ```
 
 The original data API returns `candidate`, `review` or `skip`. The strategy API adds the seven position decisions. A data candidate is not automatically a BUY.
@@ -166,4 +171,4 @@ The application owns fills and position updates. A repeated decision is not an a
 
 OMNIA Trading uses the attributed [OMNIA LAYA](https://github.com/Omniaeye/omnia-laya) integration. [OMNIA MCP](https://github.com/Omniaeye/omnia-mcp) and [OMNIA Chronicle](https://github.com/Omniaeye/omnia-chronicle) are separate components in the OMNIA ecosystem.
 
-Â© 2026 OMNIA EYE Corporation. [Apache-2.0](LICENSE) Â· [Third-party notices](THIRD_PARTY_NOTICES.md) Â· [Security](SECURITY.md)
+&copy; 2026 OMNIA EYE Corporation. [Apache-2.0](LICENSE) &middot; [Third-party notices](THIRD_PARTY_NOTICES.md) &middot; [Security](SECURITY.md)
