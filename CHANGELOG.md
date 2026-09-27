@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0
+
+- Position-aware SKIP, BUY, HOLD, HOLD_BAG, PROFIT, TP and SL decisions.
+- Independent strategy policy for flow, concentration, exposure and exit thresholds.
+- JEV/LAYA risk, flow and ownership assessments with typed answers.
+- Source-bound account snapshots and durable strategy decision records.
+- Strategy JSONL mode, policy inspection and position lifecycle documentation.
+
 ## 0.2.0
 
 - Executable parameter catalog, explicit notes and bounded evidence context.

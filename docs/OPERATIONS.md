@@ -114,3 +114,11 @@ after changing dependencies, runtime files or precision settings.
 `OMNIA_TRADING_MIN_LIQUIDITY_USD` default to 120, 30000 and 10000.
 These are explicit configuration values, not calibrated trading recommendations.
 The data-policy result never authorizes an order. See [parameter contracts](PARAMETERS.md).
+
+## Strategy streams
+
+Use `omnia-trading --strategy --input strategy-observations.jsonl` for position decisions. Each line binds one observation to its own account context and policy. Byte offsets, input limits, failure records and storage ownership match data mode.
+
+Inspect defaults using `omnia-trading --strategy-policy`. Policy overrides belong to each envelope's `strategy_policy`; runtime environment variables remain unchanged.
+
+A paused stream must resume from the same immutable file. Old observations and account snapshots retain their original times and expire normally. A pending position decision must not be submitted again merely because input was replayed. The execution application owns order idempotency and reconciles fills before emitting a new account snapshot.

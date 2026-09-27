@@ -48,6 +48,8 @@ There is no embedded background scheduler or retry queue. The caller owns origin
 
 ## Product boundary
 
-This is source-data assessment infrastructure. It has no embedded live collector, financial strategy, order sizing, wallet keys, transaction signer or execution adapter. The output always declares `execution_authorized: false`. Executor policy, simulation, authorization, submission and reconciliation require a separate system with its own evidence and controls.
+The data pipeline feeds the position-aware strategy in strategy.py. strategy_contracts.py validates account snapshots and immutable policy limits; strategy_questions.py defines risk, flow and ownership tasks. The strategy records SKIP, BUY, HOLD, HOLD_BAG, PROFIT, TP and SL with proposed sizing and evidence.
+
+Collection, wallet keys, transaction signing and execution remain external. Both data and strategy results declare execution_authorized: false. The execution adapter owns account serialization, capital reservations, quotes, submission and reconciliation. See [Strategy](STRATEGY.md) for rule precedence and position lifecycle.
 
 Contract fixtures demonstrate implementation behavior. Neither the presence of 102 catalog definitions nor a single successful local inference establishes provider coverage, calibration, financial performance or production capacity.

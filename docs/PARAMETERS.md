@@ -871,3 +871,7 @@ Source-reported follower count for the associated profile; association is not ve
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
 Missingness: `optional_absent; supplied_null_requires_review`.
+
+## Account and strategy parameters
+
+Position state and entry/exit thresholds are separate from the 102 source definitions. See [Strategy](STRATEGY.md#policy) for the 11 policy limits and [account context](STRATEGY.md#account-context) for position, exposure and cash fields. Inspect defaults with `omnia-trading --strategy-policy`.

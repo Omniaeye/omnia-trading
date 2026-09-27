@@ -1,5 +1,13 @@
 # Trading API
 
+## Position decisions
+
+`decide(event, context, ledger, backend, *, strategy_policy=None, data_policy=None, min_probability=.8, max_bytes=65536, now=None)` returns a persisted `omnia.trading.strategy.v1` result.
+
+`process_strategy(envelope, ledger, backend, **kwargs)` reads exactly `observation`, `context` and `strategy_policy`. The CLI selects this API with `--strategy`. Use `--strategy-policy` to print defaults without initializing the model.
+
+The [strategy reference](STRATEGY.md) specifies all seven actions, context members, thresholds, sizing and decision precedence. The data-assessment API below remains independently available.
+
 ## Input and responsibility
 
 `process(event, ledger, backend, *, min_probability=.8, max_bytes=65536, policy=None, now=None)` returns `omnia.trading.assessment.v1` with an immutable `assessment_id`. `ledger` is a `DecisionLedger` with `decide()` and `record_assessment()`; `backend` exposes `manifest()` and is callable as `(state, questions)`.
