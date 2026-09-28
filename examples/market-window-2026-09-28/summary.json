@@ -95,5 +95,6 @@
     "bsc": 122
   },
   "model_evaluation_scope": "Three native tasks per observation; full strategy and account execution were not run.",
-  "price_basis": "First captured quote of each series; peak and last observed quote within this window."
+  "price_basis": "First captured quote of each series; peak and last observed quote within this window.",
+  "unique_tokens": 620
 }

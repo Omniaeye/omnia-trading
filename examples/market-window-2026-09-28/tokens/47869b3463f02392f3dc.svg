@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>SOUL: 4 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">SOUL: 4 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.74x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="207.586" x2="740" y2="207.586" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="207.586">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,207.586 286.445,100.045 514.236,54.001 740.000,52.414"/>
+<circle cx="60.000" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="286.445" cy="100.045" r="2" fill="#087f6d"/>
+<circle cx="514.236" cy="54.001" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="52.414" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:22:30.535979+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:23:15.534636+00:00</text>
+</g></svg>

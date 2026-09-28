@@ -10,7 +10,7 @@ and requires at least two quotes. Missing coverage is not a zero return.
 
 ## Observed market results
 
-- Final return: last quote / first quote − 1.
+- Final return: last quote / first quote âˆ’ 1.
 - Peak multiple: highest observed quote / first quote.
 - Maximum drawdown: largest decline from a previous observed peak.
 - 2x, 3x, 5x and 10x milestones: first observed quote meeting each multiple.
@@ -25,7 +25,7 @@ backtest with identical observation horizons.
 ## Conditional position scenario
 
 The reference scenario buys $100 at the first quote. The next observed quote
-selects SL at −10%, TP at +50%, or a one-time PROFIT reduction of 80% at +25%.
+selects SL at âˆ’10%, TP at +50%, or a one-time PROFIT reduction of 80% at +25%.
 The residual position is HOLD_BAG; other open positions are HOLD. Full exits
 prevent re-entry. Price thresholds and bag size come from `StrategyPolicy`.
 
@@ -52,9 +52,8 @@ The capture directory supplies `manifest.json`, `sample.json`,
 manifest hashes. Only the documented ranking price path enters the series;
 unverified launch prices and unrelated candle history are not mixed in.
 
-The output contains `index.html` and `report.json`. Serve it on a local-only
-HTTP server to use filters, rankings, the individual timeline and model details.
-Source strings are rendered as text, not HTML. The output directory must be new.
+The output contains `report.json`. The casebook exporter produces Markdown indexes,
+per-contract quote curves and complete JSON/CSV records. The output directory must be new.
 
 ## Published window
 

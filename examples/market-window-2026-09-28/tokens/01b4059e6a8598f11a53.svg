@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>OMNINU: 9 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">OMNINU: 9 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.12x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="167.444" x2="740" y2="167.444" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="167.444">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,167.444 91.538,167.444 186.259,141.757 276.596,141.248 370.548,111.137 461.656,93.904 553.680,92.556 656.140,92.556 740.000,130.190"/>
+<circle cx="60.000" cy="167.444" r="2" fill="#087f6d"/>
+<circle cx="91.538" cy="167.444" r="2" fill="#087f6d"/>
+<circle cx="186.259" cy="141.757" r="2" fill="#087f6d"/>
+<circle cx="276.596" cy="141.248" r="2" fill="#087f6d"/>
+<circle cx="370.548" cy="111.137" r="2" fill="#087f6d"/>
+<circle cx="461.656" cy="93.904" r="2" fill="#087f6d"/>
+<circle cx="553.680" cy="92.556" r="2" fill="#087f6d"/>
+<circle cx="656.140" cy="92.556" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="130.190" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:12:40.365643+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:14:30.874732+00:00</text>
+</g></svg>

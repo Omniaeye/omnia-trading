@@ -1,44 +1,22 @@
-# Market results
+# Market window
 
 **2026-09-28 19:12:37 to 2026-09-28 19:27:37 UTC**
 
 Robinhood Chain · BSC · Solana
 
-| Captures | Ranking series | Series with two or more quotes | Reached 2x | Finished at 2x or above |
+| Captures | Unique tokens | Series | Two or more quotes | Single or no quote |
 | ---: | ---: | ---: | ---: | ---: |
-| 789 | 607 | 568 | 25 | 12 |
+| 789 | 620 | 621 | 568 | 53 |
 
-## Price milestones
+## All tokens and curves
 
-Multiples use the first captured price of each series. Peak is the highest captured quote in this window; final is its last captured quote.
+[Open the complete token index](tokens/README.md). Each network and contract appears once, with every pool series, quote, native assessment and policy event linked from its record.
 
-| Token | Network | Contract | Peak | Final |
-| --- | --- | --- | ---: | ---: |
-| RADAR | solana | `4SYjuST7d74abwTPnBtBgqZ3UmBB1QKEo9W3gCBApump` | **7.014x** | 2.453x |
-| p/xmr | solana | `GBTkSzep7xDoBGWK154TvaJWWzsb8rw5GWChNcoLcYM8` | **6.333x** | 4.120x |
-| CATTO | bsc | `0x8e7307bee5200a0d6ae4dde971383db19b277777` | **5.445x** | 2.685x |
-| DOA | solana | `6Y852xQ6PMeVVJSjNATMVdgh6hL2LMpsZjJ8KjGiR8ig` | **4.720x** | 1.076x |
-| Pumpdog | solana | `F518B5yf33Yed4HPp2akNzfr11xLbPE83CnBa19Upump` | **4.082x** | 1.117x |
-| XPAD | solana | `FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump` | **3.995x** | 3.995x |
-| LBX | robinhood | `0x18b98fbd9000ef5da84d21bd801c5f2504bf20ca` | **3.866x** | 1.356x |
-| MESUB | solana | `BcyEzKVBXkPAX6651VV2GkuVyAUS7kVSwTPaamGrpump` | **3.656x** | 2.856x |
-| SENT | solana | `9N7o7AazXwY4HBG2BSsmNmEQirDDd2isbbMJDBzYpump` | **3.519x** | 2.309x |
-| Fo | solana | `APLwmQEyK1oYptMboQ2iFbAiqhomaz9H2vQQF8J2pump` | **3.363x** | 2.237x |
-| * | solana | `7XEqj3KrRESniCnFbLgkcoykyP348MYYCi35FWdgpump` | **3.283x** | 2.812x |
-| MINTCLIP | solana | `CxxvCLmrF6hYHsexpeorGmhqv1Anuqn1Loddm9ZCpump` | **3.193x** | 1.861x |
-| Fern | solana | `BfK1fZuZjcgtxpdKowafwDzFTywdVzyQb5mRYAdHpump` | **3.078x** | 3.046x |
-| HYPE | solana | `2fL2ZTDH2qowXRX5mwHWskuJ2hEY7P7i4i91AvKQpump` | **3.048x** | 1.247x |
-| e/acc67 | solana | `4KPFYgMQg8Su7ZaqDduSYEZXPmh8fyUgot4yooZtpump` | **2.865x** | 2.630x |
-| SCAT | solana | `HqypR6Un8UHxh4XBzXhMgY97XP33k2LakqvcoXRvioS6` | **2.837x** | 0.773x |
-| UFO | solana | `2gSgbNue3spuFGoiMSCvFo3G9yArciFeSdyCi65pvo7P` | **2.586x** | 2.586x |
-| Responsible | solana | `T2g5NaX71HVsr46yg4W2vz3rtaW8RjTeTMpG8qZGdgz` | **2.525x** | 0.354x |
-| Shore | solana | `68SS2BwEC76JVpyfL9AN9EC3VDw1vQPxqLGsrFJ8pump` | **2.372x** | 1.500x |
-| CTRL | solana | `A3tykDf9NeAcCYKtKGQJHXmgY3BRT5K3CU9F6sXwjVQN` | **2.333x** | 2.333x |
-| BUSTO | robinhood | `0x31e31f14fec0591d3e53e85ca5fc425bba1ce21d` | **2.287x** | 1.781x |
-| DARREN | solana | `6837Fsabr9FUt3snY4UsnRzzgqJatgJzT5dQakVJpump` | **2.265x** | 0.053x |
-| Optimist | solana | `7VySefcz618cz6TkNbXRjVKLtzkLD2a6tyMpH6iTVbDq` | **2.243x** | 0.295x |
-| o | solana | `4FRZQ5hBxNrwTmEyarihhufNQSJXzv2NnbXJQbjq4uqz` | **2.016x** | 0.798x |
-| Habibi | solana | `4jT4RNs8Z4P3ZqXXCXf15StJ1Nbz3eARDDSf6oL299XD` | **2.001x** | 0.302x |
+Curves include every recorded price, including declines. Multiples start at the first quote; peak is the highest quote in this window, not an all-time high.
+
+| Series ending above entry | Below entry | Unchanged |
+| ---: | ---: | ---: |
+| 213 | 315 | 40 |
 
 **Complete coverage:** [all series](series.csv), [every quote and milestone](series.jsonl), [exit-policy timeline](decisions.csv).
 

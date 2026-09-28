@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>ZARVIS: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">ZARVIS: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.12x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="168.363" x2="740" y2="168.363" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="168.363">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,168.363 96.931,168.363 133.877,153.395 209.018,153.395 397.467,116.993 436.380,99.088 472.846,91.637 510.714,91.637 550.332,165.885 592.600,160.840 639.300,146.696 662.493,138.488 701.029,138.488 740.000,131.098"/>
+<circle cx="60.000" cy="168.363" r="2" fill="#087f6d"/>
+<circle cx="96.931" cy="168.363" r="2" fill="#087f6d"/>
+<circle cx="133.877" cy="153.395" r="2" fill="#087f6d"/>
+<circle cx="209.018" cy="153.395" r="2" fill="#087f6d"/>
+<circle cx="397.467" cy="116.993" r="2" fill="#087f6d"/>
+<circle cx="436.380" cy="99.088" r="2" fill="#087f6d"/>
+<circle cx="472.846" cy="91.637" r="2" fill="#087f6d"/>
+<circle cx="510.714" cy="91.637" r="2" fill="#087f6d"/>
+<circle cx="550.332" cy="165.885" r="2" fill="#087f6d"/>
+<circle cx="592.600" cy="160.840" r="2" fill="#087f6d"/>
+<circle cx="639.300" cy="146.696" r="2" fill="#087f6d"/>
+<circle cx="662.493" cy="138.488" r="2" fill="#087f6d"/>
+<circle cx="701.029" cy="138.488" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="131.098" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:23:01.833252+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:31.150305+00:00</text>
+</g></svg>

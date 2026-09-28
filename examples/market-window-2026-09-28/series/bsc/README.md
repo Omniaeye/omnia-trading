@@ -1,190 +1,192 @@
-# BSC results
+# BSC quote series
 
-[Window overview](../../README.md)
+[All tokens](../../tokens/README.md) | [Market window](../../README.md)
 
-| Token | Contract | Quotes | Peak | Final | Record |
-| --- | --- | ---: | ---: | ---: | --- |
-| CATTO | `0x8e7307bee5200a0d6ae4dde971383db19b277777` | 53 | 5.445x | 2.685x | [Inspect](6830dda6eaafc43aad4d.json) |
-| CHINESE | `0x518962f1b37217980111c2443dd9a698bac27777` | 23 | 1.488x | 1.439x | [Inspect](f2ff106f4b685833da87.json) |
-| 王様 | `0xadc9c71939ab7b9a010ca72648b4e2f764137777` | 2 | 1.150x | 1.150x | [Inspect](4c35b5403ab340e033b5.json) |
-| 中国人能飞 | `0x108876c3df3d893350e9b780563b3697aa3e7777` | 61 | 1.153x | 1.148x | [Inspect](3d8688ad33c89ac91033.json) |
-| 🦋 | `0x0764970a280419e21eed7688f4506e26f9797777` | 60 | 1.155x | 1.125x | [Inspect](94d70237c7ec96a5047e.json) |
-| 我要去中国 | `0x61832b9e8c5f7da7c213b1e7d60485932b407777` | 61 | 1.288x | 1.098x | [Inspect](533aa9da6698bdf097d0.json) |
-| GME | `0x38d58d65e280a3451634a09b2515015153bc7777` | 22 | 1.075x | 1.064x | [Inspect](d033f0b00195bf1d88cc.json) |
-| BNBS | `0xefd9440be6f0e612daaa2be235fbe9654c3c31c0` | 16 | 1.063x | 1.063x | [Inspect](5135642a03105cfc3720.json) |
-| 中国第一 | `0xc0bffa353b4712c171eff93ade372ee80f697777` | 35 | 1.060x | 1.060x | [Inspect](be7006937f8de29ed54a.json) |
-| 熊猫派 | `0x88c08bf706146c149fb1fade2834ac72290e7777` | 61 | 1.177x | 1.057x | [Inspect](20735ed45f70dd731a60.json) |
-| Chachamaru | `0x5c82cb0b7135965f787d4e1afd6d32c495747777` | 60 | 1.344x | 1.035x | [Inspect](4d08b07d14fa8723fdbc.json) |
-| 中国牛能飞 | `0x60e391232b0d68ba40f6e72636f3e53bbaaf7777` | 60 | 1.044x | 1.029x | [Inspect](ca7c780f47ff196493b2.json) |
-| 张树鹏 | `0xad40d1de038a8214b8c77d3c821e7bb159107777` | 26 | 1.078x | 1.029x | [Inspect](fa94e9d20dd62fed937b.json) |
-| 螃蟹 | `0x7bc023e0693589817ed258cd1507b66b1e207777` | 47 | 1.032x | 1.028x | [Inspect](274760b55b97bbd2c41c.json) |
-| BRAD | `0x3db1b406a4d50a841948765685ed42ed1f174444` | 56 | 1.030x | 1.022x | [Inspect](1ef7a12415ed2795195a.json) |
-| 牛来 | `0xbeea1d618e533a387d941f58a7d4c9b7bd377777` | 61 | 1.024x | 1.022x | [Inspect](af84711c2270ee288655.json) |
-| AGI | `0x54f03efb71d057c646892bff95a293d87741bc2a` | 13 | 1.017x | 1.017x | [Inspect](63d9bbcb6b7a2f89b379.json) |
-| MarsCoin | `0xfe189e97832da1573e4e4ff034f4ffc3a15c7777` | 61 | 1.028x | 1.016x | [Inspect](2a3f7de5db309e163b07.json) |
-| 一 | `0xef91c1eae97edcd429a5ad197753a6c3e4214444` | 61 | 1.014x | 1.014x | [Inspect](ee12e1f5ed60445c64a8.json) |
-| LUCKY | `0x67b47971426bb2180453b3993ff2ec319e704444` | 23 | 1.014x | 1.012x | [Inspect](d2a74f0ad90e17ffff10.json) |
-| BNBO | `0x7fb4758cb0c617c0bab1baf80525fab958637777` | 52 | 1.013x | 1.012x | [Inspect](1e0b272eadda9442618e.json) |
-| DOYR | `0x925c8ab7a9a8a148e87cd7f1ec7ecc3625864444` | 38 | 1.010x | 1.010x | [Inspect](3656e6119c5944a11794.json) |
-| 4 | `0x0a43fc31a73013089df59194872ecae4cae14444` | 61 | 1.010x | 1.009x | [Inspect](72bf8920489e0ce3b7be.json) |
-| 笑笑牛 | `0xcb975f49924a2c8f8d7884b3b5adcef7e1fc7777` | 23 | 1.023x | 1.007x | [Inspect](295cd2e7372c12732b42.json) |
-| TRUSTY | `0x4e79a464877b63f411500a4d158b3532cecf7777` | 28 | 1.007x | 1.007x | [Inspect](d69bae50ea570ea1a3a5.json) |
-| TAC | `0xb305e6954e4e0cd021c06ec355681abc8a00dbd7` | 61 | 1.015x | 1.007x | [Inspect](7498e91dbe20e6b99553.json) |
-| Stonks | `0xc9d825e83aada475bd4d38c8ca984ed746277777` | 32 | 1.011x | 1.006x | [Inspect](f0ff21f18cb71a542a37.json) |
-| 大头混子 | `0xa62391552b8aeaa97a18b99d44eb8137935e7777` | 18 | 1.005x | 1.005x | [Inspect](c33d53c3fba0561cf757.json) |
-| FLOCK | `0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691` | 19 | 1.005x | 1.005x | [Inspect](d73877ff009143cc490b.json) |
-| GSTOCK | `0xcafdbce93477261db8250e42bdae6e66733f9e20` | 40 | 1.024x | 1.004x | [Inspect](a23b7e2689e0964b3aab.json) |
-| 我踏马来了 | `0xc51a9250795c0186a6fb4a7d20a90330651e4444` | 8 | 1.003x | 1.003x | [Inspect](5d85f558925be117e201.json) |
-| SOXLB | `0xd97d097a89113fa59b76c572e5b2eb647e8eefaf` | 13 | 1.003x | 1.003x | [Inspect](b28f5663bc09d699f2df.json) |
-| BEM | `0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a` | 59 | 1.009x | 1.002x | [Inspect](a9149faa5f8a6411d323.json) |
-| 蝴蝶琦迹 | `0x51819c9f5abd784a49b22675703308aae8b47777` | 21 | 1.002x | 1.002x | [Inspect](8d6dee031345e1b5915d.json) |
-| BNC4 | `0x7c8d5502b544ddaf8852fc46d1174e34876d545c` | 57 | 1.003x | 1.002x | [Inspect](c0f410926d6fa8013c19.json) |
-| TSLAB | `0x5b1910eaad6450e50f816082aa078c41f10c292f` | 49 | 1.002x | 1.002x | [Inspect](a3c8e56944b8c2163ddf.json) |
-| memestock | `0x6ff45323817d1d53bbb8a8dfba9245ae74057777` | 39 | 1.012x | 1.001x | [Inspect](ddd166216a995acc0ab9.json) |
-| TART | `0x7ab8d02cbb51ff7223fde700eaaa2a91bf750314` | 12 | 1.001x | 1.001x | [Inspect](313d73eea6f2eab2f31a.json) |
-| GRVT | `0x46f2564e0fa8248d15125e7e54173cfbdef91be7` | 54 | 1.002x | 1.001x | [Inspect](e95d2a499e5d471c07b1.json) |
-| ClipX | `0xc269d59a0d608ea0bd672f2f4616c372d8554444` | 52 | 1.007x | 1.001x | [Inspect](2d55e41dee865458e49f.json) |
-| 主流矿机 | `0x7b7dd9c242aaaa7ee3c9da41ca49dc2b4a987777` | 21 | 1.002x | 1.001x | [Inspect](46c17790e9420fb84710.json) |
-| BAXK | `0x616d821f756d537809b8a920a1a8aa28738f4444` | 12 | 1.001x | 1.001x | [Inspect](f8804bd20cb59d2bb5f4.json) |
-| NVDAB | `0x02fca66c1d1afb4e2a7884261eb00f63598a7436` | 61 | 1.002x | 1.001x | [Inspect](498a6ca02cabc376f4ea.json) |
-| FIST | `0xc9882def23bc42d53895b8361d0b1edc7570bc6a` | 11 | 1.001x | 1.001x | [Inspect](726f73bb007142f80d42.json) |
-| DOT | `0x7083609fce4d1d8dc0c979aab8c869ea2c873402` | 32 | 1.001x | 1.001x | [Inspect](cedc9d420898579e6dcd.json) |
-| CETS | `0xb0c2ab5af4028461ace3f6e1c33a4ee1404e7777` | 22 | 1.007x | 1.001x | [Inspect](0e4094955658465b8d83.json) |
-| STBL | `0x8dedf84656fa932157e27c060d8613824e7979e3` | 48 | 1.001x | 1.001x | [Inspect](25728ffdade328c2b9b1.json) |
-| pPOLY | `0x1d80392d12caaaf9e333bb0bb7f021eacf297fe6` | 61 | 1.001x | 1.001x | [Inspect](30b65cf2d461b232e51b.json) |
-| Moolah | `0xbab528425edb1e0e36d3719bc3307d9c8cce8888` | 61 | 1.002x | 1.000x | [Inspect](9abb14a130d63828ef16.json) |
-| PAID | `0xc31ae677e52d8c4d3def6b00affc9c3c19577777` | 5 | 1.000x | 1.000x | [Inspect](100d10dff71ed8c86460.json) |
-| 龙虾 | `0xeccbb861c0dda7efd964010085488b69317e4444` | 61 | 1.005x | 1.000x | [Inspect](b5ec50025e78446f204d.json) |
-| DOGE | `0xba2ae424d960c26247dd6c32edc70b295c744c43` | 61 | 1.008x | 1.000x | [Inspect](2428ad0d995455146938.json) |
-| QQQB | `0x205812cdbed920aff76c6580abd681a46d11efc7` | 61 | 1.002x | 1.000x | [Inspect](951316303e2d3bd66167.json) |
-| DAI | `0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3` | 40 | 1.000x | 1.000x | [Inspect](b4a00e59c1bb185c9047.json) |
-| 中国人 | `0xa01d75690d9604eb96cc307fd82efd8612fd7777` | 5 | 1.000x | 1.000x | [Inspect](e71abf80213ace02cb96.json) |
-| COTI | `0xadbaf88b39d37dc68775ed1541f1bf83a5a45feb` | 12 | 1.000x | 1.000x | [Inspect](fb72bce330e7773140b4.json) |
-| PENGU | `0x6418c0dd099a9fda397c766304cdd918233e8847` | 9 | 1.000x | 1.000x | [Inspect](d1b21d2c91815ea38368.json) |
-| POO | `0x372ef131b69068ea774a3540c704db2b0bb38888` | 18 | 1.000x | 1.000x | [Inspect](c5af0c9d3f11d18080cd.json) |
-| CAT | `0x6894cde390a3f51155ea41ed24a33a4827d3063d` | 4 | 1.000x | 1.000x | [Inspect](94690045b9ed40cdd2d2.json) |
-| Broccoli | `0x12b4356c65340fb02cdff01293f95febb1512f3b` | 4 | 1.000x | 1.000x | [Inspect](c2076a730724aadc407c.json) |
-| MRNAB | `0x5fd86da9b05abe396fe9d02a4a213a7c00556503` | 2 | 1.000x | 1.000x | [Inspect](be851a92aa81753b35e3.json) |
-| 蝴蝶宝藏 | `0x8b99e444b818d5ca55427501584b15aadd027777` | 13 | 1.000x | 1.000x | [Inspect](df21cd63bfb94a4e53b6.json) |
-| BORT | `0x2a846aaaf896ef393ccb76398c1d96ea97374444` | 8 | 1.000x | 1.000x | [Inspect](b06a03fae5efda636ac5.json) |
-| bPay | `0xb13003bf44de426dd2a3aae3df9c3400de0a7777` | 6 | 1.000x | 1.000x | [Inspect](1016fc048469540ba5d6.json) |
-| FlapCat | `0x36a03f41df3e6d3fad7bc81b4d14fe57c08e7777` | 18 | 1.000x | 1.000x | [Inspect](daf889e8043c292b648f.json) |
-| 跨栏栋 | `0x30309bd4d541644ce280a1c88aa1d9b1d6447777` | 15 | 1.000x | 1.000x | [Inspect](f3fcdec9c74ed6db06b8.json) |
-| Dogcz | `0x5d228afbf655feb83e47fba29bd211c76c4d7777` | 5 | 1.000x | 1.000x | [Inspect](c1e4966ce6a640e2f60f.json) |
-| BWHEEL | `0x3aec6d579c902c1fe8035a038e3335f3c5e3ffff` | 3 | 1.000x | 1.000x | [Inspect](6528cd432cabcf76ae72.json) |
-| short | `0x7c46508f0937a0c8fb4c34fa20fef70ec9a6bbbb` | 3 | 1.000x | 1.000x | [Inspect](10186fe70f84eed0a696.json) |
-| BSC | `0xddb4c1ad32a29135e73997571e6a447335ed7777` | 3 | 1.000x | 1.000x | [Inspect](0967f6e24ecbb2c444c7.json) |
-| Chinese | `0x4e5b09f32eb710095b7cdc46fb447b72e18c7777` | 6 | 1.000x | 1.000x | [Inspect](b398650b83b8287acf87.json) |
-| HIVE | `0xc3af616ba6be262e251d43129ec9b6059b2c7777` | 19 | 1.000x | 1.000x | [Inspect](16b3441bc9cf4344aae3.json) |
-| 修仙 | `0x44443dd87ec4d1bea3425acc118adb023f07f91b` | 15 | 1.000x | 1.000x | [Inspect](b788c00920249634ec3b.json) |
-| DJTB | `0xf2ec508422174ee564de98187db9359d318afb6b` | 9 | 1.000x | 1.000x | [Inspect](d4b95734d20f3a312182.json) |
-| HOODB | `0xa394dcea3fd3847fd793afbfd163e2e3858b7c65` | 7 | 1.000x | 1.000x | [Inspect](032290bf2f0e6bdc4307.json) |
-| 永生果蝇 | `0xf545af97ea5405f6eb4b396b571338ef15357777` | 6 | 1.000x | 1.000x | [Inspect](acce30f5123fec70eda1.json) |
-| TOSHI | `0x6a2608dabe09bc1128eec7275b92dfb939d5db3f` | 4 | 1.000x | 1.000x | [Inspect](e8240db1764bbdc80baa.json) |
-| b-money | `0xf49725118cb0707b8706ffffe895f3ab16da7777` | 2 | 1.000x | 1.000x | [Inspect](3403dd3e7e6df2cd3e8d.json) |
-| 苹果人生 | `0xccfb3e8b1772bd3a9fc62deaf75127adad597777` | 19 | 1.000x | 1.000x | [Inspect](ef951cc086cfca39c223.json) |
-| EDGE | `0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf` | 12 | 1.001x | 1.000x | [Inspect](80c45159817b31b31b80.json) |
-| niannian | `0xcb74970b86b9abf3d75748eb2c3bff53e5cd7777` | 16 | 1.000x | 1.000x | [Inspect](6e493cda3276293f2fbf.json) |
-| CREPE | `0xeb2b7d5691878627eff20492ca7c9a71228d931d` | 57 | 1.001x | 1.000x | [Inspect](4768d1e17dec6be4ecbf.json) |
-| BabyAsteroid | `0xfecbda1b8dbd73c4eea7843c04db816107fa6666` | 9 | 1.000x | 1.000x | [Inspect](44bf75469da609e867d8.json) |
-| BREW | `0xfa6d9b504848606eb9aec04ccc161d169b3f2159` | 49 | 1.002x | 1.000x | [Inspect](ff1940e4680d1281df26.json) |
-| SNDKB | `0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb` | 16 | 1.000x | 1.000x | [Inspect](e6cae2dc30d5ac3adabe.json) |
-| AVAX | `0x1ce0c2827e2ef14d5c4f29a091d735a204794041` | 33 | 1.001x | 1.000x | [Inspect](77cf1e212ec451d89620.json) |
-| LBD | `0x186c561db134466a444a6aa75f9ecb0b3d93ffff` | 61 | 1.000x | 1.000x | [Inspect](90095921c7cb4d5e817a.json) |
-| memes | `0xf74548802f4c700315f019fde17178b392ee4444` | 4 | 1.000x | 1.000x | [Inspect](de28cea6ec775763bc64.json) |
-| LTC | `0x4338665cbb7b2485a8855a139b75d5e34ab0db94` | 34 | 1.000x | 1.000x | [Inspect](732f88595ec933cb87e0.json) |
-| SPYB | `0x7138b48df7d98d7e3cc221bfe7192d0a178182d8` | 30 | 1.000x | 1.000x | [Inspect](91ae3a1bdd4e9fffb72b.json) |
-| GMEB | `0x46ceefda28dd7207059ed19b0acdc026955bb15c` | 40 | 1.001x | 1.000x | [Inspect](c9ba7db88a1dae6c06ba.json) |
-| 人生好物 | `0x047d4f93045292bdc2cc7ced1ecf71dd12377777` | 6 | 1.000x | 1.000x | [Inspect](b8cb3c15103a4b1b3bb8.json) |
-| CUE | `0x5074546cb787d5a698ec8e9a1734e33a3fae7777` | 61 | 1.059x | 1.000x | [Inspect](4cd0a35a368a6b5a990d.json) |
-| 哈基米 | `0x82ec31d69b3c289e541b50e30681fd1acad24444` | 37 | 1.000x | 1.000x | [Inspect](f7b10e6aa71d3a79b83c.json) |
-| SNXXB | `0x9e82e3da8f1115b73d24bb24113ab836ffdab6b6` | 19 | 1.000x | 1.000x | [Inspect](915f3d0bb736a589269b.json) |
-| UPS | `0xae5a409773b9a7dd0ae94ff437ac213d8fafba01` | 39 | 1.001x | 1.000x | [Inspect](9d6f8a686a24d83464b1.json) |
-| 比特币 | `0x18d0e455b3491e09210292d3953157a4bf104444` | 43 | 1.002x | 1.000x | [Inspect](5596ac626bf97f5c9fa2.json) |
-| TOM | `0x7b87829a47b835f7be99a74b62d6c04d57847777` | 17 | 1.000x | 0.999x | [Inspect](0cc5be1f4a50b6c6f27e.json) |
-| CARING | `0xfc51f3e85e538a2d9910b8690717e47ba2dfffff` | 16 | 1.000x | 0.999x | [Inspect](a551b59de94456db4f74.json) |
-| PIRATE | `0xafcc12e4040615e7afe9fb4330eb3d9120acac05` | 61 | 1.001x | 0.999x | [Inspect](8e02cb17139e9259d785.json) |
-| PEAQ | `0x8b9ee39195ea99d6ddd68030f44131116bc218f6` | 50 | 1.002x | 0.999x | [Inspect](bd524df9fe45b08f1372.json) |
-| SLX | `0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d` | 22 | 1.001x | 0.999x | [Inspect](c64568386aac25082fbb.json) |
-| MSFTB | `0x80106cb3ead06659a5ad19df39d9b4733863b9b0` | 18 | 1.000x | 0.999x | [Inspect](9997cf588f7837b8b6af.json) |
-| ARX | `0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715` | 61 | 1.004x | 0.999x | [Inspect](59925f540fbad9ae66c2.json) |
-| FXIon | `0x9b8e987e6fec8cf1380c4dca7071e2c7853aeea1` | 61 | 1.000x | 0.999x | [Inspect](204993dda6866e45a45b.json) |
-| GTAN | `0xbd7909318b9ca4ff140b840f69bb310a785d1095` | 28 | 1.000x | 0.999x | [Inspect](56f0f2f24cd8d0940315.json) |
-| TCC | `0xa4390b901a63641c92327e5793b45fcb46954444` | 24 | 1.000x | 0.999x | [Inspect](76bb43230b8c813c1713.json) |
-| XAN | `0x7427bd9542e64d1ac207a540cfce194b7390a07f` | 44 | 1.001x | 0.999x | [Inspect](37c7ba2a204c71ebea66.json) |
-| EMPIRE | `0xbafb8bdae95399e63974fa1e0e55da75fd727777` | 20 | 1.000x | 0.999x | [Inspect](45d16fa8f4f1eaf84a2b.json) |
-| BNCB | `0x4902c5ebc598265ed2212b559b042de8a5eeec3f` | 61 | 1.002x | 0.999x | [Inspect](02bb3cea7fdbb4f1d454.json) |
-| CZ | `0x7a848a5a8169aa6a2f603d056a749f924f504444` | 33 | 1.000x | 0.999x | [Inspect](8e86c6ae68711c954e02.json) |
-| TrustCat | `0x75b364916b65f1e8959fa0210a6922c2ee237777` | 23 | 1.000x | 0.999x | [Inspect](f9ceea8e4cb530365218.json) |
-| AAPLB | `0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a` | 61 | 1.000x | 0.999x | [Inspect](4d34bff19c4804dbdee3.json) |
-| GOOGLB | `0x3f53de71c126bdabae20f9cd64848d317f6c3238` | 58 | 1.000x | 0.999x | [Inspect](745576edb41f41ddd178.json) |
-| CMC20 | `0x2f8a339b5889ffac4c5a956787cda593b3c36867` | 61 | 1.000x | 0.999x | [Inspect](bc93ababc8f3e9afd8ac.json) |
-| SENTIS | `0x8fd0d741e09a98e82256c63f25f90301ea71a83e` | 35 | 1.000x | 0.999x | [Inspect](1e1c6d8ccf993cc4c2c2.json) |
-| AST | `0x265b3982ea730748100947f52561a4eab54affff` | 51 | 1.000x | 0.999x | [Inspect](154901029bcba66335af.json) |
-| XAUt | `0x21caef8a43163eea865baee23b9c2e327696a3bf` | 47 | 1.003x | 0.999x | [Inspect](4f0879dc126a4a6100ef.json) |
-| ADA | `0x3ee2200efb3400fabb9aacf31297cbdd1d435d47` | 61 | 1.002x | 0.998x | [Inspect](383b58f96602fc695215.json) |
-| METAB | `0x7425889fe94f9d693e8daefe88bcced6acfef4c0` | 19 | 1.000x | 0.998x | [Inspect](d2fe44b49140c5c8921c.json) |
-| ZSWAP | `0x2e44ab95549b8a12afdb970bde5a6a78365e4444` | 24 | 1.000x | 0.998x | [Inspect](ca0c71d798999e759fb8.json) |
-| 健康天使 | `0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777` | 56 | 1.001x | 0.998x | [Inspect](13d8388f99072243834b.json) |
-| NLM | `0xe5f88c1f98b7c0ac0e00dbc894cd0a7a265f7777` | 21 | 1.000x | 0.998x | [Inspect](0237ea943178dc1fa875.json) |
-| ENSO | `0xfeb339236d25d3e415f280189bc7c2fbab6ae9ef` | 40 | 1.000x | 0.998x | [Inspect](4d0621056f64f06b58bf.json) |
-| 兔来 | `0xaf9ea0f0971a72e5e1b65de64fae2922c85d7777` | 14 | 1.000x | 0.998x | [Inspect](67cd768473b8b768baa6.json) |
-| PROVE | `0x7ddf164cecfddd0f992299d033b5a11279a15929` | 57 | 1.000x | 0.998x | [Inspect](72182cf8c14ba520443a.json) |
-| build | `0x489ce5fb31523516f3fb4aacd597508c80edffff` | 48 | 1.000x | 0.998x | [Inspect](ed8c68277dbea468dd01.json) |
-| ANTS | `0xc1d308b258e21ed5f3ddc50351d21d2809337777` | 61 | 1.004x | 0.998x | [Inspect](bc26103907699d8cfe61.json) |
-| UNI | `0xbf5140a22578168fd562dccf235e5d43a02ce9b1` | 50 | 1.002x | 0.997x | [Inspect](ef7a826b9c81708ee64f.json) |
-| 0G | `0x4b948d64de1f71fcd12fb586f4c776421a35b3ee` | 32 | 1.000x | 0.997x | [Inspect](95b93b61e5d1f0a0b0f3.json) |
-| XPL | `0x405fbc9004d857903bfd6b3357792d71a50726b0` | 61 | 1.003x | 0.997x | [Inspect](dc22b15edefc5fb96601.json) |
-| 四股 | `0x800ad6bf6747105e3620d3cb4bced15ab9e47777` | 21 | 1.000x | 0.997x | [Inspect](4b1f4e193448e8761218.json) |
-| RICE | `0xb5761f36fdfe2892f1b54bc8ee8babb2a1b698d3` | 9 | 1.000x | 0.997x | [Inspect](0bc71a97bc3654c84e2f.json) |
-| TRX | `0xce7de646e7208a4ef112cb6ed5038fa6cc6b12e3` | 37 | 1.000x | 0.997x | [Inspect](578ef6f37815c478c0f2.json) |
-| SPCXB | `0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1` | 61 | 1.000x | 0.996x | [Inspect](392fdc0b767446e72503.json) |
-| POLLY | `0x41bc6001cff48d25fa4329d990d08f15ec927777` | 61 | 1.005x | 0.996x | [Inspect](5d9d8ebf1f46d104a9d4.json) |
-| MERL | `0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9` | 27 | 1.000x | 0.996x | [Inspect](80a5fb7e694c020d45e8.json) |
-| BeeStock | `0x7e409e3a3d2cfb804dfe21294a56cf97a0957777` | 23 | 1.000x | 0.996x | [Inspect](6b7f364dbec882ae1d92.json) |
-| 4Stock | `0xd270d4e1ec6e6e0d28c0ecb8be966ec75997ffff` | 45 | 1.000x | 0.995x | [Inspect](afd9a63a2fe75432edb3.json) |
-| 招财猫 | `0x975faed559b45feb8a5c5ceb940e614302947777` | 61 | 1.014x | 0.995x | [Inspect](1b0d65b67d6e18d30624.json) |
-| ESPORTS | `0xf39e4b21c84e737df08e2c3b32541d856f508e48` | 61 | 1.000x | 0.995x | [Inspect](23415ea4ada1337dd67a.json) |
-| Sue | `0x2ab8a4dd2191989ac2898006df350b236d2b7777` | 56 | 1.009x | 0.995x | [Inspect](97f2d0adc102c72c13c6.json) |
-| VenusCoin | `0xf76e106254a2fac844827a2fea2b8f9ed80a4444` | 24 | 1.000x | 0.994x | [Inspect](b90ac5c4b482a1f1d25c.json) |
-| 币安生态 | `0x73495f9b2e2b5604a05278a50bd51e1996057777` | 6 | 1.003x | 0.994x | [Inspect](0aea9776bd21b56a928e.json) |
-| BMNRB | `0x3548da95a9effe481e8604664d75e95821e557f5` | 50 | 1.007x | 0.994x | [Inspect](2914283291d0eee08674.json) |
-| ZEC | `0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb` | 61 | 1.003x | 0.993x | [Inspect](279e7ce72f73f203fd61.json) |
-| CASH | `0x324f74a4fd5d25186c74fae255a5750b6a807777` | 24 | 1.000x | 0.992x | [Inspect](9023517f69511ca3ef55.json) |
-| FIL | `0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153` | 58 | 1.000x | 0.991x | [Inspect](75e1436140a7be5ce961.json) |
-| NIGHT | `0xfe930c2d63aed9b82fc4dbc801920dd2c1a3224f` | 30 | 1.000x | 0.990x | [Inspect](13076f5b046d0ca24c57.json) |
-| FLORK | `0xf40592daacb3e5abf358789f5688c0b4f64d7777` | 33 | 1.000x | 0.990x | [Inspect](eb3e627b945e21b44169.json) |
-| 自由鸭 | `0x5d01b8174a661600cf4f016bea9b073557847777` | 59 | 1.001x | 0.989x | [Inspect](9507ece47fb9302f83bd.json) |
-| Binancians | `0xa15a6b1b9c256aa42cee7a0947a2404a72ed7777` | 30 | 1.001x | 0.987x | [Inspect](4d02db3ea219cb93d2f6.json) |
-| osbook | `0x355c11826d33ac0cce61f4c1f71eef9363707777` | 49 | 1.009x | 0.985x | [Inspect](16e9abb15fd98a71dfe5.json) |
-| 羊头人生 | `0xf43d342d375e98141bb093fecdd841a9500e7777` | 10 | 1.000x | 0.983x | [Inspect](7ad62c56fd19a4635102.json) |
-| 久留美 | `0xfedf19759ba9c45b1a8345a2bde916b38acc7777` | 32 | 1.016x | 0.980x | [Inspect](b46ae20e69dd21a137d4.json) |
-| 蘑菇头 | `0x681234b574ac190eaf58bb12a5d61fb29bb07777` | 7 | 1.000x | 0.971x | [Inspect](a52ee4a08d445e59e7bc.json) |
-| testmarscoin | `0xfce886d0e0bb01b3611c94dee215bfd280037777` | 3 | 1.000x | 0.971x | [Inspect](a277905d0e0b50b0e42f.json) |
-| Hachiko | `0xf1c599e9a5fbdea408a7409c0176a2fe42c64444` | 43 | 1.001x | 0.970x | [Inspect](b22da020bfa7b5d96465.json) |
-| 旺柴 | `0x14f6a94909c407854390aa2d2462a3095d317777` | 55 | 1.009x | 0.968x | [Inspect](bec6e0e7f596e54c0788.json) |
-| 和平熊猫 | `0x3a91c7d22d8d306eb109c9e9fa78ac162cca7777` | 20 | 1.000x | 0.964x | [Inspect](d5693e288c8091be65fa.json) |
-| SPX | `0xca56094722450016f280c4fd6a333e5c36903827` | 30 | 1.023x | 0.962x | [Inspect](0bc79548d7db57e80819.json) |
-| BNBCAT | `0x3efbfff95576e1d23cf6ead0acd2e73f4d6a7777` | 55 | 1.000x | 0.953x | [Inspect](5facb4c143a738e99de5.json) |
-| MAME | `0x39d9b36aa0e7a1fee97d6ff614420f7308ba7777` | 61 | 1.001x | 0.938x | [Inspect](fa2887970645af8211a6.json) |
-| WIRED | `0x55db4b1f497b1d7aa93354701883efc758367777` | 61 | 1.027x | 0.930x | [Inspect](47e856ccaf94f00b3a4f.json) |
-| RHEA | `0x4c067de26475e1cefee8b8d1f6e2266b33a2372e` | 61 | 1.002x | 0.925x | [Inspect](cde0da528183df10e999.json) |
-| 中国能腾飞 | `0xdacc94928112c2eafb20c8d18316e9ceeaaa7777` | 61 | 1.000x | 0.924x | [Inspect](86a1f9dbf125263ad0a0.json) |
-| Mamesuke | `0x7b307ad0360499099291db190c5c0b111c147777` | 61 | 1.004x | 0.924x | [Inspect](0d14dad2d55e4ec2dcb2.json) |
-| TIPPED | `0x6617986f7c3a599326b606cf42ff53e4f694fa4a` | 50 | 1.010x | 0.920x | [Inspect](78278f932fc22db5f303.json) |
-| BONKGUY | `0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777` | 42 | 1.000x | 0.874x | [Inspect](f79ba94f5c35cba03ab8.json) |
-| CMC | `0x43ed6706e35a1fff03e542c6ff7e58a41da37777` | 61 | 1.152x | 0.865x | [Inspect](3c5fc511c49c82a913a9.json) |
-| LOBBY | `0x1db90b97e9ca25f69643989b37ba41210ea07777` | 21 | 1.133x | 0.840x | [Inspect](d1fab732232e4ebfcaa8.json) |
-| OATHWALL | `0xeed22a9ef4ccd6a945aba4e21739708cb3227777` | 22 | 1.000x | 0.782x | [Inspect](ffd4af529d799a8f0fe8.json) |
-| DBYTE | `0x4334d6b64e97e4150a57eccae9a8c76f76547777` | 61 | 1.009x | 0.716x | [Inspect](452899038760f23ffbdc.json) |
-| 友谊使者 | `0x6196cc4e1a04f8fcce9593012d708d5c7a6a7777` | 59 | 1.000x | 0.715x | [Inspect](1853da28f2498b0ffd8f.json) |
-| SpaceXcoin | `0xf225e70162837a811c77dc2bb413a5c06e97ffff` | 1 | — | — | [Inspect](46ebf7708cf2cfbde61a.json) |
-| WoD | `0xb994882a1b9bd98a71dd6ea5f61577c42848b0e8` | 1 | — | — | [Inspect](d54dcfb0298c0ef45f96.json) |
-| MARTIANS | `0x8c5cfe14cf4fa710b7d2245a9e7d989980c37777` | 1 | — | — | [Inspect](63b7b85e46db20d3f9a9.json) |
-| ATOM | `0x0eb3a705fc54725037cc9e008bdede697f62f335` | 1 | — | — | [Inspect](937e9287e2f7684684e9.json) |
-| 太空兔 | `0x38860d2ee327244229242c02e600a6154cec7777` | 1 | — | — | [Inspect](0aabc033c5a601e96ce1.json) |
-| MILAN | `0x5c9ff301ec2d882b635813739cc07330788d7322` | 1 | — | — | [Inspect](30ac78f56df3b7dad997.json) |
-| DDOG | `0x2b44d7ee02e8f9916a2ffee02e4e6354ab5c7777` | 0 | — | — | [Inspect](3d55fa908e0910498d5a.json) |
-| FUELBOT | `0x3b7dec98e2748d523e751eceb1d81eac67fb7777` | 0 | — | — | [Inspect](9a05291b3203bf62f5ad.json) |
-| KAI | `0xcc28015f40cf707f8b9d236cc1fc90bc040a7777` | 0 | — | — | [Inspect](e947aee632e809be5e3c.json) |
-| 币安蝴蝶 | `0xfbc0e9e64579857f7e36004995252fb76ff57777` | 0 | — | — | [Inspect](127f4b78b662bee14715.json) |
+Every series, ordered by token name. Pools and contracts retain separate identities.
+
+| Token | Contract | Quotes | Peak | Final | Drawdown | Curve and timeline |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| 0G | `0x4b948d64de1f71fcd12fb586f4c776421a35b3ee` | 32 | 1.000x | 0.997x | 0.26% | [Inspect](../../tokens/3bc13c451646f32ba2f68fc3.md) |
+| 4 | `0x0a43fc31a73013089df59194872ecae4cae14444` | 61 | 1.010x | 1.009x | 0.19% | [Inspect](../../tokens/12ef4ef5c4b094012d65e498.md) |
+| 4Stock | `0xd270d4e1ec6e6e0d28c0ecb8be966ec75997ffff` | 45 | 1.000x | 0.995x | 0.78% | [Inspect](../../tokens/d736c4c02012465c0c40a091.md) |
+| AAPLB | `0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a` | 61 | 1.000x | 0.999x | 0.40% | [Inspect](../../tokens/a1000d3df9c7f1ed7b75ba63.md) |
+| ADA | `0x3ee2200efb3400fabb9aacf31297cbdd1d435d47` | 61 | 1.002x | 0.998x | 0.39% | [Inspect](../../tokens/a2125a0a8274efb997dda659.md) |
+| AGI | `0x54f03efb71d057c646892bff95a293d87741bc2a` | 13 | 1.017x | 1.017x | 0.00% | [Inspect](../../tokens/77406cf75f7adc0346febac5.md) |
+| ANTS | `0xc1d308b258e21ed5f3ddc50351d21d2809337777` | 61 | 1.004x | 0.998x | 0.81% | [Inspect](../../tokens/0ef787220a1a76d6675d6626.md) |
+| ARX | `0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715` | 61 | 1.004x | 0.999x | 0.66% | [Inspect](../../tokens/1041885551e5c4c749f92138.md) |
+| AST | `0x265b3982ea730748100947f52561a4eab54affff` | 51 | 1.000x | 0.999x | 0.75% | [Inspect](../../tokens/aac6050d204020052875b1ce.md) |
+| ATOM | `0x0eb3a705fc54725037cc9e008bdede697f62f335` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/c22857211f55170091c09921.md) |
+| AVAX | `0x1ce0c2827e2ef14d5c4f29a091d735a204794041` | 33 | 1.001x | 1.000x | 0.28% | [Inspect](../../tokens/465cfc681aa87244c0cce38f.md) |
+| b-money | `0xf49725118cb0707b8706ffffe895f3ab16da7777` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/8bcfeb874f6bebaad12f30c2.md) |
+| BabyAsteroid | `0xfecbda1b8dbd73c4eea7843c04db816107fa6666` | 9 | 1.000x | 1.000x | 0.02% | [Inspect](../../tokens/f7b8ec687eb90761d106c925.md) |
+| BAXK | `0x616d821f756d537809b8a920a1a8aa28738f4444` | 12 | 1.001x | 1.001x | 0.00% | [Inspect](../../tokens/e9dc7ec2da28709c9c6532f9.md) |
+| BeeStock | `0x7e409e3a3d2cfb804dfe21294a56cf97a0957777` | 23 | 1.000x | 0.996x | 0.51% | [Inspect](../../tokens/f634805fcf66025745a28cde.md) |
+| BEM | `0x5ce033b2bfca3af30b3e8c8457deaf776a8b695a` | 59 | 1.009x | 1.002x | 1.14% | [Inspect](../../tokens/b191a965dc7b120de0943786.md) |
+| Binancians | `0xa15a6b1b9c256aa42cee7a0947a2404a72ed7777` | 30 | 1.001x | 0.987x | 1.41% | [Inspect](../../tokens/6619b14719668b6001c52b2b.md) |
+| BMNRB | `0x3548da95a9effe481e8604664d75e95821e557f5` | 50 | 1.007x | 0.994x | 1.62% | [Inspect](../../tokens/7d10d415109d4d52f8b29c34.md) |
+| BNBCAT | `0x3efbfff95576e1d23cf6ead0acd2e73f4d6a7777` | 55 | 1.000x | 0.953x | 4.85% | [Inspect](../../tokens/327c16d7ceea92f2e0d5c006.md) |
+| BNBO | `0x7fb4758cb0c617c0bab1baf80525fab958637777` | 52 | 1.013x | 1.012x | 0.14% | [Inspect](../../tokens/312f53da15c8695a6a89bd4f.md) |
+| BNBS | `0xefd9440be6f0e612daaa2be235fbe9654c3c31c0` | 16 | 1.063x | 1.063x | 0.08% | [Inspect](../../tokens/51cb277811779b3ae98d63a9.md) |
+| BNC4 | `0x7c8d5502b544ddaf8852fc46d1174e34876d545c` | 57 | 1.003x | 1.002x | 0.49% | [Inspect](../../tokens/a125c20124f504a85246af58.md) |
+| BNCB | `0x4902c5ebc598265ed2212b559b042de8a5eeec3f` | 61 | 1.002x | 0.999x | 1.51% | [Inspect](../../tokens/bb97f126ce686e501af3e616.md) |
+| BONKGUY | `0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777` | 42 | 1.000x | 0.874x | 12.63% | [Inspect](../../tokens/9b619e2160fcdd4e3cfa5f34.md) |
+| BORT | `0x2a846aaaf896ef393ccb76398c1d96ea97374444` | 8 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/f20a5f4d6f577ba6a16f1939.md) |
+| bPay | `0xb13003bf44de426dd2a3aae3df9c3400de0a7777` | 6 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/0a1c59d8e53887ac66f0ee2b.md) |
+| BRAD | `0x3db1b406a4d50a841948765685ed42ed1f174444` | 56 | 1.030x | 1.022x | 0.83% | [Inspect](../../tokens/73ac40bb0c9fe76d62ac5142.md) |
+| BREW | `0xfa6d9b504848606eb9aec04ccc161d169b3f2159` | 49 | 1.002x | 1.000x | 0.27% | [Inspect](../../tokens/42a44d95c33d821910cf6e16.md) |
+| Broccoli | `0x12b4356c65340fb02cdff01293f95febb1512f3b` | 4 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/904e1aa704cd92b8e2881c31.md) |
+| BSC | `0xddb4c1ad32a29135e73997571e6a447335ed7777` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/33333ccb0ad5013b4e8930f0.md) |
+| build | `0x489ce5fb31523516f3fb4aacd597508c80edffff` | 48 | 1.000x | 0.998x | 0.56% | [Inspect](../../tokens/7c84242d3b61dc5c8696c661.md) |
+| BWHEEL | `0x3aec6d579c902c1fe8035a038e3335f3c5e3ffff` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/bccd64625bbad44a39661f27.md) |
+| CARING | `0xfc51f3e85e538a2d9910b8690717e47ba2dfffff` | 16 | 1.000x | 0.999x | 0.08% | [Inspect](../../tokens/452cafa57bbcf56baa030009.md) |
+| CASH | `0x324f74a4fd5d25186c74fae255a5750b6a807777` | 24 | 1.000x | 0.992x | 0.82% | [Inspect](../../tokens/6a0eff93df80fd3bf7aa0a62.md) |
+| CAT | `0x6894cde390a3f51155ea41ed24a33a4827d3063d` | 4 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/5d96cbf2c86f4e0fe96b191a.md) |
+| CATTO | `0x8e7307bee5200a0d6ae4dde971383db19b277777` | 53 | 5.445x | 2.685x | 54.31% | [Inspect](../../tokens/abfa6ca95177dfe10153d3e2.md) |
+| CETS | `0xb0c2ab5af4028461ace3f6e1c33a4ee1404e7777` | 22 | 1.007x | 1.001x | 0.62% | [Inspect](../../tokens/93268ccd3628f480c057b189.md) |
+| Chachamaru | `0x5c82cb0b7135965f787d4e1afd6d32c495747777` | 60 | 1.344x | 1.035x | 23.27% | [Inspect](../../tokens/99b8e0667577563e58614fb5.md) |
+| Chinese | `0x4e5b09f32eb710095b7cdc46fb447b72e18c7777` | 6 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/7e2635a430aa71e884532b13.md) |
+| CHINESE | `0x518962f1b37217980111c2443dd9a698bac27777` | 23 | 1.488x | 1.439x | 57.03% | [Inspect](../../tokens/d3fe37baba5a0759672e6200.md) |
+| ClipX | `0xc269d59a0d608ea0bd672f2f4616c372d8554444` | 52 | 1.007x | 1.001x | 0.60% | [Inspect](../../tokens/9b2d61121104b05d94cdd9b0.md) |
+| CMC | `0x43ed6706e35a1fff03e542c6ff7e58a41da37777` | 61 | 1.152x | 0.865x | 26.65% | [Inspect](../../tokens/eb86d35572ea1f00a4589410.md) |
+| CMC20 | `0x2f8a339b5889ffac4c5a956787cda593b3c36867` | 61 | 1.000x | 0.999x | 0.19% | [Inspect](../../tokens/1e3a9d905aab1b0f5fad6fdd.md) |
+| COTI | `0xadbaf88b39d37dc68775ed1541f1bf83a5a45feb` | 12 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/ef8e7ca1f71f79765f705ee4.md) |
+| CREPE | `0xeb2b7d5691878627eff20492ca7c9a71228d931d` | 57 | 1.001x | 1.000x | 0.15% | [Inspect](../../tokens/e0b7741498fb62d2e6959ec7.md) |
+| CUE | `0x5074546cb787d5a698ec8e9a1734e33a3fae7777` | 61 | 1.059x | 1.000x | 10.99% | [Inspect](../../tokens/897892cce9abdedccad890d7.md) |
+| CZ | `0x7a848a5a8169aa6a2f603d056a749f924f504444` | 33 | 1.000x | 0.999x | 0.12% | [Inspect](../../tokens/bd99e8079c9527df049dbf90.md) |
+| DAI | `0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3` | 40 | 1.000x | 1.000x | 0.18% | [Inspect](../../tokens/832ccd03e3f25e360b6a4bf1.md) |
+| DBYTE | `0x4334d6b64e97e4150a57eccae9a8c76f76547777` | 61 | 1.009x | 0.716x | 34.87% | [Inspect](../../tokens/6bfb2eff6821c11d423bc7da.md) |
+| DDOG | `0x2b44d7ee02e8f9916a2ffee02e4e6354ab5c7777` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/57433a77519c078be1dab451.md) |
+| DJTB | `0xf2ec508422174ee564de98187db9359d318afb6b` | 9 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/5ad1c0e442f3852ec323f6c2.md) |
+| Dogcz | `0x5d228afbf655feb83e47fba29bd211c76c4d7777` | 5 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/c852647919963961a12c2c17.md) |
+| DOGE | `0xba2ae424d960c26247dd6c32edc70b295c744c43` | 61 | 1.008x | 1.000x | 0.98% | [Inspect](../../tokens/6dcea43ac75e8f784f65e8d8.md) |
+| DOT | `0x7083609fce4d1d8dc0c979aab8c869ea2c873402` | 32 | 1.001x | 1.001x | 0.09% | [Inspect](../../tokens/1f46a8291ef5041defd0fccc.md) |
+| DOYR | `0x925c8ab7a9a8a148e87cd7f1ec7ecc3625864444` | 38 | 1.010x | 1.010x | 0.12% | [Inspect](../../tokens/5b1e46940b59824df6e5f10e.md) |
+| EDGE | `0x70f2eadf1ca1969ff42b0c78e9da519e8937cbaf` | 12 | 1.001x | 1.000x | 0.11% | [Inspect](../../tokens/80fc3e90b76b4ff86d48ea16.md) |
+| EMPIRE | `0xbafb8bdae95399e63974fa1e0e55da75fd727777` | 20 | 1.000x | 0.999x | 0.12% | [Inspect](../../tokens/ca233dbc0b88469077cb9a5b.md) |
+| ENSO | `0xfeb339236d25d3e415f280189bc7c2fbab6ae9ef` | 40 | 1.000x | 0.998x | 0.21% | [Inspect](../../tokens/427712a53e6fa72ed26a3da5.md) |
+| ESPORTS | `0xf39e4b21c84e737df08e2c3b32541d856f508e48` | 61 | 1.000x | 0.995x | 0.67% | [Inspect](../../tokens/fb709c8524e932bf1c317f50.md) |
+| FIL | `0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153` | 58 | 1.000x | 0.991x | 1.01% | [Inspect](../../tokens/da48e79f2d075a2bb1ec712d.md) |
+| FIST | `0xc9882def23bc42d53895b8361d0b1edc7570bc6a` | 11 | 1.001x | 1.001x | 0.00% | [Inspect](../../tokens/db50c828df8931957c636acc.md) |
+| FlapCat | `0x36a03f41df3e6d3fad7bc81b4d14fe57c08e7777` | 18 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/99aa046e8a2c86c3b47e0b76.md) |
+| FLOCK | `0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691` | 19 | 1.005x | 1.005x | 0.00% | [Inspect](../../tokens/9817a0a77997d2765a4484cf.md) |
+| FLORK | `0xf40592daacb3e5abf358789f5688c0b4f64d7777` | 33 | 1.000x | 0.990x | 2.64% | [Inspect](../../tokens/cbdda6e76273a51fb5825e44.md) |
+| FUELBOT | `0x3b7dec98e2748d523e751eceb1d81eac67fb7777` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/bca57071928d12235807e904.md) |
+| FXIon | `0x9b8e987e6fec8cf1380c4dca7071e2c7853aeea1` | 61 | 1.000x | 0.999x | 0.25% | [Inspect](../../tokens/d289ff79c473f7efee4c382f.md) |
+| GME | `0x38d58d65e280a3451634a09b2515015153bc7777` | 22 | 1.075x | 1.064x | 0.99% | [Inspect](../../tokens/a41ee020e53cbfd628da09f5.md) |
+| GMEB | `0x46ceefda28dd7207059ed19b0acdc026955bb15c` | 40 | 1.001x | 1.000x | 0.24% | [Inspect](../../tokens/0c26e058d8bc64b368d93e0c.md) |
+| GOOGLB | `0x3f53de71c126bdabae20f9cd64848d317f6c3238` | 58 | 1.000x | 0.999x | 0.16% | [Inspect](../../tokens/42b88bd309a55a0d8db8153a.md) |
+| GRVT | `0x46f2564e0fa8248d15125e7e54173cfbdef91be7` | 54 | 1.002x | 1.001x | 0.36% | [Inspect](../../tokens/db7054cc147a047557c4589e.md) |
+| GSTOCK | `0xcafdbce93477261db8250e42bdae6e66733f9e20` | 40 | 1.024x | 1.004x | 2.22% | [Inspect](../../tokens/674e919dfbb76b04cd04f73c.md) |
+| GTAN | `0xbd7909318b9ca4ff140b840f69bb310a785d1095` | 28 | 1.000x | 0.999x | 0.10% | [Inspect](../../tokens/73fbb0ea978695cdd8cbf0bf.md) |
+| Hachiko | `0xf1c599e9a5fbdea408a7409c0176a2fe42c64444` | 43 | 1.001x | 0.970x | 3.03% | [Inspect](../../tokens/fcfc28a4dac9717761aa875f.md) |
+| HIVE | `0xc3af616ba6be262e251d43129ec9b6059b2c7777` | 19 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/758c643ee1e9ee03c2654617.md) |
+| HOODB | `0xa394dcea3fd3847fd793afbfd163e2e3858b7c65` | 7 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/3a7a0aa7f69a14e03b379248.md) |
+| KAI | `0xcc28015f40cf707f8b9d236cc1fc90bc040a7777` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/d3a7fb29c737b7715c9e34d3.md) |
+| LBD | `0x186c561db134466a444a6aa75f9ecb0b3d93ffff` | 61 | 1.000x | 1.000x | 0.09% | [Inspect](../../tokens/da2dfef2c9c5ecca71c7001c.md) |
+| LOBBY | `0x1db90b97e9ca25f69643989b37ba41210ea07777` | 21 | 1.133x | 0.840x | 45.07% | [Inspect](../../tokens/04f47826c5d318669007a1c8.md) |
+| LTC | `0x4338665cbb7b2485a8855a139b75d5e34ab0db94` | 34 | 1.000x | 1.000x | 0.02% | [Inspect](../../tokens/90ca9d2433d17db366189707.md) |
+| LUCKY | `0x67b47971426bb2180453b3993ff2ec319e704444` | 23 | 1.014x | 1.012x | 0.12% | [Inspect](../../tokens/ff6ae1576625e33e5b26109f.md) |
+| MAME | `0x39d9b36aa0e7a1fee97d6ff614420f7308ba7777` | 61 | 1.001x | 0.938x | 6.36% | [Inspect](../../tokens/8eb142815c5530f2c0e47757.md) |
+| Mamesuke | `0x7b307ad0360499099291db190c5c0b111c147777` | 61 | 1.004x | 0.924x | 11.26% | [Inspect](../../tokens/c3298f41f6769a7952ef7808.md) |
+| MarsCoin | `0xfe189e97832da1573e4e4ff034f4ffc3a15c7777` | 61 | 1.028x | 1.016x | 2.63% | [Inspect](../../tokens/a86459d2611e230f72064666.md) |
+| MARTIANS | `0x8c5cfe14cf4fa710b7d2245a9e7d989980c37777` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/8d2611b1ddc6da6a1af4fbde.md) |
+| memes | `0xf74548802f4c700315f019fde17178b392ee4444` | 4 | 1.000x | 1.000x | 0.02% | [Inspect](../../tokens/018dfc2da221eb4cfc0cadd3.md) |
+| memestock | `0x6ff45323817d1d53bbb8a8dfba9245ae74057777` | 39 | 1.012x | 1.001x | 1.08% | [Inspect](../../tokens/fdc7a46585a0a77d728aa6c8.md) |
+| MERL | `0xa0c56a8c0692bd10b3fa8f8ba79cf5332b7107f9` | 27 | 1.000x | 0.996x | 0.47% | [Inspect](../../tokens/39227ec440ac3cdbfac42cad.md) |
+| METAB | `0x7425889fe94f9d693e8daefe88bcced6acfef4c0` | 19 | 1.000x | 0.998x | 0.17% | [Inspect](../../tokens/94d94bd1379d8a80ffab53ae.md) |
+| MILAN | `0x5c9ff301ec2d882b635813739cc07330788d7322` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/4fccbd2c97dd1e1206f107ec.md) |
+| Moolah | `0xbab528425edb1e0e36d3719bc3307d9c8cce8888` | 61 | 1.002x | 1.000x | 0.79% | [Inspect](../../tokens/be07345e2e43bbd1ae800648.md) |
+| MRNAB | `0x5fd86da9b05abe396fe9d02a4a213a7c00556503` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/3f3e9f3972f99b3b5187008a.md) |
+| MSFTB | `0x80106cb3ead06659a5ad19df39d9b4733863b9b0` | 18 | 1.000x | 0.999x | 0.07% | [Inspect](../../tokens/a807c4dbf8669d3519b4e198.md) |
+| niannian | `0xcb74970b86b9abf3d75748eb2c3bff53e5cd7777` | 16 | 1.000x | 1.000x | 0.03% | [Inspect](../../tokens/f3c7419be123d027d623b5ba.md) |
+| NIGHT | `0xfe930c2d63aed9b82fc4dbc801920dd2c1a3224f` | 30 | 1.000x | 0.990x | 1.66% | [Inspect](../../tokens/70fa4564f876d0b82c287fc6.md) |
+| NLM | `0xe5f88c1f98b7c0ac0e00dbc894cd0a7a265f7777` | 21 | 1.000x | 0.998x | 0.22% | [Inspect](../../tokens/56b035f3513d74667629e377.md) |
+| NVDAB | `0x02fca66c1d1afb4e2a7884261eb00f63598a7436` | 61 | 1.002x | 1.001x | 0.47% | [Inspect](../../tokens/9dd3394f9b9fce7f4f5eed3c.md) |
+| OATHWALL | `0xeed22a9ef4ccd6a945aba4e21739708cb3227777` | 22 | 1.000x | 0.782x | 21.79% | [Inspect](../../tokens/868a7c0fc8fd290e044deae6.md) |
+| osbook | `0x355c11826d33ac0cce61f4c1f71eef9363707777` | 49 | 1.009x | 0.985x | 2.49% | [Inspect](../../tokens/0bc8ab0850a8e9e0249d1c37.md) |
+| PAID | `0xc31ae677e52d8c4d3def6b00affc9c3c19577777` | 5 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/17924a1827b38dbe66e3b1bf.md) |
+| PEAQ | `0x8b9ee39195ea99d6ddd68030f44131116bc218f6` | 50 | 1.002x | 0.999x | 0.30% | [Inspect](../../tokens/b1afd5c491d79b346d3ca6e7.md) |
+| PENGU | `0x6418c0dd099a9fda397c766304cdd918233e8847` | 9 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/e321d7fad95b413db71f53cc.md) |
+| PIRATE | `0xafcc12e4040615e7afe9fb4330eb3d9120acac05` | 61 | 1.001x | 0.999x | 0.31% | [Inspect](../../tokens/644bd8f86ef26431ece826b0.md) |
+| POLLY | `0x41bc6001cff48d25fa4329d990d08f15ec927777` | 61 | 1.005x | 0.996x | 1.34% | [Inspect](../../tokens/bcf0479524c7c8f20623dd31.md) |
+| POO | `0x372ef131b69068ea774a3540c704db2b0bb38888` | 18 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/8f7ebdec7b7a929a5afdc52f.md) |
+| pPOLY | `0x1d80392d12caaaf9e333bb0bb7f021eacf297fe6` | 61 | 1.001x | 1.001x | 0.07% | [Inspect](../../tokens/46e19ab65155c66a1355edfb.md) |
+| PROVE | `0x7ddf164cecfddd0f992299d033b5a11279a15929` | 57 | 1.000x | 0.998x | 0.21% | [Inspect](../../tokens/8f08cdd35e343bb2a922ae19.md) |
+| QQQB | `0x205812cdbed920aff76c6580abd681a46d11efc7` | 61 | 1.002x | 1.000x | 0.20% | [Inspect](../../tokens/7eb67116a2c83e59269fc3ba.md) |
+| RHEA | `0x4c067de26475e1cefee8b8d1f6e2266b33a2372e` | 61 | 1.002x | 0.925x | 12.95% | [Inspect](../../tokens/8046eb52294688e9a9895854.md) |
+| RICE | `0xb5761f36fdfe2892f1b54bc8ee8babb2a1b698d3` | 9 | 1.000x | 0.997x | 0.30% | [Inspect](../../tokens/3b028a7ed392359c70793d40.md) |
+| SENTIS | `0x8fd0d741e09a98e82256c63f25f90301ea71a83e` | 35 | 1.000x | 0.999x | 0.14% | [Inspect](../../tokens/6fd38e42459a8497a947bdd3.md) |
+| short | `0x7c46508f0937a0c8fb4c34fa20fef70ec9a6bbbb` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/40b44acdab10298727e48afc.md) |
+| SLX | `0x02bcc4c181b83a8c0a342bc003389cbecb4bc54d` | 22 | 1.001x | 0.999x | 0.13% | [Inspect](../../tokens/d21522e6b206841b60282289.md) |
+| SNDKB | `0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb` | 16 | 1.000x | 1.000x | 0.02% | [Inspect](../../tokens/cd18c9dc5d45f8a10bce94c0.md) |
+| SNXXB | `0x9e82e3da8f1115b73d24bb24113ab836ffdab6b6` | 19 | 1.000x | 1.000x | 0.10% | [Inspect](../../tokens/1d17146dfa2096ae56b0b459.md) |
+| SOXLB | `0xd97d097a89113fa59b76c572e5b2eb647e8eefaf` | 13 | 1.003x | 1.003x | 0.23% | [Inspect](../../tokens/ea02e6cfceab2a3f1bf79bb0.md) |
+| SpaceXcoin | `0xf225e70162837a811c77dc2bb413a5c06e97ffff` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/1e7268d6eae3dca9c3245132.md) |
+| SPCXB | `0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1` | 61 | 1.000x | 0.996x | 0.50% | [Inspect](../../tokens/c6a2b2230e97b8cd0050345c.md) |
+| SPX | `0xca56094722450016f280c4fd6a333e5c36903827` | 30 | 1.023x | 0.962x | 6.23% | [Inspect](../../tokens/ad4acbd67e0533a228072ef4.md) |
+| SPYB | `0x7138b48df7d98d7e3cc221bfe7192d0a178182d8` | 30 | 1.000x | 1.000x | 0.29% | [Inspect](../../tokens/60eb8ea43b310518a1e3dbc9.md) |
+| STBL | `0x8dedf84656fa932157e27c060d8613824e7979e3` | 48 | 1.001x | 1.001x | 0.06% | [Inspect](../../tokens/95a52602716b27133685cf70.md) |
+| Stonks | `0xc9d825e83aada475bd4d38c8ca984ed746277777` | 32 | 1.011x | 1.006x | 0.98% | [Inspect](../../tokens/4cb6a035aa727c5a3c95cc48.md) |
+| Sue | `0x2ab8a4dd2191989ac2898006df350b236d2b7777` | 56 | 1.009x | 0.995x | 1.38% | [Inspect](../../tokens/f4cd40909e392d9b17d8f567.md) |
+| TAC | `0xb305e6954e4e0cd021c06ec355681abc8a00dbd7` | 61 | 1.015x | 1.007x | 0.84% | [Inspect](../../tokens/0df4a9f1255e33b7e2466405.md) |
+| TART | `0x7ab8d02cbb51ff7223fde700eaaa2a91bf750314` | 12 | 1.001x | 1.001x | 0.04% | [Inspect](../../tokens/87236763091f3850efa9a1f2.md) |
+| TCC | `0xa4390b901a63641c92327e5793b45fcb46954444` | 24 | 1.000x | 0.999x | 0.10% | [Inspect](../../tokens/0ba5b00090795bc74fa49cfe.md) |
+| testmarscoin | `0xfce886d0e0bb01b3611c94dee215bfd280037777` | 3 | 1.000x | 0.971x | 7.18% | [Inspect](../../tokens/377041976128ae899a8f351d.md) |
+| TIPPED | `0x6617986f7c3a599326b606cf42ff53e4f694fa4a` | 50 | 1.010x | 0.920x | 9.10% | [Inspect](../../tokens/65d6c179eb42722586224f4f.md) |
+| TOM | `0x7b87829a47b835f7be99a74b62d6c04d57847777` | 17 | 1.000x | 0.999x | 0.08% | [Inspect](../../tokens/18af0136308cb99853c6d6ee.md) |
+| TOSHI | `0x6a2608dabe09bc1128eec7275b92dfb939d5db3f` | 4 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/056e3b6c7c80aa75b5d2f47e.md) |
+| TrustCat | `0x75b364916b65f1e8959fa0210a6922c2ee237777` | 23 | 1.000x | 0.999x | 0.18% | [Inspect](../../tokens/e3a642a2d0dd1708a4ae8d13.md) |
+| TRUSTY | `0x4e79a464877b63f411500a4d158b3532cecf7777` | 28 | 1.007x | 1.007x | 0.04% | [Inspect](../../tokens/af53fe81081c6fb1820003c7.md) |
+| TRX | `0xce7de646e7208a4ef112cb6ed5038fa6cc6b12e3` | 37 | 1.000x | 0.997x | 0.56% | [Inspect](../../tokens/091789f50d65270e4ed542be.md) |
+| TSLAB | `0x5b1910eaad6450e50f816082aa078c41f10c292f` | 49 | 1.002x | 1.002x | 0.21% | [Inspect](../../tokens/be28a494dc48bebf97d30d6e.md) |
+| UNI | `0xbf5140a22578168fd562dccf235e5d43a02ce9b1` | 50 | 1.002x | 0.997x | 0.48% | [Inspect](../../tokens/3c4809c7fc233e0cd9d87ba1.md) |
+| UPS | `0xae5a409773b9a7dd0ae94ff437ac213d8fafba01` | 39 | 1.001x | 1.000x | 0.15% | [Inspect](../../tokens/4a233ec09068232b450f1030.md) |
+| VenusCoin | `0xf76e106254a2fac844827a2fea2b8f9ed80a4444` | 24 | 1.000x | 0.994x | 0.61% | [Inspect](../../tokens/95d105d51028c1e3626b37af.md) |
+| WIRED | `0x55db4b1f497b1d7aa93354701883efc758367777` | 61 | 1.027x | 0.930x | 10.77% | [Inspect](../../tokens/f5dc4c6947a146cf04c1f52e.md) |
+| WoD | `0xb994882a1b9bd98a71dd6ea5f61577c42848b0e8` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/27c2f0958eddb233898c5456.md) |
+| XAN | `0x7427bd9542e64d1ac207a540cfce194b7390a07f` | 44 | 1.001x | 0.999x | 0.23% | [Inspect](../../tokens/70a086bcd661a0c38bc3ae05.md) |
+| XAUt | `0x21caef8a43163eea865baee23b9c2e327696a3bf` | 47 | 1.003x | 0.999x | 0.44% | [Inspect](../../tokens/67dec3bd48ad73ad1c8a42e3.md) |
+| XPL | `0x405fbc9004d857903bfd6b3357792d71a50726b0` | 61 | 1.003x | 0.997x | 0.67% | [Inspect](../../tokens/a7659b77ae20697ee98a5037.md) |
+| ZEC | `0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb` | 61 | 1.003x | 0.993x | 1.24% | [Inspect](../../tokens/019fbf35bd6792176465606d.md) |
+| ZSWAP | `0x2e44ab95549b8a12afdb970bde5a6a78365e4444` | 24 | 1.000x | 0.998x | 0.17% | [Inspect](../../tokens/b3685a1a4a640a584260e0f3.md) |
+| 一 | `0xef91c1eae97edcd429a5ad197753a6c3e4214444` | 61 | 1.014x | 1.014x | 1.55% | [Inspect](../../tokens/b9d0efda3b94b727ecdbd72d.md) |
+| 中国人 | `0xa01d75690d9604eb96cc307fd82efd8612fd7777` | 5 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/fd7ab2ea9bf7dd73fc7c01c9.md) |
+| 中国人能飞 | `0x108876c3df3d893350e9b780563b3697aa3e7777` | 61 | 1.153x | 1.148x | 2.24% | [Inspect](../../tokens/85e757f71d37f07b30063e00.md) |
+| 中国牛能飞 | `0x60e391232b0d68ba40f6e72636f3e53bbaaf7777` | 60 | 1.044x | 1.029x | 2.78% | [Inspect](../../tokens/66a0289f9ef63e5d5017f4a8.md) |
+| 中国第一 | `0xc0bffa353b4712c171eff93ade372ee80f697777` | 35 | 1.060x | 1.060x | 0.00% | [Inspect](../../tokens/e00ca6596bc95a70d5582916.md) |
+| 中国能腾飞 | `0xdacc94928112c2eafb20c8d18316e9ceeaaa7777` | 61 | 1.000x | 0.924x | 12.42% | [Inspect](../../tokens/a9086b24b548bfb99185da8c.md) |
+| 主流矿机 | `0x7b7dd9c242aaaa7ee3c9da41ca49dc2b4a987777` | 21 | 1.002x | 1.001x | 0.21% | [Inspect](../../tokens/8a974c4b507d41bc4178d8f7.md) |
+| 久留美 | `0xfedf19759ba9c45b1a8345a2bde916b38acc7777` | 32 | 1.016x | 0.980x | 4.77% | [Inspect](../../tokens/bca6d319ce80b916155f9266.md) |
+| 人生好物 | `0x047d4f93045292bdc2cc7ced1ecf71dd12377777` | 6 | 1.000x | 1.000x | 0.03% | [Inspect](../../tokens/a40e20083ed0ee18ad3316c4.md) |
+| 修仙 | `0x44443dd87ec4d1bea3425acc118adb023f07f91b` | 15 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/e51467aaa006343b95828f88.md) |
+| 健康天使 | `0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777` | 56 | 1.001x | 0.998x | 0.31% | [Inspect](../../tokens/fb95e5f965962ab5d5b173c3.md) |
+| 兔来 | `0xaf9ea0f0971a72e5e1b65de64fae2922c85d7777` | 14 | 1.000x | 0.998x | 0.22% | [Inspect](../../tokens/26a1c9acee2377a1c79034e4.md) |
+| 友谊使者 | `0x6196cc4e1a04f8fcce9593012d708d5c7a6a7777` | 59 | 1.000x | 0.715x | 34.02% | [Inspect](../../tokens/9dbc8aa4463050d9ad669a3c.md) |
+| 和平熊猫 | `0x3a91c7d22d8d306eb109c9e9fa78ac162cca7777` | 20 | 1.000x | 0.964x | 3.56% | [Inspect](../../tokens/9bdc536c5761ddc46ea328a6.md) |
+| 哈基米 | `0x82ec31d69b3c289e541b50e30681fd1acad24444` | 37 | 1.000x | 1.000x | 0.08% | [Inspect](../../tokens/2bc6c5608669db694b721999.md) |
+| 四股 | `0x800ad6bf6747105e3620d3cb4bced15ab9e47777` | 21 | 1.000x | 0.997x | 0.28% | [Inspect](../../tokens/e785406102772dac3fc27048.md) |
+| 大头混子 | `0xa62391552b8aeaa97a18b99d44eb8137935e7777` | 18 | 1.005x | 1.005x | 0.00% | [Inspect](../../tokens/2583aae6d7535eacf7c6028c.md) |
+| 太空兔 | `0x38860d2ee327244229242c02e600a6154cec7777` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/79a1e2532ed7500901ab7607.md) |
+| 币安生态 | `0x73495f9b2e2b5604a05278a50bd51e1996057777` | 6 | 1.003x | 0.994x | 0.92% | [Inspect](../../tokens/49553dfbe0b3bd3457d88f37.md) |
+| 币安蝴蝶 | `0xfbc0e9e64579857f7e36004995252fb76ff57777` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/0d9efd30fdb8f8ad7c6d3c9a.md) |
+| 张树鹏 | `0xad40d1de038a8214b8c77d3c821e7bb159107777` | 26 | 1.078x | 1.029x | 4.59% | [Inspect](../../tokens/8be37cc636389eb8d3c5efdd.md) |
+| 我要去中国 | `0x61832b9e8c5f7da7c213b1e7d60485932b407777` | 61 | 1.288x | 1.098x | 14.80% | [Inspect](../../tokens/88a094eb6554570b532956e2.md) |
+| 我踏马来了 | `0xc51a9250795c0186a6fb4a7d20a90330651e4444` | 8 | 1.003x | 1.003x | 0.00% | [Inspect](../../tokens/6ad5818c36a4601b9dbef11b.md) |
+| 招财猫 | `0x975faed559b45feb8a5c5ceb940e614302947777` | 61 | 1.014x | 0.995x | 1.98% | [Inspect](../../tokens/d76a72c518f5c15788cbd76a.md) |
+| 旺柴 | `0x14f6a94909c407854390aa2d2462a3095d317777` | 55 | 1.009x | 0.968x | 4.10% | [Inspect](../../tokens/9e1ccc4b8f24f4553d8f423b.md) |
+| 比特币 | `0x18d0e455b3491e09210292d3953157a4bf104444` | 43 | 1.002x | 1.000x | 0.47% | [Inspect](../../tokens/ca5477a7e10f8249adce5bd4.md) |
+| 永生果蝇 | `0xf545af97ea5405f6eb4b396b571338ef15357777` | 6 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/8c9dd473ad6570cabca1fa1e.md) |
+| 熊猫派 | `0x88c08bf706146c149fb1fade2834ac72290e7777` | 61 | 1.177x | 1.057x | 21.89% | [Inspect](../../tokens/95ef47e1d9a08a053030c892.md) |
+| 牛来 | `0xbeea1d618e533a387d941f58a7d4c9b7bd377777` | 61 | 1.024x | 1.022x | 0.58% | [Inspect](../../tokens/1f4a777967ae305a90bda474.md) |
+| 王様 | `0xadc9c71939ab7b9a010ca72648b4e2f764137777` | 2 | 1.150x | 1.150x | 0.00% | [Inspect](../../tokens/d156d423108d8dddde33b2f7.md) |
+| 笑笑牛 | `0xcb975f49924a2c8f8d7884b3b5adcef7e1fc7777` | 23 | 1.023x | 1.007x | 1.59% | [Inspect](../../tokens/6f90e6c6142fc92356914d08.md) |
+| 羊头人生 | `0xf43d342d375e98141bb093fecdd841a9500e7777` | 10 | 1.000x | 0.983x | 1.72% | [Inspect](../../tokens/94dcbf30a61b27a754814e70.md) |
+| 自由鸭 | `0x5d01b8174a661600cf4f016bea9b073557847777` | 59 | 1.001x | 0.989x | 1.89% | [Inspect](../../tokens/e292ea61658e6ae7505c0057.md) |
+| 苹果人生 | `0xccfb3e8b1772bd3a9fc62deaf75127adad597777` | 19 | 1.000x | 1.000x | 0.04% | [Inspect](../../tokens/e76609ca81b627bdadbfb43a.md) |
+| 蘑菇头 | `0x681234b574ac190eaf58bb12a5d61fb29bb07777` | 7 | 1.000x | 0.971x | 2.91% | [Inspect](../../tokens/d2d927e64fb7c2b03a0892a8.md) |
+| 蝴蝶宝藏 | `0x8b99e444b818d5ca55427501584b15aadd027777` | 13 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/39a81e13686b3961c79ed4d6.md) |
+| 蝴蝶琦迹 | `0x51819c9f5abd784a49b22675703308aae8b47777` | 21 | 1.002x | 1.002x | 0.06% | [Inspect](../../tokens/5cc74a3aa8c61c4685bfaec3.md) |
+| 螃蟹 | `0x7bc023e0693589817ed258cd1507b66b1e207777` | 47 | 1.032x | 1.028x | 0.72% | [Inspect](../../tokens/4fa74594de841d8e4792ff33.md) |
+| 跨栏栋 | `0x30309bd4d541644ce280a1c88aa1d9b1d6447777` | 15 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/14063931ba1556db062fda17.md) |
+| 龙虾 | `0xeccbb861c0dda7efd964010085488b69317e4444` | 61 | 1.005x | 1.000x | 0.43% | [Inspect](../../tokens/62462d4518fabbc93de04388.md) |
+| 🦋 | `0x0764970a280419e21eed7688f4506e26f9797777` | 60 | 1.155x | 1.125x | 3.70% | [Inspect](../../tokens/70ea0b0eaac86c553cd27300.md) |

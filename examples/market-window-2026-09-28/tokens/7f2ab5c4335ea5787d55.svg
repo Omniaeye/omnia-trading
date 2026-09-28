@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>PROOF: 7 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">PROOF: 7 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.12x</text><text x="8" y="220">0.87x</text>
+<line x1="60" y1="125.730" x2="740" y2="125.730" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="125.730">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,125.730 127.489,184.384 467.709,75.616 560.959,98.090 604.246,113.286 671.445,139.149 740.000,151.349"/>
+<circle cx="60.000" cy="125.730" r="2" fill="#b33b47"/>
+<circle cx="127.489" cy="184.384" r="2" fill="#b33b47"/>
+<circle cx="467.709" cy="75.616" r="2" fill="#b33b47"/>
+<circle cx="560.959" cy="98.090" r="2" fill="#b33b47"/>
+<circle cx="604.246" cy="113.286" r="2" fill="#b33b47"/>
+<circle cx="671.445" cy="139.149" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="151.349" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:25:00.412700+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

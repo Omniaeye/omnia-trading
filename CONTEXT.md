@@ -1,4 +1,13 @@
-## Public source namespaces — 0.5.1
+## Complete market-window presentation — 0.5.2
+
+The product README links to examples without performance highlights. The
+market window contains 620 unique network/contract identities, 621 pool series
+and every captured quote. Per-contract pages include full curves and policy
+timelines, with native assessments linked where present. The HTML report
+template is removed; the report command writes JSON. Markdown/SVG views are
+reproducible from the verified casebook without changing source evidence.
+
+## Public source namespaces - 0.5.1
 
 Public rank/security records use OMNIA namespaces. The casebook was regenerated
 from source-verified captures and carries archived-event hashes before projection.

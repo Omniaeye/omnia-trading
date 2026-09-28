@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>Honko: 3 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">Honko: 3 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.38x</text>
+<line x1="60" y1="53.403" x2="740" y2="53.403" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="53.403">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,53.403 399.825,188.106 740.000,206.597"/>
+<circle cx="60.000" cy="53.403" r="2" fill="#b33b47"/>
+<circle cx="399.825" cy="188.106" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="206.597" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:19:15.826416+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:19:45.817199+00:00</text>
+</g></svg>

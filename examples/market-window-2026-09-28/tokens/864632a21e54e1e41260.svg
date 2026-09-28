@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>TROVOK: 7 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">TROVOK: 7 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.43x</text><text x="8" y="220">0.65x</text>
+<line x1="60" y1="138.472" x2="740" y2="138.472" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="138.472">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,138.472 168.557,122.841 298.003,157.217 396.607,207.586 512.434,58.466 628.051,52.414 740.000,61.604"/>
+<circle cx="60.000" cy="138.472" r="2" fill="#087f6d"/>
+<circle cx="168.557" cy="122.841" r="2" fill="#087f6d"/>
+<circle cx="298.003" cy="157.217" r="2" fill="#087f6d"/>
+<circle cx="396.607" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="512.434" cy="58.466" r="2" fill="#087f6d"/>
+<circle cx="628.051" cy="52.414" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="61.604" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:15:16.098308+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:16:45.311485+00:00</text>
+</g></svg>

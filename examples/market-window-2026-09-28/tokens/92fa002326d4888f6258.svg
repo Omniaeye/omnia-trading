@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>bukangi: 5 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">bukangi: 5 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.91x</text>
+<line x1="60" y1="104.532" x2="740" y2="104.532" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="104.532">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,104.532 73.933,104.532 138.959,104.930 695.636,155.468 740.000,150.296"/>
+<circle cx="60.000" cy="104.532" r="2" fill="#b33b47"/>
+<circle cx="73.933" cy="104.532" r="2" fill="#b33b47"/>
+<circle cx="138.959" cy="104.930" r="2" fill="#b33b47"/>
+<circle cx="695.636" cy="155.468" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="150.296" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:18:07.749963+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:25:45.342895+00:00</text>
+</g></svg>

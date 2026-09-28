@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>UNIPCS: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">UNIPCS: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="130.000" x2="740" y2="130.000" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="130.000">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,130.000 112.245,130.000 164.749,130.000 217.324,130.000 272.768,130.000 322.755,130.000 373.664,130.000 426.112,130.000 478.035,130.000 530.725,130.000 583.163,130.000 634.908,130.000 687.584,130.000 740.000,130.000"/>
+<circle cx="60.000" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="112.245" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="164.749" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="217.324" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="272.768" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="322.755" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="373.664" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="426.112" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="478.035" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="530.725" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="583.163" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="634.908" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="687.584" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="130.000" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:13:00.335966+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:16:15.518445+00:00</text>
+</g></svg>

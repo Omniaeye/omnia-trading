@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>王様: 13 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">王様: 13 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.79x</text><text x="8" y="220">0.42x</text>
+<line x1="60" y1="144.300" x2="740" y2="144.300" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="144.300">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,144.300 111.210,112.792 163.631,52.414 223.784,77.858 268.849,67.765 330.481,75.603 372.792,57.307 426.546,53.844 533.539,206.061 584.574,206.665 634.389,207.289 688.370,207.344 740.000,207.586"/>
+<circle cx="60.000" cy="144.300" r="2" fill="#b33b47"/>
+<circle cx="111.210" cy="112.792" r="2" fill="#b33b47"/>
+<circle cx="163.631" cy="52.414" r="2" fill="#b33b47"/>
+<circle cx="223.784" cy="77.858" r="2" fill="#b33b47"/>
+<circle cx="268.849" cy="67.765" r="2" fill="#b33b47"/>
+<circle cx="330.481" cy="75.603" r="2" fill="#b33b47"/>
+<circle cx="372.792" cy="57.307" r="2" fill="#b33b47"/>
+<circle cx="426.546" cy="53.844" r="2" fill="#b33b47"/>
+<circle cx="533.539" cy="206.061" r="2" fill="#b33b47"/>
+<circle cx="584.574" cy="206.665" r="2" fill="#b33b47"/>
+<circle cx="634.389" cy="207.289" r="2" fill="#b33b47"/>
+<circle cx="688.370" cy="207.344" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="207.586" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:21:00.690136+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:24:15.655418+00:00</text>
+</g></svg>

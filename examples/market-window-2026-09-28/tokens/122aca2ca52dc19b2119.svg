@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>Pillys: 3 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">Pillys: 3 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.52x</text>
+<line x1="60" y1="56.943" x2="740" y2="56.943" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="56.943">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,56.943 398.096,180.000 740.000,203.057"/>
+<circle cx="60.000" cy="56.943" r="2" fill="#b33b47"/>
+<circle cx="398.096" cy="180.000" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="203.057" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:27:00.453239+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:31.150305+00:00</text>
+</g></svg>

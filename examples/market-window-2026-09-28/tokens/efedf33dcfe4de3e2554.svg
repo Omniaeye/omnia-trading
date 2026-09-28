@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>r/opt: 18 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">r/opt: 18 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.28x</text>
+<line x1="60" y1="52.414" x2="740" y2="52.414" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="52.414">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,52.414 98.798,207.586 141.997,197.813 177.354,190.417 218.909,190.417 254.035,191.957 294.679,191.957 331.628,194.481 375.687,195.377 409.248,195.377 448.672,195.377 488.023,195.377 526.127,195.377 565.191,195.377 605.522,195.671 649.758,195.671 683.801,195.671 740.000,195.671"/>
+<circle cx="60.000" cy="52.414" r="2" fill="#b33b47"/>
+<circle cx="98.798" cy="207.586" r="2" fill="#b33b47"/>
+<circle cx="141.997" cy="197.813" r="2" fill="#b33b47"/>
+<circle cx="177.354" cy="190.417" r="2" fill="#b33b47"/>
+<circle cx="218.909" cy="190.417" r="2" fill="#b33b47"/>
+<circle cx="254.035" cy="191.957" r="2" fill="#b33b47"/>
+<circle cx="294.679" cy="191.957" r="2" fill="#b33b47"/>
+<circle cx="331.628" cy="194.481" r="2" fill="#b33b47"/>
+<circle cx="375.687" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="409.248" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="448.672" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="488.023" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="526.127" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="565.191" cy="195.377" r="2" fill="#b33b47"/>
+<circle cx="605.522" cy="195.671" r="2" fill="#b33b47"/>
+<circle cx="649.758" cy="195.671" r="2" fill="#b33b47"/>
+<circle cx="683.801" cy="195.671" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="195.671" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:13:45.640151+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:18:07.749963+00:00</text>
+</g></svg>

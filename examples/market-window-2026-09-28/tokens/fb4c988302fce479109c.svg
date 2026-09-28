@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>WhatsPay: 7 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">WhatsPay: 7 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.55x</text>
+<line x1="60" y1="57.927" x2="740" y2="57.927" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="57.927">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,57.927 188.310,202.073 286.898,153.985 399.129,151.594 514.566,156.244 628.514,152.038 740.000,176.036"/>
+<circle cx="60.000" cy="57.927" r="2" fill="#b33b47"/>
+<circle cx="188.310" cy="202.073" r="2" fill="#b33b47"/>
+<circle cx="286.898" cy="153.985" r="2" fill="#b33b47"/>
+<circle cx="399.129" cy="151.594" r="2" fill="#b33b47"/>
+<circle cx="514.566" cy="156.244" r="2" fill="#b33b47"/>
+<circle cx="628.514" cy="152.038" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="176.036" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:19:45.817199+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:21:15.372716+00:00</text>
+</g></svg>

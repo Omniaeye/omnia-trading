@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>HUGEKINSON: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">HUGEKINSON: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.75x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="207.586" x2="740" y2="207.586" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="207.586">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,207.586 320.400,88.483 340.976,100.733 410.962,90.660 458.255,101.728 481.685,52.414 505.185,83.619 555.206,88.078 575.565,88.078 598.741,104.684 669.131,111.802 692.698,132.006 719.741,143.341 740.000,126.870"/>
+<circle cx="60.000" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="320.400" cy="88.483" r="2" fill="#087f6d"/>
+<circle cx="340.976" cy="100.733" r="2" fill="#087f6d"/>
+<circle cx="410.962" cy="90.660" r="2" fill="#087f6d"/>
+<circle cx="458.255" cy="101.728" r="2" fill="#087f6d"/>
+<circle cx="481.685" cy="52.414" r="2" fill="#087f6d"/>
+<circle cx="505.185" cy="83.619" r="2" fill="#087f6d"/>
+<circle cx="555.206" cy="88.078" r="2" fill="#087f6d"/>
+<circle cx="575.565" cy="88.078" r="2" fill="#087f6d"/>
+<circle cx="598.741" cy="104.684" r="2" fill="#087f6d"/>
+<circle cx="669.131" cy="111.802" r="2" fill="#087f6d"/>
+<circle cx="692.698" cy="132.006" r="2" fill="#087f6d"/>
+<circle cx="719.741" cy="143.341" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="126.870" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:14:46.892387+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:22:00.569928+00:00</text>
+</g></svg>

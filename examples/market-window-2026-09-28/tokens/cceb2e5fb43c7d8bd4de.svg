@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>DOOMSCROLLER: 17 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">DOOMSCROLLER: 17 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.12x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="158.264" x2="740" y2="158.264" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="158.264">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,158.264 100.457,158.264 144.299,158.264 186.231,169.911 229.856,169.911 279.798,154.928 317.163,124.029 355.718,124.029 399.373,124.029 440.284,90.089 482.768,111.568 527.215,108.575 574.634,108.575 627.026,108.575 653.046,108.575 696.279,108.575 740.000,108.575"/>
+<circle cx="60.000" cy="158.264" r="2" fill="#087f6d"/>
+<circle cx="100.457" cy="158.264" r="2" fill="#087f6d"/>
+<circle cx="144.299" cy="158.264" r="2" fill="#087f6d"/>
+<circle cx="186.231" cy="169.911" r="2" fill="#087f6d"/>
+<circle cx="229.856" cy="169.911" r="2" fill="#087f6d"/>
+<circle cx="279.798" cy="154.928" r="2" fill="#087f6d"/>
+<circle cx="317.163" cy="124.029" r="2" fill="#087f6d"/>
+<circle cx="355.718" cy="124.029" r="2" fill="#087f6d"/>
+<circle cx="399.373" cy="124.029" r="2" fill="#087f6d"/>
+<circle cx="440.284" cy="90.089" r="2" fill="#087f6d"/>
+<circle cx="482.768" cy="111.568" r="2" fill="#087f6d"/>
+<circle cx="527.215" cy="108.575" r="2" fill="#087f6d"/>
+<circle cx="574.634" cy="108.575" r="2" fill="#087f6d"/>
+<circle cx="627.026" cy="108.575" r="2" fill="#087f6d"/>
+<circle cx="653.046" cy="108.575" r="2" fill="#087f6d"/>
+<circle cx="696.279" cy="108.575" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="108.575" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:23:31.092727+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:31.150305+00:00</text>
+</g></svg>

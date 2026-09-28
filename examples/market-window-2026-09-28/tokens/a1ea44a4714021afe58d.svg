@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>TICKER: 8 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">TICKER: 8 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.15x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="175.066" x2="740" y2="175.066" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="175.066">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,175.066 599.342,84.934 624.102,84.934 646.351,84.934 669.543,84.934 692.841,84.934 716.350,84.934 740.000,84.934"/>
+<circle cx="60.000" cy="175.066" r="2" fill="#087f6d"/>
+<circle cx="599.342" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="624.102" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="646.351" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="669.543" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="692.841" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="716.350" cy="84.934" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="84.934" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:18:30.489414+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:25:45.483791+00:00</text>
+</g></svg>

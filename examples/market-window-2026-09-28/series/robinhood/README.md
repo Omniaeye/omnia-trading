@@ -1,202 +1,204 @@
-# ROBINHOOD results
+# ROBINHOOD quote series
 
-[Window overview](../../README.md)
+[All tokens](../../tokens/README.md) | [Market window](../../README.md)
 
-| Token | Contract | Quotes | Peak | Final | Record |
-| --- | --- | ---: | ---: | ---: | --- |
-| BUSTO | `0x31e31f14fec0591d3e53e85ca5fc425bba1ce21d` | 61 | 2.287x | 1.781x | [Inspect](5d143fdaf42236556a12.json) |
-| PIG | `0xeaa86c0f9ee8a83ad303abe2d3170d223c22c522` | 31 | 1.998x | 1.762x | [Inspect](9cb4bfbe49afd1c8afea.json) |
-| SOUL | `0x63a6b4290b1948b55f82d6ac6c6f549e53cbf562` | 4 | 1.686x | 1.686x | [Inspect](47869b3463f02392f3dc.json) |
-| OBOL | `0xda49424d50e67a4015de19a15868d874931b5af2` | 58 | 1.638x | 1.553x | [Inspect](c3c6839398acbda45014.json) |
-| 5600 | `0x0b98987748ade6f8b51141e3c08025aa6394d6ce` | 7 | 1.415x | 1.415x | [Inspect](9cc0e56ec907af71a838.json) |
-| LBX | `0x18b98fbd9000ef5da84d21bd801c5f2504bf20ca` | 58 | 3.866x | 1.356x | [Inspect](90a9e6c357e5cd634a71.json) |
-| SHAD | `0x95cc69fa3fbb35955a921876f60631c606e54a17` | 31 | 1.387x | 1.280x | [Inspect](05cb6edcaa28584ddbc6.json) |
-| DOA | `0x7c74e367d6d17e60bc551db65b689d512b7b1e18` | 6 | 1.425x | 1.229x | [Inspect](dab00dce155f2640a805.json) |
-| HOWL | `0x93e7a34db439a3371d4149eb9e6794343312d4f2` | 53 | 1.264x | 1.197x | [Inspect](33091af717da834b210d.json) |
-| BPOOL | `0xa32cdb8e84c68eb995c8dc270b528d7c5d6a0f20` | 61 | 1.359x | 1.192x | [Inspect](aa01ef2217670e3c2d7c.json) |
-| Hound | `0x7efa92fb3657d1fe086c5b178c3e6f1e7cdc2e19` | 22 | 1.175x | 1.163x | [Inspect](9cf7ee98ca60b87dacf4.json) |
-| GRAPH | `0x48a0f9024cbe319cc51a5263d9edcdfd7228fc2d` | 12 | 1.496x | 1.154x | [Inspect](2b688e1c6656563a0e03.json) |
-| QNTA | `0xa67b2080b0b9b8f458bef979ee56b706986f31aa` | 46 | 1.205x | 1.149x | [Inspect](a7bb2415f7dd1ffda240.json) |
-| LOYAL | `0xac1a6297af5118f6232d10b6df243c7f8b528a9b` | 22 | 1.136x | 1.136x | [Inspect](4bd464d8102dbf3b8e99.json) |
-| RESPONSIBLE | `0xb7dbd935c86c9ffea2f89171e033a1ec1d7f1e18` | 5 | 1.136x | 1.136x | [Inspect](7c458d71f0f5ba22ceae.json) |
-| BPEPE | `0xbf818efe65aac127ac8f9fec6fec203ee222c851` | 24 | 1.119x | 1.119x | [Inspect](1c6521c290b017955aa9.json) |
-| Joe | `0xe02950c5661cc27aec28f838c7a4e261b0159c83` | 36 | 1.118x | 1.118x | [Inspect](501551c74ccd790a96dd.json) |
-| BUNDOG | `0xd68f57b08cd9732e4ddd1a04ba4d26629dc44b8e` | 34 | 1.109x | 1.109x | [Inspect](e9023d436170cfea7d4d.json) |
-| HYPOCRITE | `0xffff3f5af6e5ff1668d2dce40e10507b7ca47cf6` | 12 | 1.190x | 1.107x | [Inspect](e6408038dd8d1eeaa6b2.json) |
-| TICKER | `0x6c43086993f904499a24e6df42c7e785ea1843e7` | 8 | 1.100x | 1.100x | [Inspect](a1ea44a4714021afe58d.json) |
-| WHLR | `0x2ea98073e7c3b0781f8cec3690eacb8f5c83507d` | 5 | 1.090x | 1.090x | [Inspect](27976c29b48e7f1efa9e.json) |
-| TENDIES | `0x45242320dbb855eea8fd36804c6487e10e97fcf9` | 61 | 1.110x | 1.088x | [Inspect](63ce920930d547a018a4.json) |
-| BUNNY | `0x608d0a3ff08c9aaab8dfa76da2110c69280aa7ac` | 21 | 1.075x | 1.075x | [Inspect](4f2a85ef0919545f1ffc.json) |
-| CASE | `0xa643c2c8ce98ea2b1038d2d501fb52f1556e275f` | 9 | 1.072x | 1.072x | [Inspect](26aeceaa3567b3589485.json) |
-| PONSAPP | `0xf6ec257f07f2018ff7634597a9d390f3695c9fb2` | 38 | 1.062x | 1.061x | [Inspect](86ae60b116a70229ccf2.json) |
-| BUSTO | `0xad51c026010202f784ce4ba86d688632e5e264a0` | 22 | 1.074x | 1.059x | [Inspect](51cacf81bcadf5438ef7.json) |
-| NFS | `0x39f59262a6f82bb1e0ae30a2ae2fab2a66accd44` | 49 | 1.136x | 1.054x | [Inspect](604d8843f22c5666a986.json) |
-| par | `0x507b6f349a80114097a67b8b4677367acc15b220` | 8 | 1.048x | 1.048x | [Inspect](00584fa22cc2db85dca6.json) |
-| AUR | `0xb0788f5f65a9f4c0d8a634c45c391234f46221ab` | 61 | 1.103x | 1.047x | [Inspect](535988603c59d5a532d7.json) |
-| PRIORS | `0xedbf91223639800bcd5756815caf908df3b890be` | 7 | 1.038x | 1.037x | [Inspect](e6394f28fd320797db46.json) |
-| WORM | `0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d` | 47 | 1.055x | 1.037x | [Inspect](6f0794499c4cb4249284.json) |
-| DARK | `0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e` | 33 | 1.055x | 1.035x | [Inspect](5fd580c21de1a25cad6c.json) |
-| OYSTER | `0x9b40671d11fd1e85976618fb468c1c03caa7c2b4` | 61 | 1.040x | 1.035x | [Inspect](2e0a660a34799164a5c5.json) |
-| ZEAL | `0x9fa1c5e90a11294f83a9f135b81ad1b537a5ffdc` | 22 | 1.031x | 1.031x | [Inspect](d4ecf7fc14d7d202c4b6.json) |
-| microduck | `0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725` | 25 | 1.030x | 1.030x | [Inspect](ae28972412f4bf1c2761.json) |
-| BUSINESS | `0xc7c377d63f3783f65598b8044f2614dbecb7fb46` | 20 | 1.051x | 1.029x | [Inspect](7176eb9470542ae9310c.json) |
-| Maisy | `0x6785e1738f04eab71fc0cb8d2be5d727bc32bf91` | 61 | 1.029x | 1.029x | [Inspect](24510e1d2ce4b657062d.json) |
-| VLAD | `0x739958e366a0509d4c51c1c164c509fff154adee` | 52 | 1.086x | 1.024x | [Inspect](d1f0c96413a00036d07c.json) |
-| RLHOOD | `0x5c4d524ea1531b53a73f3cd0b7f75ae5b26913ba` | 45 | 1.022x | 1.022x | [Inspect](bde4b19cc520d38daa64.json) |
-| FAB | `0xc7db9a7034d061feca50f0a25636bcc83ca717d9` | 5 | 1.022x | 1.022x | [Inspect](1cf3831b80518fde11ce.json) |
-| MONITOR | `0x1a911bb954daa9cb38513423075be74450351e18` | 48 | 1.031x | 1.022x | [Inspect](c8eb6b4f3cb9beeabeb0.json) |
-| ROBIT | `0x368580343a637b8b91d27c8a8be124f534329a30` | 14 | 1.022x | 1.022x | [Inspect](4e252f7894f2b1457155.json) |
-| ANSEM | `0x521934ea44568164cd3a578e5823dba0de700880` | 49 | 1.025x | 1.020x | [Inspect](17b00bac94ea73a127c0.json) |
-| O | `0xe6c54ae72612c530fc86a3d9f93a743b221a1e18` | 18 | 1.019x | 1.019x | [Inspect](d1ce370b398f47369c4e.json) |
-| BRAIN | `0xbb59e4c6a56111a35a8066bbf0593d50139c7d94` | 9 | 1.016x | 1.016x | [Inspect](005f462c41d9fe9e6ca6.json) |
-| ALF | `0x35d9123d4fa11ee93e350c59c7ef70741714374a` | 19 | 1.014x | 1.014x | [Inspect](6d1b0988092da1f40431.json) |
-| HADES | `0x923d915ddf0fe60c04addac68e13f0d5af03164f` | 8 | 1.011x | 1.011x | [Inspect](85c943e7e463a1ae8ad1.json) |
-| ZZZ | `0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a` | 35 | 1.018x | 1.010x | [Inspect](206653ca2c2ff78d6e29.json) |
-| ORBIO | `0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3` | 59 | 1.027x | 1.009x | [Inspect](d15d101d1c532aa1dcff.json) |
-| STELX | `0x7a8cda6a1cab3e5146cd13cb623a3bb284fb4ad1` | 3 | 1.008x | 1.008x | [Inspect](e5cae6c89b8e45ac0ac9.json) |
-| MUMU | `0x8ec17c059f250a5c19566c3fc56ee13a343dd283` | 51 | 1.008x | 1.008x | [Inspect](7f1b9461059ab98905b7.json) |
-| Index | `0x56910d4409f3a0c78c64dd8d0545ff0705389870` | 17 | 1.006x | 1.006x | [Inspect](7ed476f4d8163c5c3c88.json) |
-| STONKBROKER | `0xe934e36a439c94017b64a3fece66af12099abf50` | 56 | 1.008x | 1.006x | [Inspect](1f838b2959160ffdcf19.json) |
-| CLOAKSWAP | `0xa8936b7148efda48226de8c06706c8f7b0f85c98` | 45 | 1.295x | 1.006x | [Inspect](5aafd500498c1a2694fc.json) |
-| U | `0x3e17c94ba8112380ef81a43fc33b08ca6284fb33` | 12 | 1.005x | 1.005x | [Inspect](aaac936d48be109bc70f.json) |
-| YOLO | `0x62c71cd34a52c30d894419cbcc55db2afa8032ea` | 5 | 1.005x | 1.005x | [Inspect](d367caca0ff52a96735f.json) |
-| DOLL | `0x68353dea233cf2ed0f4ab795430962cc50e5d325` | 16 | 1.030x | 1.004x | [Inspect](9ca1b221ef2b13938715.json) |
-| Artcoin | `0x9516922a56171ab9834b88864d1010a6d8633296` | 33 | 1.005x | 1.004x | [Inspect](c008c17325bc0c3bdb5f.json) |
-| BULL | `0x49bac47750f3dcdba49350b5d74fd399e90f97c6` | 61 | 1.004x | 1.004x | [Inspect](9d33a15d22881290ec2f.json) |
-| ROBIN | `0x11b70d0243baf75e85ce03201a92b5b7c33beb59` | 14 | 1.004x | 1.004x | [Inspect](04a44bcaab73d14b8e50.json) |
-| INTC | `0xc72b96e0e48ecd4dc75e1e45396e26300bc39681` | 61 | 1.005x | 1.003x | [Inspect](fa1693d2dc830733b797.json) |
-| USO | `0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344` | 60 | 1.006x | 1.003x | [Inspect](122ef9454210e22e13ad.json) |
-| LLY | `0x8005d266423c7ea827372c9c864491e5786600ea` | 31 | 1.003x | 1.003x | [Inspect](4a5678aa6ed44e275a5f.json) |
-| WALLET | `0x0339f5459fc690ac85f1782e15782a151b4a9e1b` | 23 | 1.003x | 1.003x | [Inspect](5208c72a15dffb674a9f.json) |
-| CME | `0xe2324ff2a59f8ecba8c321c6466e59121c00e795` | 19 | 1.016x | 1.002x | [Inspect](9ec97495f6676a06833a.json) |
-| PEARCAT | `0x40e1a49553ce67058fb33c2fe1446c7e0ee0038f` | 8 | 1.009x | 1.002x | [Inspect](7be92ab2de1cf80751b4.json) |
-| BUN | `0x07ebb29a38fbcb41563817e5e19f2cec619c90d2` | 61 | 1.045x | 1.002x | [Inspect](18c69cc8f4cb43b63665.json) |
-| HOOKR | `0x18e674231a58c239dc7daedcffe15ec3a24cff5c` | 16 | 1.006x | 1.001x | [Inspect](9b445fb78b895013a352.json) |
-| NOSH | `0xe02c53d448a62067b2ac10ed70f5bc6c29471386` | 10 | 1.001x | 1.001x | [Inspect](dc7451be98e1559c159a.json) |
-| NFX | `0xf1740d428a469bd270c5de0710a2f7d887a650fb` | 60 | 1.002x | 1.001x | [Inspect](98258b52d6bc8d308d7b.json) |
-| moon | `0x862cdccb67c8a22fdb247d09a08b1dad09447777` | 15 | 1.001x | 1.001x | [Inspect](f405a430488fb64b86fd.json) |
-| IBM | `0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619` | 21 | 1.001x | 1.001x | [Inspect](2568724363bc6844cc50.json) |
-| MU | `0xff080c8ce2e5feadaca0da81314ae59d232d4afd` | 21 | 1.001x | 1.001x | [Inspect](efa5e99f70afb2fa65e5.json) |
-| MSFT | `0xe93237c50d904957cf27e7b1133b510c669c2e74` | 22 | 1.001x | 1.000x | [Inspect](622c6df9420ec5320442.json) |
-| AMD | `0x86923f96303d656e4aa86d9d42d1e57ad2023fdc` | 25 | 1.000x | 1.000x | [Inspect](569ecd42ff9beb79f392.json) |
-| AMZN | `0x12f190a9f9d7d37a250758b26824b97ce941bf54` | 61 | 1.002x | 1.000x | [Inspect](b4c8ac89d1e86d6fe75b.json) |
-| GME | `0x1b0e319c6a659f002271b69db8a7df2f911c153e` | 61 | 1.007x | 1.000x | [Inspect](cb3f5658d398744e478f.json) |
-| HIMS | `0xccee82fe024c36fa15e1005ede3e9e4787e23d09` | 60 | 1.001x | 1.000x | [Inspect](2592e2cf4799efdc50d4.json) |
-| GLD | `0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e` | 61 | 1.003x | 1.000x | [Inspect](2140d4b7430f7f46386c.json) |
-| BOO | `0xabe232d69c6fe90d80b1fb54f141391dfce71e18` | 2 | 1.000x | 1.000x | [Inspect](c4a720a99adb75493657.json) |
-| LEFTCURVE | `0x845e03a601ad42040bf20fe17a8054cbd7561e18` | 9 | 1.000x | 1.000x | [Inspect](b9b613c120be6daa431f.json) |
-| AURELIUS | `0x9720db7cd017650ae50c2a86c2023fe4d2caad8f` | 14 | 1.000x | 1.000x | [Inspect](1dd6367e8a9f5821b37e.json) |
-| PUR | `0x65d7e1d00867d1a659c2f190cc40637df3ed1e18` | 13 | 1.000x | 1.000x | [Inspect](50a3228ed580d45fef8b.json) |
-| UNIPCS | `0xdd6536545ae510f009ce0d91620ab4f09f869aaf` | 14 | 1.000x | 1.000x | [Inspect](f689efb382eb29c52e3b.json) |
-| BUTTHOLE | `0x093dba25e5428589fa698de674e5b16b80841e18` | 6 | 1.000x | 1.000x | [Inspect](b813259ca5069b308e89.json) |
-| Schrödinger  | `0x7638d07e58e875a8b6e91cf50dbcac270e664b73` | 2 | 1.000x | 1.000x | [Inspect](51b082e08c6565688b0f.json) |
-| AEON | `0x25db25ca341ec0fc45e33c46ce22c9a6acd61e18` | 3 | 1.000x | 1.000x | [Inspect](49763caec001d75fc677.json) |
-| 富贵 | `0xceebf25b318201f1f949be2fabbfcee231737139` | 2 | 1.000x | 1.000x | [Inspect](36593389bd9c5de80a6d.json) |
-| worth | `0xfb1bcb6817f7b8fa86896d3253b16aeb7bd6a5a8` | 3 | 1.000x | 1.000x | [Inspect](89d7a7b79a78a9aaad67.json) |
-| $GARRI | `0xdddf7ab756c35b4d0537825497e6932780710241` | 2 | 1.000x | 1.000x | [Inspect](7a8f13e00c508b936ae3.json) |
-| KEK | `0x86e5d8818eff06f0dea9e5eca87f056bc44c7777` | 16 | 1.000x | 1.000x | [Inspect](043f683a0e7cd5b8dfc3.json) |
-| KITSU | `0x8d4dfaaa4198b6486e0293fec914c2b6a821d4dc` | 11 | 1.000x | 1.000x | [Inspect](e815d3df879e687e10fc.json) |
-| COIN | `0x6330d8c3178a418788df01a47479c0ce7ccf450b` | 23 | 1.003x | 1.000x | [Inspect](37b16bcde14a154148d1.json) |
-| DJT | `0x1d11f0496982706c5e14a514d4e79f2e6bde4516` | 16 | 1.000x | 1.000x | [Inspect](5c84dfd8819e9f3037ce.json) |
-| Anon | `0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c` | 7 | 1.000x | 1.000x | [Inspect](656ac3dab886349ede0a.json) |
-| QQQ | `0xd5f3879160bc7c32ebb4dc785f8a4f505888de68` | 35 | 1.001x | 1.000x | [Inspect](ad9bfd1da69d56516f3d.json) |
-| MANCER | `0xc72f232a6869e6cf34dc06129affd07f8a2a246a` | 20 | 1.000x | 1.000x | [Inspect](5f16d8666a9e16fdeff2.json) |
-| HOTDOG | `0x45443a4a7b58ab26a4b4d72616cf36d5aae7188c` | 20 | 1.001x | 1.000x | [Inspect](5a9733d25dcb66384f40.json) |
-| MEME | `0x385f4f8ae47651ce5f58f5265395a669f8281e18` | 61 | 1.002x | 1.000x | [Inspect](789e97e285e4288e6d13.json) |
-| SNAT | `0x02c83495bb67b325f9694dd9bfacd51c8218bdc9` | 2 | 1.000x | 1.000x | [Inspect](76550011646e42c7bd78.json) |
-| GLXY | `0x2d427692e928fa156ec22acfabafa0447c5805b7` | 11 | 1.000x | 1.000x | [Inspect](9cf6bc7b4c0875bff533.json) |
-| SPY | `0x117cc2133c37b721f49de2a7a74833232b3b4c0c` | 61 | 1.000x | 1.000x | [Inspect](f7d1e664bf62e42c2e09.json) |
-| COST | `0x4ea005168d7f09a7a0ba9d1def21a479950e44c2` | 18 | 1.000x | 1.000x | [Inspect](56c281b754b72acd1c61.json) |
-| AAPL | `0xaf3d76f1834a1d425780943c99ea8a608f8a93f9` | 61 | 1.002x | 0.999x | [Inspect](b1fa0a9647f2e69e366f.json) |
-| U | `0xce24439f2d9c6a2289f741120fe202248b666666` | 50 | 1.000x | 0.999x | [Inspect](45db9d7f071f52cd3ff6.json) |
-| PONS | `0x39dbed3a2bd333467115de45665cc57f813c4571` | 61 | 1.009x | 0.999x | [Inspect](1de8dca88ee0da87aa1a.json) |
-| PLTR | `0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a` | 56 | 1.004x | 0.999x | [Inspect](f254642bb5cb401ef54d.json) |
-| TSLA | `0x322f0929c4625ed5bad873c95208d54e1c003b2d` | 61 | 1.000x | 0.999x | [Inspect](7ca20f4c1f64a5a90369.json) |
-| PARE | `0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d` | 15 | 1.000x | 0.999x | [Inspect](13c8a8776a9245cd47a3.json) |
-| HMM | `0x7fe995a80075df3dc8ae11a9b82c7fe4202cd87f` | 41 | 1.007x | 0.999x | [Inspect](8090fbc56ab9af5e18e2.json) |
-| NVDA | `0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec` | 61 | 1.001x | 0.999x | [Inspect](92747c8fe128c7f351a2.json) |
-| AMC | `0x05a3d1cd21d0c88145e82600e62e7e496e0f222b` | 43 | 1.000x | 0.999x | [Inspect](a0e275b4a0b15b20d465.json) |
-| GOOGL | `0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3` | 55 | 1.000x | 0.999x | [Inspect](c90276b356e077fbef55.json) |
-| cbBTC | `0xcec185eb182c47d1ba1efc84e6959e18cd620be4` | 37 | 1.000x | 0.999x | [Inspect](9bff33c92b70ed5b3c69.json) |
-| MRVL | `0x62fd0668e10d8b72339be2dcf7643001688ff13b` | 10 | 1.002x | 0.998x | [Inspect](0eac5afa844f113f25e3.json) |
-| FRONG | `0x6245e67affa44a23077f0ea7f981a8dc743a0c47` | 60 | 1.005x | 0.998x | [Inspect](2ac2bda4ef0519e73acd.json) |
-| WEN | `0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820` | 17 | 1.000x | 0.998x | [Inspect](7054b02a2dfe5325374c.json) |
-| RDDT | `0x05b37fb53a299a1b874a619e1c4c404d52c36f4c` | 27 | 1.000x | 0.998x | [Inspect](94849abeecfc316e90d0.json) |
-| VIRTUAL | `0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31` | 61 | 1.000x | 0.998x | [Inspect](492febb345a84898e274.json) |
-| MRNA | `0x43b07d15ce533bec5476d70c22a78a1b2b662155` | 19 | 1.000x | 0.998x | [Inspect](9652c7f1fb4542908147.json) |
-| OMNIBIND | `0x1ee2a7c326805e094b2ed4d06a95012296c8454b` | 15 | 1.000x | 0.998x | [Inspect](0d453ec3dc989a0d8757.json) |
-| SPCX | `0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea` | 61 | 1.005x | 0.997x | [Inspect](bcb9c50f834bd26740b6.json) |
-| PROLOGUE | `0xb9972ca7188e511174947e3936a5315ac7073277` | 10 | 1.000x | 0.997x | [Inspect](d74fb4d6a23c69f02aae.json) |
-| Agrippa | `0x83a49b808f8d5e02cb2931cd2352988f498e5ba3` | 61 | 1.003x | 0.997x | [Inspect](8a2cd74e785d06278a76.json) |
-| SHROOM | `0xab093def657f15df31b33922a95e047add645b29` | 27 | 1.002x | 0.996x | [Inspect](73d63f7f62196ab3bdf6.json) |
-| DANIO | `0xd17badeaa23ef8afe9e4aa393c9e4160be2b9f7b` | 11 | 1.023x | 0.996x | [Inspect](c6416f2ca9b74ad5a959.json) |
-| CRCL | `0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5` | 56 | 1.001x | 0.996x | [Inspect](4b8edc18ce75866ecb13.json) |
-| WOJAK | `0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f` | 21 | 1.000x | 0.996x | [Inspect](7f507b877c9931c2b0dd.json) |
-| META | `0xc0d6457c16cc70d6790dd43521c899c87ce02f35` | 61 | 1.000x | 0.996x | [Inspect](73cba868a1e65f14ba5f.json) |
-| NOTE | `0xc4f730335fb9e439ca5552f7b52b8e638c4245b0` | 45 | 1.000x | 0.996x | [Inspect](10ff3df72aa521edf007.json) |
-| CASHCAT | `0x020bfc650a365f8bb26819deaabf3e21291018b4` | 61 | 1.004x | 0.995x | [Inspect](4ef3eaa983c8f8062c2a.json) |
-| UP | `0x57c0e45cb534413d1c20a4240955d6bb250bb4f1` | 37 | 1.000x | 0.995x | [Inspect](1beb5ffe5907db382442.json) |
-| POTATCHI | `0xfad17d7cc41d9c9ca4a459da798a4446dd217974` | 20 | 1.002x | 0.993x | [Inspect](ad2a42207c383cb1d651.json) |
-| NATION | `0xc839a88a05b231515a82c71ee97b4f18973c1340` | 61 | 1.000x | 0.992x | [Inspect](71f1c2414ae67c37e88c.json) |
-| VISTA | `0x59cbe15eb2c034fcf6800a998225ce06b68a0229` | 18 | 1.003x | 0.992x | [Inspect](4c8772dba088a8ca6e72.json) |
-| MANY | `0xa26992c4268a8a78a4d872fe4bdad2ed03ac287d` | 29 | 1.000x | 0.992x | [Inspect](321050990274c260ed58.json) |
-| SW | `0x7325305929cb804d2fc394120622ae73afc804eb` | 40 | 1.009x | 0.992x | [Inspect](71359bea9c982629ddaa.json) |
-| MOO | `0xd9db30bb0d2b8d2eae3826a1372117e058791e18` | 53 | 1.028x | 0.991x | [Inspect](f9483421b9f54208675b.json) |
-| AI | `0x2e8c31162b855a2ffa90f6f8634643ad6f111e18` | 61 | 1.000x | 0.991x | [Inspect](54ae0e0025a927339d76.json) |
-| NET | `0xca9c78dd337a67f6e0077f65f5e9218719d30edf` | 61 | 1.025x | 0.990x | [Inspect](fff456b954579dea1970.json) |
-| 4663 | `0xd4052415613b34af236024b895574c467f65b6dd` | 10 | 1.000x | 0.987x | [Inspect](3fa465c5a6413b40f465.json) |
-| musebook | `0x91a2dae9699f0b82540b5886b0d8759c22820ba3` | 61 | 1.001x | 0.987x | [Inspect](a3a87393824c3ab2fb77.json) |
-| ERRAND | `0xeb2ecf641a1f04b8df37c24eabca8f5a47cfaacb` | 14 | 1.000x | 0.986x | [Inspect](9d43367b7780ab88bea7.json) |
-| UBIK | `0x812486eaea648819853f8e372dc9f1516c7868bd` | 39 | 1.000x | 0.985x | [Inspect](661403aff5e556fd058c.json) |
-| MSTR | `0xec262a75e413fafd0df80480274532c79d42da09` | 61 | 1.001x | 0.981x | [Inspect](3323710b6a2eb15c1703.json) |
-| VAULT | `0xfdae23ce76018da62507bb5ef20e6ef5450e8312` | 60 | 1.012x | 0.978x | [Inspect](21a1d81db6e8c2bd2aba.json) |
-| PRISM | `0x20024e485c0b22b42855589700721b28320a7777` | 61 | 1.001x | 0.976x | [Inspect](4c336eae1d4cd2b2faf0.json) |
-| INU | `0x63ee32ac3077d1fbd8a77ebba2a6ed4b8e9c1e18` | 57 | 1.005x | 0.974x | [Inspect](8941045babf7dc83711f.json) |
-| BOW | `0x451b42a15100c340ca12f7c66de06fac5ea2d751` | 34 | 1.000x | 0.972x | [Inspect](711340300547d1aeb9cc.json) |
-| HYDX | `0xaa5751ff3fb61e613993b2eb4eab1fce017081fc` | 34 | 1.000x | 0.971x | [Inspect](a3518b25a3edcc3994bb.json) |
-| Givest | `0x0188da44dcc9b6c9d0d80de904c633c5ff227777` | 41 | 1.000x | 0.967x | [Inspect](06ffb1d5f0b0ef88a43a.json) |
-| iOS | `0xa7527ecf567cdc75be3a03d7f89a072bdbfda50f` | 24 | 1.000x | 0.966x | [Inspect](69d21c8f2d53998f6c7b.json) |
-| PROOF | `0x4841bc1d0727b857dbc2ef58f68a8edd0a3705d9` | 7 | 1.070x | 0.964x | [Inspect](7f2ab5c4335ea5787d55.json) |
-| ODYSSEY | `0x87a91420200989e6da9e33d5400683be04a386d7` | 5 | 1.000x | 0.963x | [Inspect](460db3f4bb3a60822d9d.json) |
-| CASHED | `0x6249519883b8d7ccf915dfcd6c0442984dae9d24` | 20 | 1.003x | 0.961x | [Inspect](d56048a234a33f3d523b.json) |
-| TAPEGRAPH | `0xb2adbe31831383260e63c7fc512378c229da6419` | 9 | 1.001x | 0.960x | [Inspect](c91e45453e3ea1edd5c1.json) |
-| goonos | `0x47eb31e37d7b88e2f31ebb86c7fa8cd1a02b26a4` | 2 | 1.000x | 0.959x | [Inspect](d45d0c212efee35d7fc9.json) |
-| WOOD | `0xf8bc08092c06db6148114dcf82af881f1085f92b` | 61 | 1.001x | 0.950x | [Inspect](b8eec3e38407b21a3366.json) |
-| Fuelbot  | `0xa603f6606099d9b23f6762c78f740950d263860b` | 2 | 1.000x | 0.947x | [Inspect](c90d6634502f5a27219b.json) |
-| O | `0x9d6967e7f5ed93ba3fbbcb03ec2e13b617591e18` | 21 | 1.011x | 0.945x | [Inspect](ed4529027af7bc07e04c.json) |
-| LIGHT | `0x7e96c5d2dd964bccf631dd6abd0750da4cf52daa` | 35 | 1.013x | 0.933x | [Inspect](efba74bf468d11b423f6.json) |
-| BONER | `0x98096d17e191b3da1d5f99a6d7b3584351b11e18` | 46 | 1.014x | 0.932x | [Inspect](1f88d55a21d0fc646fc8.json) |
-| SCROOGE | `0x4da3916d3ae6feece32ec8a2c4856d4abeb41bfd` | 14 | 1.001x | 0.906x | [Inspect](113cd91ae32c2502b7eb.json) |
-| LISTED | `0x398aca5e6ae801b002d684333affadc1a25e897c` | 42 | 1.016x | 0.903x | [Inspect](37bba3798439491b7020.json) |
-| PRIME | `0x9ac0efe775ef5eadf1fd106a6efe19d0e1421e18` | 51 | 1.000x | 0.900x | [Inspect](e6d29a3449aa7abd5841.json) |
-| LIGER | `0x420393b70a34d6aef855ef56e87d4d4161f27c27` | 20 | 1.000x | 0.900x | [Inspect](069ec8c909bc4f4dce6b.json) |
-| LCAP | `0xbca18efee2c63dfb67c374db5ffaacf058426f54` | 7 | 1.002x | 0.884x | [Inspect](f119a15e825ac53f0576.json) |
-| DOTS | `0x53b7ffe8a95cf169e9a9355d333c1b1afbdb1e18` | 37 | 1.411x | 0.868x | [Inspect](71ffcb5b5322964c8a5b.json) |
-| 1% | `0xa56bc2948cbab327e456b9a2eeb41b7aaa16bacf` | 61 | 1.072x | 0.867x | [Inspect](ab6a3cce88521080bc86.json) |
-| MUSEO | `0x188d97362109f9978bc7ebd3c8302f0a024291bf` | 60 | 1.049x | 0.850x | [Inspect](39b4fd806799417a4de0.json) |
-| TRENCHR | `0x1411ce34688de2fa995a2acb617f5340cb16ee87` | 38 | 1.000x | 0.827x | [Inspect](1635689b9d9eb3247fff.json) |
-| HIVE | `0xcdae63d95d6dd4f89f6e508c77bd4388b4e5c8ab` | 55 | 1.000x | 0.797x | [Inspect](132e599f905b2dad570a.json) |
-| AVOCADO | `0x6b8b8658044a8c7edd57fd57a5ae9d82bd1b92d9` | 56 | 1.082x | 0.792x | [Inspect](b09632b7698ab4dad213.json) |
-| MAKE | `0x56b893f217ba78a9ec0c01d1a74811fc410a4d0c` | 61 | 1.000x | 0.785x | [Inspect](3b08fbc6e9cc98803239.json) |
-| VERDEX | `0x96f455a90a80dcf0c2df6703ea4ba3bedf286e43` | 61 | 1.000x | 0.764x | [Inspect](567d865771dc2bf4c2db.json) |
-| SQUAD | `0xea59f8c34b6c07ab35ee77d8798f5995036d8fd0` | 61 | 1.023x | 0.757x | [Inspect](b31b7a1a7b6bd7539811.json) |
-| RVN | `0x060a0600abe74166e629f6749de284910ff8d8a3` | 55 | 1.000x | 0.738x | [Inspect](17d95a3fc35a1d6aba48.json) |
-| APPSHARE | `0x0338a1b7fa2ae1cd997b541432d01af011754b0e` | 38 | 1.001x | 0.683x | [Inspect](bb49577c804633482e2e.json) |
-| SOURCCEY | `0xdc3861b1b2ca83421b4632e292485bdb571cac34` | 61 | 1.000x | 0.605x | [Inspect](59833684ae54dae75952.json) |
-| PLUG | `0xf8c68c1c554cfb1d7d5cc21a8260413ca6f27065` | 61 | 1.526x | 0.549x | [Inspect](d0b1387d374fa07e517a.json) |
-| ODYSSEY | `0xf50363707e7ddc3c5a6f5c93491c688795561dcb` | 61 | 1.000x | 0.410x | [Inspect](1b06b6517564f3613dae.json) |
-| MANCER | `0x20707ce6468919c6e0e29b9eac27e80b3c2310c8` | 61 | 1.360x | 0.275x | [Inspect](51302e4083d0cd4271bb.json) |
-| RECORD | `0x54babe7eab0516889aae26563a537c0a756f6ec3` | 1 | — | — | [Inspect](89d1ed8184f0d3a18f95.json) |
-| DELL | `0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd` | 1 | — | — | [Inspect](d8855d628010690fb385.json) |
-| SAMA | `0x79f03ae1e2ed220d3721feaf5e2403d379f31e18` | 1 | — | — | [Inspect](deb020e7357fa35b1e21.json) |
-| BUNDOG | `0x67e1cdab841957688cd355ff90c0d8139ea32fe6` | 1 | — | — | [Inspect](2cd86b693e8fc7de6622.json) |
-| STONKS | `0x1ec871553be07dc68ec1661c32eca7e2e46e1e18` | 1 | — | — | [Inspect](7df67a0da531c8c7e7d4.json) |
-| AVM | `0x6f48538fc1b79af9e7f56890e0da0582d763a272` | 1 | — | — | [Inspect](1057b1ddef254da92f02.json) |
-| seedcoin | `0xd8d1c08a8ba4fc64bac744f74290b89adcb6bf25` | 1 | — | — | [Inspect](cf201d8370f628426211.json) |
-| DEBT | `0x41ca1a94f5262c4a84fafdaa23b9499aa5b9fcd0` | 1 | — | — | [Inspect](5110978ae4a741686ec2.json) |
-| BINGHAM | `0x9bde9528206bd498f8843020e294bfb793f4d680` | 1 | — | — | [Inspect](332d6c4d3045857b64ff.json) |
-| MUSCAT | `0x101879cb2ce63cbcb19e799d7d29d11632154ba3` | 0 | — | — | [Inspect](37a2eb85bd2ec47fbbb9.json) |
-| OPENAIAGENT | `0x137960d3a9888066ba38a0781132dcadd3011e18` | 0 | — | — | [Inspect](f1fefd74345925a51ce0.json) |
-| DOGCOIN | `0x52baac2f9e2621a321ad1034112bdd41dc691e18` | 0 | — | — | [Inspect](1abaa2b6817e646cc12f.json) |
-| TSLA | `0x6329bcc68f66bdd89a9cbea6dee15c1272191c0b` | 0 | — | — | [Inspect](5de00d42b05258438adb.json) |
-| Euler | `0x89814ca6a4656a3e8a5025cf33cd59b23fa08ba3` | 0 | — | — | [Inspect](962f996d62da47affc0f.json) |
+Every series, ordered by token name. Pools and contracts retain separate identities.
+
+| Token | Contract | Quotes | Peak | Final | Drawdown | Curve and timeline |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| $GARRI | `0xdddf7ab756c35b4d0537825497e6932780710241` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/5e0f6f0bc50325700a9b80c1.md) |
+| 1% | `0xa56bc2948cbab327e456b9a2eeb41b7aaa16bacf` | 61 | 1.072x | 0.867x | 58.48% | [Inspect](../../tokens/45fe9d207964cc59e02169a8.md) |
+| 4663 | `0xd4052415613b34af236024b895574c467f65b6dd` | 10 | 1.000x | 0.987x | 1.29% | [Inspect](../../tokens/eb2f2ce3bbf0fe21769e69ae.md) |
+| 5600 | `0x0b98987748ade6f8b51141e3c08025aa6394d6ce` | 7 | 1.415x | 1.415x | 6.61% | [Inspect](../../tokens/d54178e5c40fb8ce48aeb164.md) |
+| AAPL | `0xaf3d76f1834a1d425780943c99ea8a608f8a93f9` | 61 | 1.002x | 0.999x | 0.40% | [Inspect](../../tokens/f76d998d175381997c383128.md) |
+| AEON | `0x25db25ca341ec0fc45e33c46ce22c9a6acd61e18` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/22e1512a89aaeff3bd45b151.md) |
+| Agrippa | `0x83a49b808f8d5e02cb2931cd2352988f498e5ba3` | 61 | 1.003x | 0.997x | 2.68% | [Inspect](../../tokens/3e545e329dde0d981d5f49dc.md) |
+| AI | `0x2e8c31162b855a2ffa90f6f8634643ad6f111e18` | 61 | 1.000x | 0.991x | 1.77% | [Inspect](../../tokens/b942cefe5dc564f96b092534.md) |
+| ALF | `0x35d9123d4fa11ee93e350c59c7ef70741714374a` | 19 | 1.014x | 1.014x | 0.03% | [Inspect](../../tokens/e85ccd2323c4e2acea2d0c5a.md) |
+| AMC | `0x05a3d1cd21d0c88145e82600e62e7e496e0f222b` | 43 | 1.000x | 0.999x | 0.27% | [Inspect](../../tokens/09925320edd73234de9303ec.md) |
+| AMD | `0x86923f96303d656e4aa86d9d42d1e57ad2023fdc` | 25 | 1.000x | 1.000x | 0.22% | [Inspect](../../tokens/b4b06773ed36af26fae022a0.md) |
+| AMZN | `0x12f190a9f9d7d37a250758b26824b97ce941bf54` | 61 | 1.002x | 1.000x | 0.24% | [Inspect](../../tokens/00bc15bb22c1ff60fd39e82c.md) |
+| Anon | `0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c` | 7 | 1.000x | 1.000x | 0.01% | [Inspect](../../tokens/401f14efe59e76b2310d5d55.md) |
+| ANSEM | `0x521934ea44568164cd3a578e5823dba0de700880` | 49 | 1.025x | 1.020x | 0.78% | [Inspect](../../tokens/4eaaba6d21a0b00aa194ba6c.md) |
+| APPSHARE | `0x0338a1b7fa2ae1cd997b541432d01af011754b0e` | 38 | 1.001x | 0.683x | 31.74% | [Inspect](../../tokens/7e1ea1180122385745f05305.md) |
+| Artcoin | `0x9516922a56171ab9834b88864d1010a6d8633296` | 33 | 1.005x | 1.004x | 0.10% | [Inspect](../../tokens/506a8cb9b108aa2f1fbe07b9.md) |
+| AUR | `0xb0788f5f65a9f4c0d8a634c45c391234f46221ab` | 61 | 1.103x | 1.047x | 5.17% | [Inspect](../../tokens/68b067923a759aee7af9958e.md) |
+| AURELIUS | `0x9720db7cd017650ae50c2a86c2023fe4d2caad8f` | 14 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/1ae51fb9badcce3ecd6ceafe.md) |
+| AVM | `0x6f48538fc1b79af9e7f56890e0da0582d763a272` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/e825958739f71f7167d3aa7d.md) |
+| AVOCADO | `0x6b8b8658044a8c7edd57fd57a5ae9d82bd1b92d9` | 56 | 1.082x | 0.792x | 30.11% | [Inspect](../../tokens/4cfc5fab218d378e436f863e.md) |
+| BINGHAM | `0x9bde9528206bd498f8843020e294bfb793f4d680` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/99cf6cfa11fcd0740ab9e58e.md) |
+| BONER | `0x98096d17e191b3da1d5f99a6d7b3584351b11e18` | 46 | 1.014x | 0.932x | 8.60% | [Inspect](../../tokens/c9621264b005bff418bf8e17.md) |
+| BOO | `0xabe232d69c6fe90d80b1fb54f141391dfce71e18` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/9cd6185472afa5f55468ccac.md) |
+| BOW | `0x451b42a15100c340ca12f7c66de06fac5ea2d751` | 34 | 1.000x | 0.972x | 2.87% | [Inspect](../../tokens/bae7d54282b3b540267475de.md) |
+| BPEPE | `0xbf818efe65aac127ac8f9fec6fec203ee222c851` | 24 | 1.119x | 1.119x | 0.00% | [Inspect](../../tokens/06b4316819ecf946a4851272.md) |
+| BPOOL | `0xa32cdb8e84c68eb995c8dc270b528d7c5d6a0f20` | 61 | 1.359x | 1.192x | 12.29% | [Inspect](../../tokens/1a818af938932d425f54a0f5.md) |
+| BRAIN | `0xbb59e4c6a56111a35a8066bbf0593d50139c7d94` | 9 | 1.016x | 1.016x | 0.00% | [Inspect](../../tokens/b7d07201efcd38303f175521.md) |
+| BULL | `0x49bac47750f3dcdba49350b5d74fd399e90f97c6` | 61 | 1.004x | 1.004x | 1.75% | [Inspect](../../tokens/b4bc1532b69b37e79d97e298.md) |
+| BUN | `0x07ebb29a38fbcb41563817e5e19f2cec619c90d2` | 61 | 1.045x | 1.002x | 7.97% | [Inspect](../../tokens/f29fd73a59f10bd4672639fd.md) |
+| BUNDOG | `0x67e1cdab841957688cd355ff90c0d8139ea32fe6` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/7a0261a1bce5613785d3f9b6.md) |
+| BUNDOG | `0xd68f57b08cd9732e4ddd1a04ba4d26629dc44b8e` | 34 | 1.109x | 1.109x | 16.82% | [Inspect](../../tokens/1e07a1afe303847fc1842c08.md) |
+| BUNNY | `0x608d0a3ff08c9aaab8dfa76da2110c69280aa7ac` | 21 | 1.075x | 1.075x | 0.00% | [Inspect](../../tokens/c698c039b86cec00b3dfe810.md) |
+| BUSINESS | `0xc7c377d63f3783f65598b8044f2614dbecb7fb46` | 20 | 1.051x | 1.029x | 2.06% | [Inspect](../../tokens/77fd5004c062a68d2815d70e.md) |
+| BUSTO | `0xad51c026010202f784ce4ba86d688632e5e264a0` | 22 | 1.074x | 1.059x | 1.66% | [Inspect](../../tokens/9b82f5928d2675247b581b55.md) |
+| BUSTO | `0x31e31f14fec0591d3e53e85ca5fc425bba1ce21d` | 61 | 2.287x | 1.781x | 36.05% | [Inspect](../../tokens/e11fe3139b60f1b8f25db8d1.md) |
+| BUTTHOLE | `0x093dba25e5428589fa698de674e5b16b80841e18` | 6 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/c7d1d334956dbd4ec7637ffc.md) |
+| CASE | `0xa643c2c8ce98ea2b1038d2d501fb52f1556e275f` | 9 | 1.072x | 1.072x | 0.00% | [Inspect](../../tokens/b30a62eacec6f9a72136526a.md) |
+| CASHCAT | `0x020bfc650a365f8bb26819deaabf3e21291018b4` | 61 | 1.004x | 0.995x | 1.17% | [Inspect](../../tokens/d4efaff11c35a27a95abb1d3.md) |
+| CASHED | `0x6249519883b8d7ccf915dfcd6c0442984dae9d24` | 20 | 1.003x | 0.961x | 4.23% | [Inspect](../../tokens/cbae43fe6ff9f6fe8b84b062.md) |
+| cbBTC | `0xcec185eb182c47d1ba1efc84e6959e18cd620be4` | 37 | 1.000x | 0.999x | 0.18% | [Inspect](../../tokens/71867fc9ad866bf803420851.md) |
+| CLOAKSWAP | `0xa8936b7148efda48226de8c06706c8f7b0f85c98` | 45 | 1.295x | 1.006x | 29.72% | [Inspect](../../tokens/a52659c816e39476a3f393b0.md) |
+| CME | `0xe2324ff2a59f8ecba8c321c6466e59121c00e795` | 19 | 1.016x | 1.002x | 1.35% | [Inspect](../../tokens/015a89b083753e0307a470e1.md) |
+| COIN | `0x6330d8c3178a418788df01a47479c0ce7ccf450b` | 23 | 1.003x | 1.000x | 0.32% | [Inspect](../../tokens/4f34350a177ea13ce899cb43.md) |
+| COST | `0x4ea005168d7f09a7a0ba9d1def21a479950e44c2` | 18 | 1.000x | 1.000x | 0.05% | [Inspect](../../tokens/e3af16b2cb8f17b5d93e020a.md) |
+| CRCL | `0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5` | 56 | 1.001x | 0.996x | 0.67% | [Inspect](../../tokens/cf43722082c8a9413ce1eb40.md) |
+| DANIO | `0xd17badeaa23ef8afe9e4aa393c9e4160be2b9f7b` | 11 | 1.023x | 0.996x | 2.56% | [Inspect](../../tokens/60dcdccd11cec77fab6b6c9d.md) |
+| DARK | `0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e` | 33 | 1.055x | 1.035x | 7.47% | [Inspect](../../tokens/12d33a38571b7e4706f5165f.md) |
+| DEBT | `0x41ca1a94f5262c4a84fafdaa23b9499aa5b9fcd0` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/fe3728bbb9dadc97c29e409c.md) |
+| DELL | `0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/c928d6e56d7bddbe789f9d9c.md) |
+| DJT | `0x1d11f0496982706c5e14a514d4e79f2e6bde4516` | 16 | 1.000x | 1.000x | 0.06% | [Inspect](../../tokens/450310c41727280ff43f4be6.md) |
+| DOA | `0x7c74e367d6d17e60bc551db65b689d512b7b1e18` | 6 | 1.425x | 1.229x | 35.43% | [Inspect](../../tokens/e15a7a3d7a7f7a96886fd592.md) |
+| DOGCOIN | `0x52baac2f9e2621a321ad1034112bdd41dc691e18` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/cc53ee1f0b3cabd6baae0a00.md) |
+| DOLL | `0x68353dea233cf2ed0f4ab795430962cc50e5d325` | 16 | 1.030x | 1.004x | 2.49% | [Inspect](../../tokens/921b79b0cd24eb9a9bc29864.md) |
+| DOTS | `0x53b7ffe8a95cf169e9a9355d333c1b1afbdb1e18` | 37 | 1.411x | 0.868x | 41.32% | [Inspect](../../tokens/f7a6272014b051d424010f95.md) |
+| ERRAND | `0xeb2ecf641a1f04b8df37c24eabca8f5a47cfaacb` | 14 | 1.000x | 0.986x | 1.35% | [Inspect](../../tokens/b0da7a0fcaedf62b8d9854bb.md) |
+| Euler | `0x89814ca6a4656a3e8a5025cf33cd59b23fa08ba3` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/c38701e127703f17f71669d7.md) |
+| FAB | `0xc7db9a7034d061feca50f0a25636bcc83ca717d9` | 5 | 1.022x | 1.022x | 0.00% | [Inspect](../../tokens/ecef6617904ae375922dff60.md) |
+| FRONG | `0x6245e67affa44a23077f0ea7f981a8dc743a0c47` | 60 | 1.005x | 0.998x | 0.85% | [Inspect](../../tokens/c25bb9c22f63972fc2366c13.md) |
+| Fuelbot  | `0xa603f6606099d9b23f6762c78f740950d263860b` | 2 | 1.000x | 0.947x | 5.32% | [Inspect](../../tokens/7e756315216a6d6fedcc0cf9.md) |
+| Givest | `0x0188da44dcc9b6c9d0d80de904c633c5ff227777` | 41 | 1.000x | 0.967x | 4.15% | [Inspect](../../tokens/3635852c7b3b77d1e4d54f7a.md) |
+| GLD | `0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e` | 61 | 1.003x | 1.000x | 0.29% | [Inspect](../../tokens/a721131862876ead01b6dab0.md) |
+| GLXY | `0x2d427692e928fa156ec22acfabafa0447c5805b7` | 11 | 1.000x | 1.000x | 0.04% | [Inspect](../../tokens/60c14f98494322c4ca51cd76.md) |
+| GME | `0x1b0e319c6a659f002271b69db8a7df2f911c153e` | 61 | 1.007x | 1.000x | 0.84% | [Inspect](../../tokens/4715c3fed05204649d93a47e.md) |
+| GOOGL | `0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3` | 55 | 1.000x | 0.999x | 0.30% | [Inspect](../../tokens/71adb35be12b92fc179962b5.md) |
+| goonos | `0x47eb31e37d7b88e2f31ebb86c7fa8cd1a02b26a4` | 2 | 1.000x | 0.959x | 4.10% | [Inspect](../../tokens/430db4d2167b4aa698528e69.md) |
+| GRAPH | `0x48a0f9024cbe319cc51a5263d9edcdfd7228fc2d` | 12 | 1.496x | 1.154x | 41.85% | [Inspect](../../tokens/88038f5e5db916e712495fde.md) |
+| HADES | `0x923d915ddf0fe60c04addac68e13f0d5af03164f` | 8 | 1.011x | 1.011x | 1.35% | [Inspect](../../tokens/68f6be3aca0173f5e83dd6ca.md) |
+| HIMS | `0xccee82fe024c36fa15e1005ede3e9e4787e23d09` | 60 | 1.001x | 1.000x | 0.29% | [Inspect](../../tokens/d9f7aaaa675543b281b67522.md) |
+| HIVE | `0xcdae63d95d6dd4f89f6e508c77bd4388b4e5c8ab` | 55 | 1.000x | 0.797x | 21.10% | [Inspect](../../tokens/17b3b789afc8bbea74fde3dd.md) |
+| HMM | `0x7fe995a80075df3dc8ae11a9b82c7fe4202cd87f` | 41 | 1.007x | 0.999x | 1.02% | [Inspect](../../tokens/9d88ee74fda087479d1b661f.md) |
+| HOOKR | `0x18e674231a58c239dc7daedcffe15ec3a24cff5c` | 16 | 1.006x | 1.001x | 0.46% | [Inspect](../../tokens/e802a42f6860dd23275844e1.md) |
+| HOTDOG | `0x45443a4a7b58ab26a4b4d72616cf36d5aae7188c` | 20 | 1.001x | 1.000x | 0.22% | [Inspect](../../tokens/60ce448668772ece4d8bdf42.md) |
+| Hound | `0x7efa92fb3657d1fe086c5b178c3e6f1e7cdc2e19` | 22 | 1.175x | 1.163x | 3.67% | [Inspect](../../tokens/0903d01886e63e7018aca4b7.md) |
+| HOWL | `0x93e7a34db439a3371d4149eb9e6794343312d4f2` | 53 | 1.264x | 1.197x | 5.43% | [Inspect](../../tokens/e9fa4946262196d25b5bfe00.md) |
+| HYDX | `0xaa5751ff3fb61e613993b2eb4eab1fce017081fc` | 34 | 1.000x | 0.971x | 15.44% | [Inspect](../../tokens/f7d0b66fce5ec831453a1906.md) |
+| HYPOCRITE | `0xffff3f5af6e5ff1668d2dce40e10507b7ca47cf6` | 12 | 1.190x | 1.107x | 7.01% | [Inspect](../../tokens/86eef6861b8d6965f773aa52.md) |
+| IBM | `0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619` | 21 | 1.001x | 1.001x | 0.00% | [Inspect](../../tokens/08507a9e97da6f473afe1624.md) |
+| Index | `0x56910d4409f3a0c78c64dd8d0545ff0705389870` | 17 | 1.006x | 1.006x | 0.09% | [Inspect](../../tokens/eaa53cdecc54b4a6d9652436.md) |
+| INTC | `0xc72b96e0e48ecd4dc75e1e45396e26300bc39681` | 61 | 1.005x | 1.003x | 0.32% | [Inspect](../../tokens/65a77950cbaded4585a77c92.md) |
+| INU | `0x63ee32ac3077d1fbd8a77ebba2a6ed4b8e9c1e18` | 57 | 1.005x | 0.974x | 3.13% | [Inspect](../../tokens/6d90e789d0af4630d8b4e842.md) |
+| iOS | `0xa7527ecf567cdc75be3a03d7f89a072bdbfda50f` | 24 | 1.000x | 0.966x | 10.34% | [Inspect](../../tokens/e8b0aef98a40a92ba9815c41.md) |
+| Joe | `0xe02950c5661cc27aec28f838c7a4e261b0159c83` | 36 | 1.118x | 1.118x | 1.02% | [Inspect](../../tokens/3eea971d90b242a810a72a23.md) |
+| KEK | `0x86e5d8818eff06f0dea9e5eca87f056bc44c7777` | 16 | 1.000x | 1.000x | 0.04% | [Inspect](../../tokens/c4844db368cab9ca864d4518.md) |
+| KITSU | `0x8d4dfaaa4198b6486e0293fec914c2b6a821d4dc` | 11 | 1.000x | 1.000x | 0.01% | [Inspect](../../tokens/8fc5be1f87233e7aedf5ef7b.md) |
+| LBX | `0x18b98fbd9000ef5da84d21bd801c5f2504bf20ca` | 58 | 3.866x | 1.356x | 90.49% | [Inspect](../../tokens/709e2f9628486cf76fd612c0.md) |
+| LCAP | `0xbca18efee2c63dfb67c374db5ffaacf058426f54` | 7 | 1.002x | 0.884x | 11.83% | [Inspect](../../tokens/cfc9566a33c0a41e7dd43db6.md) |
+| LEFTCURVE | `0x845e03a601ad42040bf20fe17a8054cbd7561e18` | 9 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/ff8b08cf9892102f78e1f301.md) |
+| LIGER | `0x420393b70a34d6aef855ef56e87d4d4161f27c27` | 20 | 1.000x | 0.900x | 10.00% | [Inspect](../../tokens/118eef642ac6f2eb3cdf6c3e.md) |
+| LIGHT | `0x7e96c5d2dd964bccf631dd6abd0750da4cf52daa` | 35 | 1.013x | 0.933x | 11.24% | [Inspect](../../tokens/91cd2af2ded738ed18ef37b2.md) |
+| LISTED | `0x398aca5e6ae801b002d684333affadc1a25e897c` | 42 | 1.016x | 0.903x | 24.36% | [Inspect](../../tokens/64dd0fc41bb51fb58f677527.md) |
+| LLY | `0x8005d266423c7ea827372c9c864491e5786600ea` | 31 | 1.003x | 1.003x | 0.00% | [Inspect](../../tokens/1241ac00327ef9e393b10e12.md) |
+| LOYAL | `0xac1a6297af5118f6232d10b6df243c7f8b528a9b` | 22 | 1.136x | 1.136x | 0.00% | [Inspect](../../tokens/369e7dc74c75bfb7a1fe6911.md) |
+| Maisy | `0x6785e1738f04eab71fc0cb8d2be5d727bc32bf91` | 61 | 1.029x | 1.029x | 2.38% | [Inspect](../../tokens/66ff31673e4fad6fad4c1ecc.md) |
+| MAKE | `0x56b893f217ba78a9ec0c01d1a74811fc410a4d0c` | 61 | 1.000x | 0.785x | 36.42% | [Inspect](../../tokens/3622fdb22e64d83bfbe95751.md) |
+| MANCER | `0x20707ce6468919c6e0e29b9eac27e80b3c2310c8` | 61 | 1.360x | 0.275x | 85.96% | [Inspect](../../tokens/ffd4ec31986927024bec6212.md) |
+| MANCER | `0xc72f232a6869e6cf34dc06129affd07f8a2a246a` | 20 | 1.000x | 1.000x | 0.03% | [Inspect](../../tokens/77fa92b7838eef9a38383757.md) |
+| MANY | `0xa26992c4268a8a78a4d872fe4bdad2ed03ac287d` | 29 | 1.000x | 0.992x | 1.40% | [Inspect](../../tokens/e1742fc815d59914f8753245.md) |
+| MEME | `0x385f4f8ae47651ce5f58f5265395a669f8281e18` | 61 | 1.002x | 1.000x | 0.34% | [Inspect](../../tokens/7354721dbc0a3e3a185d84f4.md) |
+| META | `0xc0d6457c16cc70d6790dd43521c899c87ce02f35` | 61 | 1.000x | 0.996x | 0.40% | [Inspect](../../tokens/0731b5d51f95335bd37eca6f.md) |
+| microduck | `0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725` | 25 | 1.030x | 1.030x | 1.18% | [Inspect](../../tokens/8c0b7f0ca6be1578e66086a1.md) |
+| MONITOR | `0x1a911bb954daa9cb38513423075be74450351e18` | 48 | 1.031x | 1.022x | 0.89% | [Inspect](../../tokens/8ee0327f5ff0fda8eba0f079.md) |
+| MOO | `0xd9db30bb0d2b8d2eae3826a1372117e058791e18` | 53 | 1.028x | 0.991x | 3.61% | [Inspect](../../tokens/ed8892f4a6ec70fca9d6cc1c.md) |
+| moon | `0x862cdccb67c8a22fdb247d09a08b1dad09447777` | 15 | 1.001x | 1.001x | 0.06% | [Inspect](../../tokens/f98c9ba2e077fe4043f74eb1.md) |
+| MRNA | `0x43b07d15ce533bec5476d70c22a78a1b2b662155` | 19 | 1.000x | 0.998x | 0.23% | [Inspect](../../tokens/b210550a8585c615279c87b9.md) |
+| MRVL | `0x62fd0668e10d8b72339be2dcf7643001688ff13b` | 10 | 1.002x | 0.998x | 0.40% | [Inspect](../../tokens/fb300a02053f1c951511d975.md) |
+| MSFT | `0xe93237c50d904957cf27e7b1133b510c669c2e74` | 22 | 1.001x | 1.000x | 0.09% | [Inspect](../../tokens/30f410b855f9f1a84b3620fd.md) |
+| MSTR | `0xec262a75e413fafd0df80480274532c79d42da09` | 61 | 1.001x | 0.981x | 2.04% | [Inspect](../../tokens/2e330596a1145dc1e7da90b6.md) |
+| MU | `0xff080c8ce2e5feadaca0da81314ae59d232d4afd` | 21 | 1.001x | 1.001x | 0.07% | [Inspect](../../tokens/9873f70b0500080dd5ad75e6.md) |
+| MUMU | `0x8ec17c059f250a5c19566c3fc56ee13a343dd283` | 51 | 1.008x | 1.008x | 0.50% | [Inspect](../../tokens/4fd4bb941c1f729f704b1817.md) |
+| MUSCAT | `0x101879cb2ce63cbcb19e799d7d29d11632154ba3` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/d62cbd8e44bc1dfea4184bad.md) |
+| musebook | `0x91a2dae9699f0b82540b5886b0d8759c22820ba3` | 61 | 1.001x | 0.987x | 2.23% | [Inspect](../../tokens/5d80a8fa9fa54c7cd5595157.md) |
+| MUSEO | `0x188d97362109f9978bc7ebd3c8302f0a024291bf` | 60 | 1.049x | 0.850x | 22.12% | [Inspect](../../tokens/fae6f1bd7e6b4fc78f75bda2.md) |
+| NATION | `0xc839a88a05b231515a82c71ee97b4f18973c1340` | 61 | 1.000x | 0.992x | 3.66% | [Inspect](../../tokens/f6285e262537df218cf66590.md) |
+| NET | `0xca9c78dd337a67f6e0077f65f5e9218719d30edf` | 61 | 1.025x | 0.990x | 3.40% | [Inspect](../../tokens/440c26649d4dc1eda88b8930.md) |
+| NFS | `0x39f59262a6f82bb1e0ae30a2ae2fab2a66accd44` | 49 | 1.136x | 1.054x | 11.74% | [Inspect](../../tokens/c4188b0a0a350fa25dc1f052.md) |
+| NFX | `0xf1740d428a469bd270c5de0710a2f7d887a650fb` | 60 | 1.002x | 1.001x | 0.10% | [Inspect](../../tokens/3cb7f4d4ebeb4c8a61fee62e.md) |
+| NOSH | `0xe02c53d448a62067b2ac10ed70f5bc6c29471386` | 10 | 1.001x | 1.001x | 0.00% | [Inspect](../../tokens/527f5e152d792e0f6b5d8e06.md) |
+| NOTE | `0xc4f730335fb9e439ca5552f7b52b8e638c4245b0` | 45 | 1.000x | 0.996x | 0.43% | [Inspect](../../tokens/c5d998a80bde9da229bfd4e4.md) |
+| NVDA | `0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec` | 61 | 1.001x | 0.999x | 0.37% | [Inspect](../../tokens/a272861795f10da5001b1212.md) |
+| O | `0xe6c54ae72612c530fc86a3d9f93a743b221a1e18` | 18 | 1.019x | 1.019x | 0.00% | [Inspect](../../tokens/ca61ec9486f0336effcbd3d3.md) |
+| O | `0x9d6967e7f5ed93ba3fbbcb03ec2e13b617591e18` | 21 | 1.011x | 0.945x | 6.47% | [Inspect](../../tokens/04c3c38ba0176ecb84aa4167.md) |
+| OBOL | `0xda49424d50e67a4015de19a15868d874931b5af2` | 58 | 1.638x | 1.553x | 5.17% | [Inspect](../../tokens/f87b44952526fec6bba75512.md) |
+| ODYSSEY | `0xf50363707e7ddc3c5a6f5c93491c688795561dcb` | 61 | 1.000x | 0.410x | 70.00% | [Inspect](../../tokens/d57731ead4668292bea9f6ab.md) |
+| ODYSSEY | `0x87a91420200989e6da9e33d5400683be04a386d7` | 5 | 1.000x | 0.963x | 3.70% | [Inspect](../../tokens/e4cd917adaee065694d8f5e5.md) |
+| OMNIBIND | `0x1ee2a7c326805e094b2ed4d06a95012296c8454b` | 15 | 1.000x | 0.998x | 1.29% | [Inspect](../../tokens/42f86221540fdc6da3eade5d.md) |
+| OPENAIAGENT | `0x137960d3a9888066ba38a0781132dcadd3011e18` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/bb76aee0860915c9495f66ed.md) |
+| ORBIO | `0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3` | 59 | 1.027x | 1.009x | 3.71% | [Inspect](../../tokens/8cd2a4cb9a0f6dcc004bfd57.md) |
+| OYSTER | `0x9b40671d11fd1e85976618fb468c1c03caa7c2b4` | 61 | 1.040x | 1.035x | 2.60% | [Inspect](../../tokens/8cf9b42c24c35421ca7a7d78.md) |
+| par | `0x507b6f349a80114097a67b8b4677367acc15b220` | 8 | 1.048x | 1.048x | 0.00% | [Inspect](../../tokens/6d792d6d5152fd3e47633456.md) |
+| PARE | `0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d` | 15 | 1.000x | 0.999x | 0.10% | [Inspect](../../tokens/80e658ce8e334049645d35a5.md) |
+| PEARCAT | `0x40e1a49553ce67058fb33c2fe1446c7e0ee0038f` | 8 | 1.009x | 1.002x | 0.69% | [Inspect](../../tokens/b446382a82b634a062d756a5.md) |
+| PIG | `0xeaa86c0f9ee8a83ad303abe2d3170d223c22c522` | 31 | 1.998x | 1.762x | 11.82% | [Inspect](../../tokens/0cc88887367cf9f23ebe6379.md) |
+| PLTR | `0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a` | 56 | 1.004x | 0.999x | 0.50% | [Inspect](../../tokens/fde246fe2c26a42428f49463.md) |
+| PLUG | `0xf8c68c1c554cfb1d7d5cc21a8260413ca6f27065` | 61 | 1.526x | 0.549x | 64.65% | [Inspect](../../tokens/8980a99d93c4212e04fbf0d0.md) |
+| PONS | `0x39dbed3a2bd333467115de45665cc57f813c4571` | 61 | 1.009x | 0.999x | 2.12% | [Inspect](../../tokens/f7e6540b437628436161d06d.md) |
+| PONSAPP | `0xf6ec257f07f2018ff7634597a9d390f3695c9fb2` | 38 | 1.062x | 1.061x | 3.17% | [Inspect](../../tokens/3a2dae1876bfa03d8ef0e1b9.md) |
+| POTATCHI | `0xfad17d7cc41d9c9ca4a459da798a4446dd217974` | 20 | 1.002x | 0.993x | 5.34% | [Inspect](../../tokens/e441778ff44df2db50858f65.md) |
+| PRIME | `0x9ac0efe775ef5eadf1fd106a6efe19d0e1421e18` | 51 | 1.000x | 0.900x | 9.98% | [Inspect](../../tokens/c032740b27f9df2c436338ec.md) |
+| PRIORS | `0xedbf91223639800bcd5756815caf908df3b890be` | 7 | 1.038x | 1.037x | 0.06% | [Inspect](../../tokens/0ebec82f58c2a9e003b7d0d1.md) |
+| PRISM | `0x20024e485c0b22b42855589700721b28320a7777` | 61 | 1.001x | 0.976x | 4.63% | [Inspect](../../tokens/78ae1f263390a054267d2626.md) |
+| PROLOGUE | `0xb9972ca7188e511174947e3936a5315ac7073277` | 10 | 1.000x | 0.997x | 0.31% | [Inspect](../../tokens/373f58bcf0ef5c87b7c8efd4.md) |
+| PROOF | `0x4841bc1d0727b857dbc2ef58f68a8edd0a3705d9` | 7 | 1.070x | 0.964x | 9.93% | [Inspect](../../tokens/295b470eca5e4b6823846772.md) |
+| PUR | `0x65d7e1d00867d1a659c2f190cc40637df3ed1e18` | 13 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/27dec9c8235ca1c66a8a8e2b.md) |
+| QNTA | `0xa67b2080b0b9b8f458bef979ee56b706986f31aa` | 46 | 1.205x | 1.149x | 4.68% | [Inspect](../../tokens/ae42ba77f42c7726f3e29d8e.md) |
+| QQQ | `0xd5f3879160bc7c32ebb4dc785f8a4f505888de68` | 35 | 1.001x | 1.000x | 0.29% | [Inspect](../../tokens/724c8e2142f465d60d843f7d.md) |
+| RDDT | `0x05b37fb53a299a1b874a619e1c4c404d52c36f4c` | 27 | 1.000x | 0.998x | 1.35% | [Inspect](../../tokens/09139d48d96d4a30c17dcfeb.md) |
+| RECORD | `0x54babe7eab0516889aae26563a537c0a756f6ec3` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/9c4a9ca809287b1333d1156b.md) |
+| RESPONSIBLE | `0xb7dbd935c86c9ffea2f89171e033a1ec1d7f1e18` | 5 | 1.136x | 1.136x | 0.00% | [Inspect](../../tokens/800634b90a19386d0e6243d0.md) |
+| RLHOOD | `0x5c4d524ea1531b53a73f3cd0b7f75ae5b26913ba` | 45 | 1.022x | 1.022x | 4.54% | [Inspect](../../tokens/89bffc2518e92d87eaa1c7ca.md) |
+| ROBIN | `0x11b70d0243baf75e85ce03201a92b5b7c33beb59` | 14 | 1.004x | 1.004x | 0.00% | [Inspect](../../tokens/c5d89b4945b0547d240b98b6.md) |
+| ROBIT | `0x368580343a637b8b91d27c8a8be124f534329a30` | 14 | 1.022x | 1.022x | 0.00% | [Inspect](../../tokens/f73cf1339d30cae763241279.md) |
+| RVN | `0x060a0600abe74166e629f6749de284910ff8d8a3` | 55 | 1.000x | 0.738x | 26.63% | [Inspect](../../tokens/8d7c6d2d327afcd07324a5bb.md) |
+| SAMA | `0x79f03ae1e2ed220d3721feaf5e2403d379f31e18` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/4a76906c0c6df48ae3dc694e.md) |
+| Schrödinger  | `0x7638d07e58e875a8b6e91cf50dbcac270e664b73` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/9a0edb545120d610640c18a5.md) |
+| SCROOGE | `0x4da3916d3ae6feece32ec8a2c4856d4abeb41bfd` | 14 | 1.001x | 0.906x | 9.50% | [Inspect](../../tokens/c557cda50bcac45587dce12b.md) |
+| seedcoin | `0xd8d1c08a8ba4fc64bac744f74290b89adcb6bf25` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/63dccf46b61b1ba3008c7f64.md) |
+| SHAD | `0x95cc69fa3fbb35955a921876f60631c606e54a17` | 31 | 1.387x | 1.280x | 7.71% | [Inspect](../../tokens/28bad9afc2866d63a974a22b.md) |
+| SHROOM | `0xab093def657f15df31b33922a95e047add645b29` | 27 | 1.002x | 0.996x | 0.50% | [Inspect](../../tokens/2f1b280d78adb841e7297852.md) |
+| SNAT | `0x02c83495bb67b325f9694dd9bfacd51c8218bdc9` | 2 | 1.000x | 1.000x | 0.04% | [Inspect](../../tokens/68210f43eb9e3196b517636a.md) |
+| SOUL | `0x63a6b4290b1948b55f82d6ac6c6f549e53cbf562` | 4 | 1.686x | 1.686x | 0.00% | [Inspect](../../tokens/030a8caa56be76a1b2d65a9b.md) |
+| SOURCCEY | `0xdc3861b1b2ca83421b4632e292485bdb571cac34` | 61 | 1.000x | 0.605x | 39.55% | [Inspect](../../tokens/712cce8cbf6d8bb5b5530206.md) |
+| SPCX | `0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea` | 61 | 1.005x | 0.997x | 0.80% | [Inspect](../../tokens/c8ede1f4f131025e3c21fb00.md) |
+| SPY | `0x117cc2133c37b721f49de2a7a74833232b3b4c0c` | 61 | 1.000x | 1.000x | 0.11% | [Inspect](../../tokens/3eedaa55d170ef826724a4fb.md) |
+| SQUAD | `0xea59f8c34b6c07ab35ee77d8798f5995036d8fd0` | 61 | 1.023x | 0.757x | 25.97% | [Inspect](../../tokens/cec1f9dab881002bdc7ad382.md) |
+| STELX | `0x7a8cda6a1cab3e5146cd13cb623a3bb284fb4ad1` | 3 | 1.008x | 1.008x | 0.00% | [Inspect](../../tokens/87cc8f096af61dbe93f31281.md) |
+| STONKBROKER | `0xe934e36a439c94017b64a3fece66af12099abf50` | 56 | 1.008x | 1.006x | 0.68% | [Inspect](../../tokens/18bd76c8eed984ed38061a0e.md) |
+| STONKS | `0x1ec871553be07dc68ec1661c32eca7e2e46e1e18` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/1439a6c57cc81c8704da6bda.md) |
+| SW | `0x7325305929cb804d2fc394120622ae73afc804eb` | 40 | 1.009x | 0.992x | 2.19% | [Inspect](../../tokens/0317eef28b343de148753038.md) |
+| TAPEGRAPH | `0xb2adbe31831383260e63c7fc512378c229da6419` | 9 | 1.001x | 0.960x | 4.10% | [Inspect](../../tokens/b5f577913a74c4d721462bad.md) |
+| TENDIES | `0x45242320dbb855eea8fd36804c6487e10e97fcf9` | 61 | 1.110x | 1.088x | 2.92% | [Inspect](../../tokens/2d23845c79d2c1b040c12278.md) |
+| TICKER | `0x6c43086993f904499a24e6df42c7e785ea1843e7` | 8 | 1.100x | 1.100x | 0.00% | [Inspect](../../tokens/f17e366c0cfb11df884cfe36.md) |
+| TRENCHR | `0x1411ce34688de2fa995a2acb617f5340cb16ee87` | 38 | 1.000x | 0.827x | 20.23% | [Inspect](../../tokens/d1c1a7df33bfc349586a05bb.md) |
+| TSLA | `0x6329bcc68f66bdd89a9cbea6dee15c1272191c0b` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/d5a2a2a9d2f6104053627c71.md) |
+| TSLA | `0x322f0929c4625ed5bad873c95208d54e1c003b2d` | 61 | 1.000x | 0.999x | 0.45% | [Inspect](../../tokens/d0284a3ae50f9696a33c1a2d.md) |
+| U | `0xce24439f2d9c6a2289f741120fe202248b666666` | 50 | 1.000x | 0.999x | 0.11% | [Inspect](../../tokens/df22f987f29118c2d137270c.md) |
+| U | `0x3e17c94ba8112380ef81a43fc33b08ca6284fb33` | 12 | 1.005x | 1.005x | 0.00% | [Inspect](../../tokens/ecd9176120d35cbd281fd101.md) |
+| UBIK | `0x812486eaea648819853f8e372dc9f1516c7868bd` | 39 | 1.000x | 0.985x | 1.90% | [Inspect](../../tokens/70021b98f67d4bf3d9865b37.md) |
+| UNIPCS | `0xdd6536545ae510f009ce0d91620ab4f09f869aaf` | 14 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/757fdd6a7a1eaa6c6a00586a.md) |
+| UP | `0x57c0e45cb534413d1c20a4240955d6bb250bb4f1` | 37 | 1.000x | 0.995x | 0.54% | [Inspect](../../tokens/18f603acd5d960213ccda8d1.md) |
+| USO | `0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344` | 60 | 1.006x | 1.003x | 0.24% | [Inspect](../../tokens/b1787bf106197e9c2709e0ac.md) |
+| VAULT | `0xfdae23ce76018da62507bb5ef20e6ef5450e8312` | 60 | 1.012x | 0.978x | 5.79% | [Inspect](../../tokens/8fd9f47be3f3caebbb778a40.md) |
+| VERDEX | `0x96f455a90a80dcf0c2df6703ea4ba3bedf286e43` | 61 | 1.000x | 0.764x | 35.97% | [Inspect](../../tokens/ccd31fe1b68d32597ef1f834.md) |
+| VIRTUAL | `0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31` | 61 | 1.000x | 0.998x | 0.46% | [Inspect](../../tokens/952e1baa26b8ae758f72d50a.md) |
+| VISTA | `0x59cbe15eb2c034fcf6800a998225ce06b68a0229` | 18 | 1.003x | 0.992x | 1.11% | [Inspect](../../tokens/43a9a2bb54991d5cf08d485d.md) |
+| VLAD | `0x739958e366a0509d4c51c1c164c509fff154adee` | 52 | 1.086x | 1.024x | 9.08% | [Inspect](../../tokens/a99417e6d57352171f259455.md) |
+| WALLET | `0x0339f5459fc690ac85f1782e15782a151b4a9e1b` | 23 | 1.003x | 1.003x | 0.10% | [Inspect](../../tokens/94655fd9b58a7944cf3c45ad.md) |
+| WEN | `0xa80eb66b3e0cf66ccb46f8b8c9e7ff5803eeb820` | 17 | 1.000x | 0.998x | 0.17% | [Inspect](../../tokens/e741ed54d5f90249c4130f73.md) |
+| WHLR | `0x2ea98073e7c3b0781f8cec3690eacb8f5c83507d` | 5 | 1.090x | 1.090x | 0.00% | [Inspect](../../tokens/583a12aa95c603046b8127ed.md) |
+| WOJAK | `0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f` | 21 | 1.000x | 0.996x | 0.64% | [Inspect](../../tokens/dbc75ca7bfecdc0ec8564a02.md) |
+| WOOD | `0xf8bc08092c06db6148114dcf82af881f1085f92b` | 61 | 1.001x | 0.950x | 5.54% | [Inspect](../../tokens/e728be18319f53248da4574e.md) |
+| WORM | `0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d` | 47 | 1.055x | 1.037x | 2.68% | [Inspect](../../tokens/bc6d48921704ab6d55c97b6a.md) |
+| worth | `0xfb1bcb6817f7b8fa86896d3253b16aeb7bd6a5a8` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/5261ea67bf5d6424743fc602.md) |
+| YOLO | `0x62c71cd34a52c30d894419cbcc55db2afa8032ea` | 5 | 1.005x | 1.005x | 0.00% | [Inspect](../../tokens/75e934624ba033d321342996.md) |
+| ZEAL | `0x9fa1c5e90a11294f83a9f135b81ad1b537a5ffdc` | 22 | 1.031x | 1.031x | 0.30% | [Inspect](../../tokens/406feeb4ca98f68941f13d35.md) |
+| ZZZ | `0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a` | 35 | 1.018x | 1.010x | 4.11% | [Inspect](../../tokens/507d50a1058e6c23fda03fda.md) |
+| 富贵 | `0xceebf25b318201f1f949be2fabbfcee231737139` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/8ef286793159d41885d21832.md) |

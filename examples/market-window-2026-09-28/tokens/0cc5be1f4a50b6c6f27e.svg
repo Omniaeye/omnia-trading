@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>TOM: 17 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">TOM: 17 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="129.259" x2="740" y2="129.259" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="129.259">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,129.259 102.623,130.230 145.158,130.700 187.214,130.741 229.931,130.741 272.002,130.741 314.778,129.687 357.691,129.687 400.642,130.209 442.885,130.209 484.932,130.209 527.617,130.292 578.240,130.292 613.296,130.292 654.822,130.292 697.399,130.261 740.000,130.261"/>
+<circle cx="60.000" cy="129.259" r="2" fill="#b33b47"/>
+<circle cx="102.623" cy="130.230" r="2" fill="#b33b47"/>
+<circle cx="145.158" cy="130.700" r="2" fill="#b33b47"/>
+<circle cx="187.214" cy="130.741" r="2" fill="#b33b47"/>
+<circle cx="229.931" cy="130.741" r="2" fill="#b33b47"/>
+<circle cx="272.002" cy="130.741" r="2" fill="#b33b47"/>
+<circle cx="314.778" cy="129.687" r="2" fill="#b33b47"/>
+<circle cx="357.691" cy="129.687" r="2" fill="#b33b47"/>
+<circle cx="400.642" cy="130.209" r="2" fill="#b33b47"/>
+<circle cx="442.885" cy="130.209" r="2" fill="#b33b47"/>
+<circle cx="484.932" cy="130.209" r="2" fill="#b33b47"/>
+<circle cx="527.617" cy="130.292" r="2" fill="#b33b47"/>
+<circle cx="578.240" cy="130.292" r="2" fill="#b33b47"/>
+<circle cx="613.296" cy="130.292" r="2" fill="#b33b47"/>
+<circle cx="654.822" cy="130.292" r="2" fill="#b33b47"/>
+<circle cx="697.399" cy="130.261" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="130.261" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:15:02.698030+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:19:02.666276+00:00</text>
+</g></svg>

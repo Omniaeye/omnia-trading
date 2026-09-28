@@ -16,6 +16,7 @@ from .contracts import normalize, timestamp
 from .capture_archive import asset_key, ranking_series
 from .performance import summarize_quotes
 from .strategy_contracts import StrategyPolicy
+from .casebook_views import token_groups, write_tokens
 
 SCHEMA = 'omnia.trading.casebook.v1'
 
@@ -205,6 +206,10 @@ def verify(directory: Path):
             raise ValueError('unsafe_casebook_path')
         if _hash(path) != checksum:
             raise ValueError('casebook_hash_mismatch:' + name)
+    actual_files = {path.relative_to(directory).as_posix() for path in directory.rglob('*')
+                    if path.is_file() and path != directory / 'manifest.json'}
+    if actual_files != set(manifest['files']):
+        raise ValueError('casebook_file_set_mismatch')
     observations = _lines(directory / 'observations.jsonl')
     decisions = _lines(directory / 'native-decisions.jsonl')
     calls = _lines(directory / 'native-calls.jsonl')
@@ -230,6 +235,14 @@ def verify(directory: Path):
     actions = dict(Counter(e['action'] for row in observed for e in row['performance']['scenario']['events']))
     if actions != summary['scenario_events']:
         raise ValueError('casebook_action_count_mismatch')
+    if 'unique_tokens' in summary:
+        groups = token_groups(series)
+        if summary['unique_tokens'] != len(groups):
+            raise ValueError('casebook_token_count_mismatch')
+        expected = {'README.md'} | {group['id'] + '.md' for group in groups}
+        actual = {path.name for path in (directory / 'tokens').glob('*.md')}
+        if actual != expected:
+            raise ValueError('casebook_token_coverage_mismatch')
     return {'schema': SCHEMA, 'files_verified': len(manifest['files']), 'observations': len(observations),
             'native_calls': len(calls), 'series_recomputed': len(series), 'decision_events': sum(actions.values())}
 
@@ -274,6 +287,7 @@ def publish(capture: Path, report_path: Path, output: Path):
     summary['observation_count'] = len(samples)
     summary['native_call_count'] = len(calls)
     summary['source_parameter_values'] = sum(len(entry['event']['fields']) for entry in samples)
+    summary['unique_tokens'] = len(token_groups(report['rows']))
     summary['observations_by_chain'] = dict(Counter(entry['event']['identity']['chain'] for entry in samples))
     summary['captures_by_chain'] = dict(Counter('solana' if row['chain'] == 'sol' else row['chain'] for row in receipts))
     summary['model_evaluation_scope'] = 'Three native tasks per observation; full strategy and account execution were not run.'
@@ -353,6 +367,7 @@ def publish(capture: Path, report_path: Path, output: Path):
                                'first_at', 'last_at', 'final_action', 'gross_profit_usd'],
          ({'series_id': row['id'], 'name': row['name'], **row['identity'], **row['performance'],
            **(row['performance']['market'] or {}), **(row['performance']['scenario'] or {})} for row in report['rows']))
+    write_tokens(output, report['rows'], samples)
     _write_overview(output, summary, report['rows'], case_links)
     files = {path.relative_to(output).as_posix(): _hash(path) for path in sorted(output.rglob('*')) if path.is_file()}
     _json(output / 'manifest.json', {'schema': SCHEMA, 'files': files,
@@ -363,23 +378,42 @@ def publish(capture: Path, report_path: Path, output: Path):
     return verify(output)
 
 
+def refresh_views(directory):
+    """Regenerate presentation from verified frozen records without changing native evidence."""
+    verify(directory)
+    rows = _lines(directory / 'series.jsonl')
+    samples = _lines(directory / 'observations.jsonl')
+    summary = _read(directory / 'summary.json')
+    summary['unique_tokens'] = len(token_groups(rows))
+    _json(directory / 'summary.json', summary)
+    write_tokens(directory, rows, samples)
+    _write_overview(directory, summary, rows, [(entry, digest(entry['event']['id'])[:16]) for entry in samples])
+    manifest = _read(directory / 'manifest.json')
+    manifest['presentation'] = {'version': 'omnia.trading.casebook-views.v2',
+                                'implementation_sha256': _hash(Path(__file__).with_name('casebook_views.py'))}
+    manifest['files'] = {path.relative_to(directory).as_posix(): _hash(path)
+                         for path in sorted(directory.rglob('*')) if path.is_file() and path != directory / 'manifest.json'}
+    _json(directory / 'manifest.json', manifest)
+    return verify(directory)
+
+
 def _write_overview(output, summary, rows, cases):
     observed = [row for row in rows if row['performance']['market']]
-    winners = sorted((row for row in observed if row['performance']['market']['peak_multiple'] >= 2),
-                     key=lambda row: row['performance']['market']['peak_multiple'], reverse=True)
+    tokens = token_groups(rows)
     start, end = timestamp(summary['capture_start']), timestamp(summary['capture_end'])
     period = f"**{start:%Y-%m-%d %H:%M:%S} to {end:%Y-%m-%d %H:%M:%S} UTC**"
-    lines = ['# Market results', '', period, '',
+    lines = ['# Market window', '', period, '',
              'Robinhood Chain · BSC · Solana', '',
-             '| Captures | Ranking series | Series with two or more quotes | Reached 2x | Finished at 2x or above |',
+             '| Captures | Unique tokens | Series | Two or more quotes | Single or no quote |',
              '| ---: | ---: | ---: | ---: | ---: |',
-             f"| {summary['capture_count']} | {summary['rank_series_count']} | {len(observed)} | {summary['observed_2x']} | {summary['final_2x']} |", '',
-             '## Price milestones', '',
-             'Multiples use the first captured price of each series. Peak is the highest captured quote in this window; final is its last captured quote.', '',
-             '| Token | Network | Contract | Peak | Final |', '| --- | --- | --- | ---: | ---: |']
-    for row in winners:
-        market = row['performance']['market']
-        lines.append(f"| {_md(row['name'])} | {row['identity']['chain']} | `{row['identity']['contract']}` | **{market['peak_multiple']:.3f}x** | {market['final_multiple']:.3f}x |")
+             f"| {summary['capture_count']} | {len(tokens)} | {len(rows)} | {len(observed)} | {len(rows) - len(observed)} |", '',
+             '## All tokens and curves', '',
+             '[Open the complete token index](tokens/README.md). Each network and contract appears once, with every pool series, quote, native assessment and policy event linked from its record.', '',
+             'Curves include every recorded price, including declines. Multiples start at the first quote; peak is the highest quote in this window, not an all-time high.', '',
+             '| Series ending above entry | Below entry | Unchanged |', '| ---: | ---: | ---: |',
+             f"| {sum(r['performance']['market']['final_multiple'] > 1 for r in observed)} | "
+             f"{sum(r['performance']['market']['final_multiple'] < 1 for r in observed)} | "
+             f"{sum(r['performance']['market']['final_multiple'] == 1 for r in observed)} |"]
     lines += ['', '**Complete coverage:** [all series](series.csv), [every quote and milestone](series.jsonl), [exit-policy timeline](decisions.csv).', '',
               '**Browse by network:** [Robinhood](series/robinhood/README.md) · [BSC](series/bsc/README.md) · [Solana](series/solana/README.md). Every series has its own full record.', '',
               'The exit-policy timeline applies an independent USD 100 entry at the first quote. It records partial exits and TP/SL at captured prices. Costs are excluded; these calculations are separate from native model decisions.', '',
@@ -407,12 +441,19 @@ def main():
     commands = parser.add_subparsers(dest='command', required=True)
     inspect = commands.add_parser('verify', help='Verify a published window without inference')
     inspect.add_argument('directory', type=Path)
+    refresh = commands.add_parser('refresh-views', help='Refresh Markdown and curves from verified records')
+    refresh.add_argument('directory', type=Path)
     export = commands.add_parser('export', help='Export an intact capture and its frozen report')
     export.add_argument('--capture-dir', type=Path, required=True)
     export.add_argument('--report', type=Path, required=True)
     export.add_argument('--output-dir', type=Path, required=True)
     args = parser.parse_args()
-    result = verify(args.directory) if args.command == 'verify' else publish(args.capture_dir, args.report, args.output_dir)
+    if args.command == 'verify':
+        result = verify(args.directory)
+    elif args.command == 'refresh-views':
+        result = refresh_views(args.directory)
+    else:
+        result = publish(args.capture_dir, args.report, args.output_dir)
     print(json.dumps(result, indent=2))
 
 

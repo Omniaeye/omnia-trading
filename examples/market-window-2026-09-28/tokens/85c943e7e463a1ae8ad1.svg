@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>HADES: 8 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">HADES: 8 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.06x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="128.282" x2="740" y2="128.282" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="128.282">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,128.282 75.526,128.282 91.899,128.282 106.661,128.282 121.695,128.282 137.183,147.768 152.516,147.768 740.000,112.232"/>
+<circle cx="60.000" cy="128.282" r="2" fill="#087f6d"/>
+<circle cx="75.526" cy="128.282" r="2" fill="#087f6d"/>
+<circle cx="91.899" cy="128.282" r="2" fill="#087f6d"/>
+<circle cx="106.661" cy="128.282" r="2" fill="#087f6d"/>
+<circle cx="121.695" cy="128.282" r="2" fill="#087f6d"/>
+<circle cx="137.183" cy="147.768" r="2" fill="#087f6d"/>
+<circle cx="152.516" cy="147.768" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="112.232" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:13:30.402311+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:24:31.344409+00:00</text>
+</g></svg>

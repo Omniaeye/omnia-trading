@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>ERRAND: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">ERRAND: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="119.282" x2="740" y2="119.282" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="119.282">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,119.282 111.704,119.282 164.156,121.888 219.403,140.718 269.044,140.718 320.792,140.718 372.776,140.718 425.230,140.718 478.000,140.718 530.453,140.718 585.415,140.718 634.832,140.718 706.659,140.718 740.000,140.718"/>
+<circle cx="60.000" cy="119.282" r="2" fill="#b33b47"/>
+<circle cx="111.704" cy="119.282" r="2" fill="#b33b47"/>
+<circle cx="164.156" cy="121.888" r="2" fill="#b33b47"/>
+<circle cx="219.403" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="269.044" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="320.792" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="372.776" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="425.230" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="478.000" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="530.453" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="585.415" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="634.832" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="706.659" cy="140.718" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="140.718" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:23:45.643860+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:00.598930+00:00</text>
+</g></svg>

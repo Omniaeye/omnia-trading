@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>HYPOCRITE: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">HYPOCRITE: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.24x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="189.016" x2="740" y2="189.016" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="189.016">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,189.016 121.143,121.654 182.564,118.276 244.540,86.814 306.889,71.382 368.865,71.382 433.804,70.984 492.192,104.570 577.058,121.332 616.452,121.332 677.610,122.667 740.000,122.667"/>
+<circle cx="60.000" cy="189.016" r="2" fill="#087f6d"/>
+<circle cx="121.143" cy="121.654" r="2" fill="#087f6d"/>
+<circle cx="182.564" cy="118.276" r="2" fill="#087f6d"/>
+<circle cx="244.540" cy="86.814" r="2" fill="#087f6d"/>
+<circle cx="306.889" cy="71.382" r="2" fill="#087f6d"/>
+<circle cx="368.865" cy="71.382" r="2" fill="#087f6d"/>
+<circle cx="433.804" cy="70.984" r="2" fill="#087f6d"/>
+<circle cx="492.192" cy="104.570" r="2" fill="#087f6d"/>
+<circle cx="577.058" cy="121.332" r="2" fill="#087f6d"/>
+<circle cx="616.452" cy="121.332" r="2" fill="#087f6d"/>
+<circle cx="677.610" cy="122.667" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="122.667" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:24:45.576445+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

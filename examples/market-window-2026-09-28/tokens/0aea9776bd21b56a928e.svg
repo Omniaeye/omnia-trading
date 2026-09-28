@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>币安生态: 6 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">币安生态: 6 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="127.263" x2="740" y2="127.263" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="127.263">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,127.263 225.939,122.386 325.344,122.386 342.798,122.386 723.673,137.614 740.000,137.614"/>
+<circle cx="60.000" cy="127.263" r="2" fill="#b33b47"/>
+<circle cx="225.939" cy="122.386" r="2" fill="#b33b47"/>
+<circle cx="325.344" cy="122.386" r="2" fill="#b33b47"/>
+<circle cx="342.798" cy="122.386" r="2" fill="#b33b47"/>
+<circle cx="723.673" cy="137.614" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="137.614" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:16:17.512218+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:26:32.687411+00:00</text>
+</g></svg>

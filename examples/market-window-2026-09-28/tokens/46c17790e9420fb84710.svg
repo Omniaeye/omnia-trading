@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>主流矿机: 21 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">主流矿机: 21 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="131.586" x2="740" y2="131.586" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="131.586">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,131.586 93.940,132.032 127.513,131.522 162.821,131.027 196.791,130.680 230.241,130.347 263.624,129.575 297.714,129.370 331.510,128.782 365.210,128.442 400.958,132.075 433.018,131.770 467.117,131.345 501.287,131.005 543.559,130.552 569.540,130.319 602.952,129.582 649.627,128.633 671.221,128.442 704.314,127.925 740.000,129.455"/>
+<circle cx="60.000" cy="131.586" r="2" fill="#087f6d"/>
+<circle cx="93.940" cy="132.032" r="2" fill="#087f6d"/>
+<circle cx="127.513" cy="131.522" r="2" fill="#087f6d"/>
+<circle cx="162.821" cy="131.027" r="2" fill="#087f6d"/>
+<circle cx="196.791" cy="130.680" r="2" fill="#087f6d"/>
+<circle cx="230.241" cy="130.347" r="2" fill="#087f6d"/>
+<circle cx="263.624" cy="129.575" r="2" fill="#087f6d"/>
+<circle cx="297.714" cy="129.370" r="2" fill="#087f6d"/>
+<circle cx="331.510" cy="128.782" r="2" fill="#087f6d"/>
+<circle cx="365.210" cy="128.442" r="2" fill="#087f6d"/>
+<circle cx="400.958" cy="132.075" r="2" fill="#087f6d"/>
+<circle cx="433.018" cy="131.770" r="2" fill="#087f6d"/>
+<circle cx="467.117" cy="131.345" r="2" fill="#087f6d"/>
+<circle cx="501.287" cy="131.005" r="2" fill="#087f6d"/>
+<circle cx="543.559" cy="130.552" r="2" fill="#087f6d"/>
+<circle cx="569.540" cy="130.319" r="2" fill="#087f6d"/>
+<circle cx="602.952" cy="129.582" r="2" fill="#087f6d"/>
+<circle cx="649.627" cy="128.633" r="2" fill="#087f6d"/>
+<circle cx="671.221" cy="128.442" r="2" fill="#087f6d"/>
+<circle cx="704.314" cy="127.925" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="129.455" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:22:32.671189+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:33.270377+00:00</text>
+</g></svg>

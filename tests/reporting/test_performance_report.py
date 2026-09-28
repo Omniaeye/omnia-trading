@@ -50,6 +50,7 @@ class PerformanceReportTests(unittest.TestCase):
         self.assertIsNone(row['performance']['market'])
         self.assertEqual(row['evaluations'][0]['decision_notes']['observation_id'], self.event['id'])
         self.assertFalse(report['publication_authorized'])
+        self.assertEqual({path.name for path in self.output.iterdir()}, {'report.json'})
 
     def test_tampered_capture_cannot_produce_a_report(self):
         (self.source / 'raw/capture.json').write_text('{}', encoding='utf-8')

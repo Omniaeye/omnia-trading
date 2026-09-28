@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>moon: 15 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">moon: 15 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="131.092" x2="740" y2="131.092" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="131.092">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,131.092 77.629,131.092 118.829,131.092 160.201,131.092 201.779,128.999 243.414,128.999 287.319,128.908 326.904,128.908 367.219,128.908 408.753,128.908 449.871,128.908 615.813,130.018 657.321,129.604 698.224,129.956 740.000,129.956"/>
+<circle cx="60.000" cy="131.092" r="2" fill="#087f6d"/>
+<circle cx="77.629" cy="131.092" r="2" fill="#087f6d"/>
+<circle cx="118.829" cy="131.092" r="2" fill="#087f6d"/>
+<circle cx="160.201" cy="131.092" r="2" fill="#087f6d"/>
+<circle cx="201.779" cy="128.999" r="2" fill="#087f6d"/>
+<circle cx="243.414" cy="128.999" r="2" fill="#087f6d"/>
+<circle cx="287.319" cy="128.908" r="2" fill="#087f6d"/>
+<circle cx="326.904" cy="128.908" r="2" fill="#087f6d"/>
+<circle cx="367.219" cy="128.908" r="2" fill="#087f6d"/>
+<circle cx="408.753" cy="128.908" r="2" fill="#087f6d"/>
+<circle cx="449.871" cy="128.908" r="2" fill="#087f6d"/>
+<circle cx="615.813" cy="130.018" r="2" fill="#087f6d"/>
+<circle cx="657.321" cy="129.604" r="2" fill="#087f6d"/>
+<circle cx="698.224" cy="129.956" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="129.956" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:12:39.012894+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:16:45.486467+00:00</text>
+</g></svg>

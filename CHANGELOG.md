@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.2
+
+- Add a complete unique-token index with per-contract quote curves and policy timelines.
+- Include every observed quote, declining series and incomplete trajectories.
+- Keep pool identities separate within each contract and order indexes by token name.
+- Replace the HTML report template with JSON output and Markdown/SVG casebooks.
+- Move window results out of the product README and into examples.
+
 ## 0.5.1
 
 - Standardize public market and security source namespaces.

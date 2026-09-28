@@ -1,247 +1,249 @@
-# SOLANA results
+# SOLANA quote series
 
-[Window overview](../../README.md)
+[All tokens](../../tokens/README.md) | [Market window](../../README.md)
 
-| Token | Contract | Quotes | Peak | Final | Record |
-| --- | --- | ---: | ---: | ---: | --- |
-| p/xmr | `GBTkSzep7xDoBGWK154TvaJWWzsb8rw5GWChNcoLcYM8` | 51 | 6.333x | 4.120x | [Inspect](c038a616dcd0d48dbbf3.json) |
-| XPAD | `FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump` | 9 | 3.995x | 3.995x | [Inspect](9a034990d7968e2d276f.json) |
-| Fern | `BfK1fZuZjcgtxpdKowafwDzFTywdVzyQb5mRYAdHpump` | 61 | 3.078x | 3.046x | [Inspect](0479bc85d9b5a729b2fe.json) |
-| MESUB | `BcyEzKVBXkPAX6651VV2GkuVyAUS7kVSwTPaamGrpump` | 34 | 3.656x | 2.856x | [Inspect](b72a35b94f13c30ea5e3.json) |
-| * | `7XEqj3KrRESniCnFbLgkcoykyP348MYYCi35FWdgpump` | 29 | 3.283x | 2.812x | [Inspect](077169fb72802e679540.json) |
-| e/acc67 | `4KPFYgMQg8Su7ZaqDduSYEZXPmh8fyUgot4yooZtpump` | 26 | 2.865x | 2.630x | [Inspect](83716a4a23a90abafb97.json) |
-| UFO | `2gSgbNue3spuFGoiMSCvFo3G9yArciFeSdyCi65pvo7P` | 16 | 2.586x | 2.586x | [Inspect](d2f91f9806f4eb87de7d.json) |
-| RADAR | `4SYjuST7d74abwTPnBtBgqZ3UmBB1QKEo9W3gCBApump` | 55 | 7.014x | 2.453x | [Inspect](2980b614bba3d3a11242.json) |
-| CTRL | `A3tykDf9NeAcCYKtKGQJHXmgY3BRT5K3CU9F6sXwjVQN` | 38 | 2.333x | 2.333x | [Inspect](b7904d61f1adeebb0795.json) |
-| SENT | `9N7o7AazXwY4HBG2BSsmNmEQirDDd2isbbMJDBzYpump` | 38 | 3.519x | 2.309x | [Inspect](5f2fa9ec68e97ce82189.json) |
-| Fo | `APLwmQEyK1oYptMboQ2iFbAiqhomaz9H2vQQF8J2pump` | 61 | 3.363x | 2.237x | [Inspect](9b8586b1b08a8fa52cc0.json) |
-| MINTCLIP | `CxxvCLmrF6hYHsexpeorGmhqv1Anuqn1Loddm9ZCpump` | 18 | 3.193x | 1.861x | [Inspect](6200f795a29b56c2d671.json) |
-| Pumpdog | `7tUodA1L3SeFfp7k2tSSWNn9fWpe6gH76VrQyqYrpump` | 9 | 1.683x | 1.683x | [Inspect](f7ecb034339a08d66e9b.json) |
-| OFOMO | `FoAc4fY5jyzP9gddWH2rsTPQNnbBppajxj9VHUinpump` | 13 | 1.503x | 1.503x | [Inspect](d048ec3953903cb0260d.json) |
-| Shore | `68SS2BwEC76JVpyfL9AN9EC3VDw1vQPxqLGsrFJ8pump` | 52 | 2.372x | 1.500x | [Inspect](d0128dd9819a0ad7e4c4.json) |
-| HarleQuin | `jNeszEWkVZtzYMUCmYm8dqgaLvRTsEwQFwfJiaFpump` | 61 | 1.482x | 1.482x | [Inspect](fed047c66200cafcf977.json) |
-| AGENTORY | `cPW1Zrx1zqEVb21pcQrzfjNkhS4Dz6fyztKooh6xfEX` | 34 | 1.456x | 1.456x | [Inspect](40e50128941e696263e8.json) |
-| BotBook | `7n7dS5Dk7YjaKKDzb5e9gPK3Md6mziTLsBA3mJYu6gnV` | 20 | 1.417x | 1.417x | [Inspect](e10f12dad6a72e48d33c.json) |
-| ChatGPT | `E4uMkXeYPKE5kqEcbh4b87dMHcDpmqjMDqstV8dqpump` | 31 | 1.389x | 1.389x | [Inspect](6a28db7ac031aa7cfbea.json) |
-| LUMI | `7dMdLxaSg4JLXdhtG28wx7wGPUKMQbK4NUdAoXePpump` | 5 | 1.385x | 1.385x | [Inspect](05f96dfa14823f052e44.json) |
-| LUMI | `3a8aELD8pk8vNxquhX76CBEwc99uj2joRFEtYK4fpump` | 2 | 1.379x | 1.379x | [Inspect](234a20b8f3a35c03139f.json) |
-| smolpp | `7wBt7aNt1DBzE3WPbPQruhvo4x7Y95PBHnBMVaBLpump` | 21 | 1.567x | 1.378x | [Inspect](01d48affa9ce894e30f3.json) |
-| HUGEKINSON | `BBwH6xYy2LTmbjYX3e9uS5UKgNqmrx7PVSsfpwgsXcNL` | 14 | 1.697x | 1.363x | [Inspect](22bcc6b1a59f363c4d21.json) |
-| TROVOK | `8ttG1niVUr8uBXo8S4Yd7dSdatV8cQk8dNAZxVyBpump` | 7 | 1.373x | 1.333x | [Inspect](864632a21e54e1e41260.json) |
-| Tehc | `3WLZeqDnVyeSAzcgQL13EUjbwhLjCT7Z6Goi1opctehc` | 52 | 1.317x | 1.253x | [Inspect](6cbed203462471fcbff6.json) |
-| HYPE | `2fL2ZTDH2qowXRX5mwHWskuJ2hEY7P7i4i91AvKQpump` | 36 | 3.048x | 1.247x | [Inspect](213f2e047d44187fc269.json) |
-| STC | `A2EyPshAzKGYG4QnY7ZSdHWkq7DpwiGnTnYgNBoQvjR1` | 3 | 1.229x | 1.229x | [Inspect](8dd0c4143f57fe225fad.json) |
-| GTA6 | `Dw5b32W2vDzjqSwSKHTGYm3auESxx5NX52BAz5wBpump` | 12 | 1.204x | 1.204x | [Inspect](ce9588a75fefd769eda5.json) |
-| DOTS | `7MYpDaZ1Uorg1QtkjWK25X2K4UoNk88854jfopAXxNKs` | 37 | 1.563x | 1.196x | [Inspect](4fa983641fe315d2a0b8.json) |
-| OFFICE | `5boGajrVzMCgKeMQTs8eBpzYyhoayTkjRfKbfdTTpump` | 10 | 1.255x | 1.167x | [Inspect](eae1b950253a2209d786.json) |
-| REGULARS | `8HnLRKJ6XkeGq1tpmKPqn3yB5ruqbSR5LR5nVCNAshop` | 28 | 1.247x | 1.156x | [Inspect](340242b045120e6ab050.json) |
-| AZZ | `CZWyKU9MghRchXXw6x34aPN7MGeQR8QJKwymX6cpump` | 13 | 1.156x | 1.156x | [Inspect](e85a7ba6e637b39a7f5d.json) |
-| JEANPAID | `4Exc9SfSRRButkzTT456SPa6sTzQCb8pnfqcUECGpump` | 61 | 1.166x | 1.149x | [Inspect](e9504905aa1e912863c7.json) |
-| OMO | `Dqo1RV2KGFnfyYkYE7sW7cs2o6GiBt2kcZEf5vvXpump` | 61 | 1.171x | 1.142x | [Inspect](3f064a64cd675c0b77c5.json) |
-| MOTHERSHIP | `BxzNGYrbVtP4yBnB6pn21Vp5rwyJiDhooJ2Rn24nKJYu` | 4 | 1.142x | 1.142x | [Inspect](a4c44fca75042d663f17.json) |
-| r/opt | `3wNbnWqEyXuPG8Xh14Uaj9yBUHhASnBjcioWKPaTpump` | 3 | 1.150x | 1.140x | [Inspect](4888cc9eea542136d75e.json) |
-| LEFTCURVE | `CzdNEEHHjFZJ5dq7jjDViqWP1AxtStN9B2A12Qn3UmH` | 60 | 1.393x | 1.138x | [Inspect](62a8f43449af5169f0a7.json) |
-| 67cat | `CXfx1nC8en7QHf7gc7UXo6jjQ6ynrB43pp1DT6Bypump` | 4 | 1.374x | 1.132x | [Inspect](202a89647bcd7c771c80.json) |
-| TOBEY | `FbrMGVE2548HfpMVhYsybmYyUQVHMefMiUSkckyipump` | 61 | 1.140x | 1.129x | [Inspect](2678aa6178b08e75b02b.json) |
-| HORSECOIN | `DMtcCpMUXU83NFxKReriDj8PutxUGKifSKFqLjK3pump` | 24 | 1.330x | 1.124x | [Inspect](96d1d03d6aa02c0bbe3b.json) |
-| a=(v-u)/t | `HAYYs5Vctf9ibgFRqZdD2nTj9QzjGXZqHJMXoDjNc3Zo` | 32 | 1.131x | 1.124x | [Inspect](db0570385a63dca6e5ad.json) |
-| Pumpkinu | `3eYTViXTUBCVhn1TSVZAAbajRLPKs4tuV6DwL4oTpump` | 50 | 1.141x | 1.123x | [Inspect](08fa767efb33ded442c0.json) |
-| Pumpdog | `F518B5yf33Yed4HPp2akNzfr11xLbPE83CnBa19Upump` | 30 | 4.082x | 1.117x | [Inspect](adc3adb020eb2c59f104.json) |
-| FGLD | `B42dPzwDewMHvowDFQj4CAjaLhkxmTniczugvNp2Y4CT` | 5 | 1.088x | 1.088x | [Inspect](29bbd1eee55679a54117.json) |
-| Felon | `snSekSZEHCjoSsKk5J2GYyNSoQSvskSp4RpUQuNpump` | 2 | 1.085x | 1.085x | [Inspect](cf5b58e895c424e256bb.json) |
-| p/xmr | `B5R7Xt9pXBHDAs2jkJ67nM2Wwch1napBsdzMxk56qpJk` | 61 | 1.363x | 1.078x | [Inspect](28f2afa63643103636f0.json) |
-| DOA | `6Y852xQ6PMeVVJSjNATMVdgh6hL2LMpsZjJ8KjGiR8ig` | 15 | 4.720x | 1.076x | [Inspect](f40f954192dc74537b4b.json) |
-| JEETTARA | `qyLr3k8yBZz5Lj3aV3uzmkqpGyyBqLyyfJ3ugbvpump` | 59 | 1.435x | 1.073x | [Inspect](7208d3f6f250f7580e00.json) |
-| Old No. 7 | `gCsv2hac3zRiyFZZnh8WX7zTT7Fw31x6ggFDMUrpump` | 9 | 1.074x | 1.066x | [Inspect](0545e69d67ed6fdd9fee.json) |
-| STOXES | `AfVUPhruMtJuFVtPj4u8kvpNbNEuy7VQ3ME5eAHq9999` | 61 | 1.229x | 1.062x | [Inspect](d9a15013f07e52e51aab.json) |
-| SWARM | `5g9PWcRUHpmqm5uKycpShKXJB18sGLeCEzgB3qrRpump` | 26 | 1.069x | 1.061x | [Inspect](c2a1b83e18c03a760c18.json) |
-| DOOMSCROLLER | `GtAUoL7YiDQoRtoZEvBKkUXEftsouJkxoGXqLERa9Thg` | 17 | 1.068x | 1.050x | [Inspect](cceb2e5fb43c7d8bd4de.json) |
-| MINEPAD | `2EUKLvNQ63YCmjSDyJ14Tzj7ASeHGXgseYWrKAa2mine` | 58 | 1.128x | 1.048x | [Inspect](227e5af501b269ac2c88.json) |
-| MARTIANS | `HgoScXAo4zFv5kDb6axGrwuz95FaVEcLskyDVZfo297z` | 17 | 1.047x | 1.047x | [Inspect](c720a5fc50f2e9218a06.json) |
-| ADA | `5bvPcMyfbYunNqGEn7y3cjSTTDx7t9MTDFynGZZrLN2k` | 7 | 1.045x | 1.045x | [Inspect](7f22238cfa1133b7ff1f.json) |
-| ZARVIS | `Gp5rC1aHeT9WfAVvf6UEaEpuSzsKSt4j42Gbm4PZwVDs` | 14 | 1.074x | 1.036x | [Inspect](38c96cb98c8793c58a62.json) |
-| OMNINU | `rsE4qbZ6Decdu1stnoHnC7QrNtqjuzuAuD9xnNGpump` | 9 | 1.071x | 1.035x | [Inspect](01b4059e6a8598f11a53.json) |
-| Catdano | `5oGmZzTm683RPZ4MLn5wXwFU78vx1ixYWJxAqDVxtnet` | 2 | 1.034x | 1.034x | [Inspect](ed3118807aaaa4c5ee34.json) |
-| fomome | `5RfPyMZzf3nt2KuLMDcA8srqRsH2QVgs1FtpUizjpump` | 13 | 1.511x | 1.031x | [Inspect](d4bee611e912b134e6c0.json) |
-| TikTok | `95iWWUfkSwbqr1NaEXo6aKiNE7aPXKVd5EyDcyjkpump` | 3 | 1.029x | 1.029x | [Inspect](b4e5e76a6d9a69e06c7e.json) |
-| suit | `AVXPQqxd32ABAP5F7shHKNeWBpos9miktdH3uKqgXYJZ` | 7 | 1.037x | 1.027x | [Inspect](6a924889ca92bd4092fb.json) |
-| DOGEPAD | `5ew7qPp2d3QVVgPGY4C7vDeVquheGDVqguPVQySueRxu` | 57 | 1.687x | 1.024x | [Inspect](fd2c9af0a9a12bbccb51.json) |
-| POCKET | `B5QcMFvX3RmkF7StMVvGJDXm1jLo4hdY47uu1QwKpump` | 16 | 1.302x | 1.024x | [Inspect](1b39310b58a56c0a2172.json) |
-| baton | `Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump` | 59 | 1.026x | 1.020x | [Inspect](c17687572975fdb2c54b.json) |
-| Memes | `7dACCWZXF4Lr9ftxFpi7TJk7a3hcPpUwGPAcTuXDpump` | 40 | 1.257x | 1.019x | [Inspect](15217a6c690f24a65d63.json) |
-| SP | `Fr4a6ZvEh6En6enWPjhDNeittzeN7J94HDpTdja2pump` | 58 | 1.112x | 1.013x | [Inspect](62603b052cbe50d7a31a.json) |
-| KAI | `Bd31GuanWN9apY3jntXTxECongj2B1ZSFKPYdd8JJd9` | 2 | 1.012x | 1.012x | [Inspect](5b04916b5a3d1fd6ba36.json) |
-| Agartha | `92SQ1QwLTMktFeFom4sK4X6FTfX6PWHcr2PntZ5vpump` | 38 | 1.052x | 1.010x | [Inspect](a282f58a8446479ee9ad.json) |
-| Jimothy | `Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump` | 4 | 1.010x | 1.010x | [Inspect](6c9505bd8a25da698905.json) |
-| CAKE | `DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN` | 61 | 1.136x | 1.008x | [Inspect](797c0d012db43ce54d71.json) |
-| FINU | `DoHqKjwuoATgQmU3GR1etGzh9vMQK34mKeV8VtmXpCDB` | 15 | 1.108x | 1.008x | [Inspect](69ef8cf33611b01eb62a.json) |
-| GP | `HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ` | 22 | 1.057x | 1.008x | [Inspect](56d43200de51b291934b.json) |
-| fone | `CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump` | 61 | 1.018x | 1.006x | [Inspect](8a4525822f7c91c6f1e5.json) |
-| LEVERAGE | `BM2k8mJUbMthHoioykyUm2NjMrXvLBYhoXruwYLpump` | 3 | 1.006x | 1.006x | [Inspect](7a4c4a007db6c76da02e.json) |
-| TOAD | `A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump` | 21 | 1.022x | 1.005x | [Inspect](4f3e5282b2ad94aab65b.json) |
-| YAP | `jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap` | 39 | 1.028x | 1.004x | [Inspect](5618cfbae75fcca475d2.json) |
-| ALATURKA | `8JGziVgRZKyrsjWZ2FbsLiF1YnZufmvuyNuLnrauiPzC` | 7 | 1.085x | 1.003x | [Inspect](f0d077056b49257b16ba.json) |
-| testicle | `4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump` | 13 | 1.004x | 1.003x | [Inspect](cd145280dc44e295c204.json) |
-| Minaj | `Cgpfxk6Xe9W2XY5VsBhNs7QYijQGH38Tdz3UAVSjpump` | 12 | 1.079x | 1.002x | [Inspect](25dadeffaad36ca78861.json) |
-| STONK | `6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx` | 61 | 1.011x | 1.002x | [Inspect](c0fdec01639ab3f944f1.json) |
-| Jonesy | `EVLPrDPY7wzXPALz8wxq4QZfjfXAYvazeoTEZKNxpump` | 2 | 1.000x | 1.000x | [Inspect](90418dabc2dbf21f620c.json) |
-| Jotchua | `BcHEaaTCvycPwwsJ9yQTXdHP9X2gCLkznDbZ8VySpump` | 2 | 1.000x | 1.000x | [Inspect](cbcfc33f263028b1d928.json) |
-| BAYPAY | `2GyjqZhMUWxpuiVgypqV6KZ1agbzgitEVUU16mSnpump` | 3 | 1.000x | 1.000x | [Inspect](a1cf1878963815e0d8d3.json) |
-| CRIME | `7M3gDRgozcumFsiTeXwjB8cYxpg7Q9R7rH7rkw2Fpump` | 2 | 1.000x | 1.000x | [Inspect](58a29a5e034f63a8c53a.json) |
-| CATDANNO | `9fhGueQg32K4xAV7UPgQ4RcHh93fLvR4uVicvUYX3Zpu` | 5 | 1.000x | 1.000x | [Inspect](b66f10fc1766e04a4bc0.json) |
-| PAID | `98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump` | 61 | 1.021x | 0.999x | [Inspect](38c1a8d0b69eb681a40e.json) |
-| URANUS | `EpByjpXQgHw5WDTteLihkCGHFj6Cxny8wSs6umCfxmMU` | 6 | 1.000x | 0.998x | [Inspect](3ad89a0c1de2e22c43cf.json) |
-| Gentoo | `DS6ePhDssKU2aW4Wyw424CRC7fYDHygmNu4cyMCc5vq4` | 43 | 1.230x | 0.996x | [Inspect](1a6b1bb528b800134bfd.json) |
-| e/acc | `CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU` | 61 | 1.048x | 0.995x | [Inspect](978a15cc08103db3360d.json) |
-| neet | `Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump` | 60 | 1.010x | 0.995x | [Inspect](af4757896bd542156a26.json) |
-| COLLECT | `nDZknLvfFRp5rgUHdzTrQsmSY5NKzoavqdLjSHVpump` | 8 | 1.000x | 0.995x | [Inspect](fa429d4a7f57ec59315b.json) |
-| anoncoin | `6z92xw4oCWRxo9ynBEfpu5ksxEHVMuYN5VK6Wj7Lpump` | 23 | 1.074x | 0.993x | [Inspect](f85a18d34dcf48bb54fb.json) |
-| Prometheus | `63zfjPfH4uaX3TQZoD35WqUrqiuCQQWndMTxQHsJpump` | 18 | 1.006x | 0.992x | [Inspect](96ee1630a8315efc711b.json) |
-| Ō SAMA | `73yk8tioRE7NMidLnYwcwWsgWb7jsJRDSubxYHoLQPwn` | 24 | 1.543x | 0.992x | [Inspect](60f82290bb1b1019e579.json) |
-| JEANPHIL | `GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump` | 4 | 1.010x | 0.991x | [Inspect](6328d85d7346a773ecb8.json) |
-| EARLY | `Gt4Xn9JGdhQZwid83ZzEJ9df6VNJSR8SiTGarnb4eiqF` | 5 | 1.044x | 0.988x | [Inspect](a004f689ddffa3584e8e.json) |
-| USELESS | `Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk` | 12 | 1.003x | 0.988x | [Inspect](18a814280350d1fe038d.json) |
-| moin | `8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq` | 28 | 1.072x | 0.987x | [Inspect](0a7eabb1177c1a926d61.json) |
-| CATE | `Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump` | 61 | 1.005x | 0.986x | [Inspect](9e6d8fa3b91b1d0624a4.json) |
-| Holdoween | `BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump` | 47 | 1.013x | 0.985x | [Inspect](86cfa5c5ee31c4277b4e.json) |
-| Pumpoween | `5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump` | 61 | 1.014x | 0.983x | [Inspect](65624ef4ad492cc5f580.json) |
-| KLED | `1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm` | 22 | 1.000x | 0.980x | [Inspect](2e427ce56b2276a05795.json) |
-| Paul | `D5ttt1hDWSBfhVkTReTbZgp9WcoyuU181nxcRRNPpump` | 5 | 1.000x | 0.980x | [Inspect](e65fce2d2f3f45f46ed6.json) |
-| NEARKAT | `6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr` | 26 | 1.001x | 0.977x | [Inspect](7b5b2c77e958855e7b77.json) |
-| dbatura | `HqpDva4NgV5WxovPEGcZMAjy9r87eKj8f9qmrY83wcKf` | 12 | 1.000x | 0.975x | [Inspect](0ad1122ccf9fe63cf85f.json) |
-| GROK | `6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8` | 2 | 1.000x | 0.974x | [Inspect](1d0350624d177f3d503a.json) |
-| AMERICA | `pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9` | 58 | 1.114x | 0.970x | [Inspect](5b988aa09f37269222ff.json) |
-| 80085 | `7EDBH3yPjQVJTxGcAfg39dUwCcLZvARt4azQybm6jrqV` | 29 | 1.093x | 0.970x | [Inspect](c7379c2aa0f43128c986.json) |
-| CBDOGE | `65nTXTo5K3iexVZDssLR2kBhYzV12bZ62npdwB2MTeZy` | 12 | 1.010x | 0.970x | [Inspect](afefef5b20200d1cbbfd.json) |
-| ASTEROID | `7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV` | 28 | 1.050x | 0.969x | [Inspect](80bf3512867a71042514.json) |
-| BUTTHOLE | `E7zxuLbeXWdujdArhk2FZFJHqTFcihv5DDkw6NCeEtKR` | 12 | 1.090x | 0.969x | [Inspect](febf348357c0cdb97df9.json) |
-| Q4 | `F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ` | 12 | 1.000x | 0.969x | [Inspect](3e7d59eec6bcdd98ce3f.json) |
-| bukangi | `3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump` | 5 | 1.000x | 0.965x | [Inspect](92fa002326d4888f6258.json) |
-| QUAN_ETH | `6U3d9bhCsSNruozUAWZN8UbP6YRxsPRKh122EArr29Z3` | 12 | 1.000x | 0.964x | [Inspect](4bf4c338ad4c8e223d0a.json) |
-| SHALAB | `83td5rsKFF1Hg7zb1GF2pKAx8TzDnAMQ4zSyxMrwpump` | 18 | 1.073x | 0.959x | [Inspect](3dfc3023cb9b47f58315.json) |
-| PUMPDOG | `6oS4GBsisvFBtHV14BEEpKyZNL8zLBs8MtSQPsQdpump` | 4 | 1.003x | 0.955x | [Inspect](0c8101b8486735294676.json) |
-| CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 58 | 1.023x | 0.954x | [Inspect](2c3ca09014bf3d280673.json) |
-| SUPERTAKE | `WNnpLo7Mjx3mGw5Vu41EyXUd4CCyJyVHoXVkGdMxpLU` | 11 | 1.006x | 0.951x | [Inspect](3ae52eec17aa4a02d073.json) |
-| WORLD | `CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt` | 49 | 1.017x | 0.945x | [Inspect](4e24fc95a4eebdfd0410.json) |
-| FORK | `AR1J8KzrcH1HhdNP1uM6b1AjBgSkNUrBtQf2u1Wupump` | 5 | 1.224x | 0.937x | [Inspect](2c545871afb5c33aa575.json) |
-| DarkFill | `HERPQwB2KVhJSVDjBgAu14XkpBnU8VhyutjPjFCSD1mw` | 26 | 1.001x | 0.936x | [Inspect](69d24fd68a1ff180532e.json) |
-| SI | `DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP` | 61 | 1.021x | 0.933x | [Inspect](7196ec78fc7cdf52db81.json) |
-| VENM | `DMYgPtPrRJx5cvpH9EQhXhHdMyxKVaizWvXyn712CpBw` | 5 | 1.000x | 0.928x | [Inspect](45fdffbd08a8fe0d2105.json) |
-| BRAIN | `braiZ1pbCMTvXJ2edndcDsE6dogezr7jihPSrwKH1yy` | 61 | 1.222x | 0.926x | [Inspect](c215f439e11722570e0f.json) |
-| Kushi | `Fvra7uDZPPV16Mzk1MXC1Jabg8M2nFTzU1jzUk2Npump` | 29 | 1.550x | 0.923x | [Inspect](eb8fe9b2e7a0ebca3d6c.json) |
-| KARDASHEV | `5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp` | 60 | 1.030x | 0.918x | [Inspect](07e5cf598ae5c4076e1c.json) |
-| BEC | `4k9aGZAPqrrsX3sVZMiNRzZbQiBKW7D8sf6K7Er5sy1U` | 9 | 1.000x | 0.914x | [Inspect](4371c3148f3318d23c85.json) |
-| STICKMAN | `6B7fZwePZtovqEQsQWSChEYKRCSUrZdYqwT3dBiKKTWE` | 40 | 1.030x | 0.911x | [Inspect](d76afd9d3fb6a16434d0.json) |
-| DELREY | `92BVgXufGjaMUyANA97dvg8LqNb5VMg2wgRfve9tPdCG` | 26 | 1.004x | 0.911x | [Inspect](d73a0d604da493a9282f.json) |
-| CAP  | `3TMMM3u7vhLwRaeEJzvbo2177M3Cj2bSrPE3q2xepump` | 2 | 1.000x | 0.906x | [Inspect](330a12bfb58b7933a7b2.json) |
-| PHI | `zVbJ3eRjhRbvKWAxP8xrXZAeAcSqk3vtTjCzzVAAphi` | 21 | 1.062x | 0.902x | [Inspect](afb7d08db8ee0f5ce9e9.json) |
-| 3310 | `FMjzvhNVHtyEZnC5W2CgwTy7vpeWor1ZGmrsx7HkCGWs` | 45 | 1.063x | 0.900x | [Inspect](4c7c8275ea8e7186f2f5.json) |
-| BRAD | `23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt` | 5 | 1.073x | 0.900x | [Inspect](e25b6d91b4fe55f9ff5f.json) |
-| RETARDIO | `CSRRgTwf9o5KLgguS2M16aEAhV5PUUzfshrAAQ8opump` | 34 | 1.000x | 0.885x | [Inspect](6cd9dfa0675736af92f0.json) |
-| REWARDED | `RWRDiJdUzd4sehbkEvCFmF2wQMpnb3NhnRkfkDGCMeG` | 28 | 1.660x | 0.876x | [Inspect](018c7c4c69bdccbae401.json) |
-| HONEYPOT | `Cnt7Ykd7FpEyUGN4PFPbAwvDjuAZpbZ6CdsG4yidpump` | 56 | 1.615x | 0.875x | [Inspect](c22bdfebe891d743a093.json) |
-| WAGMI | `4fb2Y9QmrJCs89fj4eRL9GekV8LYz35RCZziKaus6oxB` | 20 | 1.043x | 0.866x | [Inspect](f84251954174ebd5e661.json) |
-| Carina | `EU8FftAh562jQmbxXBsjfpHgxGeHYEKXbeauhun6bxDu` | 20 | 1.000x | 0.861x | [Inspect](42d412e286987609a69b.json) |
-| o | `2bX5CKZ7SHvacmMQFq7nBjQMmpPFbCZkpA7367du9Wa2` | 49 | 1.000x | 0.856x | [Inspect](aefa783371c8cc0a8270.json) |
-| BROOM | `4YfFcPNX4yHi7rt3dKzqoiKsJVWR9czXDouPJEMJpump` | 24 | 1.000x | 0.850x | [Inspect](cd107e30f707997ebf5d.json) |
-| SMUDGE | `Af22pLvYvP5Tt8RyqdevgYefVujAa9eLNsa4rpDupump` | 17 | 1.007x | 0.848x | [Inspect](0a55386ff5a314dcf923.json) |
-| BOB | `E4vwseNWpkBxzNxyv3msVLCzYHU5SXrj1QWXEycypump` | 61 | 1.047x | 0.845x | [Inspect](f58bd5d645561f69f782.json) |
-| LAMBO | `6ge79bBZfZ9uLBYkA6bU7gSysLSpHSm9PEW6AgLB2Hrw` | 3 | 1.000x | 0.833x | [Inspect](2b2db00d7e98a1c500a1.json) |
-| WIRED | `W1REDXeQNwEjbX648217XGsErfPrw866iFX4fB1qGKT` | 7 | 1.082x | 0.830x | [Inspect](65d20d9c74cf5c557823.json) |
-| swordcat | `5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump` | 61 | 1.028x | 0.820x | [Inspect](2b7547222b62ffc725c2.json) |
-| ITCH | `2SWXLespX4sC3rzMnbS4pXyUt6aVqSaZK8X7fg8ppump` | 21 | 1.155x | 0.805x | [Inspect](c66d0696e282f4177306.json) |
-| HONKO | `DzNsNL2bGrsCWQFarzC2pgohyWPvePD5URA7bMTzqWRh` | 34 | 1.737x | 0.805x | [Inspect](5bf01941b7bfa11db4ab.json) |
-| o | `4FRZQ5hBxNrwTmEyarihhufNQSJXzv2NnbXJQbjq4uqz` | 44 | 2.016x | 0.798x | [Inspect](170fb7c7f4f1b66adcd7.json) |
-| Nimb | `AsyGtT6pataB2NYWkK1tKUQwadpBWbFEcREhLMgJpump` | 61 | 1.386x | 0.793x | [Inspect](80288b2453be12259cee.json) |
-| Cornell 7 | `Fk9dk53Pw3EhkWYn6cUvHH2PjsyoobTy88bnBSMsYu5p` | 25 | 1.031x | 0.789x | [Inspect](442e2f6d942117f83569.json) |
-| * | `4GvrfcGuypXP5QFsPmZUTSHL4H6F6kL9XbuFeZjDSTNK` | 6 | 1.305x | 0.782x | [Inspect](808cec980f4418f745d9.json) |
-| E/NYANCAT | `Dk1NXoFkQdPtSpg2L7JsCNzZvxcyF8KHjNUEKkxDpump` | 61 | 1.674x | 0.780x | [Inspect](bf44f2064dfc67aaef91.json) |
-| FROINK | `2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr` | 61 | 1.066x | 0.774x | [Inspect](d09339a28eddcff8244e.json) |
-| SCAT | `HqypR6Un8UHxh4XBzXhMgY97XP33k2LakqvcoXRvioS6` | 61 | 2.837x | 0.773x | [Inspect](4498fc3625e291d9bb17.json) |
-| Chris | `CMkXvUpvsPLZ34yyipcWR9yqTaPvgCrQN34SuGg8Y8iu` | 55 | 1.377x | 0.765x | [Inspect](d897fd4956af5c8e954a.json) |
-| STILL | `7qLn9eW3CHiCMJWokv4Kxmgs4daSnnRE4hxAzqqFpump` | 26 | 1.207x | 0.757x | [Inspect](6c36fd42bdb8afb0205d.json) |
-| wCat | `4RtA5ANnHdVDod28gczHWDpBhqcm6RF1qcEniAsHpump` | 18 | 1.059x | 0.756x | [Inspect](64109a3fe104516db759.json) |
-| Pumpdog | `43VEVRk7tRipfsTgPiyS6vKdEPzH75ga7urv1MQRxT2Y` | 10 | 1.967x | 0.754x | [Inspect](da8fd9fd403c7ffb6f46.json) |
-| 王様 | `B6TBmEJuS8QGJGcJG4V8DFzMdh944rF7TeEx9vrEBkj9` | 19 | 1.000x | 0.747x | [Inspect](7feb53d5f4ff33c9a394.json) |
-| AgentPaid | `EsceEf93ytUGvepAcY71fahRcFE4bZSkz2M2X7dPpump` | 24 | 1.000x | 0.738x | [Inspect](7241cc597646c03ee840.json) |
-| SUBS | `BW1HeTnP1ZpSyvoExMKCW86vdEAShjwBV6dUfgZwpump` | 56 | 1.000x | 0.710x | [Inspect](c0f01dfba23076931dbf.json) |
-| POCKET | `ASSWeaDhsTgGWhuPM7CFRbhQHjXk5W1SsK6VE88zpump` | 5 | 1.097x | 0.706x | [Inspect](2808f89a25af1104ab5f.json) |
-| rebound | `Ae4pQr6ibnX3MrBFjuWbLYTWEuvSmZNgfcUzZSu4pump` | 2 | 1.000x | 0.705x | [Inspect](6c81cacdc8d5cac7f98f.json) |
-| FCAT | `GsAxFNwA9eC49FayfYsGipQ7FbgJn9b2L8rYEBP9ibEY` | 53 | 1.000x | 0.701x | [Inspect](fe372b8ab0e20b2fb187.json) |
-| ONE | `Fu9bXCVogNHy5V1w8jebse4teRBPCYts3ht9yp4ipump` | 2 | 1.000x | 0.693x | [Inspect](0c676eaaecf7db8d0825.json) |
-| ClapCat | `5BjfgmtfqvNpAWx1CnZynoWLWNMnrwHLhTFzQ81vkEc8` | 61 | 1.519x | 0.681x | [Inspect](de871d925ca8c53f0790.json) |
-| PERSONA | `7mP77b3RoMo69FJAh8xARRynAttK4DKzBKst2tqy2tiZ` | 61 | 1.518x | 0.674x | [Inspect](d2e4b39f03275e64ed1c.json) |
-| SICAT | `9pMXEbTjQ5HHiYifGbNBwkMkrQxGyhuSmB8ndKNXpump` | 61 | 1.024x | 0.673x | [Inspect](c1bc685aa213f61ed54a.json) |
-| WhatsPay | `AjZ2d8n2bHH818a8ugFy4q4ipgzqzhCn3qSzsHAspump` | 7 | 1.000x | 0.671x | [Inspect](fb4c988302fce479109c.json) |
-| Slater | `2JaEmwMJ4wjJWMsHqy3Nz2WSzdTg39eUrdYSvotBh8S6` | 61 | 1.048x | 0.667x | [Inspect](8f3b499b826e49448edf.json) |
-| ICY | `6veQHmimWDy9dZgi2dkAMCngrLDQFKcA9vMtKpbqpump` | 8 | 1.129x | 0.664x | [Inspect](0a6c6c116ef9f5dcde24.json) |
-| FamilyBuy | `EfSCK9ymY4zRVeNpUoCTnhPpicx8wd8A59H5HuJZpump` | 21 | 1.000x | 0.661x | [Inspect](3fb6b771c9249bb92f06.json) |
-| D/ACC | `BcQ7PJS4sswSewssiEr1MoYWRj4AELCywZdmcT83gbkg` | 39 | 1.121x | 0.651x | [Inspect](0be1f6447c6e4e1b22ef.json) |
-| BOLD | `tDaipedqjB6y4pzV2Mrgv44X1nd1pQGvVoHTZZB1aC4` | 39 | 1.000x | 0.599x | [Inspect](e0f2c86f7b0f8c46d8cb.json) |
-| ALEX | `adGwrsB99iep9k5opFJcmjGEgSAERMATkAa8z6bSe4z` | 39 | 1.000x | 0.595x | [Inspect](8f23fc09ecadfe6b3fd8.json) |
-| BLAST | `D4GkdYbVphmZEPr24kGRjZ3S6v4zkJEe4oYnh7ZTpump` | 6 | 1.156x | 0.587x | [Inspect](62602d9af8ad5b1d77b5.json) |
-| Pillys | `6JgM8JgSzG4JLxzPgx18Hx7TA1BZRUQXQykVYusTpump` | 3 | 1.000x | 0.569x | [Inspect](122aca2ca52dc19b2119.json) |
-| CLONES | `4akevTN2EaqUKDT2jhcRH4oRk5cppwRdaE5MGoT8pump` | 20 | 1.157x | 0.557x | [Inspect](ceaf33049357f53f34e1.json) |
-| Jonesy | `6VMTDo5TyNZ7reerj2uDpDmX7mbVopysG9n19GZZCEnj` | 21 | 1.068x | 0.557x | [Inspect](fb01c46bab7245036784.json) |
-| BS | `D19Q5trfCvpgyWtgaZ2vfTQpUfmKPjMypLmH7hoXpump` | 12 | 1.075x | 0.547x | [Inspect](43c4c65d9b4a4ec12335.json) |
-| City | `3pEnLWyukwgM2VdHTFWqpFV2CHpU1LAE8qPNjVvwAtRt` | 2 | 1.000x | 0.526x | [Inspect](6fe55726ffa8924eb01c.json) |
-| COUNTRY | `7dLKp8RVPk4sooF4L3pgm9zTzKQ8mMxUJagEDNFRmPBJ` | 9 | 1.000x | 0.523x | [Inspect](1e8e96a749867b1faa26.json) |
-| 王様 | `7STQRJKjUicpcCqbU3jdUrTDbhk3vvNnHMqvM1oepQ5A` | 13 | 1.700x | 0.518x | [Inspect](158344539a14bb832b61.json) |
-| RFROG | `CStde7WQL1a9XEo5n6SZJpaYuiovaHWGNELDyUKhViBs` | 34 | 1.000x | 0.515x | [Inspect](09f5abf94036f2348130.json) |
-| * | `C2DVQKKhR8wccGYSWrnB4fcBoFti4qqMFRZeS4CkQKp5` | 34 | 1.787x | 0.510x | [Inspect](4f120e76b9d2a1ca268c.json) |
-| NOSTALGIA | `BJobPnEeiGwQXW4kfFtUAmQf4YeZPuii8pLdTBVsfxdJ` | 8 | 1.117x | 0.501x | [Inspect](b5913c57cf03e117a9ac.json) |
-| C/ACC | `D8VBcGcqS2VaHGW5dJcEZ18Z372du6jCBFNagDrvvmbS` | 49 | 1.000x | 0.496x | [Inspect](f3534a6a874a0d00733b.json) |
-| HATCH | `9tfFNiVpdtMKHZJY71t3QGAiuG55E9y9DWBaTgsApump` | 12 | 1.362x | 0.491x | [Inspect](53170d46737b9d40981a.json) |
-| GRUMPY | `Eh5rTGmL7RHtdpRXLLX6xLsHvbSL6htVCa7ifhQVV1bf` | 23 | 1.000x | 0.486x | [Inspect](a9d5b3db719c5b916a3a.json) |
-| Joe | `3YWbeb3gozGGQFNSv384BeZqTexPMmNns5vvjb7Kpump` | 61 | 1.074x | 0.486x | [Inspect](49747647c1bb4809f51e.json) |
-| nearpad | `AxUB5Y8vb361dU85JPELM8ynaTUrmjhn6fCXUHwxpump` | 61 | 1.000x | 0.482x | [Inspect](579f4e518c267f66656b.json) |
-| o | `7oMfBXAxeiXR24kYBagdrPcmjG4Ybjhc9aL7u6W5hWSV` | 22 | 1.000x | 0.468x | [Inspect](3dda8331132f0f07d07b.json) |
-| Honko | `33RXti5iriPdzHEXET7SfuGmPaauzLrUR8eHhMZy5A59` | 3 | 1.000x | 0.429x | [Inspect](3d7a2791f3fce30080e2.json) |
-| BEND | `HpSdozkc6ypvBf9hpPvCaZ6cJBarutL8kTuQx2HjqkeJ` | 7 | 1.000x | 0.399x | [Inspect](52772cad5e702a168d2d.json) |
-| p/xmr | `u9uhxHwAn5K5jcuB25QEXBX7XBPArFSTkTQg7F1nuCA` | 61 | 1.653x | 0.388x | [Inspect](8332d45a4b1142a8900a.json) |
-| r/opt | `7UGrjz5XN6769DqXzfe98RyN3m3oFApwArQRAwo26HjN` | 18 | 1.000x | 0.383x | [Inspect](efedf33dcfe4de3e2554.json) |
-| CPU | `7yZUkgwjNZ97ZUXK4NNdCbHzeGiht6owZyf5wn9DSTNK` | 11 | 1.299x | 0.380x | [Inspect](7339b767007263a4cd23.json) |
-| APPARENTLY | `3sCmd6NDMjLyhVHwgG5kRShRDLRDd3DMwT4pKttGpump` | 44 | 1.212x | 0.373x | [Inspect](04a54efda9d3186421d7.json) |
-| Honko | `2yKzF3hBYZbeYn3wid5vBKDpVqpDxGX11QrB13cqtzkJ` | 38 | 1.854x | 0.357x | [Inspect](2a0e85fcd9b58ca9df80.json) |
-| Responsible | `T2g5NaX71HVsr46yg4W2vz3rtaW8RjTeTMpG8qZGdgz` | 24 | 2.525x | 0.354x | [Inspect](0a89535714f3440358a3.json) |
-| BRAD | `GuW7v9moS4MECUKwosj1DA5nb1Zvu4ju7cnWNY25pump` | 61 | 1.828x | 0.344x | [Inspect](cb78a36e39be1686390a.json) |
-| KIDS | `Ak3t4DtSzXxASA6wsXSyRzdMfTSvoedeMU1ym6WtaDDu` | 6 | 1.000x | 0.336x | [Inspect](a203fa168c73acfbae31.json) |
-| OI | `4gNtnJBued8iGufYCHXfbC94d7skbDnESqtyAWd6BTWw` | 17 | 1.000x | 0.320x | [Inspect](584019ab47c37b146467.json) |
-| Habibi | `4jT4RNs8Z4P3ZqXXCXf15StJ1Nbz3eARDDSf6oL299XD` | 61 | 2.001x | 0.302x | [Inspect](efbe64782dc93947e3a9.json) |
-| Optimist | `7VySefcz618cz6TkNbXRjVKLtzkLD2a6tyMpH6iTVbDq` | 32 | 2.243x | 0.295x | [Inspect](c9a231d93e2b3308167f.json) |
-| Fo | `Bken2392oK2zoS9S4711KR7Mm8m5ynaftZc2SUPxFHjY` | 54 | 1.000x | 0.271x | [Inspect](358c26dcfaa72ffe0b30.json) |
-| MAINST | `5z1CYwbdYwFsqp8nSSiBJkZinE6MKpFb7DodFoZzpump` | 61 | 1.118x | 0.246x | [Inspect](c6dae49ca9d7eba948fc.json) |
-| CHILDREN | `HcEfPDUGUaNbsb318rZRiFi7PnxWXbBEa4DAHgTgpump` | 42 | 1.000x | 0.203x | [Inspect](403449d02df74c33ef64.json) |
-| CCAT | `H7YEgWhVSWW1HAJomtsBTmSpaBRCoD9V17BvwEyipump` | 61 | 1.000x | 0.188x | [Inspect](158df6722a6f8755581f.json) |
-| BMW | `Qh7JtiXEEA2GPUSNFEPMNpJKmbVduF3x9SLVtECpump` | 22 | 1.593x | 0.168x | [Inspect](23ccc1bf75051859234e.json) |
-| KAI | `FyJhergwKuofZBnJ7bKWmywueUronhCimhRG7rPVxWd6` | 38 | 1.413x | 0.069x | [Inspect](1a09d778056139dfbde9.json) |
-| DARREN | `6837Fsabr9FUt3snY4UsnRzzgqJatgJzT5dQakVJpump` | 38 | 2.265x | 0.053x | [Inspect](18579e349960fb05be42.json) |
-| CCAT | `9i5UQBxF3PfdAxypu6ZPps9CfHopUqNubeQ4sdejTQDa` | 1 | — | — | [Inspect](e958d32670cca01ddac8.json) |
-| DOGCOIN | `DBrbyyYBukDRskqAHkv7NEuRBMo3w1tAZ4Yyadxfpump` | 1 | — | — | [Inspect](4b1dd3cd181761af481b.json) |
-| Anal | `GDxfw3KERBgEefhzFqih9N5vFqTCe93qkg5jUBivt76s` | 1 | — | — | [Inspect](aa1fb2425f0519262dc4.json) |
-| MIGR | `HNazMWySREpLBoyEdsXPPzvvc4eZ6avQDwqBko3vpump` | 1 | — | — | [Inspect](bd33a6413cd94deeae17.json) |
-| DUMP | `3gzcjJR1RAwTLg7dno3UgjYE2TfAJPve7hpDJfNmEAMh` | 1 | — | — | [Inspect](bfa4cfbc56ac63215a7a.json) |
-| Reggie | `8HES3xmbpDGQiv1SxM4mmzPuNqb3R1QhfPCFg2aspump` | 1 | — | — | [Inspect](73149bd961f0bb6f34d1.json) |
-| INDX | `GX53Ff64B9uvBLgjuDMikZup3tjFiU8xZ6SXmC5mpump` | 1 | — | — | [Inspect](8c61b739dbbb53356212.json) |
-| OFFICE | `EMuTTsE5vCnMB3bTGtNUBKQwvoogSFRAPGZpVVzNpump` | 1 | — | — | [Inspect](d069d1a89f3df5244541.json) |
-| DOTS | `D4SjUtPFJ5H6WZnBdkXpbnqFf6K6NxSw23hm8CDW9xGa` | 1 | — | — | [Inspect](f3fce75cfea80600b7ee.json) |
-| artcoin | `AF9D78NdSJeH6xgwApKULZJsQFoaierDr61Um8VM75QJ` | 1 | — | — | [Inspect](0062566a3ddb928a09f4.json) |
-| Honko | `G3fgAabbgArMinMgE5iGumkmGbsrAzC2bhngbAPTpump` | 1 | — | — | [Inspect](19275291a397490c168f.json) |
-| Reggie | `HHrJwqKNvad3ycshZ7LuaNftYfyyUZSuSN52hcYJyrM8` | 1 | — | — | [Inspect](4d80b9d202ed1eb4eeae.json) |
-| HIVE | `HcpDqDR1QMFkV1KYCcYyRRSCL63TkvbGLXf3PxhChfVD` | 1 | — | — | [Inspect](4e3709605e0aeb937d50.json) |
-| ROOFTOP | `38pbCNLqnEzQ7rhMQgiQupGQW7NSPQSqRThHGppFdTXH` | 1 | — | — | [Inspect](55252c0ba2a937120f7a.json) |
-| SCAT | `68U457cJxhAQ9gz1QivaD6sHtDpe1gXtcehnpiiGSpmA` | 1 | — | — | [Inspect](49b067f04d5e9564b3e7.json) |
-| COUNTRY | `FoQq16ZcyvC7kgFAoxLhrAYverC1UqqJenys4L2spump` | 1 | — | — | [Inspect](2990fe4ec223761ebf5b.json) |
-| EMBER | `5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6` | 1 | — | — | [Inspect](65c5215b693c85440854.json) |
-| wdog  | `AUxE3g2UQ6YApyAPRdXGx56FCs7gpW4BzCSEgH4zpump` | 1 | — | — | [Inspect](c1de43f0dde94df912cc.json) |
-| o | `FXwzAD4jyH7mraT8i7gMcUQyq5uyamV62xyBUaDPoWgz` | 1 | — | — | [Inspect](b24506883fe70e696dea.json) |
-| Dog | `33y9V2nzdfM5CEdtzyv37SGEz42m3H35oDpwfS9Q3dfV` | 1 | — | — | [Inspect](754c9ff9908aafed8c2d.json) |
-| Pumpcat | `DSsBjz7aNxadyg2Fx9aGE6QxKKoj7HaKmm7LbmvZpump` | 1 | — | — | [Inspect](805b7c911b5c4448737b.json) |
-| DOA | `9PnSovNipeoxbBbLUbsZVKPvjPBYhMqVoeJV1qVmj9Xb` | 1 | — | — | [Inspect](07596c228bf09d2b5d15.json) |
-| SpaceX | `AtfUWNGbNdwRVzVCmU3K9GwDdcQzzJ83QKQ7qrJFpump` | 1 | — | — | [Inspect](c827cb4913fd2160e1a9.json) |
-| Pumpcat | `G9U27fAmKg8b8kjMWt53VTNvVq8KvDy2u3ojyZVFpump` | 1 | — | — | [Inspect](7958ff19db25d6dafb04.json) |
-| pump | `Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump` | 0 | — | — | [Inspect](2dbd69d0e89e9223758d.json) |
-| CLAUSE | `Akx3xogrZjMrt81cd1tvmWKkqL3Q5VviqcuqNS2Epump` | 0 | — | — | [Inspect](aa3ce229915e7e3ac18d.json) |
-| NOSTALGIA | `BJobPnEeiGwQXW4kfFtUAmQf4YeZPuii8pLdTBVsfxdJ` | 0 | — | — | [Inspect](c299953f37229b877ad4.json) |
-| LEVERAGE | `9GgDKaEx8SjnxUc4rDDGkZPc4xLzZLRg5omTVND6pump` | 0 | — | — | [Inspect](ea5d451e764704e0ada3.json) |
-| FPEPE | `J2wHs1ViGcCnCnvYLXLrkGQRFLBGaWMz7c9nokMMErcG` | 0 | — | — | [Inspect](ca9c837665198d962b15.json) |
+Every series, ordered by token name. Pools and contracts retain separate identities.
+
+| Token | Contract | Quotes | Peak | Final | Drawdown | Curve and timeline |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| * | `7XEqj3KrRESniCnFbLgkcoykyP348MYYCi35FWdgpump` | 29 | 3.283x | 2.812x | 14.37% | [Inspect](../../tokens/93c96a29d77b66ffc637602c.md) |
+| * | `C2DVQKKhR8wccGYSWrnB4fcBoFti4qqMFRZeS4CkQKp5` | 34 | 1.787x | 0.510x | 72.85% | [Inspect](../../tokens/0d2c6bf909bf5b2acf096487.md) |
+| * | `4GvrfcGuypXP5QFsPmZUTSHL4H6F6kL9XbuFeZjDSTNK` | 6 | 1.305x | 0.782x | 40.04% | [Inspect](../../tokens/709f8a038584562e921a774c.md) |
+| 3310 | `FMjzvhNVHtyEZnC5W2CgwTy7vpeWor1ZGmrsx7HkCGWs` | 45 | 1.063x | 0.900x | 21.76% | [Inspect](../../tokens/a4817c97f2e440fbcdd8da44.md) |
+| 67cat | `CXfx1nC8en7QHf7gc7UXo6jjQ6ynrB43pp1DT6Bypump` | 4 | 1.374x | 1.132x | 17.59% | [Inspect](../../tokens/28b72a942f1a4c716aaf141d.md) |
+| 80085 | `7EDBH3yPjQVJTxGcAfg39dUwCcLZvARt4azQybm6jrqV` | 29 | 1.093x | 0.970x | 24.10% | [Inspect](../../tokens/007f77ec848a49912affa6ad.md) |
+| a=(v-u)/t | `HAYYs5Vctf9ibgFRqZdD2nTj9QzjGXZqHJMXoDjNc3Zo` | 32 | 1.131x | 1.124x | 24.64% | [Inspect](../../tokens/0e9ff6b331f2e4c7c15de1c4.md) |
+| ADA | `5bvPcMyfbYunNqGEn7y3cjSTTDx7t9MTDFynGZZrLN2k` | 7 | 1.045x | 1.045x | 0.00% | [Inspect](../../tokens/c14b69ecb0a3b0cf75286494.md) |
+| Agartha | `92SQ1QwLTMktFeFom4sK4X6FTfX6PWHcr2PntZ5vpump` | 38 | 1.052x | 1.010x | 17.82% | [Inspect](../../tokens/f377ff1c4e3bffac1ef8f799.md) |
+| AGENTORY | `cPW1Zrx1zqEVb21pcQrzfjNkhS4Dz6fyztKooh6xfEX` | 34 | 1.456x | 1.456x | 20.40% | [Inspect](../../tokens/957f133b36315c3cf67c5290.md) |
+| AgentPaid | `EsceEf93ytUGvepAcY71fahRcFE4bZSkz2M2X7dPpump` | 24 | 1.000x | 0.738x | 26.15% | [Inspect](../../tokens/4ac46f3dfbfab1fe935caca0.md) |
+| ALATURKA | `8JGziVgRZKyrsjWZ2FbsLiF1YnZufmvuyNuLnrauiPzC` | 7 | 1.085x | 1.003x | 7.53% | [Inspect](../../tokens/88f97ca2007e67ee34284903.md) |
+| ALEX | `adGwrsB99iep9k5opFJcmjGEgSAERMATkAa8z6bSe4z` | 39 | 1.000x | 0.595x | 40.49% | [Inspect](../../tokens/703af116f19438b055e70897.md) |
+| AMERICA | `pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9` | 58 | 1.114x | 0.970x | 12.95% | [Inspect](../../tokens/3c0466b6bcdb349152c3682e.md) |
+| Anal | `GDxfw3KERBgEefhzFqih9N5vFqTCe93qkg5jUBivt76s` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/c381692f682590fc42b03eba.md) |
+| anoncoin | `6z92xw4oCWRxo9ynBEfpu5ksxEHVMuYN5VK6Wj7Lpump` | 23 | 1.074x | 0.993x | 7.67% | [Inspect](../../tokens/efb1f0b534b425e617c94875.md) |
+| APPARENTLY | `3sCmd6NDMjLyhVHwgG5kRShRDLRDd3DMwT4pKttGpump` | 44 | 1.212x | 0.373x | 69.18% | [Inspect](../../tokens/acab01d54dcd373caf23ddc2.md) |
+| artcoin | `AF9D78NdSJeH6xgwApKULZJsQFoaierDr61Um8VM75QJ` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/49bbc7b235336a792ee63a54.md) |
+| ASTEROID | `7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV` | 28 | 1.050x | 0.969x | 9.31% | [Inspect](../../tokens/a4bd1f43c196f669dc3ca705.md) |
+| AZZ | `CZWyKU9MghRchXXw6x34aPN7MGeQR8QJKwymX6cpump` | 13 | 1.156x | 1.156x | 7.97% | [Inspect](../../tokens/67150ec7e3bcfb0818222795.md) |
+| baton | `Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump` | 59 | 1.026x | 1.020x | 2.69% | [Inspect](../../tokens/0d659915104e3e3ddffb7f45.md) |
+| BAYPAY | `2GyjqZhMUWxpuiVgypqV6KZ1agbzgitEVUU16mSnpump` | 3 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/c60e7e98813ee64584a5145c.md) |
+| BEC | `4k9aGZAPqrrsX3sVZMiNRzZbQiBKW7D8sf6K7Er5sy1U` | 9 | 1.000x | 0.914x | 8.59% | [Inspect](../../tokens/dba650134a25e64aa9fb264c.md) |
+| BEND | `HpSdozkc6ypvBf9hpPvCaZ6cJBarutL8kTuQx2HjqkeJ` | 7 | 1.000x | 0.399x | 60.11% | [Inspect](../../tokens/97d352f89930ced36146e54b.md) |
+| BLAST | `D4GkdYbVphmZEPr24kGRjZ3S6v4zkJEe4oYnh7ZTpump` | 6 | 1.156x | 0.587x | 49.20% | [Inspect](../../tokens/38aa4e831e1b2a48ea839b61.md) |
+| BMW | `Qh7JtiXEEA2GPUSNFEPMNpJKmbVduF3x9SLVtECpump` | 22 | 1.593x | 0.168x | 89.48% | [Inspect](../../tokens/bbf69a86e8c30d0c57aca696.md) |
+| BOB | `E4vwseNWpkBxzNxyv3msVLCzYHU5SXrj1QWXEycypump` | 61 | 1.047x | 0.845x | 19.30% | [Inspect](../../tokens/37b5b28b250e829a25a06fe0.md) |
+| BOLD | `tDaipedqjB6y4pzV2Mrgv44X1nd1pQGvVoHTZZB1aC4` | 39 | 1.000x | 0.599x | 43.55% | [Inspect](../../tokens/7c406daa091c6ffec24d48e3.md) |
+| BotBook | `7n7dS5Dk7YjaKKDzb5e9gPK3Md6mziTLsBA3mJYu6gnV` | 20 | 1.417x | 1.417x | 6.99% | [Inspect](../../tokens/326ce11fc4e3cccf0b554a7c.md) |
+| BRAD | `GuW7v9moS4MECUKwosj1DA5nb1Zvu4ju7cnWNY25pump` | 61 | 1.828x | 0.344x | 81.18% | [Inspect](../../tokens/9034c7b6accf8cb4589dd908.md) |
+| BRAD | `23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt` | 5 | 1.073x | 0.900x | 17.57% | [Inspect](../../tokens/18575990c4a9e885ef5f7918.md) |
+| BRAIN | `braiZ1pbCMTvXJ2edndcDsE6dogezr7jihPSrwKH1yy` | 61 | 1.222x | 0.926x | 27.77% | [Inspect](../../tokens/5afe3011937984662858f06b.md) |
+| BROOM | `4YfFcPNX4yHi7rt3dKzqoiKsJVWR9czXDouPJEMJpump` | 24 | 1.000x | 0.850x | 27.49% | [Inspect](../../tokens/70233c1072f5bca5ace7f139.md) |
+| BS | `D19Q5trfCvpgyWtgaZ2vfTQpUfmKPjMypLmH7hoXpump` | 12 | 1.075x | 0.547x | 49.12% | [Inspect](../../tokens/0246b4fff24523a9480abd41.md) |
+| bukangi | `3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump` | 5 | 1.000x | 0.965x | 3.95% | [Inspect](../../tokens/3e9079720dfa627f28549b92.md) |
+| BUTTHOLE | `E7zxuLbeXWdujdArhk2FZFJHqTFcihv5DDkw6NCeEtKR` | 12 | 1.090x | 0.969x | 11.11% | [Inspect](../../tokens/e3098feb2dc18e2a21f94272.md) |
+| C/ACC | `D8VBcGcqS2VaHGW5dJcEZ18Z372du6jCBFNagDrvvmbS` | 49 | 1.000x | 0.496x | 53.07% | [Inspect](../../tokens/726eedfaa5c1fee5c60a0756.md) |
+| CAKE | `DAemPFNc3RtibBDKkUA4eL2Ns11q9VRdbpptmqm8DGqN` | 61 | 1.136x | 1.008x | 11.98% | [Inspect](../../tokens/d8ee1f1d5d4d7a2a68800bc1.md) |
+| CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 58 | 1.023x | 0.954x | 6.76% | [Inspect](../../tokens/e5ec1e9477f5e23c26a0f1f7.md) |
+| CAP  | `3TMMM3u7vhLwRaeEJzvbo2177M3Cj2bSrPE3q2xepump` | 2 | 1.000x | 0.906x | 9.37% | [Inspect](../../tokens/5ea23b73cea4367842f14210.md) |
+| Carina | `EU8FftAh562jQmbxXBsjfpHgxGeHYEKXbeauhun6bxDu` | 20 | 1.000x | 0.861x | 18.66% | [Inspect](../../tokens/d15da606212b0fc95bcd2622.md) |
+| CATDANNO | `9fhGueQg32K4xAV7UPgQ4RcHh93fLvR4uVicvUYX3Zpu` | 5 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/2d8c08908547aa65c0603b73.md) |
+| Catdano | `5oGmZzTm683RPZ4MLn5wXwFU78vx1ixYWJxAqDVxtnet` | 2 | 1.034x | 1.034x | 0.00% | [Inspect](../../tokens/2303e57669033b77e6ac57ba.md) |
+| CATE | `Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump` | 61 | 1.005x | 0.986x | 2.57% | [Inspect](../../tokens/53fcc2085ca4705dc95618fe.md) |
+| CBDOGE | `65nTXTo5K3iexVZDssLR2kBhYzV12bZ62npdwB2MTeZy` | 12 | 1.010x | 0.970x | 3.97% | [Inspect](../../tokens/81384695400e7ffe82d30e06.md) |
+| CCAT | `H7YEgWhVSWW1HAJomtsBTmSpaBRCoD9V17BvwEyipump` | 61 | 1.000x | 0.188x | 81.98% | [Inspect](../../tokens/f0462e2287d818935e3001ed.md) |
+| CCAT | `9i5UQBxF3PfdAxypu6ZPps9CfHopUqNubeQ4sdejTQDa` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/a91aaddaac078b26560d0649.md) |
+| ChatGPT | `E4uMkXeYPKE5kqEcbh4b87dMHcDpmqjMDqstV8dqpump` | 31 | 1.389x | 1.389x | 0.84% | [Inspect](../../tokens/31a770f620f83a890420ab17.md) |
+| CHILDREN | `HcEfPDUGUaNbsb318rZRiFi7PnxWXbBEa4DAHgTgpump` | 42 | 1.000x | 0.203x | 79.74% | [Inspect](../../tokens/73bea9439fbbca9fcb80b61a.md) |
+| Chris | `CMkXvUpvsPLZ34yyipcWR9yqTaPvgCrQN34SuGg8Y8iu` | 55 | 1.377x | 0.765x | 44.42% | [Inspect](../../tokens/29bfd068c2bc5cbc06b81bff.md) |
+| City | `3pEnLWyukwgM2VdHTFWqpFV2CHpU1LAE8qPNjVvwAtRt` | 2 | 1.000x | 0.526x | 47.43% | [Inspect](../../tokens/fc40cb7b92dfd20bfeb819dc.md) |
+| ClapCat | `5BjfgmtfqvNpAWx1CnZynoWLWNMnrwHLhTFzQ81vkEc8` | 61 | 1.519x | 0.681x | 63.95% | [Inspect](../../tokens/27939afc15124e9bd8a90a3a.md) |
+| CLAUSE | `Akx3xogrZjMrt81cd1tvmWKkqL3Q5VviqcuqNS2Epump` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/cd0c47124fa3b2eabcd41c2a.md) |
+| CLONES | `4akevTN2EaqUKDT2jhcRH4oRk5cppwRdaE5MGoT8pump` | 20 | 1.157x | 0.557x | 51.84% | [Inspect](../../tokens/c93456e81ee56e5fecbe20fa.md) |
+| COLLECT | `nDZknLvfFRp5rgUHdzTrQsmSY5NKzoavqdLjSHVpump` | 8 | 1.000x | 0.995x | 4.18% | [Inspect](../../tokens/4bc2e34dc90ea1fb1744c6f3.md) |
+| Cornell 7 | `Fk9dk53Pw3EhkWYn6cUvHH2PjsyoobTy88bnBSMsYu5p` | 25 | 1.031x | 0.789x | 25.55% | [Inspect](../../tokens/cec462ff6ea975ed34d3d785.md) |
+| COUNTRY | `7dLKp8RVPk4sooF4L3pgm9zTzKQ8mMxUJagEDNFRmPBJ` | 9 | 1.000x | 0.523x | 47.75% | [Inspect](../../tokens/9642211ec8a43979b20941af.md) |
+| COUNTRY | `FoQq16ZcyvC7kgFAoxLhrAYverC1UqqJenys4L2spump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/7b5eee95262c6e2d4a383749.md) |
+| CPU | `7yZUkgwjNZ97ZUXK4NNdCbHzeGiht6owZyf5wn9DSTNK` | 11 | 1.299x | 0.380x | 70.72% | [Inspect](../../tokens/79420b761b2e20ddef3ab061.md) |
+| CRIME | `7M3gDRgozcumFsiTeXwjB8cYxpg7Q9R7rH7rkw2Fpump` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/7db7a63b32c4269aef3b8e36.md) |
+| CTRL | `A3tykDf9NeAcCYKtKGQJHXmgY3BRT5K3CU9F6sXwjVQN` | 38 | 2.333x | 2.333x | 17.45% | [Inspect](../../tokens/5f3cd676c9e2075ab111a0a5.md) |
+| D/ACC | `BcQ7PJS4sswSewssiEr1MoYWRj4AELCywZdmcT83gbkg` | 39 | 1.121x | 0.651x | 43.77% | [Inspect](../../tokens/38659b6d5375a4fd462d706a.md) |
+| DarkFill | `HERPQwB2KVhJSVDjBgAu14XkpBnU8VhyutjPjFCSD1mw` | 26 | 1.001x | 0.936x | 6.40% | [Inspect](../../tokens/c0674c8fde0a4259eb1bc1d2.md) |
+| DARREN | `6837Fsabr9FUt3snY4UsnRzzgqJatgJzT5dQakVJpump` | 38 | 2.265x | 0.053x | 97.64% | [Inspect](../../tokens/758f26e01ae573e3e3e5883e.md) |
+| dbatura | `HqpDva4NgV5WxovPEGcZMAjy9r87eKj8f9qmrY83wcKf` | 12 | 1.000x | 0.975x | 2.53% | [Inspect](../../tokens/e29b5ea05e6a82f7938d14aa.md) |
+| DELREY | `92BVgXufGjaMUyANA97dvg8LqNb5VMg2wgRfve9tPdCG` | 26 | 1.004x | 0.911x | 9.26% | [Inspect](../../tokens/54f576fa5d8cb39b1115ca80.md) |
+| DOA | `9PnSovNipeoxbBbLUbsZVKPvjPBYhMqVoeJV1qVmj9Xb` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/0ab1b31d05c5dc9c1d031b8f.md) |
+| DOA | `6Y852xQ6PMeVVJSjNATMVdgh6hL2LMpsZjJ8KjGiR8ig` | 15 | 4.720x | 1.076x | 81.03% | [Inspect](../../tokens/83930f12cc861761e816f369.md) |
+| Dog | `33y9V2nzdfM5CEdtzyv37SGEz42m3H35oDpwfS9Q3dfV` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/d49202d66bc84cbbe1aeaf8f.md) |
+| DOGCOIN | `DBrbyyYBukDRskqAHkv7NEuRBMo3w1tAZ4Yyadxfpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/519b9df53f75765e1dcbb677.md) |
+| DOGEPAD | `5ew7qPp2d3QVVgPGY4C7vDeVquheGDVqguPVQySueRxu` | 57 | 1.687x | 1.024x | 51.03% | [Inspect](../../tokens/235a838f9a69a149c6b10094.md) |
+| DOOMSCROLLER | `GtAUoL7YiDQoRtoZEvBKkUXEftsouJkxoGXqLERa9Thg` | 17 | 1.068x | 1.050x | 2.01% | [Inspect](../../tokens/f35bdcb9b98bed6b557a20a7.md) |
+| DOTS | `7MYpDaZ1Uorg1QtkjWK25X2K4UoNk88854jfopAXxNKs` | 37 | 1.563x | 1.196x | 50.55% | [Inspect](../../tokens/3d07712f23da95800bb5892b.md) |
+| DOTS | `D4SjUtPFJ5H6WZnBdkXpbnqFf6K6NxSw23hm8CDW9xGa` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/9b6a2168621481a1afd67ed3.md) |
+| DUMP | `3gzcjJR1RAwTLg7dno3UgjYE2TfAJPve7hpDJfNmEAMh` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/8006061d555c11f69f3ac614.md) |
+| e/acc | `CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU` | 61 | 1.048x | 0.995x | 6.02% | [Inspect](../../tokens/2ee6544b78a963fac19126d7.md) |
+| e/acc67 | `4KPFYgMQg8Su7ZaqDduSYEZXPmh8fyUgot4yooZtpump` | 26 | 2.865x | 2.630x | 29.21% | [Inspect](../../tokens/3a8cc5ad56ff371051f4385f.md) |
+| E/NYANCAT | `Dk1NXoFkQdPtSpg2L7JsCNzZvxcyF8KHjNUEKkxDpump` | 61 | 1.674x | 0.780x | 60.66% | [Inspect](../../tokens/570f7c8468ef5355b587113b.md) |
+| EARLY | `Gt4Xn9JGdhQZwid83ZzEJ9df6VNJSR8SiTGarnb4eiqF` | 5 | 1.044x | 0.988x | 5.36% | [Inspect](../../tokens/d49f319d40252f4c91a33ae4.md) |
+| EMBER | `5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/86955788b630bd88bb5019d1.md) |
+| FamilyBuy | `EfSCK9ymY4zRVeNpUoCTnhPpicx8wd8A59H5HuJZpump` | 21 | 1.000x | 0.661x | 34.17% | [Inspect](../../tokens/f6eea7a0fc20954068f0b949.md) |
+| FCAT | `GsAxFNwA9eC49FayfYsGipQ7FbgJn9b2L8rYEBP9ibEY` | 53 | 1.000x | 0.701x | 31.05% | [Inspect](../../tokens/18e72855991b073c9a1050ee.md) |
+| Felon | `snSekSZEHCjoSsKk5J2GYyNSoQSvskSp4RpUQuNpump` | 2 | 1.085x | 1.085x | 0.00% | [Inspect](../../tokens/ebfa244af26f3cce04596295.md) |
+| Fern | `BfK1fZuZjcgtxpdKowafwDzFTywdVzyQb5mRYAdHpump` | 61 | 3.078x | 3.046x | 28.41% | [Inspect](../../tokens/2bf5607a593b544842d9a782.md) |
+| FGLD | `B42dPzwDewMHvowDFQj4CAjaLhkxmTniczugvNp2Y4CT` | 5 | 1.088x | 1.088x | 0.00% | [Inspect](../../tokens/c65a1f065e606b0a4dbc68f1.md) |
+| FINU | `DoHqKjwuoATgQmU3GR1etGzh9vMQK34mKeV8VtmXpCDB` | 15 | 1.108x | 1.008x | 9.00% | [Inspect](../../tokens/a98e42f4f9e317b7a222ffb8.md) |
+| Fo | `Bken2392oK2zoS9S4711KR7Mm8m5ynaftZc2SUPxFHjY` | 54 | 1.000x | 0.271x | 76.70% | [Inspect](../../tokens/79453f87b67344b819c51fd2.md) |
+| Fo | `APLwmQEyK1oYptMboQ2iFbAiqhomaz9H2vQQF8J2pump` | 61 | 3.363x | 2.237x | 33.50% | [Inspect](../../tokens/0ff6fb616f72a104b1fb70e0.md) |
+| fomome | `5RfPyMZzf3nt2KuLMDcA8srqRsH2QVgs1FtpUizjpump` | 13 | 1.511x | 1.031x | 38.87% | [Inspect](../../tokens/cb46304ac7bfeae23ea5bc79.md) |
+| fone | `CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump` | 61 | 1.018x | 1.006x | 3.79% | [Inspect](../../tokens/b8926038618d73d594ad9f8e.md) |
+| FORK | `AR1J8KzrcH1HhdNP1uM6b1AjBgSkNUrBtQf2u1Wupump` | 5 | 1.224x | 0.937x | 23.43% | [Inspect](../../tokens/44247a410fdeb843f099eaf7.md) |
+| FPEPE | `J2wHs1ViGcCnCnvYLXLrkGQRFLBGaWMz7c9nokMMErcG` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/39ad0b8a8cb6fc955bfa1da3.md) |
+| FROINK | `2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr` | 61 | 1.066x | 0.774x | 32.18% | [Inspect](../../tokens/53b7907ce3433eabfd980e62.md) |
+| Gentoo | `DS6ePhDssKU2aW4Wyw424CRC7fYDHygmNu4cyMCc5vq4` | 43 | 1.230x | 0.996x | 20.17% | [Inspect](../../tokens/41a0b71eec4ac3ffb46ba24b.md) |
+| GP | `HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ` | 22 | 1.057x | 1.008x | 6.15% | [Inspect](../../tokens/747c477c367bcbf3483ec459.md) |
+| GROK | `6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8` | 2 | 1.000x | 0.974x | 2.61% | [Inspect](../../tokens/d2c6c758b346d60a06775fbd.md) |
+| GRUMPY | `Eh5rTGmL7RHtdpRXLLX6xLsHvbSL6htVCa7ifhQVV1bf` | 23 | 1.000x | 0.486x | 51.42% | [Inspect](../../tokens/cdfc5fcfd25a7cce2553c645.md) |
+| GTA6 | `Dw5b32W2vDzjqSwSKHTGYm3auESxx5NX52BAz5wBpump` | 12 | 1.204x | 1.204x | 0.00% | [Inspect](../../tokens/39a86933fa4185981c9c02fe.md) |
+| Habibi | `4jT4RNs8Z4P3ZqXXCXf15StJ1Nbz3eARDDSf6oL299XD` | 61 | 2.001x | 0.302x | 89.40% | [Inspect](../../tokens/cad7805e8a1162e130f8c761.md) |
+| HarleQuin | `jNeszEWkVZtzYMUCmYm8dqgaLvRTsEwQFwfJiaFpump` | 61 | 1.482x | 1.482x | 0.98% | [Inspect](../../tokens/17b268d0694a36ab2154f3b6.md) |
+| HATCH | `9tfFNiVpdtMKHZJY71t3QGAiuG55E9y9DWBaTgsApump` | 12 | 1.362x | 0.491x | 63.96% | [Inspect](../../tokens/9fc232a1f40f401f4ddb79ea.md) |
+| HIVE | `HcpDqDR1QMFkV1KYCcYyRRSCL63TkvbGLXf3PxhChfVD` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/47a6d8f3f903565318ca6411.md) |
+| Holdoween | `BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump` | 47 | 1.013x | 0.985x | 2.91% | [Inspect](../../tokens/68cde2178fe24b37b71197fa.md) |
+| HONEYPOT | `Cnt7Ykd7FpEyUGN4PFPbAwvDjuAZpbZ6CdsG4yidpump` | 56 | 1.615x | 0.875x | 60.59% | [Inspect](../../tokens/bdbc33cc33bb0fff1ecfb855.md) |
+| Honko | `G3fgAabbgArMinMgE5iGumkmGbsrAzC2bhngbAPTpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/74c685fd04fb29e820dd4d46.md) |
+| Honko | `2yKzF3hBYZbeYn3wid5vBKDpVqpDxGX11QrB13cqtzkJ` | 38 | 1.854x | 0.357x | 81.71% | [Inspect](../../tokens/fba394360881f3fc4ccbd47a.md) |
+| Honko | `33RXti5iriPdzHEXET7SfuGmPaauzLrUR8eHhMZy5A59` | 3 | 1.000x | 0.429x | 57.15% | [Inspect](../../tokens/437aa3815473c2406f439ce0.md) |
+| HONKO | `DzNsNL2bGrsCWQFarzC2pgohyWPvePD5URA7bMTzqWRh` | 34 | 1.737x | 0.805x | 61.25% | [Inspect](../../tokens/4e9e5c282ef3eab0498ff796.md) |
+| HORSECOIN | `DMtcCpMUXU83NFxKReriDj8PutxUGKifSKFqLjK3pump` | 24 | 1.330x | 1.124x | 20.47% | [Inspect](../../tokens/a77eee3012dcd8ad0fdc2753.md) |
+| HUGEKINSON | `BBwH6xYy2LTmbjYX3e9uS5UKgNqmrx7PVSsfpwgsXcNL` | 14 | 1.697x | 1.363x | 24.07% | [Inspect](../../tokens/b03019991d42493fe0b24671.md) |
+| HYPE | `2fL2ZTDH2qowXRX5mwHWskuJ2hEY7P7i4i91AvKQpump` | 36 | 3.048x | 1.247x | 59.09% | [Inspect](../../tokens/3954137c064a295caf0d2280.md) |
+| ICY | `6veQHmimWDy9dZgi2dkAMCngrLDQFKcA9vMtKpbqpump` | 8 | 1.129x | 0.664x | 41.19% | [Inspect](../../tokens/73d4706123528e9b9801e66d.md) |
+| INDX | `GX53Ff64B9uvBLgjuDMikZup3tjFiU8xZ6SXmC5mpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/0165c870f4c39e38043f31e3.md) |
+| ITCH | `2SWXLespX4sC3rzMnbS4pXyUt6aVqSaZK8X7fg8ppump` | 21 | 1.155x | 0.805x | 30.27% | [Inspect](../../tokens/bd50fc13acad164481e8f62b.md) |
+| JEANPAID | `4Exc9SfSRRButkzTT456SPa6sTzQCb8pnfqcUECGpump` | 61 | 1.166x | 1.149x | 2.89% | [Inspect](../../tokens/0b5050fa8f570ad9002d5e00.md) |
+| JEANPHIL | `GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump` | 4 | 1.010x | 0.991x | 1.82% | [Inspect](../../tokens/ec0d4f554bc61b67ea922b39.md) |
+| JEETTARA | `qyLr3k8yBZz5Lj3aV3uzmkqpGyyBqLyyfJ3ugbvpump` | 59 | 1.435x | 1.073x | 43.67% | [Inspect](../../tokens/5f5b02198e404665969a7137.md) |
+| Jimothy | `Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump` | 4 | 1.010x | 1.010x | 0.00% | [Inspect](../../tokens/a6d9f2f6fe30e835666a4864.md) |
+| Joe | `3YWbeb3gozGGQFNSv384BeZqTexPMmNns5vvjb7Kpump` | 61 | 1.074x | 0.486x | 57.41% | [Inspect](../../tokens/10577cca571e610e4bebe545.md) |
+| Jonesy | `EVLPrDPY7wzXPALz8wxq4QZfjfXAYvazeoTEZKNxpump` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/0e028c8a71f74bf44cbd67db.md) |
+| Jonesy | `6VMTDo5TyNZ7reerj2uDpDmX7mbVopysG9n19GZZCEnj` | 21 | 1.068x | 0.557x | 47.85% | [Inspect](../../tokens/ff09b97df82b38da376f699c.md) |
+| Jotchua | `BcHEaaTCvycPwwsJ9yQTXdHP9X2gCLkznDbZ8VySpump` | 2 | 1.000x | 1.000x | 0.00% | [Inspect](../../tokens/bc4cec1df9e19ff020c18d0a.md) |
+| KAI | `FyJhergwKuofZBnJ7bKWmywueUronhCimhRG7rPVxWd6` | 38 | 1.413x | 0.069x | 95.09% | [Inspect](../../tokens/db5a185f88149883cbc8a137.md) |
+| KAI | `Bd31GuanWN9apY3jntXTxECongj2B1ZSFKPYdd8JJd9` | 2 | 1.012x | 1.012x | 0.00% | [Inspect](../../tokens/f6124ff4c609649c20aefd94.md) |
+| KARDASHEV | `5wW9mhbwq1HTFh341iimpmrqBB4mfxdXiYhdYBL7hUnp` | 60 | 1.030x | 0.918x | 10.93% | [Inspect](../../tokens/7ca78c97580ef069cfad72fe.md) |
+| KIDS | `Ak3t4DtSzXxASA6wsXSyRzdMfTSvoedeMU1ym6WtaDDu` | 6 | 1.000x | 0.336x | 66.99% | [Inspect](../../tokens/a304b5c7d8cfb7fb9ec2b8c7.md) |
+| KLED | `1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm` | 22 | 1.000x | 0.980x | 3.44% | [Inspect](../../tokens/ef5989fa88458dcf523f6023.md) |
+| Kushi | `Fvra7uDZPPV16Mzk1MXC1Jabg8M2nFTzU1jzUk2Npump` | 29 | 1.550x | 0.923x | 40.48% | [Inspect](../../tokens/fcc3970f19c89046d7dd8da9.md) |
+| LAMBO | `6ge79bBZfZ9uLBYkA6bU7gSysLSpHSm9PEW6AgLB2Hrw` | 3 | 1.000x | 0.833x | 16.71% | [Inspect](../../tokens/01e185f5565244275746454b.md) |
+| LEFTCURVE | `CzdNEEHHjFZJ5dq7jjDViqWP1AxtStN9B2A12Qn3UmH` | 60 | 1.393x | 1.138x | 28.41% | [Inspect](../../tokens/6c5ea8c2286e8b7a43eaf5ab.md) |
+| LEVERAGE | `BM2k8mJUbMthHoioykyUm2NjMrXvLBYhoXruwYLpump` | 3 | 1.006x | 1.006x | 0.00% | [Inspect](../../tokens/897293cc69ffae85e09ad879.md) |
+| LEVERAGE | `9GgDKaEx8SjnxUc4rDDGkZPc4xLzZLRg5omTVND6pump` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/01712dac77822b01fdb66485.md) |
+| LUMI | `7dMdLxaSg4JLXdhtG28wx7wGPUKMQbK4NUdAoXePpump` | 5 | 1.385x | 1.385x | 22.75% | [Inspect](../../tokens/0fc3e3f08edcfa94570be42a.md) |
+| LUMI | `3a8aELD8pk8vNxquhX76CBEwc99uj2joRFEtYK4fpump` | 2 | 1.379x | 1.379x | 0.00% | [Inspect](../../tokens/4301c87b0b5be62ab3395f0a.md) |
+| MAINST | `5z1CYwbdYwFsqp8nSSiBJkZinE6MKpFb7DodFoZzpump` | 61 | 1.118x | 0.246x | 81.28% | [Inspect](../../tokens/fb9f06004fb4e5e073f196ce.md) |
+| MARTIANS | `HgoScXAo4zFv5kDb6axGrwuz95FaVEcLskyDVZfo297z` | 17 | 1.047x | 1.047x | 2.49% | [Inspect](../../tokens/4e1e7d2c42a19d9556c9af50.md) |
+| Memes | `7dACCWZXF4Lr9ftxFpi7TJk7a3hcPpUwGPAcTuXDpump` | 40 | 1.257x | 1.019x | 30.96% | [Inspect](../../tokens/f1d1d1bbdc6b371a6c03a7c0.md) |
+| MESUB | `BcyEzKVBXkPAX6651VV2GkuVyAUS7kVSwTPaamGrpump` | 34 | 3.656x | 2.856x | 45.01% | [Inspect](../../tokens/be457cace045774e89aa30ea.md) |
+| MIGR | `HNazMWySREpLBoyEdsXPPzvvc4eZ6avQDwqBko3vpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/8827c5f376457a7bde920239.md) |
+| Minaj | `Cgpfxk6Xe9W2XY5VsBhNs7QYijQGH38Tdz3UAVSjpump` | 12 | 1.079x | 1.002x | 7.31% | [Inspect](../../tokens/de5cde5a1fbaf7f27da15f0d.md) |
+| MINEPAD | `2EUKLvNQ63YCmjSDyJ14Tzj7ASeHGXgseYWrKAa2mine` | 58 | 1.128x | 1.048x | 35.66% | [Inspect](../../tokens/ac628027e6e64063f2175e2b.md) |
+| MINTCLIP | `CxxvCLmrF6hYHsexpeorGmhqv1Anuqn1Loddm9ZCpump` | 18 | 3.193x | 1.861x | 48.35% | [Inspect](../../tokens/dbc760b0dbd34d23d07a8b07.md) |
+| moin | `8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq` | 28 | 1.072x | 0.987x | 7.96% | [Inspect](../../tokens/41b1696c238c0363608fae9e.md) |
+| MOTHERSHIP | `BxzNGYrbVtP4yBnB6pn21Vp5rwyJiDhooJ2Rn24nKJYu` | 4 | 1.142x | 1.142x | 0.00% | [Inspect](../../tokens/7b48999eeb63b74740ba3db2.md) |
+| NEARKAT | `6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr` | 26 | 1.001x | 0.977x | 6.83% | [Inspect](../../tokens/d20a99b22a21600d22fdf69d.md) |
+| nearpad | `AxUB5Y8vb361dU85JPELM8ynaTUrmjhn6fCXUHwxpump` | 61 | 1.000x | 0.482x | 62.38% | [Inspect](../../tokens/b92223bc97a8cd999c2c3deb.md) |
+| neet | `Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump` | 60 | 1.010x | 0.995x | 1.63% | [Inspect](../../tokens/b02019704eddda7402c3607b.md) |
+| Nimb | `AsyGtT6pataB2NYWkK1tKUQwadpBWbFEcREhLMgJpump` | 61 | 1.386x | 0.793x | 46.35% | [Inspect](../../tokens/a5380070db1f601c034e2abc.md) |
+| NOSTALGIA | `BJobPnEeiGwQXW4kfFtUAmQf4YeZPuii8pLdTBVsfxdJ` | 8 | 1.117x | 0.501x | 56.73% | [Inspect](../../tokens/234fc19b3e98f1f138712f6e.md) |
+| NOSTALGIA | `BJobPnEeiGwQXW4kfFtUAmQf4YeZPuii8pLdTBVsfxdJ` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/234fc19b3e98f1f138712f6e.md) |
+| o | `4FRZQ5hBxNrwTmEyarihhufNQSJXzv2NnbXJQbjq4uqz` | 44 | 2.016x | 0.798x | 61.49% | [Inspect](../../tokens/1de975dd81e3f244581723bd.md) |
+| o | `7oMfBXAxeiXR24kYBagdrPcmjG4Ybjhc9aL7u6W5hWSV` | 22 | 1.000x | 0.468x | 53.19% | [Inspect](../../tokens/bf174477b9a348b88e220bad.md) |
+| o | `2bX5CKZ7SHvacmMQFq7nBjQMmpPFbCZkpA7367du9Wa2` | 49 | 1.000x | 0.856x | 20.74% | [Inspect](../../tokens/054b961a1f16a4a9b2004ace.md) |
+| o | `FXwzAD4jyH7mraT8i7gMcUQyq5uyamV62xyBUaDPoWgz` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/9a3739349048d0afb7af9172.md) |
+| OFFICE | `EMuTTsE5vCnMB3bTGtNUBKQwvoogSFRAPGZpVVzNpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/413a8b1632dd74bc85be446f.md) |
+| OFFICE | `5boGajrVzMCgKeMQTs8eBpzYyhoayTkjRfKbfdTTpump` | 10 | 1.255x | 1.167x | 6.98% | [Inspect](../../tokens/0ca57c0051b9a363d9c49102.md) |
+| OFOMO | `FoAc4fY5jyzP9gddWH2rsTPQNnbBppajxj9VHUinpump` | 13 | 1.503x | 1.503x | 4.60% | [Inspect](../../tokens/349ab0c52880ac2e25917215.md) |
+| OI | `4gNtnJBued8iGufYCHXfbC94d7skbDnESqtyAWd6BTWw` | 17 | 1.000x | 0.320x | 68.01% | [Inspect](../../tokens/fab3dc12f660fd32b13c5d89.md) |
+| Old No. 7 | `gCsv2hac3zRiyFZZnh8WX7zTT7Fw31x6ggFDMUrpump` | 9 | 1.074x | 1.066x | 0.75% | [Inspect](../../tokens/89c3c2bf8619a5b24c4c7834.md) |
+| OMNINU | `rsE4qbZ6Decdu1stnoHnC7QrNtqjuzuAuD9xnNGpump` | 9 | 1.071x | 1.035x | 3.34% | [Inspect](../../tokens/d5d4d202bc03ce55c4908308.md) |
+| OMO | `Dqo1RV2KGFnfyYkYE7sW7cs2o6GiBt2kcZEf5vvXpump` | 61 | 1.171x | 1.142x | 42.15% | [Inspect](../../tokens/49006c81dbafa919634598fd.md) |
+| ONE | `Fu9bXCVogNHy5V1w8jebse4teRBPCYts3ht9yp4ipump` | 2 | 1.000x | 0.693x | 30.73% | [Inspect](../../tokens/99cdd66198e89aab77cf9dfe.md) |
+| Optimist | `7VySefcz618cz6TkNbXRjVKLtzkLD2a6tyMpH6iTVbDq` | 32 | 2.243x | 0.295x | 86.83% | [Inspect](../../tokens/b92c1f97fd47ffa90c4c07de.md) |
+| p/xmr | `B5R7Xt9pXBHDAs2jkJ67nM2Wwch1napBsdzMxk56qpJk` | 61 | 1.363x | 1.078x | 71.24% | [Inspect](../../tokens/bf52be3034bb7987667282d6.md) |
+| p/xmr | `u9uhxHwAn5K5jcuB25QEXBX7XBPArFSTkTQg7F1nuCA` | 61 | 1.653x | 0.388x | 76.49% | [Inspect](../../tokens/2c88d053d97f56db8a328156.md) |
+| p/xmr | `GBTkSzep7xDoBGWK154TvaJWWzsb8rw5GWChNcoLcYM8` | 51 | 6.333x | 4.120x | 52.18% | [Inspect](../../tokens/9c5b27a14e73431999b87fe8.md) |
+| PAID | `98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump` | 61 | 1.021x | 0.999x | 2.17% | [Inspect](../../tokens/a4547fa810a986e0635d0a08.md) |
+| Paul | `D5ttt1hDWSBfhVkTReTbZgp9WcoyuU181nxcRRNPpump` | 5 | 1.000x | 0.980x | 2.04% | [Inspect](../../tokens/2c445f1cc5b8c5b56c5df663.md) |
+| PERSONA | `7mP77b3RoMo69FJAh8xARRynAttK4DKzBKst2tqy2tiZ` | 61 | 1.518x | 0.674x | 55.61% | [Inspect](../../tokens/3d06a4e1ef691cf63d5756ed.md) |
+| PHI | `zVbJ3eRjhRbvKWAxP8xrXZAeAcSqk3vtTjCzzVAAphi` | 21 | 1.062x | 0.902x | 16.16% | [Inspect](../../tokens/a142402adb25629ab91b288f.md) |
+| Pillys | `6JgM8JgSzG4JLxzPgx18Hx7TA1BZRUQXQykVYusTpump` | 3 | 1.000x | 0.569x | 43.12% | [Inspect](../../tokens/45ccbeb4d8ac7624699e5750.md) |
+| POCKET | `B5QcMFvX3RmkF7StMVvGJDXm1jLo4hdY47uu1QwKpump` | 16 | 1.302x | 1.024x | 21.40% | [Inspect](../../tokens/d0bdca63be2bdfded618140e.md) |
+| POCKET | `ASSWeaDhsTgGWhuPM7CFRbhQHjXk5W1SsK6VE88zpump` | 5 | 1.097x | 0.706x | 35.69% | [Inspect](../../tokens/2906cb0d00d60ef4cbd46e78.md) |
+| Prometheus | `63zfjPfH4uaX3TQZoD35WqUrqiuCQQWndMTxQHsJpump` | 18 | 1.006x | 0.992x | 1.41% | [Inspect](../../tokens/a059da5db15e3f59884b8adf.md) |
+| pump | `Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump` | 0 | N/A | N/A | N/A | [Inspect](../../tokens/e19e354d9ace13e4b91812d6.md) |
+| Pumpcat | `G9U27fAmKg8b8kjMWt53VTNvVq8KvDy2u3ojyZVFpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/633a7d99e97dd30b376e8895.md) |
+| Pumpcat | `DSsBjz7aNxadyg2Fx9aGE6QxKKoj7HaKmm7LbmvZpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/29dbe4c8a1b94774aa41bb01.md) |
+| PUMPDOG | `6oS4GBsisvFBtHV14BEEpKyZNL8zLBs8MtSQPsQdpump` | 4 | 1.003x | 0.955x | 4.81% | [Inspect](../../tokens/7572eb2a5a0ed22fff2b9458.md) |
+| Pumpdog | `F518B5yf33Yed4HPp2akNzfr11xLbPE83CnBa19Upump` | 30 | 4.082x | 1.117x | 72.63% | [Inspect](../../tokens/9caf9cd89fb266b2b3afb377.md) |
+| Pumpdog | `43VEVRk7tRipfsTgPiyS6vKdEPzH75ga7urv1MQRxT2Y` | 10 | 1.967x | 0.754x | 61.64% | [Inspect](../../tokens/43df35f0f9876edc4951af4a.md) |
+| Pumpdog | `7tUodA1L3SeFfp7k2tSSWNn9fWpe6gH76VrQyqYrpump` | 9 | 1.683x | 1.683x | 7.43% | [Inspect](../../tokens/618303e9fbc2747fab6b5c98.md) |
+| Pumpkinu | `3eYTViXTUBCVhn1TSVZAAbajRLPKs4tuV6DwL4oTpump` | 50 | 1.141x | 1.123x | 10.54% | [Inspect](../../tokens/dbeed2e2ebaecbf2e64e0965.md) |
+| Pumpoween | `5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump` | 61 | 1.014x | 0.983x | 3.81% | [Inspect](../../tokens/d0cb7c101b0e6ab16d30396a.md) |
+| Q4 | `F1z5FQdToNDLQYJ72grqePaWJrcrf39HR4gaKA57ySUQ` | 12 | 1.000x | 0.969x | 3.14% | [Inspect](../../tokens/0e06241b9f9544adf8e94a0b.md) |
+| QUAN_ETH | `6U3d9bhCsSNruozUAWZN8UbP6YRxsPRKh122EArr29Z3` | 12 | 1.000x | 0.964x | 4.13% | [Inspect](../../tokens/ec69ec7ba2641c7f10931d90.md) |
+| r/opt | `3wNbnWqEyXuPG8Xh14Uaj9yBUHhASnBjcioWKPaTpump` | 3 | 1.150x | 1.140x | 0.85% | [Inspect](../../tokens/b33f121a4092fd8c6a9f47e4.md) |
+| r/opt | `7UGrjz5XN6769DqXzfe98RyN3m3oFApwArQRAwo26HjN` | 18 | 1.000x | 0.383x | 66.80% | [Inspect](../../tokens/b81e251e4f7323a38d708d64.md) |
+| RADAR | `4SYjuST7d74abwTPnBtBgqZ3UmBB1QKEo9W3gCBApump` | 55 | 7.014x | 2.453x | 71.03% | [Inspect](../../tokens/d28d5605275a80cd84d13376.md) |
+| rebound | `Ae4pQr6ibnX3MrBFjuWbLYTWEuvSmZNgfcUzZSu4pump` | 2 | 1.000x | 0.705x | 29.45% | [Inspect](../../tokens/dccca17bf80ee129340e60a2.md) |
+| Reggie | `HHrJwqKNvad3ycshZ7LuaNftYfyyUZSuSN52hcYJyrM8` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/bd7cc3f6296dde9faba72fb8.md) |
+| Reggie | `8HES3xmbpDGQiv1SxM4mmzPuNqb3R1QhfPCFg2aspump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/ebf3ecdc634d7ee754d73ce2.md) |
+| REGULARS | `8HnLRKJ6XkeGq1tpmKPqn3yB5ruqbSR5LR5nVCNAshop` | 28 | 1.247x | 1.156x | 7.29% | [Inspect](../../tokens/99a13ddaf1c8bddff207d1b8.md) |
+| Responsible | `T2g5NaX71HVsr46yg4W2vz3rtaW8RjTeTMpG8qZGdgz` | 24 | 2.525x | 0.354x | 87.49% | [Inspect](../../tokens/6fd1c13bb5f5f718f75df881.md) |
+| RETARDIO | `CSRRgTwf9o5KLgguS2M16aEAhV5PUUzfshrAAQ8opump` | 34 | 1.000x | 0.885x | 14.78% | [Inspect](../../tokens/c114efd9fd6b44c33849790b.md) |
+| REWARDED | `RWRDiJdUzd4sehbkEvCFmF2wQMpnb3NhnRkfkDGCMeG` | 28 | 1.660x | 0.876x | 54.76% | [Inspect](../../tokens/fc020d46566c5da4bfba83df.md) |
+| RFROG | `CStde7WQL1a9XEo5n6SZJpaYuiovaHWGNELDyUKhViBs` | 34 | 1.000x | 0.515x | 54.03% | [Inspect](../../tokens/35471d9d18e5379426a7d1ba.md) |
+| ROOFTOP | `38pbCNLqnEzQ7rhMQgiQupGQW7NSPQSqRThHGppFdTXH` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/38c1acacc332bfa98aa24823.md) |
+| SCAT | `HqypR6Un8UHxh4XBzXhMgY97XP33k2LakqvcoXRvioS6` | 61 | 2.837x | 0.773x | 75.98% | [Inspect](../../tokens/0813c4573f4d164ec789ec90.md) |
+| SCAT | `68U457cJxhAQ9gz1QivaD6sHtDpe1gXtcehnpiiGSpmA` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/eaf6e1e4cbe77e80c50ddec5.md) |
+| SENT | `9N7o7AazXwY4HBG2BSsmNmEQirDDd2isbbMJDBzYpump` | 38 | 3.519x | 2.309x | 44.44% | [Inspect](../../tokens/7b5c6cb5f3fe9c120e623c0e.md) |
+| SHALAB | `83td5rsKFF1Hg7zb1GF2pKAx8TzDnAMQ4zSyxMrwpump` | 18 | 1.073x | 0.959x | 11.23% | [Inspect](../../tokens/907df08f050318c68b97aa60.md) |
+| Shore | `68SS2BwEC76JVpyfL9AN9EC3VDw1vQPxqLGsrFJ8pump` | 52 | 2.372x | 1.500x | 44.88% | [Inspect](../../tokens/85e7bbc138b2a962db642c71.md) |
+| SI | `DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP` | 61 | 1.021x | 0.933x | 11.55% | [Inspect](../../tokens/8906f3984fd45e366d5c8c3b.md) |
+| SICAT | `9pMXEbTjQ5HHiYifGbNBwkMkrQxGyhuSmB8ndKNXpump` | 61 | 1.024x | 0.673x | 38.20% | [Inspect](../../tokens/8a29a565c075df25b0483a7a.md) |
+| Slater | `2JaEmwMJ4wjJWMsHqy3Nz2WSzdTg39eUrdYSvotBh8S6` | 61 | 1.048x | 0.667x | 43.98% | [Inspect](../../tokens/86cbb1b543e6a4c30e3fe3dc.md) |
+| smolpp | `7wBt7aNt1DBzE3WPbPQruhvo4x7Y95PBHnBMVaBLpump` | 21 | 1.567x | 1.378x | 20.81% | [Inspect](../../tokens/4ee555ccf86e1a9a9c98c796.md) |
+| SMUDGE | `Af22pLvYvP5Tt8RyqdevgYefVujAa9eLNsa4rpDupump` | 17 | 1.007x | 0.848x | 15.78% | [Inspect](../../tokens/3499b9e7977ca9e7ceb46fab.md) |
+| SP | `Fr4a6ZvEh6En6enWPjhDNeittzeN7J94HDpTdja2pump` | 58 | 1.112x | 1.013x | 12.72% | [Inspect](../../tokens/1ccba671c992ca404d57e7a1.md) |
+| SpaceX | `AtfUWNGbNdwRVzVCmU3K9GwDdcQzzJ83QKQ7qrJFpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/8055c5709674b3bb18cb5b3b.md) |
+| STC | `A2EyPshAzKGYG4QnY7ZSdHWkq7DpwiGnTnYgNBoQvjR1` | 3 | 1.229x | 1.229x | 0.00% | [Inspect](../../tokens/bae8f013bda1283b3a94e78e.md) |
+| STICKMAN | `6B7fZwePZtovqEQsQWSChEYKRCSUrZdYqwT3dBiKKTWE` | 40 | 1.030x | 0.911x | 27.15% | [Inspect](../../tokens/2770bc3a6e32f78396dc3105.md) |
+| STILL | `7qLn9eW3CHiCMJWokv4Kxmgs4daSnnRE4hxAzqqFpump` | 26 | 1.207x | 0.757x | 39.09% | [Inspect](../../tokens/7f0e234de7f82539804110b6.md) |
+| STONK | `6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx` | 61 | 1.011x | 1.002x | 1.86% | [Inspect](../../tokens/74c4c5d3f84d04f787cf39bb.md) |
+| STOXES | `AfVUPhruMtJuFVtPj4u8kvpNbNEuy7VQ3ME5eAHq9999` | 61 | 1.229x | 1.062x | 19.71% | [Inspect](../../tokens/6933037cfdd3092b39d65856.md) |
+| SUBS | `BW1HeTnP1ZpSyvoExMKCW86vdEAShjwBV6dUfgZwpump` | 56 | 1.000x | 0.710x | 29.00% | [Inspect](../../tokens/5b8f3e965e4ec13b7ee70743.md) |
+| suit | `AVXPQqxd32ABAP5F7shHKNeWBpos9miktdH3uKqgXYJZ` | 7 | 1.037x | 1.027x | 5.01% | [Inspect](../../tokens/5a4df9849c77948316017ee7.md) |
+| SUPERTAKE | `WNnpLo7Mjx3mGw5Vu41EyXUd4CCyJyVHoXVkGdMxpLU` | 11 | 1.006x | 0.951x | 5.47% | [Inspect](../../tokens/ae648c246e5cb441b48f2d51.md) |
+| SWARM | `5g9PWcRUHpmqm5uKycpShKXJB18sGLeCEzgB3qrRpump` | 26 | 1.069x | 1.061x | 0.78% | [Inspect](../../tokens/ef55263a20eac16b4c4ce83d.md) |
+| swordcat | `5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump` | 61 | 1.028x | 0.820x | 20.22% | [Inspect](../../tokens/cb9d9a79b21e0c1d7722fcd7.md) |
+| Tehc | `3WLZeqDnVyeSAzcgQL13EUjbwhLjCT7Z6Goi1opctehc` | 52 | 1.317x | 1.253x | 33.28% | [Inspect](../../tokens/2beb1e678d10a27f3d3726ac.md) |
+| testicle | `4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump` | 13 | 1.004x | 1.003x | 0.02% | [Inspect](../../tokens/a3bf076e11090a78bba5c0e6.md) |
+| TikTok | `95iWWUfkSwbqr1NaEXo6aKiNE7aPXKVd5EyDcyjkpump` | 3 | 1.029x | 1.029x | 0.00% | [Inspect](../../tokens/961252eed7328796c1e631ee.md) |
+| TOAD | `A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump` | 21 | 1.022x | 1.005x | 1.98% | [Inspect](../../tokens/31c16759362eddb357e75fb4.md) |
+| TOBEY | `FbrMGVE2548HfpMVhYsybmYyUQVHMefMiUSkckyipump` | 61 | 1.140x | 1.129x | 2.75% | [Inspect](../../tokens/854d3a5796da3ddef33b171a.md) |
+| TROVOK | `8ttG1niVUr8uBXo8S4Yd7dSdatV8cQk8dNAZxVyBpump` | 7 | 1.373x | 1.333x | 34.36% | [Inspect](../../tokens/1622551694c8c0ad29bbaff4.md) |
+| UFO | `2gSgbNue3spuFGoiMSCvFo3G9yArciFeSdyCi65pvo7P` | 16 | 2.586x | 2.586x | 36.50% | [Inspect](../../tokens/142addb3c6b837c8a04f2998.md) |
+| URANUS | `EpByjpXQgHw5WDTteLihkCGHFj6Cxny8wSs6umCfxmMU` | 6 | 1.000x | 0.998x | 0.21% | [Inspect](../../tokens/5e1a44f0e40915d8a788b41b.md) |
+| USELESS | `Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk` | 12 | 1.003x | 0.988x | 1.48% | [Inspect](../../tokens/5e68128421cf3a9f6e857694.md) |
+| VENM | `DMYgPtPrRJx5cvpH9EQhXhHdMyxKVaizWvXyn712CpBw` | 5 | 1.000x | 0.928x | 17.62% | [Inspect](../../tokens/9c155258e2342f0db45c569b.md) |
+| WAGMI | `4fb2Y9QmrJCs89fj4eRL9GekV8LYz35RCZziKaus6oxB` | 20 | 1.043x | 0.866x | 16.93% | [Inspect](../../tokens/9c4086ff23c141865015e4f2.md) |
+| wCat | `4RtA5ANnHdVDod28gczHWDpBhqcm6RF1qcEniAsHpump` | 18 | 1.059x | 0.756x | 28.63% | [Inspect](../../tokens/41ec74f477039a1085b357d3.md) |
+| wdog  | `AUxE3g2UQ6YApyAPRdXGx56FCs7gpW4BzCSEgH4zpump` | 1 | N/A | N/A | N/A | [Inspect](../../tokens/5033df02d26a0689282cc274.md) |
+| WhatsPay | `AjZ2d8n2bHH818a8ugFy4q4ipgzqzhCn3qSzsHAspump` | 7 | 1.000x | 0.671x | 40.20% | [Inspect](../../tokens/272ed0b41124df45c9a9ffb0.md) |
+| WIRED | `W1REDXeQNwEjbX648217XGsErfPrw866iFX4fB1qGKT` | 7 | 1.082x | 0.830x | 23.26% | [Inspect](../../tokens/d3500923f3ca94dec8250483.md) |
+| WORLD | `CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt` | 49 | 1.017x | 0.945x | 12.09% | [Inspect](../../tokens/811065f2a3218eea751a931a.md) |
+| XPAD | `FFzTy32bZbPA8zRLbbiWoNzW2emGv86tUxaoqhz1pump` | 9 | 3.995x | 3.995x | 0.00% | [Inspect](../../tokens/9c66a1efbbd58e8136158590.md) |
+| YAP | `jLz71QZfjnZZMLjUaCBw7KmUyftkkNq8NkWi2u9dyap` | 39 | 1.028x | 1.004x | 4.93% | [Inspect](../../tokens/99f93e7817646104ef4385e0.md) |
+| ZARVIS | `Gp5rC1aHeT9WfAVvf6UEaEpuSzsKSt4j42Gbm4PZwVDs` | 14 | 1.074x | 1.036x | 6.69% | [Inspect](../../tokens/de3924ad90535a9adb2f8e58.md) |
+| Ō SAMA | `73yk8tioRE7NMidLnYwcwWsgWb7jsJRDSubxYHoLQPwn` | 24 | 1.543x | 0.992x | 45.16% | [Inspect](../../tokens/a64ab6b4508c7d78c70f3a36.md) |
+| 王様 | `7STQRJKjUicpcCqbU3jdUrTDbhk3vvNnHMqvM1oepQ5A` | 13 | 1.700x | 0.518x | 69.56% | [Inspect](../../tokens/6607f15d6861128e502a8788.md) |
+| 王様 | `B6TBmEJuS8QGJGcJG4V8DFzMdh944rF7TeEx9vrEBkj9` | 19 | 1.000x | 0.747x | 25.31% | [Inspect](../../tokens/f22c51a368e5d43eedfc08a1.md) |

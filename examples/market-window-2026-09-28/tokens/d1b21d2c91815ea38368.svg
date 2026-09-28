@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>PENGU: 9 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">PENGU: 9 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="130.000" x2="740" y2="130.000" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="130.000">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,130.000 98.983,130.000 190.102,130.000 281.540,130.000 396.173,130.000 466.004,130.000 558.897,130.000 652.946,130.000 740.000,130.000"/>
+<circle cx="60.000" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="98.983" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="190.102" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="281.540" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="396.173" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="466.004" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="558.897" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="652.946" cy="130.000" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="130.000" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:12:41.261074+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:14:32.527710+00:00</text>
+</g></svg>

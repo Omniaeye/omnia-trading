@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>BEC: 9 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">BEC: 9 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.86x</text>
+<line x1="60" y1="88.413" x2="740" y2="88.413" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="88.413">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,88.413 91.538,88.413 186.259,128.849 276.596,128.849 370.548,171.587 461.656,171.587 553.680,171.587 656.140,171.587 740.000,171.587"/>
+<circle cx="60.000" cy="88.413" r="2" fill="#b33b47"/>
+<circle cx="91.538" cy="88.413" r="2" fill="#b33b47"/>
+<circle cx="186.259" cy="128.849" r="2" fill="#b33b47"/>
+<circle cx="276.596" cy="128.849" r="2" fill="#b33b47"/>
+<circle cx="370.548" cy="171.587" r="2" fill="#b33b47"/>
+<circle cx="461.656" cy="171.587" r="2" fill="#b33b47"/>
+<circle cx="553.680" cy="171.587" r="2" fill="#b33b47"/>
+<circle cx="656.140" cy="171.587" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="171.587" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:12:40.365643+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:14:30.874732+00:00</text>
+</g></svg>

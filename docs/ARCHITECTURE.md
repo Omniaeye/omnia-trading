@@ -91,8 +91,7 @@ Contract fixtures demonstrate implementation behavior. Neither the presence of 1
 
 ## Reporting and published windows
 
-`reporting.build()` owns archive validation, report assembly and the installed
-HTML template. It verifies a frozen sample when supplied and binds native calls
+`reporting.build()` owns archive validation and JSON report assembly. It verifies a frozen sample when supplied and binds native calls
 to source fields and question hashes when recorded calls are available. The
 `omnia-trading-report` command exposes it without checkout-specific imports.
 
@@ -100,6 +99,11 @@ to source fields and question hashes when recorded calls are available. The
 `casebook.verify()` checks published file hashes, the complete native cohort,
 request/answer bindings, summary counts and every quote replay. No provider,
 model or database is required to inspect a published window.
+
+`casebook_views` groups tokens by chain, network and contract, retaining separate
+pool series. It renders complete quote curves as SVG and every quote/policy event
+in Markdown. `refresh-views` verifies the existing casebook before regenerating
+presentation; native calls, observations and quote arrays remain unchanged.
 
 `tests/contracts`, `tests/strategy`, `tests/runtime` and `tests/reporting` test
 these responsibilities separately. The shared `_engine` remains fingerprinted.

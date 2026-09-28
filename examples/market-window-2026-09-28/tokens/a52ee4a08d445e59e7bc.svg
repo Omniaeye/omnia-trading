@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>蘑菇头: 7 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">蘑菇头: 7 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.92x</text>
+<line x1="60" y1="109.706" x2="740" y2="109.706" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="109.706">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,109.706 527.076,150.294 569.642,150.294 611.608,150.294 654.601,150.294 696.907,150.294 740.000,150.294"/>
+<circle cx="60.000" cy="109.706" r="2" fill="#b33b47"/>
+<circle cx="527.076" cy="150.294" r="2" fill="#b33b47"/>
+<circle cx="569.642" cy="150.294" r="2" fill="#b33b47"/>
+<circle cx="611.608" cy="150.294" r="2" fill="#b33b47"/>
+<circle cx="654.601" cy="150.294" r="2" fill="#b33b47"/>
+<circle cx="696.907" cy="150.294" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="150.294" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:16:02.665866+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:20:02.835112+00:00</text>
+</g></svg>

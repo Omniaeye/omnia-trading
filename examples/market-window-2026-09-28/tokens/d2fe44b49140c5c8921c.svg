@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>METAB: 19 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">METAB: 19 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="128.532" x2="740" y2="128.532" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="128.532">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,128.532 70.947,128.532 96.535,128.532 122.212,128.532 154.402,128.532 174.012,128.532 200.098,128.532 226.508,128.532 250.954,129.542 276.967,131.468 302.732,131.468 328.546,131.468 354.307,131.468 379.777,131.468 405.648,131.468 431.127,131.468 616.595,131.468 714.562,131.468 740.000,131.468"/>
+<circle cx="60.000" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="70.947" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="96.535" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="122.212" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="154.402" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="174.012" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="200.098" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="226.508" cy="128.532" r="2" fill="#b33b47"/>
+<circle cx="250.954" cy="129.542" r="2" fill="#b33b47"/>
+<circle cx="276.967" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="302.732" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="328.546" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="354.307" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="379.777" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="405.648" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="431.127" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="616.595" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="714.562" cy="131.468" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="131.468" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:12:41.261074+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:19:17.488471+00:00</text>
+</g></svg>

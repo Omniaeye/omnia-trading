@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>BAXK: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">BAXK: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="130.736" x2="740" y2="130.736" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="130.736">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,130.736 112.541,130.736 156.569,130.736 205.207,130.736 253.321,130.736 448.378,130.736 497.231,129.264 545.665,129.264 593.960,129.264 645.190,129.264 691.134,129.264 740.000,129.264"/>
+<circle cx="60.000" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="112.541" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="156.569" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="205.207" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="253.321" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="448.378" cy="130.736" r="2" fill="#087f6d"/>
+<circle cx="497.231" cy="129.264" r="2" fill="#087f6d"/>
+<circle cx="545.665" cy="129.264" r="2" fill="#087f6d"/>
+<circle cx="593.960" cy="129.264" r="2" fill="#087f6d"/>
+<circle cx="645.190" cy="129.264" r="2" fill="#087f6d"/>
+<circle cx="691.134" cy="129.264" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="129.264" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:22:02.883000+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:25:32.640282+00:00</text>
+</g></svg>

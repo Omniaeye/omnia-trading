@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>WHLR: 5 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">WHLR: 5 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.14x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="172.559" x2="740" y2="172.559" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="172.559">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,172.559 516.368,87.441 570.435,87.441 654.372,87.441 740.000,87.441"/>
+<circle cx="60.000" cy="172.559" r="2" fill="#087f6d"/>
+<circle cx="516.368" cy="87.441" r="2" fill="#087f6d"/>
+<circle cx="570.435" cy="87.441" r="2" fill="#087f6d"/>
+<circle cx="654.372" cy="87.441" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="87.441" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:25:30.354898+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

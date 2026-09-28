@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>SCROOGE: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">SCROOGE: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.86x</text>
+<line x1="60" y1="87.163" x2="740" y2="87.163" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="87.163">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,87.163 64.873,87.163 76.263,87.163 87.701,87.163 99.195,86.121 110.705,87.621 122.843,88.178 133.786,88.178 144.931,88.178 156.413,88.178 167.780,86.897 179.315,86.897 247.986,87.200 740.000,173.879"/>
+<circle cx="60.000" cy="87.163" r="2" fill="#b33b47"/>
+<circle cx="64.873" cy="87.163" r="2" fill="#b33b47"/>
+<circle cx="76.263" cy="87.163" r="2" fill="#b33b47"/>
+<circle cx="87.701" cy="87.163" r="2" fill="#b33b47"/>
+<circle cx="99.195" cy="86.121" r="2" fill="#b33b47"/>
+<circle cx="110.705" cy="87.621" r="2" fill="#b33b47"/>
+<circle cx="122.843" cy="88.178" r="2" fill="#b33b47"/>
+<circle cx="133.786" cy="88.178" r="2" fill="#b33b47"/>
+<circle cx="144.931" cy="88.178" r="2" fill="#b33b47"/>
+<circle cx="156.413" cy="88.178" r="2" fill="#b33b47"/>
+<circle cx="167.780" cy="86.897" r="2" fill="#b33b47"/>
+<circle cx="179.315" cy="86.897" r="2" fill="#b33b47"/>
+<circle cx="247.986" cy="87.200" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="173.879" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:12:39.012894+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

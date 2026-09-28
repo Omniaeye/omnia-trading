@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>ZZZ: 35 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">ZZZ: 35 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.07x</text><text x="8" y="220">0.93x</text>
+<line x1="60" y1="125.783" x2="740" y2="125.783" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="125.783">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,125.783 65.633,125.783 78.798,125.783 92.018,125.783 105.304,125.783 118.608,120.568 132.637,120.568 145.286,120.568 158.168,120.568 171.440,120.568 184.579,120.568 197.912,120.568 211.181,120.568 224.274,120.568 237.604,120.568 488.846,103.461 502.056,103.461 515.419,103.461 528.954,138.999 541.702,138.999 554.987,138.999 568.336,138.999 581.475,138.999 594.686,138.999 607.974,138.999 621.145,138.999 634.617,138.999 647.689,138.999 660.757,138.999 674.014,138.999 687.978,138.999 700.524,138.999 713.604,138.999 726.742,156.539 740.000,113.372"/>
+<circle cx="60.000" cy="125.783" r="2" fill="#087f6d"/>
+<circle cx="65.633" cy="125.783" r="2" fill="#087f6d"/>
+<circle cx="78.798" cy="125.783" r="2" fill="#087f6d"/>
+<circle cx="92.018" cy="125.783" r="2" fill="#087f6d"/>
+<circle cx="105.304" cy="125.783" r="2" fill="#087f6d"/>
+<circle cx="118.608" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="132.637" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="145.286" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="158.168" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="171.440" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="184.579" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="197.912" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="211.181" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="224.274" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="237.604" cy="120.568" r="2" fill="#087f6d"/>
+<circle cx="488.846" cy="103.461" r="2" fill="#087f6d"/>
+<circle cx="502.056" cy="103.461" r="2" fill="#087f6d"/>
+<circle cx="515.419" cy="103.461" r="2" fill="#087f6d"/>
+<circle cx="528.954" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="541.702" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="554.987" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="568.336" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="581.475" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="594.686" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="607.974" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="621.145" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="634.617" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="647.689" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="660.757" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="674.014" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="687.978" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="700.524" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="713.604" cy="138.999" r="2" fill="#087f6d"/>
+<circle cx="726.742" cy="156.539" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="113.372" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:12:39.012894+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:25:30.354898+00:00</text>
+</g></svg>

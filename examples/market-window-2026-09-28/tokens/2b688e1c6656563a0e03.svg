@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>GRAPH: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">GRAPH: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.55x</text><text x="8" y="220">0.82x</text>
+<line x1="60" y1="175.403" x2="740" y2="175.403" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="175.403">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,175.403 115.214,82.123 164.825,154.928 320.917,153.686 373.655,133.076 426.077,153.060 481.005,74.229 530.393,52.414 602.176,86.078 635.498,88.867 687.227,207.586 740.000,137.221"/>
+<circle cx="60.000" cy="175.403" r="2" fill="#087f6d"/>
+<circle cx="115.214" cy="82.123" r="2" fill="#087f6d"/>
+<circle cx="164.825" cy="154.928" r="2" fill="#087f6d"/>
+<circle cx="320.917" cy="153.686" r="2" fill="#087f6d"/>
+<circle cx="373.655" cy="133.076" r="2" fill="#087f6d"/>
+<circle cx="426.077" cy="153.060" r="2" fill="#087f6d"/>
+<circle cx="481.005" cy="74.229" r="2" fill="#087f6d"/>
+<circle cx="530.393" cy="52.414" r="2" fill="#087f6d"/>
+<circle cx="602.176" cy="86.078" r="2" fill="#087f6d"/>
+<circle cx="635.498" cy="88.867" r="2" fill="#087f6d"/>
+<circle cx="687.227" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="137.221" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:24:15.505143+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>dbatura: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">dbatura: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.92x</text>
+<line x1="60" y1="111.855" x2="740" y2="111.855" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="111.855">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,111.855 82.380,124.198 149.594,124.198 213.698,124.198 280.367,124.198 345.018,124.198 410.319,124.198 483.025,124.198 542.533,148.145 612.474,148.145 671.594,148.145 740.000,148.145"/>
+<circle cx="60.000" cy="111.855" r="2" fill="#b33b47"/>
+<circle cx="82.380" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="149.594" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="213.698" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="280.367" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="345.018" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="410.319" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="483.025" cy="124.198" r="2" fill="#b33b47"/>
+<circle cx="542.533" cy="148.145" r="2" fill="#b33b47"/>
+<circle cx="612.474" cy="148.145" r="2" fill="#b33b47"/>
+<circle cx="671.594" cy="148.145" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="148.145" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:12:40.365643+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:15:16.098308+00:00</text>
+</g></svg>

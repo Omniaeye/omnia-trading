@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "omnia-trading"
-version = "0.5.1"
+version = "0.5.2"
 description = "Evidence-linked trading decisions with local typed inference"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -29,7 +29,7 @@ Documentation = "https://github.com/Omniaeye/omnia-trading/tree/main/docs"
 where = ["src"]
 
 [tool.setuptools.package-data]
-omnia_trading = ["*.json", "templates/*.html"]
+omnia_trading = ["*.json"]
 
 [tool.ruff]
 line-length = 140

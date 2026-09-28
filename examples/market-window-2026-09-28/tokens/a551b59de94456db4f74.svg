@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>CARING: 16 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">CARING: 16 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="129.242" x2="740" y2="129.242" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="129.242">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,129.242 105.777,130.238 151.594,130.758 196.657,130.758 241.511,130.758 287.045,130.758 341.047,130.732 378.443,130.732 422.740,130.732 468.159,130.732 513.604,130.388 558.409,130.388 604.310,130.388 649.478,130.388 695.485,130.388 740.000,130.388"/>
+<circle cx="60.000" cy="129.242" r="2" fill="#b33b47"/>
+<circle cx="105.777" cy="130.238" r="2" fill="#b33b47"/>
+<circle cx="151.594" cy="130.758" r="2" fill="#b33b47"/>
+<circle cx="196.657" cy="130.758" r="2" fill="#b33b47"/>
+<circle cx="241.511" cy="130.758" r="2" fill="#b33b47"/>
+<circle cx="287.045" cy="130.758" r="2" fill="#b33b47"/>
+<circle cx="341.047" cy="130.732" r="2" fill="#b33b47"/>
+<circle cx="378.443" cy="130.732" r="2" fill="#b33b47"/>
+<circle cx="422.740" cy="130.732" r="2" fill="#b33b47"/>
+<circle cx="468.159" cy="130.732" r="2" fill="#b33b47"/>
+<circle cx="513.604" cy="130.388" r="2" fill="#b33b47"/>
+<circle cx="558.409" cy="130.388" r="2" fill="#b33b47"/>
+<circle cx="604.310" cy="130.388" r="2" fill="#b33b47"/>
+<circle cx="649.478" cy="130.388" r="2" fill="#b33b47"/>
+<circle cx="695.485" cy="130.388" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="130.388" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:16:32.607943+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:20:17.561225+00:00</text>
+</g></svg>

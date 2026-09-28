@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>EARLY: 5 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">EARLY: 5 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.09x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="148.561" x2="740" y2="148.561" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="148.561">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,148.561 227.191,120.919 401.072,113.351 569.689,97.690 740.000,162.310"/>
+<circle cx="60.000" cy="148.561" r="2" fill="#b33b47"/>
+<circle cx="227.191" cy="120.919" r="2" fill="#b33b47"/>
+<circle cx="401.072" cy="113.351" r="2" fill="#b33b47"/>
+<circle cx="569.689" cy="97.690" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="162.310" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:13:00.884337+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:14:00.595194+00:00</text>
+</g></svg>

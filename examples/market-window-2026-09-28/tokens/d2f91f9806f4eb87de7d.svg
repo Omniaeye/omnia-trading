@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>UFO: 16 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">UFO: 16 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">2.72x</text><text x="8" y="220">0.77x</text>
+<line x1="60" y1="199.131" x2="740" y2="199.131" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="199.131">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,199.131 106.615,202.579 151.199,199.167 197.585,172.735 250.686,174.156 290.415,207.586 331.408,106.693 377.825,106.884 421.324,117.080 466.495,72.585 513.754,84.379 564.173,150.515 619.880,152.541 647.545,121.217 693.514,137.659 740.000,52.414"/>
+<circle cx="60.000" cy="199.131" r="2" fill="#087f6d"/>
+<circle cx="106.615" cy="202.579" r="2" fill="#087f6d"/>
+<circle cx="151.199" cy="199.167" r="2" fill="#087f6d"/>
+<circle cx="197.585" cy="172.735" r="2" fill="#087f6d"/>
+<circle cx="250.686" cy="174.156" r="2" fill="#087f6d"/>
+<circle cx="290.415" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="331.408" cy="106.693" r="2" fill="#087f6d"/>
+<circle cx="377.825" cy="106.884" r="2" fill="#087f6d"/>
+<circle cx="421.324" cy="117.080" r="2" fill="#087f6d"/>
+<circle cx="466.495" cy="72.585" r="2" fill="#087f6d"/>
+<circle cx="513.754" cy="84.379" r="2" fill="#087f6d"/>
+<circle cx="564.173" cy="150.515" r="2" fill="#087f6d"/>
+<circle cx="619.880" cy="152.541" r="2" fill="#087f6d"/>
+<circle cx="647.545" cy="121.217" r="2" fill="#087f6d"/>
+<circle cx="693.514" cy="137.659" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="52.414" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:23:45.375171+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:31.150305+00:00</text>
+</g></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>CHINESE: 23 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">CHINESE: 23 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.56x</text><text x="8" y="220">0.54x</text>
+<line x1="60" y1="139.084" x2="740" y2="139.084" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="139.084">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,139.084 81.142,138.154 102.677,64.921 123.513,101.162 145.854,87.215 166.014,75.802 187.262,62.667 208.479,95.320 230.559,102.960 250.747,103.118 272.533,183.999 295.464,205.041 314.680,203.038 547.992,207.586 569.320,173.334 590.692,145.574 617.132,103.870 633.382,101.165 654.281,52.414 683.475,126.844 696.981,81.493 717.679,67.131 740.000,61.108"/>
+<circle cx="60.000" cy="139.084" r="2" fill="#087f6d"/>
+<circle cx="81.142" cy="138.154" r="2" fill="#087f6d"/>
+<circle cx="102.677" cy="64.921" r="2" fill="#087f6d"/>
+<circle cx="123.513" cy="101.162" r="2" fill="#087f6d"/>
+<circle cx="145.854" cy="87.215" r="2" fill="#087f6d"/>
+<circle cx="166.014" cy="75.802" r="2" fill="#087f6d"/>
+<circle cx="187.262" cy="62.667" r="2" fill="#087f6d"/>
+<circle cx="208.479" cy="95.320" r="2" fill="#087f6d"/>
+<circle cx="230.559" cy="102.960" r="2" fill="#087f6d"/>
+<circle cx="250.747" cy="103.118" r="2" fill="#087f6d"/>
+<circle cx="272.533" cy="183.999" r="2" fill="#087f6d"/>
+<circle cx="295.464" cy="205.041" r="2" fill="#087f6d"/>
+<circle cx="314.680" cy="203.038" r="2" fill="#087f6d"/>
+<circle cx="547.992" cy="207.586" r="2" fill="#087f6d"/>
+<circle cx="569.320" cy="173.334" r="2" fill="#087f6d"/>
+<circle cx="590.692" cy="145.574" r="2" fill="#087f6d"/>
+<circle cx="617.132" cy="103.870" r="2" fill="#087f6d"/>
+<circle cx="633.382" cy="101.165" r="2" fill="#087f6d"/>
+<circle cx="654.281" cy="52.414" r="2" fill="#087f6d"/>
+<circle cx="683.475" cy="126.844" r="2" fill="#087f6d"/>
+<circle cx="696.981" cy="81.493" r="2" fill="#087f6d"/>
+<circle cx="717.679" cy="67.131" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="61.108" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:19:32.672995+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:33.270377+00:00</text>
+</g></svg>

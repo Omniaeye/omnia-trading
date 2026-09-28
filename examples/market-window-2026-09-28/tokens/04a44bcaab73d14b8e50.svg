@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>ROBIN: 14 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">ROBIN: 14 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="133.281" x2="740" y2="133.281" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="133.281">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,133.281 115.214,126.719 164.825,126.719 216.542,126.719 268.495,126.719 320.917,126.719 373.655,126.719 426.077,126.719 481.005,126.719 530.393,126.719 602.176,126.719 635.498,126.719 687.227,126.719 740.000,126.719"/>
+<circle cx="60.000" cy="133.281" r="2" fill="#087f6d"/>
+<circle cx="115.214" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="164.825" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="216.542" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="268.495" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="320.917" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="373.655" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="426.077" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="481.005" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="530.393" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="602.176" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="635.498" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="687.227" cy="126.719" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="126.719" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:24:15.505143+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:27:30.577698+00:00</text>
+</g></svg>

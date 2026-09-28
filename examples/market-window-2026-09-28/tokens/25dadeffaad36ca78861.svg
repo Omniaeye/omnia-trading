@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>Minaj: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">Minaj: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.13x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="169.395" x2="740" y2="169.395" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="169.395">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,169.395 125.996,90.329 181.782,169.504 246.331,169.504 305.012,169.504 374.985,169.671 428.285,169.671 490.897,150.764 553.394,150.764 613.908,150.764 675.948,150.764 740.000,166.879"/>
+<circle cx="60.000" cy="169.395" r="2" fill="#087f6d"/>
+<circle cx="125.996" cy="90.329" r="2" fill="#087f6d"/>
+<circle cx="181.782" cy="169.504" r="2" fill="#087f6d"/>
+<circle cx="246.331" cy="169.504" r="2" fill="#087f6d"/>
+<circle cx="305.012" cy="169.504" r="2" fill="#087f6d"/>
+<circle cx="374.985" cy="169.671" r="2" fill="#087f6d"/>
+<circle cx="428.285" cy="169.671" r="2" fill="#087f6d"/>
+<circle cx="490.897" cy="150.764" r="2" fill="#087f6d"/>
+<circle cx="553.394" cy="150.764" r="2" fill="#087f6d"/>
+<circle cx="613.908" cy="150.764" r="2" fill="#087f6d"/>
+<circle cx="675.948" cy="150.764" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="166.879" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:14:30.874732+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:17:15.914647+00:00</text>
+</g></svg>

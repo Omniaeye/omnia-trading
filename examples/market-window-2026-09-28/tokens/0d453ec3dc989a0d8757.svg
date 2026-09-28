@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>OMNIBIND: 15 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">OMNIBIND: 15 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.94x</text>
+<line x1="60" y1="119.693" x2="740" y2="119.693" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="119.693">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,119.693 108.097,119.693 157.059,119.693 205.780,119.693 253.791,119.693 302.826,124.764 351.477,140.307 400.093,140.307 448.436,140.307 497.434,140.307 553.351,140.307 594.594,140.307 642.857,140.307 691.629,123.236 740.000,123.236"/>
+<circle cx="60.000" cy="119.693" r="2" fill="#b33b47"/>
+<circle cx="108.097" cy="119.693" r="2" fill="#b33b47"/>
+<circle cx="157.059" cy="119.693" r="2" fill="#b33b47"/>
+<circle cx="205.780" cy="119.693" r="2" fill="#b33b47"/>
+<circle cx="253.791" cy="119.693" r="2" fill="#b33b47"/>
+<circle cx="302.826" cy="124.764" r="2" fill="#b33b47"/>
+<circle cx="351.477" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="400.093" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="448.436" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="497.434" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="553.351" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="594.594" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="642.857" cy="140.307" r="2" fill="#b33b47"/>
+<circle cx="691.629" cy="123.236" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="123.236" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:15:30.501058+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:19:00.487408+00:00</text>
+</g></svg>

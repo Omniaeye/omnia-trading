@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>POCKET: 16 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">POCKET: 16 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.35x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="196.407" x2="740" y2="196.407" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="196.407">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,196.407 100.205,194.302 147.458,195.658 187.400,195.658 233.617,197.805 275.633,193.444 325.733,188.155 363.896,112.907 408.725,115.601 453.473,115.601 496.801,116.813 541.222,62.195 587.083,62.195 637.384,152.247 676.096,185.939 740.000,185.939"/>
+<circle cx="60.000" cy="196.407" r="2" fill="#087f6d"/>
+<circle cx="100.205" cy="194.302" r="2" fill="#087f6d"/>
+<circle cx="147.458" cy="195.658" r="2" fill="#087f6d"/>
+<circle cx="187.400" cy="195.658" r="2" fill="#087f6d"/>
+<circle cx="233.617" cy="197.805" r="2" fill="#087f6d"/>
+<circle cx="275.633" cy="193.444" r="2" fill="#087f6d"/>
+<circle cx="325.733" cy="188.155" r="2" fill="#087f6d"/>
+<circle cx="363.896" cy="112.907" r="2" fill="#087f6d"/>
+<circle cx="408.725" cy="115.601" r="2" fill="#087f6d"/>
+<circle cx="453.473" cy="115.601" r="2" fill="#087f6d"/>
+<circle cx="496.801" cy="116.813" r="2" fill="#087f6d"/>
+<circle cx="541.222" cy="62.195" r="2" fill="#087f6d"/>
+<circle cx="587.083" cy="62.195" r="2" fill="#087f6d"/>
+<circle cx="637.384" cy="152.247" r="2" fill="#087f6d"/>
+<circle cx="676.096" cy="185.939" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="185.939" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:14:17.246316+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:18:07.749963+00:00</text>
+</g></svg>

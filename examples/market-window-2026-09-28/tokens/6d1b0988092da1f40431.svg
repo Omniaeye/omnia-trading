@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>ALF: 19 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">ALF: 19 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.06x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="140.475" x2="740" y2="140.475" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="140.475">1x</text>
+<polyline fill="none" stroke="#087f6d" stroke-width="2" points="60.000,140.475 97.407,140.956 135.488,134.019 173.380,134.019 210.720,134.019 248.857,134.019 286.695,134.019 324.506,134.019 362.105,134.019 400.212,134.019 443.702,134.019 475.778,134.019 513.315,134.527 551.246,134.527 588.867,134.527 626.554,119.044 664.488,119.044 702.080,119.044 740.000,119.044"/>
+<circle cx="60.000" cy="140.475" r="2" fill="#087f6d"/>
+<circle cx="97.407" cy="140.956" r="2" fill="#087f6d"/>
+<circle cx="135.488" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="173.380" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="210.720" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="248.857" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="286.695" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="324.506" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="362.105" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="400.212" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="443.702" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="475.778" cy="134.019" r="2" fill="#087f6d"/>
+<circle cx="513.315" cy="134.527" r="2" fill="#087f6d"/>
+<circle cx="551.246" cy="134.527" r="2" fill="#087f6d"/>
+<circle cx="588.867" cy="134.527" r="2" fill="#087f6d"/>
+<circle cx="626.554" cy="119.044" r="2" fill="#087f6d"/>
+<circle cx="664.488" cy="119.044" r="2" fill="#087f6d"/>
+<circle cx="702.080" cy="119.044" r="2" fill="#087f6d"/>
+<circle cx="740.000" cy="119.044" r="2" fill="#087f6d"/>
+<text x="60" y="250">2026-09-28T19:15:30.501058+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:20:00.494705+00:00</text>
+</g></svg>

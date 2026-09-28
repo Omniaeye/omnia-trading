@@ -13,35 +13,9 @@ OMNIA Trading evaluates market observations and turns them into position decisio
 
 The Python package combines **102 source parameter definitions**, typed model assessments, position snapshots and a persistent decision ledger. Every result identifies the observation, position, policy and evidence used.
 
-## Market results
+## Examples
 
-**28 September 2026 · 15 minutes · Robinhood Chain, BSC and Solana**
-
-| Captures | Ranking series | Reached 2x | Finished at 2x or above |
-| ---: | ---: | ---: | ---: |
-| **789** | **607** | **25** | **12** |
-
-| Token | Network | Peak | Final |
-| --- | --- | ---: | ---: |
-| RADAR | Solana | **7.014x** | 2.453x |
-| p/xmr | Solana | **6.333x** | 4.120x |
-| CATTO | BSC | **5.445x** | 2.685x |
-| DOA | Solana | **4.720x** | 1.076x |
-| Pumpdog | Solana | **4.082x** | 1.117x |
-| XPAD | Solana | **3.995x** | 3.995x |
-| LBX | Robinhood | **3.866x** | 1.356x |
-| MESUB | Solana | **3.656x** | 2.856x |
-
-Multiples are relative to each series' first captured price. Peak and final refer to captured quotes within this window. **568 series** contain at least two quotes.
-
-[**Explore every contract and result →**](examples/market-window-2026-09-28/README.md)
-
-- **60 contract records:** every supplied parameter, unit, timestamp and source mapping.
-- **180 native JEV/LAYA responses:** exact inputs, questions, answer distributions and acceptance gates.
-- **621 series:** every captured quote in the report, including single-quote and assessment-only records.
-- **14,077 exit-policy events:** BUY, HOLD, HOLD BAG, PROFIT, TP and SL with price, quantity and source references.
-
-Price trajectories, model assessments and exit-policy calculations have separate records. The complete window includes all outcomes and can be verified locally without model downloads.
+[Browse the examples](examples/README.md) for every contract, quote curve, native assessment and exit-policy timeline.
 
 ## Work with the data you have
 

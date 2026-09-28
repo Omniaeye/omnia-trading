@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>QUAN_ETH: 12 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">QUAN_ETH: 12 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.91x</text>
+<line x1="60" y1="103.703" x2="740" y2="103.703" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="103.703">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,103.703 122.285,148.035 183.767,148.035 243.919,156.297 305.494,156.297 376.153,149.537 429.087,149.537 501.482,149.435 551.182,149.435 614.323,149.435 680.076,149.435 740.000,149.435"/>
+<circle cx="60.000" cy="103.703" r="2" fill="#b33b47"/>
+<circle cx="122.285" cy="148.035" r="2" fill="#b33b47"/>
+<circle cx="183.767" cy="148.035" r="2" fill="#b33b47"/>
+<circle cx="243.919" cy="156.297" r="2" fill="#b33b47"/>
+<circle cx="305.494" cy="156.297" r="2" fill="#b33b47"/>
+<circle cx="376.153" cy="149.537" r="2" fill="#b33b47"/>
+<circle cx="429.087" cy="149.537" r="2" fill="#b33b47"/>
+<circle cx="501.482" cy="149.435" r="2" fill="#b33b47"/>
+<circle cx="551.182" cy="149.435" r="2" fill="#b33b47"/>
+<circle cx="614.323" cy="149.435" r="2" fill="#b33b47"/>
+<circle cx="680.076" cy="149.435" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="149.435" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:20:30.480194+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:23:16.460099+00:00</text>
+</g></svg>

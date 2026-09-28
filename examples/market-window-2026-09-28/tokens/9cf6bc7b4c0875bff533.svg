@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>GLXY: 11 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">GLXY: 11 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.95x</text>
+<line x1="60" y1="129.619" x2="740" y2="129.619" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="129.619">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,129.619 129.582,130.381 195.120,130.381 263.418,130.381 332.048,130.381 399.595,130.381 467.510,130.381 535.828,130.381 603.539,130.381 672.797,130.381 740.000,130.381"/>
+<circle cx="60.000" cy="129.619" r="2" fill="#b33b47"/>
+<circle cx="129.582" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="195.120" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="263.418" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="332.048" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="399.595" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="467.510" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="535.828" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="603.539" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="672.797" cy="130.381" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="130.381" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:21:15.606838+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:23:45.643860+00:00</text>
+</g></svg>

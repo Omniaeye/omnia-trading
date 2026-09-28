@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>SMUDGE: 17 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">SMUDGE: 17 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.06x</text><text x="8" y="220">0.80x</text>
+<line x1="60" y1="79.809" x2="740" y2="79.809" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="79.809">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,79.809 67.654,81.612 90.643,86.143 112.568,75.907 135.370,74.758 157.482,84.572 179.816,88.808 204.683,91.375 225.035,118.404 248.956,120.139 269.176,161.563 496.972,158.090 516.569,146.975 548.919,146.975 695.373,122.978 720.610,123.423 740.000,185.242"/>
+<circle cx="60.000" cy="79.809" r="2" fill="#b33b47"/>
+<circle cx="67.654" cy="81.612" r="2" fill="#b33b47"/>
+<circle cx="90.643" cy="86.143" r="2" fill="#b33b47"/>
+<circle cx="112.568" cy="75.907" r="2" fill="#b33b47"/>
+<circle cx="135.370" cy="74.758" r="2" fill="#b33b47"/>
+<circle cx="157.482" cy="84.572" r="2" fill="#b33b47"/>
+<circle cx="179.816" cy="88.808" r="2" fill="#b33b47"/>
+<circle cx="204.683" cy="91.375" r="2" fill="#b33b47"/>
+<circle cx="225.035" cy="118.404" r="2" fill="#b33b47"/>
+<circle cx="248.956" cy="120.139" r="2" fill="#b33b47"/>
+<circle cx="269.176" cy="161.563" r="2" fill="#b33b47"/>
+<circle cx="496.972" cy="158.090" r="2" fill="#b33b47"/>
+<circle cx="516.569" cy="146.975" r="2" fill="#b33b47"/>
+<circle cx="548.919" cy="146.975" r="2" fill="#b33b47"/>
+<circle cx="695.373" cy="122.978" r="2" fill="#b33b47"/>
+<circle cx="720.610" cy="123.423" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="185.242" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:12:40.365643+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:20:15.699547+00:00</text>
+</g></svg>

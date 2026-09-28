@@ -107,12 +107,11 @@ def build(source: Path, output: Path):
     package = files(__package__)
     result['implementation_sha256'] = {
         name: hashlib.sha256(package.joinpath(name).read_bytes()).hexdigest()
-        for name in ('capture_archive.py', 'casebook.py', 'reporting.py', 'templates/performance_report.html', 'performance.py',
+        for name in ('capture_archive.py', 'casebook.py', 'reporting.py', 'performance.py',
                      'decision_notes.py', 'strategy_facts.py', 'strategy_contracts.py',
                      'contracts.py', 'policy.py', 'identity.py', 'availability.py', 'parameters.json')}
     output.mkdir(parents=True, exist_ok=False)
     (output / 'report.json').write_text(json.dumps(result, ensure_ascii=True, allow_nan=False), encoding='utf-8')
-    (output / 'index.html').write_bytes(package.joinpath('templates/performance_report.html').read_bytes())
     print(json.dumps(summary, indent=2))
 
 

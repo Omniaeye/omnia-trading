@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img">
+<title>TAPEGRAPH: 9 observed quotes; each price relative to the first quote</title>
+<rect width="800" height="270" rx="12" fill="#f6f8fa"/>
+<g font-family="sans-serif" font-size="12" fill="#334155">
+<text x="60" y="24">TAPEGRAPH: 9 observed quotes; each price relative to the first quote</text>
+<text x="8" y="48">1.05x</text><text x="8" y="220">0.91x</text>
+<line x1="60" y1="104.851" x2="740" y2="104.851" stroke="#94a3b8" stroke-dasharray="4 4"/>
+<text x="744" y="104.851">1x</text>
+<polyline fill="none" stroke="#b33b47" stroke-width="2" points="60.000,104.851 121.984,104.851 183.347,104.851 245.616,104.851 307.589,103.805 553.984,116.651 616.329,116.651 678.186,116.651 740.000,156.195"/>
+<circle cx="60.000" cy="104.851" r="2" fill="#b33b47"/>
+<circle cx="121.984" cy="104.851" r="2" fill="#b33b47"/>
+<circle cx="183.347" cy="104.851" r="2" fill="#b33b47"/>
+<circle cx="245.616" cy="104.851" r="2" fill="#b33b47"/>
+<circle cx="307.589" cy="103.805" r="2" fill="#b33b47"/>
+<circle cx="553.984" cy="116.651" r="2" fill="#b33b47"/>
+<circle cx="616.329" cy="116.651" r="2" fill="#b33b47"/>
+<circle cx="678.186" cy="116.651" r="2" fill="#b33b47"/>
+<circle cx="740.000" cy="156.195" r="2" fill="#b33b47"/>
+<text x="60" y="250">2026-09-28T19:14:30.367936+00:00</text>
+<text x="740" y="250" text-anchor="end">2026-09-28T19:17:15.523068+00:00</text>
+</g></svg>
