@@ -2,7 +2,7 @@
 
 102 executable input definitions across Market, Holders, Risk, Lifecycle and Social.
 
-Each supplied field retains its value, unit, window, observation time and evidence reference. The catalog defines accepted adapter inputs. Optional absence is allowed; supplied null values require review. Collection coverage is established separately by the adapter.
+Each supplied field retains its value, unit, window, observation time and evidence reference. The catalog defines accepted adapter inputs. Absent or null values are not reported. Only selected policy requirements make them mandatory. Collection coverage is established separately by the adapter.
 
 Run `omnia-trading --catalog` for the machine-readable schema and fingerprint. This page is generated with `python tools/render_parameters.py` from that same catalog.
 
@@ -57,196 +57,196 @@ See [API](API.md) for envelope shape, review reasons, derived metrics and exampl
 Price reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`market_cap` — Market cap**
 
 Market cap reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`liquidity` — Liquidity**
 
 Liquidity reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`initial_liquidity` — Initial liquidity**
 
 Initial liquidity reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`history_highest_market_cap` — History highest market cap**
 
 History highest market cap reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`total_supply` — Total supply**
 
 Total supply reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`volume` — Volume · ranking window**
 
 Volume in the ranking window reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`volume_24h` — Volume 24 hours**
 
 Volume 24 hours reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`buys` — Buys · ranking window**
 
 Buys in the ranking window reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sells` — Sells · ranking window**
 
 Sells in the ranking window reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`swaps` — Swaps · ranking window**
 
 Swaps in the ranking window reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`buys_24h` — Buys 24 hours**
 
 Buys 24 hours reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sells_24h` — Sells 24 hours**
 
 Sells 24 hours reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`price_change_percent` — Price change · ranking window**
 
 Price change in the ranking window reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`price_change_percent1m` — Price change · 1 minute**
 
 Price change in the 1 minute reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`price_change_percent5m` — Price change · 5 minutes**
 
 Price change in the 5 minutes reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`price_change_percent1h` — Price change · 1 hour**
 
 Price change in the 1 hour reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`gas_fee` — Gas fee**
 
 Gas fee reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`rank` — Rank**
 
 Rank reported by the source adapter.
 
 Positive source rank; no cross-source ranking equivalence is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`circulating_supply` — Circulating supply**
 
 Source-reported circulating supply, separate from total supply and FDV.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`fdv` — Fully diluted valuation**
 
 Source-reported fully diluted valuation. It is not substituted for circulating market capitalization.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`buy_volume` — Buy volume**
 
 Aggregate buy-side volume over the explicitly declared window.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sell_volume` — Sell volume**
 
 Aggregate sell-side volume over the explicitly declared window.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`unique_buyers` — Unique buyers**
 
 Distinct buying addresses within the declared source window; not an independently identified person count.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`unique_sellers` — Unique sellers**
 
 Distinct selling addresses within the declared source window; not an independently identified person count.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`quote_reserve` — Quote reserve**
 
 Pool quote-asset reserve. The adapter must bind the quote asset; this value is not automatically USD.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`base_reserve` — Base reserve**
 
 Pool base-token reserve from the source capture; no executable depth guarantee is implied.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`price_impact_bps` — Quoted price impact**
 
 Source-reported nonnegative price-impact magnitude in basis points for a separately archived quote, size and route.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 
 ## Holders — 17 fields
@@ -278,119 +278,119 @@ Missingness: `optional_absent; supplied_null_requires_review`.
 Holder count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`top_10_holder_rate` — Top 10 holder rate**
 
 Top 10 holder rate reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creator_balance_rate` — Creator balance rate**
 
 Creator balance rate reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`dev_team_hold_rate` — Dev team hold rate**
 
 Dev team hold rate reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`rat_trader_amount_rate` — Flagged trader amount ratio**
 
 Flagged trader amount ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`bluechip_owner_percentage` — Blue-chip ownership**
 
 Blue-chip ownership reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sniper_count` — Sniper count**
 
 Sniper count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`smart_degen_count` — Smart trader count**
 
 Smart trader count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`renowned_count` — Recognized trader count**
 
 Recognized trader count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`bundler_rate` — Bundler rate**
 
 Bundler rate reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`top70_sniper_hold_rate` — Top70 sniper hold rate**
 
 Top70 sniper hold rate reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`bot_degen_count` — Bot trader count**
 
 Bot trader count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`bot_degen_rate` — Bot trader ratio**
 
 Bot trader ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`top_1_holder_rate` — Largest holder share**
 
 Share attributed to the largest holder under the source denominator and exclusion rules.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`insider_hold_rate` — Source-tagged insider share**
 
 Holder share tagged as insider-related by the source; the label is not independent attribution.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`holder_count_change` — Holder count change**
 
 Signed change in an aggregate holder count across the declared window, not identified joins or exits.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creator_token_balance` — Creator token balance**
 
 Token balance attributed to the creator address by the source.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 
 ## Risk — 19 fields
@@ -424,133 +424,133 @@ Missingness: `optional_absent; supplied_null_requires_review`.
 Buy tax reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sell_tax` — Sell tax**
 
 Sell tax reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_honeypot` — Is honeypot**
 
 Is honeypot reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_wash_trading` — Is wash trading**
 
 Is wash trading reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`renounced_mint` — Renounced mint**
 
 Renounced mint reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`renounced_freeze_account` — Renounced freeze account**
 
 Renounced freeze account reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`burn_ratio` — Burn ratio**
 
 Burn ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`burn_status` — Burn status**
 
 Burn status reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`dev_token_burn_amount` — Dev token burn amount**
 
 Dev token burn amount reported by the source adapter.
 
 Source-reported value. Only an explicit allowed unit is interpretable; raw or unknown denomination remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`dev_token_burn_ratio` — Dev token burn ratio**
 
 Dev token burn ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`rug_ratio` — Source rug ratio**
 
 Source rug ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`entrapment_ratio` — Source entrapment ratio**
 
 Source entrapment ratio reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_renounced` — Is renounced**
 
 Is renounced reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_open_source` — Is open source**
 
 Is open source reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`lock_percent` — Lock percent**
 
 Lock percent reported by the source adapter.
 
 Explicit ratio and percent units are distinguished. Domain bounds are expressed as ratios; raw source scale remains review.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`mint_authority` — Mint authority**
 
 Source-reported Solana mint authority address. An absent authority must be expressed through an explicit source flag, not an invented address.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`freeze_authority` — Freeze authority**
 
 Source-reported Solana freeze authority address. Syntactic validity does not establish current authority.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`transfer_paused` — Transfers paused**
 
 Source-reported transfer-pause state; false is not a general transferability guarantee.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`sell_simulation_success` — Sell simulation succeeded**
 
 Result reported for a separately archived sell simulation. It does not prove a real fill or future sellability.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 
 ## Lifecycle — 17 fields
@@ -582,119 +582,119 @@ Missingness: `optional_absent; supplied_null_requires_review`.
 Launchpad reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`launchpad_platform` — Launchpad platform**
 
 Launchpad platform reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`launchpad_status` — Launchpad status**
 
 Launchpad status reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`created_timestamp` — Created timestamp**
 
 Created timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creation_timestamp` — Creation timestamp**
 
 Creation timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`open_timestamp` — Open timestamp**
 
 Open timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`complete_timestamp` — Complete timestamp**
 
 Complete timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`pool_type` — Pool type code**
 
 Pool type code reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`pool_type_str` — Pool type str**
 
 Pool type str reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`exchange` — Exchange**
 
 Exchange reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creator` — Creator**
 
 Creator reported by the source adapter.
 
 Address syntax must match the observation chain. No ownership, affiliation, contract-code or on-chain lookup is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creator_token_status` — Creator token status**
 
 Creator token status reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`creator_close` — Creator close**
 
 Creator close reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`launch_quote_address` — Launch quote address**
 
 Launch quote address reported by the source adapter.
 
 Address syntax must match the observation chain. No ownership, affiliation, contract-code or on-chain lookup is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`migrated_pool_exchange` — Migrated pool exchange**
 
 Migrated pool exchange reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`block_number` — EVM block number**
 
 Source observation block number, without an implied finality or canonical-chain guarantee.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`slot` — Solana slot**
 
 Source observation slot, without an implied finality guarantee.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 
 ## Social — 21 fields
@@ -730,148 +730,144 @@ Missingness: `optional_absent; supplied_null_requires_review`.
 Twitter username reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter` — X reference**
 
 X reference reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_handle` — X handle**
 
 X handle reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`website` — Website**
 
 Website reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`telegram` — Telegram**
 
 Telegram reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_change_flag` — Twitter change flag**
 
 Twitter change flag reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_rename_count` — Twitter rename count**
 
 Twitter rename count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_del_post_token_count` — Twitter del post token count**
 
 Twitter del post token count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_create_token_count` — Twitter create token count**
 
 Twitter create token count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_dup` — Twitter dup**
 
 Twitter dup reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`telegram_dup` — Telegram dup**
 
 Telegram dup reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`website_dup` — Website dup**
 
 Website dup reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`square_mentions` — Square mentions**
 
 Square mentions reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`visiting_count` — Visiting count**
 
 Visiting count reported by the source adapter.
 
 A nonnegative whole-number source count; it does not identify individual participants or transactions.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`hot_level` — Source hot level**
 
 Source hot level reported by the source adapter.
 
 Source-supplied text. No independent truth, affiliation or availability verification is implied.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_show_alert` — Is show alert**
 
 Is show alert reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_og` — Is og**
 
 Is og reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`is_token_live` — Is token live**
 
 Is token live reported by the source adapter.
 
 Explicit source-reported boolean. A false flag alone is not a security guarantee.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`start_live_timestamp` — Start live timestamp**
 
 Start live timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`end_live_timestamp` — End live timestamp**
 
 End live timestamp reported by the source adapter.
 
 Source event time. Zero is unknown. UTC requires timezone-aware text; numeric epochs require an explicit seconds or milliseconds unit.
-Missingness: `optional_absent; supplied_null_requires_review`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.
 
 **`twitter_follower_count` — X follower count**
 
 Source-reported follower count for the associated profile; association is not verified affiliation.
 
 Optional adapter input. Catalog support does not mean this field is collected or independently verified.
-Missingness: `optional_absent; supplied_null_requires_review`.
-
-## Account and strategy parameters
-
-Position state and entry/exit thresholds are separate from the 102 source definitions. See [Strategy](STRATEGY.md#policy) for the 11 policy limits and [account context](STRATEGY.md#account-context) for position, exposure and cash fields. Inspect defaults with `omnia-trading --strategy-policy`.
+Missingness: `absent_or_null_not_reported; required_by_selected_policy`.

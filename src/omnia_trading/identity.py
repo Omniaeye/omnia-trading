@@ -23,6 +23,13 @@ def address(value, chain):
     return value
 
 
+def pool_identifier(value, chain):
+    """EVM pools may use an address or an opaque bytes32 ID; neither proves a protocol."""
+    if chain in {'robinhood', 'bsc'} and isinstance(value, str) and re.fullmatch(r'0x[0-9a-fA-F]{64}', value):
+        return value.lower()
+    return address(value, chain)
+
+
 def identity(value):
     if not isinstance(value, dict) or set(value) != {'chain', 'network_id', 'contract', 'pool'}:
         raise ValueError('invalid_identity_fields')
@@ -34,4 +41,4 @@ def identity(value):
         raise ValueError('invalid_network_id')
     return {'chain': chain, 'network_id': network,
             'contract': address(value['contract'], chain),
-            'pool': address(value['pool'], chain) if value['pool'] is not None else None}
+            'pool': pool_identifier(value['pool'], chain) if value['pool'] is not None else None}

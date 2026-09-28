@@ -1,6 +1,6 @@
 # Position strategy
 
-OMNIA Trading separates source-data acceptance from position decisions. The data API remains unchanged. The strategy API returns `omnia.trading.strategy.v1`.
+OMNIA Trading separates source-data acceptance from position decisions. The strategy API returns `omnia.trading.strategy.v2` and records source coverage alongside each assessment.
 
 ## Interfaces
 
@@ -71,6 +71,8 @@ All ratios use fractions: 0.10 means 10%. Source fields may use explicit percent
 | `profit_trigger_ratio` | 0.25 | Positive partial-exit return |
 | `take_profit_ratio` | 0.50 | Greater than the partial-profit trigger |
 | `bag_fraction` | 0.20 | Greater than 0 and less than 1 |
+| `require_risk_reports` | false | Require all four security reports before entry and holding decisions |
+| `require_ownership` | false | Require top-ten holder share for entry |
 
 Print executable defaults with `omnia-trading --strategy-policy`. Strategy options are supplied per envelope or through `StrategyPolicy`; they are not implicitly read from environment variables. Runtime and data-policy environment variables continue to use [.env.example](../.env.example).
 
@@ -78,16 +80,18 @@ Print executable defaults with `omnia-trading --strategy-policy`. Strategy optio
 
 Entry requires a candidate data assessment and positive USD price. Market cap, liquidity, source semantics and freshness use the existing data policy.
 
-The strategy also requires:
+The minimum entry inputs are a valid asset identity, current positive USD price, comparable buy/sell counts, a current account snapshot and enough budget. The accepted data assessment and the flow model answer remain required.
 
-- `is_honeypot=false`, `transfer_paused=false`, `sell_simulation_success=true`, `is_wash_trading=false`.
-- `top_10_holder_rate` within the configured concentration limit.
-- Comparable `buys` and `sells` with matching source evidence, timestamp, count unit and configured window.
-- Buy share meeting policy, sufficient available cash and sufficient remaining portfolio exposure.
-- Accepted risk, flow and ownership model answers meeting the probability gate.
-- Supplied `buy_tax` and `sell_tax` within the configured tax limit.
+- Known honeypot, paused transfer, failed sell-check or wash-trading reports reject entry.
+- Missing security reports are recorded as partial or not reported. They are not called clear. Risk inference runs only with all four reports; `require_risk_reports=true` makes their presence mandatory.
+- Reported top-ten holder share must respect the concentration limit. Absence is allowed unless `require_ownership=true`; ownership inference is skipped when absent.
+- Reported market cap and liquidity must use USD and respect their limits. Data-policy requirements can make presence mandatory.
+- Supplied buy/sell taxes must respect the tax limit.
+- Invalid reported measurements and expired inputs still block promotion.
 
-A source-reported sell check is an input, not proof of a current executable quote. Missing prerequisites yield SKIP with explicit reason codes. Additional supplied fields still participate in data-quality assessment even when they are not direct strategy triggers.
+Existing positions do not require entry-flow or ownership tasks. Risk reports remain evaluated when complete; known rejecting reports still block HOLD and PROFIT. SL and TP retain their documented precedence.
+
+`strategy_coverage` lists each task's reported and missing fields. `strategy_checks` contains only actual model answers. Partial coverage does not establish token safety, and a BUY remains an execution proposal.
 
 ## Decision precedence
 
@@ -103,7 +107,7 @@ A source-reported sell check is an input, not proof of a current executable quot
 
 SL and TP do not depend on the additional strategy-model answers. They still require an accepted data assessment and fresh, matching account/price inputs. SKIP with an existing position is an abstention, not a liquidation instruction or protection order. An execution service must maintain its own independent position protection.
 
-Flow and ownership are entry filters. Existing positions require interpretable accepted strategy answers, but weak flow or concentrated ownership alone does not introduce an undocumented sell rule. Explicit transfer/manipulation risk blocks HOLD and PROFIT proposals.
+Flow and ownership are entry filters. Existing positions use risk inference when its reports are complete; flow and ownership are not additional holding gates. Explicit transfer/manipulation risk blocks HOLD and PROFIT proposals.
 
 ## Position lifecycle
 

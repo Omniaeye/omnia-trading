@@ -2,7 +2,7 @@
 
 ## Position decisions
 
-`decide(event, context, ledger, backend, *, strategy_policy=None, data_policy=None, min_probability=.8, max_bytes=65536, now=None)` returns a persisted `omnia.trading.strategy.v1` result.
+`decide(event, context, ledger, backend, *, strategy_policy=None, data_policy=None, min_probability=.8, max_bytes=65536, now=None)` returns a persisted `omnia.trading.strategy.v2` result.
 
 `process_strategy(envelope, ledger, backend, **kwargs)` reads exactly `observation`, `context` and `strategy_policy`. The CLI selects this API with `--strategy`. Use `--strategy-policy` to print defaults without initializing the model.
 
@@ -38,7 +38,7 @@ For example, a count over a confirmed one-minute window is:
 
 `id` and `source` are bounded to 200 characters; text values to 2,048; units to 64. Unknown keys, malformed envelopes, invalid identity/address syntax, invalid metadata shape, nonfinite values and oversized packets raise a contract error. The CLI records those failures and continues within its batch limit.
 
-Semantically questionable but structurally valid input is retained: null values, negative counts, mismatched units, invalid field-address syntax, wrong chain applicability, ambiguous timestamps and inconsistent windows become review reasons. Input is not silently rewritten. Optional absent fields are allowed; a supplied null is explicitly unknown and requires review.
+Absent and null values are recorded as not reported. Fields outside the selected chain are marked not applicable. These values remain linked through the original observation hash and evidence, but are excluded from model batches. Negative counts, mismatched units, invalid addresses, ambiguous timestamps and inconsistent windows still require review. Missing essential decision inputs or explicitly required policy inputs block that decision.
 
 ## Executable semantics
 
@@ -68,11 +68,11 @@ This validates source semantics, not policy thresholds or current freshness. Tho
 
 ## Policy and clocks
 
-`Policy()` defaults to `max_age_seconds=120`, `min_market_cap_usd=30000`, and `min_liquidity_usd=10000`. The required policy inputs are `market_cap`, `liquidity` and an explicit `is_honeypot` boolean. Missing required inputs require review. Supplied optional fields must also be semantically valid.
+`Policy()` defaults to `max_age_seconds=120`, `min_market_cap_usd=30000`, and `min_liquidity_usd=10000`. Their presence is optional by default: `require_market_cap`, `require_liquidity` and `require_honeypot_report` are false. Set a requirement to true to block absent or null values. Reported values still undergo semantic and threshold checks. `data_coverage` records which policy inputs were reported.
 
 A well-formed below-threshold market value or a reported honeypot produces conservative `skip`. Rejection takes precedence over review, but stale, missing and inconsistent reasons are retained. No model is called for a deterministic skip. All other observations assess every supplied batch; an accepted model answer cannot erase a deterministic review reason.
 
-With `now=None`, the library checks current UTC freshness before inference and again when constructing the final assessment. `evaluated_at` records the final check; `valid_until` is the earliest source observation time plus the configured maximum age. Consumers must check expiry themselves because storage, queues and transport can add delay.
+With `now=None`, the library checks current UTC freshness before inference and again when constructing the final assessment. `evaluated_at` records the final check; `valid_until` is the earliest reported source-field or envelope time plus the configured maximum age. Consumers must check expiry themselves because storage, queues and transport can add delay.
 
 An explicit timezone-aware `now` selects historical replay. The clock is fixed for both checks and recorded as `clock_mode: replay`. Replay is not evidence that a historical input is currently fresh:
 
@@ -88,7 +88,7 @@ result = process(observation, ledger, backend,
 
 Fields are sorted and partitioned within each family into batches of at most four. A family with up to four fields keeps its name; larger families use `Market:part1`, `Market:part2`, and so on. `assessment_batches` maps every planned batch to its family, field names, part number and part count. Successful entries in `groups` include the same mapping; `group_failures` identifies failed batches.
 
-Planned model requests equal the sum of `ceil(supplied_fields_in_family / 4)` across populated families, except deterministic skips. Cache hits avoid repeated inference. This is two requests for the included three-field example and 28 for the union of all 102 definitions. Actual latency depends on the checkpoint, content, device, cache and scheduler. Token budgets still apply to each batch; four long strings are not guaranteed to fit.
+Planned model requests equal the sum of `ceil(reported_applicable_fields_in_family / 4)` across populated families, except deterministic skips. Cache hits avoid repeated inference. This is two requests for the included three-field example. The 102-definition catalog spans multiple networks; fields not applicable to the selected chain do not create model calls. Actual latency depends on the checkpoint, content, device, cache and scheduler. Token budgets still apply to each batch; four long strings are not guaranteed to fit.
 
 The model sees source identity, source name and observation time, plus each batch's values, units, windows and field-clock offsets from the source observation. No verbose catalog descriptions are added to the model state. Cross-field constraints and arithmetic are owned by deterministic code; there is no implied model comparison across separate batches.
 
@@ -118,3 +118,9 @@ A final result is persisted with `ledger.record_assessment()` even when it is a 
 | `circulating_supply_fraction` | circulating_supply / total_supply | Positive total supply; fraction at most one |
 
 Inputs must be semantically valid, share source evidence and observation time, and have compatible units/windows. Ambiguous or inconsistent inputs suppress the affected metric. Each metric records the input keys, formula, unit, window, observation time and evidence. These aggregate calculations do not identify trades, infer guaranteed profit or authorize an order.
+
+## Coverage and migration
+
+Version 0.4 uses strategy.v2 and data-policy.v3. Missing optional data no longer blocks an assessment by default. Set the three data-policy requirements and `StrategyPolicy(require_risk_reports=True, require_ownership=True)` to require those inputs. Supplied nulls are tracked as unavailable rather than interpreted by the model. Each consumer should select its policy explicitly when upgrading.
+
+`reported_parameter_count` counts fields sent through the batch plan. `unavailable_fields` maps supplied fields to `not_reported` or `not_applicable`. `strategy_coverage` identifies complete, partial, not-reported and not-required-for-position tasks; `strategy_checks` contains only actual model records. No native risk answer is requested when any of its four required reports is absent.

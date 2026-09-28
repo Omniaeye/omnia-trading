@@ -10,8 +10,8 @@ def render(root):
     out = ['# Parameter catalog', '',
            f'{len(rows)} executable input definitions across Market, Holders, Risk, Lifecycle and Social.', '',
            'Each supplied field retains its value, unit, window, observation time and evidence reference. '
-           'The catalog defines accepted adapter inputs. Optional absence is allowed; supplied null values '
-           'require review. Collection coverage is established separately by the adapter.', '',
+           'The catalog defines accepted adapter inputs. Absent or null values are not reported. '
+           'Only selected policy requirements make them mandatory. Collection coverage is established separately by the adapter.', '',
            'Run `omnia-trading --catalog` for the machine-readable schema and fingerprint. '
            'This page is generated with `python tools/render_parameters.py` from that same catalog.', '',
            '## Reading the contract', '',

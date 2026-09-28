@@ -6,8 +6,9 @@ from datetime import datetime, timezone
 import math
 from .contracts import timestamp
 from .validation import field_issues, validate_semantics
+from .availability import reported_observation
 
-POLICY_VERSION = 'omnia.trading.data-policy.v2'
+POLICY_VERSION = 'omnia.trading.data-policy.v3'
 
 
 @dataclass(frozen=True)
@@ -15,8 +16,14 @@ class Policy:
     max_age_seconds: float = 120
     min_market_cap_usd: float = 30000
     min_liquidity_usd: float = 10000
+    require_market_cap: bool = False
+    require_liquidity: bool = False
+    require_honeypot_report: bool = False
 
     def __post_init__(self):
+        for value in (self.require_market_cap, self.require_liquidity, self.require_honeypot_report):
+            if type(value) is not bool:
+                raise ValueError('invalid_policy_requirement')
         for value in (self.max_age_seconds, self.min_market_cap_usd, self.min_liquidity_usd):
             if type(value) not in (int, float) or not math.isfinite(value) or value < 0:
                 raise ValueError('invalid_policy_limit')
@@ -26,8 +33,11 @@ def evaluate(event, policy, now=None):
     now = datetime.now(timezone.utc) if now is None else now
     if not isinstance(now, datetime) or now.tzinfo is None or now.utcoffset() is None:
         raise ValueError('timezone_required')
+    event, _ = reported_observation(event)
     fields = event['fields']
     issues = validate_semantics(event)
+    if not fields:
+        issues.append('no_reported_fields')
     rejection_reasons = []
     envelope_age = (now - timestamp(event['observed_at'])).total_seconds()
     if envelope_age < -5 or envelope_age > policy.max_age_seconds:
@@ -38,12 +48,16 @@ def evaluate(event, policy, now=None):
             issues.append('stale_or_future:' + key)
     for key, minimum in (('market_cap', policy.min_market_cap_usd), ('liquidity', policy.min_liquidity_usd)):
         field = fields.get(key)
+        if not field and not getattr(policy, 'require_' + key):
+            continue
         if not field or field['unit'] != 'USD' or type(field['value']) not in (int, float):
             issues.append('missing_usd_value:' + key)
         elif not field_issues(key, field, event['identity']['chain']) and field['value'] < minimum:
             rejection_reasons.append('below_policy_limit:' + key)
     risk = fields.get('is_honeypot')
-    if not risk or type(risk['value']) is not bool:
+    if not risk and not policy.require_honeypot_report:
+        pass
+    elif not risk or type(risk['value']) is not bool:
         issues.append('missing_risk_flag:is_honeypot')
     elif not field_issues('is_honeypot', risk, event['identity']['chain']) and risk['value']:
         rejection_reasons.append('source_reports_honeypot')

@@ -177,3 +177,75 @@ class StrategyTests(unittest.TestCase):
         result = self.decide()
         self.assertEqual(result['action'], 'SKIP')
         self.assertIn('portfolio_exposure_excludes_position', result['reasons'])
+
+    def test_missing_optional_reports_do_not_call_risk_or_ownership_model(self):
+        fields = self.envelope['observation']['fields']
+        for key in ('is_honeypot', 'transfer_paused', 'sell_simulation_success', 'is_wash_trading',
+                    'top_10_holder_rate', 'market_cap', 'liquidity'):
+            fields.pop(key)
+        result = self.decide()
+        self.assertEqual(result['action'], 'BUY')
+        self.assertEqual(set(result['strategy_checks']), {'flow'})
+        self.assertEqual(result['strategy_coverage']['risk']['status'], 'not_reported')
+        self.assertEqual(result['strategy_coverage']['ownership']['status'], 'not_reported')
+        self.assertFalse(result['execution_authorized'])
+
+    def test_partial_risk_keeps_coverage_and_still_rejects_known_risk(self):
+        del self.envelope['observation']['fields']['sell_simulation_success']
+        result = self.decide()
+        self.assertEqual(result['action'], 'BUY')
+        self.assertEqual(result['strategy_coverage']['risk']['status'], 'partial')
+        self.assertNotIn('risk', result['strategy_checks'])
+        self.envelope['observation']['fields']['transfer_paused']['value'] = True
+        result = self.decide()
+        self.assertEqual(result['action'], 'SKIP')
+        self.assertIn('risk_rejected:transfer_paused', result['reasons'])
+
+    def test_operator_can_require_all_risk_reports(self):
+        del self.envelope['observation']['fields']['is_wash_trading']
+        self.envelope['strategy_policy']['require_risk_reports'] = True
+        result = self.decide()
+        self.assertEqual(result['action'], 'SKIP')
+        self.assertIn('missing_strategy_field:is_wash_trading', result['reasons'])
+
+    def test_operator_can_require_ownership(self):
+        del self.envelope['observation']['fields']['top_10_holder_rate']
+        self.envelope['strategy_policy']['require_ownership'] = True
+        result = self.decide()
+        self.assertEqual(result['action'], 'SKIP')
+        self.assertIn('missing_strategy_field:top_10_holder_rate', result['reasons'])
+
+    def test_missing_flow_or_price_still_blocks_entry(self):
+        for key in ('buys', 'sells', 'price'):
+            with self.subTest(key=key):
+                original = deepcopy(self.envelope)
+                del self.envelope['observation']['fields'][key]
+                self.assertEqual(self.decide()['action'], 'SKIP')
+                self.envelope = original
+
+    def test_existing_position_does_not_require_entry_flow_or_ownership(self):
+        self.position()
+        for key in ('buys', 'sells', 'top_10_holder_rate'):
+            del self.envelope['observation']['fields'][key]
+        result = self.decide()
+        self.assertEqual(result['action'], 'HOLD')
+        self.assertEqual(set(result['strategy_checks']), {'risk'})
+        self.assertEqual(result['strategy_coverage']['flow']['status'], 'not_required_for_position')
+
+    def test_null_optional_field_is_not_given_to_model(self):
+        self.envelope['observation']['fields']['top_10_holder_rate']['value'] = None
+        result = self.decide()
+        self.assertEqual(result['action'], 'BUY')
+        self.assertNotIn('ownership', result['strategy_checks'])
+
+    def test_invalid_optional_field_still_blocks(self):
+        self.envelope['observation']['fields']['top_10_holder_rate']['unit'] = 'unknown_scale'
+        self.assertEqual(self.decide()['action'], 'SKIP')
+
+    def test_price_exit_with_no_optional_reports(self):
+        self.position(.8)
+        self.envelope['observation']['fields'] = {'price': self.envelope['observation']['fields']['price']}
+        result = self.decide()
+        self.assertEqual(result['action'], 'SL')
+        self.assertEqual(result['sizing']['reduce_quantity'], 100)
+        self.assertEqual(result['strategy_checks'], {})

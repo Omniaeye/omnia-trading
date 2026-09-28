@@ -13,6 +13,7 @@ from .policy import Policy, evaluate
 from .strategy_contracts import STRATEGY_VERSION, StrategyPolicy, normalize_context
 from .strategy_questions import STRATEGY_TASKS
 from .validation import normalized_number
+from .availability import reported_observation
 
 
 def _now(now):
@@ -43,23 +44,27 @@ def _risk_reasons(fields, policy):
     for key, rejected in (('is_honeypot', True), ('transfer_paused', True),
                           ('sell_simulation_success', False), ('is_wash_trading', True)):
         field = fields.get(key)
-        if not field or type(field['value']) is not bool:
-            reasons.append('missing_strategy_field:' + key)
+        if not field or field['value'] is None:
+            if policy.require_risk_reports:
+                reasons.append('missing_strategy_field:' + key)
+        elif type(field['value']) is not bool:
+            reasons.append('invalid_strategy_field:' + key)
         elif field['value'] is rejected:
             reasons.append('risk_rejected:' + key)
     for key in ('buy_tax', 'sell_tax'):
         field = fields.get(key)
-        if field and normalized_number(field) > policy.max_tax_ratio:
+        if field and field['value'] is not None and normalized_number(field) > policy.max_tax_ratio:
             reasons.append('tax_limit:' + key)
     return reasons
 
 
 def _entry_reasons(item, assessment, context, policy):
-    fields = item['fields']
+    fields = reported_observation(item)[0]['fields']
     reasons = _risk_reasons(fields, policy)
     ownership = fields.get('top_10_holder_rate')
     if not ownership:
-        reasons.append('missing_strategy_field:top_10_holder_rate')
+        if policy.require_ownership:
+            reasons.append('missing_strategy_field:top_10_holder_rate')
     elif normalized_number(ownership) > policy.max_top_10_holder_ratio:
         reasons.append('holder_concentration_limit')
     metric = assessment['deterministic_metrics'].get('buy_share')
@@ -74,6 +79,22 @@ def _entry_reasons(item, assessment, context, policy):
     return reasons
 
 
+def _task_coverage(item, context):
+    fields = reported_observation(item)[0]['fields']
+    coverage = {}
+    for task, spec in STRATEGY_TASKS.items():
+        supplied = [key for key in spec['fields'] if key in fields]
+        missing = [key for key in spec['fields'] if key not in fields]
+        needed = task == 'risk' or context['position'] is None
+        coverage[task] = {
+            'status': 'not_required_for_position' if not needed else
+                      'complete' if not missing else 'partial' if supplied else 'not_reported',
+            'reported_fields': supplied, 'missing_fields': missing,
+            'inference_eligible': needed and not missing,
+        }
+    return coverage
+
+
 def _model_checks(item, ledger, backend, policy, context, floor, max_bytes):
     records, failures = {}, {}
     try:
@@ -82,6 +103,8 @@ def _model_checks(item, ledger, backend, policy, context, floor, max_bytes):
     except Exception as error:
         return {}, {'manifest': type(error).__name__}
     for task, spec in STRATEGY_TASKS.items():
+        if not _task_coverage(item, context)[task]['inference_eligible']:
+            continue
         fields = {key: item['fields'][key] for key in spec['fields'] if key in item['fields']}
         state = {'chain': item['identity']['chain'], 'task': task,
                  'fields': {key: {'value': value['value'], 'unit': value['unit'],
@@ -121,12 +144,13 @@ def _action(item, assessment, context, policy, checks, failures):
             return 'TP', ['take_profit_reached'], {**state, 'reduce_quantity': quantity}
         if value > policy.max_position_usd or context['portfolio_exposure_usd'] > policy.max_portfolio_exposure_usd:
             return 'SKIP', ['exposure_limit_requires_rebalance'], state
-        risk_reasons = _risk_reasons(item['fields'], policy)
+        risk_reasons = _risk_reasons(reported_observation(item)[0]['fields'], policy)
         if risk_reasons:
             return 'SKIP', risk_reasons, state
-        if failures or any(r['status'] != 'accepted' for r in checks.values()) or len(checks) != len(STRATEGY_TASKS):
+        required = {task for task, c in _task_coverage(item, context).items() if c['inference_eligible']}
+        if failures or any(r['status'] != 'accepted' for r in checks.values()) or set(checks) != required:
             return 'SKIP', ['strategy_evidence_requires_review'], state
-        if checks['risk']['answers']['risk']['choice'] != 'clear':
+        if 'risk' in checks and checks['risk']['answers']['risk']['choice'] != 'clear':
             return 'SKIP', ['risk_requires_review'], state
         bag = position['initial_quantity'] * policy.bag_fraction
         if pnl >= policy.profit_trigger_ratio and not position['profit_taken'] and quantity > bag:
@@ -136,7 +160,8 @@ def _action(item, assessment, context, policy, checks, failures):
             return 'HOLD_BAG', ['residual_position_within_policy'], state
         return 'HOLD', ['position_within_exit_limits'], state
     reasons = _entry_reasons(item, assessment, context, policy)
-    if failures or len(checks) != len(STRATEGY_TASKS):
+    required = {task for task, c in _task_coverage(item, context).items() if c['inference_eligible']}
+    if failures or set(checks) != required:
         reasons.append('strategy_processing_incomplete')
     for task, record in checks.items():
         if record['status'] != 'accepted' or record['answers'][task]['choice'] != STRATEGY_TASKS[task]['accepted']:
@@ -187,6 +212,7 @@ def decide(event, context, ledger, backend, *, strategy_policy=None, data_policy
         'evidence': list(dict.fromkeys([*assessment['evidence'], context['evidence']])),
         'strategy_policy': asdict(strategy_policy), 'min_answer_probability': floor,
         'strategy_checks': checks, 'strategy_failures': failures,
+        'strategy_coverage': _task_coverage(item, context),
         'evaluated_at': evaluated.isoformat(), 'valid_until': expiry.isoformat(),
         'clock_mode': 'realtime' if now is None else 'replay', 'execution_authorized': False,
     }

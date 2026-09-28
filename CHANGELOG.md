@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0
+
+- Coverage-aware strategy decisions with configurable data requirements.
+- Absent, null and chain-specific fields retained without unnecessary model calls.
+- Entry and holding tasks use distinct data prerequisites.
+- Detailed decision reasons with values, policy limits and source references.
+- Archived security adapter, quote performance calculations and a local inspection report.
+- Strategy schema v2, data policy v3 and parameter catalog v3.
+
+The default policy accepts missing optional reports while enforcing known risk and invalid-data checks. Set the documented requirement flags when complete coverage is required. Orders remain external to the package.
+
 ## 0.3.0
 
 - Position-aware SKIP, BUY, HOLD, HOLD_BAG, PROFIT, TP and SL decisions.

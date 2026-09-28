@@ -59,11 +59,11 @@ class TradingHardeningTests(unittest.TestCase):
     def test_usable_backend_cannot_override_semantic_review(self):
         cases = (
             ('holder_count', -1, 'count', None), ('holder_count', True, 'count', None),
-            ('holder_count', None, 'count', None), ('price', -10, 'USD', None),
+            ('price', -10, 'USD', None),
             ('price', 1, 'unknown', None), ('buys', 100, 'count', None),
             ('volume_24h', 100, 'USD', 1), ('creator', 'not-an-address', 'Address', None),
             ('created_timestamp', 0, 'UTC', None), ('is_honeypot', False, 'USD', None),
-            ('buy_tax', 101, 'percent', None), ('slot', 42, 'count', None),
+            ('buy_tax', 101, 'percent', None),
         )
         for key, value, unit, window in cases:
             with self.subTest(key=key, value=value, unit=unit):
@@ -108,7 +108,7 @@ class TradingHardeningTests(unittest.TestCase):
         for disposition in ('candidate', 'review', 'skip'):
             item = observation()
             if disposition == 'review':
-                item['fields']['holder_count'] = point(None, 'count')
+                item['fields']['holder_count'] = point(-1, 'count')
             elif disposition == 'skip':
                 item['fields']['market_cap']['value'] = 1
             result = process(item, self.ledger, Backend(), now=NOW)
@@ -186,12 +186,13 @@ class TradingHardeningTests(unittest.TestCase):
 
         item, backend = full_catalog_observation(), Capture()
         result = process(item, self.ledger, backend, now=NOW)
-        self.assertEqual(len(result['assessment_batches']), 28)
-        self.assertEqual(len(result['groups']), 28)
+        self.assertEqual(len(result['groups']), len(result['assessment_batches']))
         self.assertEqual(result['group_failures'], {})
         covered = [key for batch in result['assessment_batches'].values() for key in batch['fields']]
-        self.assertEqual(len(covered), 102)
-        self.assertEqual(set(covered), set(item['fields']))
+        self.assertEqual(len(covered), len(set(covered)))
+        self.assertEqual(set(covered) | set(result['unavailable_fields']), set(item['fields']))
+        self.assertFalse(set(covered) & set(result['unavailable_fields']))
+        self.assertEqual(result['parameter_count'], 102)
         for state in backend.states:
             self.assertLessEqual(len(state['fields']), 4)
             self.assertEqual(state['context']['identity'], item['identity'])
@@ -209,7 +210,7 @@ class TradingHardeningTests(unittest.TestCase):
         result = process(item, self.ledger, FailPrice(), now=NOW)
         self.assertEqual(result['disposition'], 'review')
         self.assertEqual(len(result['group_failures']), 1)
-        self.assertEqual(len(result['groups']), 27)
+        self.assertEqual(len(result['groups']) + len(result['group_failures']), len(result['assessment_batches']))
         name = next(iter(result['group_failures']))
         self.assertIn('price', result['assessment_batches'][name]['fields'])
         self.assertEqual(self.ledger.get_assessment(result['assessment_id']), result)

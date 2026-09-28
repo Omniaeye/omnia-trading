@@ -13,6 +13,22 @@ OMNIA Trading evaluates market observations and turns them into position decisio
 
 The Python package combines **102 source parameter definitions**, typed model assessments, position snapshots and a persistent decision ledger. Every result identifies the observation, position, policy and evidence used.
 
+## Work with the data you have
+
+OMNIA evaluates the information a source actually provides. A token does not need all 102 parameters. Missing values stay **not reported**; the engine evaluates applicable data and records coverage with the decision.
+
+| Data | How OMNIA uses it |
+| --- | --- |
+| Identity, current USD price, aligned buy/sell counts and account budget | Required for a new entry |
+| Security reports | Reject known risk; classify complete reports; retain partial coverage without inventing a safety result |
+| Holder concentration | Apply the limit when reported; record missing coverage otherwise |
+| Market cap and liquidity | Check reported USD values against policy thresholds |
+| Social and lifecycle context | Assess reported fields without requiring every source to provide them |
+
+Operators can require security, ownership, capitalization or liquidity coverage explicitly. Invalid reported values still require attention. For an existing position, entry-flow and ownership requirements do not prevent holding decisions.
+
+[Minimal entry input](examples/strategy-partial.jsonl) · [Coverage and configuration](docs/STRATEGY.md#entry-prerequisites)
+
 ## Decisions
 
 | Decision | Trigger | Result |
@@ -59,6 +75,46 @@ JEV/LAYA evaluates three specific strategy questions:
 
 Deterministic rules enforce the exact thresholds. A model response cannot override an invalid unit, expired observation, explicit entry rejection or exposure limit. Position exit thresholds take precedence over the additional strategy-model answers after the underlying data assessment passes.
 
+## Why a decision was made
+
+An action needs a reason that can be checked against its inputs. OMNIA records the native JEV/LAYA answer alongside the source values and policy limits. The observation report adds specific reason codes instead of relying on a single label.
+
+| Assessment | Native answers | What the observation report explains |
+| --- | --- | --- |
+| Flow | `supportive`, `weak`, `unknown` | Buy dominance, sell dominance, balanced counts, no activity or incomplete evidence; the exact buy share and entry minimum |
+| Ownership | `within_limit`, `concentrated`, `unknown` | Observed top-ten holder share against the configured limit |
+| Risk | `clear`, `reject`, `unknown` | Complete non-rejecting reports, an explicit rejection or missing security evidence |
+| Market | Policy checks | Market capitalization and liquidity in verified USD units against the required minimums |
+| Model review | Recorded answer and acceptance status | Missing answers, answers requiring review and disagreement with validated source facts |
+
+`supportive` means comparable buy counts exceed sell counts. It does not mean an entry passed. For example, 55 buys and 45 sells produce a 55% buy share: buy-dominant flow, below the default 60% entry minimum. Counts describe activity; they do not establish net capital inflow.
+
+```python
+from datetime import datetime
+from omnia_trading.decision_notes import explain_observation
+
+notes = explain_observation(
+    observation,
+    now=datetime.fromisoformat(observation["observed_at"]),
+)
+for note in notes["notes"]:
+    print(note["code"], note["values"], note["evidence"])
+```
+
+Every note carries its origin, values and evidence references. The report retains the observation hash and a hash of its notes. [Decision reasons](docs/DECISION_REASONS.md) documents the contract and interpretation.
+
+## Decision records and market outcomes
+
+The private report connects each token to its recorded quotes, entry precheck, native model answers and decision reasons. Filter by Robinhood, BSC or Solana; inspect each contract and pool; rank observed returns and identify the first captured 2x, 3x, 5x or 10x milestone.
+
+The quote replay calculates an independent $100 entry with the configured partial-profit, take-profit and stop-loss rules. It shows cash proceeds, remaining quantity and final gross P&L separately. Native model answers retain their own record; quote calculations do not become model decisions or execution receipts.
+
+- [Quote performance and exits](docs/PERFORMANCE_REPLAY.md)
+- [Source validation and task facts](docs/FACTS_REPLAY.md)
+- [Security observation adapter](docs/SECURITY_SOURCE.md)
+
+Recorded windows use frozen cohorts and retain all outcomes, including model disagreements and unavailable data. A 2x price observation is a market outcome, not proof of an entry or a fill.
+
 ## Parameters
 
 | Family | Definitions | Coverage |
@@ -89,8 +145,12 @@ Strategy adds a separate account and position contract: available cash, portfoli
 | `profit_trigger_ratio` | 0.25 | First partial-profit threshold |
 | `take_profit_ratio` | 0.50 | Full take-profit threshold |
 | `bag_fraction` | 0.20 | Residual fraction of initial quantity |
+| `require_risk_reports` | false | Require complete security reports |
+| `require_ownership` | false | Require holder concentration for entry |
 
 These are configurable package defaults, not a return forecast. The separate data policy defaults to USD 30,000 minimum market cap, USD 10,000 minimum liquidity and 120-second freshness.
+
+Market cap, liquidity and honeypot-report presence are optional by default. Require them with `OMNIA_TRADING_REQUIRE_MARKET_CAP`, `OMNIA_TRADING_REQUIRE_LIQUIDITY` and `OMNIA_TRADING_REQUIRE_HONEYPOT_REPORT`. A reported value still has to pass its applicable checks.
 
 **Position example:** average entry USD 1.00, initial quantity 100. At USD 1.25, PROFIT proposes reducing 80 units and retaining 20. After the application records that fill, the remaining 20 can receive HOLD BAG. At USD 1.50 the policy returns TP; at USD 0.90 it returns SL. Actual proceeds depend on the external execution system.
 

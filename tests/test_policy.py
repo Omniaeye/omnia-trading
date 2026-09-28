@@ -2,8 +2,10 @@
 # SPDX-License-Identifier: Apache-2.0
 from datetime import datetime, timedelta, timezone
 import unittest
+from unittest.mock import patch
 from helpers import event
 from omnia_trading.policy import Policy, evaluate
+from omnia_trading.config import Config
 
 
 class PolicyTests(unittest.TestCase):
@@ -14,11 +16,35 @@ class PolicyTests(unittest.TestCase):
         self.assertEqual(result, 'review')
         self.assertIn('missing_usd_value:market_cap', reasons)
 
-    def test_missing_flags_and_string_false_are_unknown(self):
-        for value in (None, 'false', 0):
+    def test_invalid_flags_are_not_optional_absence(self):
+        for value in ('false', 0):
             item = event()
             item['fields']['is_honeypot']['value'] = value
             self.assertEqual(evaluate(item, Policy())[0], 'review')
+
+    def test_null_optional_flag_and_strict_requirement(self):
+        item = event()
+        item['fields']['is_honeypot']['value'] = None
+        self.assertEqual(evaluate(item, Policy())[0], 'observe')
+        self.assertEqual(evaluate(item, Policy(require_honeypot_report=True))[0], 'review')
+
+    def test_optional_market_values_are_checked_when_reported(self):
+        item = event()
+        del item['fields']['liquidity']
+        self.assertEqual(evaluate(item, Policy())[0], 'observe')
+        self.assertEqual(evaluate(item, Policy(require_liquidity=True))[0], 'review')
+
+    def test_policy_requirements_are_booleans(self):
+        for key in ('require_market_cap', 'require_liquidity', 'require_honeypot_report'):
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                Policy(**{key: 'false'})
+
+    def test_environment_requirements_are_explicit_and_validated(self):
+        with patch.dict('os.environ', {'OMNIA_LAYA_REVISION': 'a' * 40, 'OMNIA_TRADING_REQUIRE_LIQUIDITY': 'true'}):
+            self.assertTrue(Config.from_env().policy().require_liquidity)
+        with patch.dict('os.environ', {'OMNIA_LAYA_REVISION': 'a' * 40, 'OMNIA_TRADING_REQUIRE_LIQUIDITY': 'maybe'}):
+            with self.assertRaises(ValueError):
+                Config.from_env()
 
     def test_source_reported_risk_is_skip(self):
         item = event()

@@ -21,6 +21,14 @@ An English checkpoint revision must not be reused for a different model family.
 | `OMNIA_LAYA_MIN_PROBABILITY` | Maximum-answer-probability gate | 0.8 |
 | `OMNIA_TRADING_DATABASE` | Private SQLite storage | var/trading/decisions.sqlite3 |
 | `OMNIA_TRADING_MAX_RECORDS` | Physical input lines per batch | 1000 |
+| `OMNIA_TRADING_REQUIRE_MARKET_CAP` | Require a reported USD market cap | false |
+| `OMNIA_TRADING_REQUIRE_LIQUIDITY` | Require reported USD liquidity | false |
+| `OMNIA_TRADING_REQUIRE_HONEYPOT_REPORT` | Require an explicit source report | false |
+
+Requirement flags accept `true`/`false` or `1`/`0`. Invalid values fail startup.
+They control presence, not validity: supplied values must still satisfy their
+unit, domain and configured thresholds. Strategy requirements for complete risk
+reports and holder concentration are supplied in `strategy_policy`.
 
 Probability thresholds belong to the task and reviewed dataset. They are not
 universal accuracy scores. Oversized model context is refused, not silently

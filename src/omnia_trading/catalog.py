@@ -5,7 +5,7 @@ from importlib.resources import files
 import hashlib
 import json
 
-CATALOG_VERSION = 'omnia.trading.parameters.v2'
+CATALOG_VERSION = 'omnia.trading.parameters.v3'
 _catalog_text = files(__package__).joinpath('parameters.json').read_text(encoding='utf-8')
 PARAMETERS = json.loads(_catalog_text)
 CATALOG_SHA256 = hashlib.sha256(_catalog_text.encode('utf-8')).hexdigest()

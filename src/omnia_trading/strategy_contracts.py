@@ -6,7 +6,7 @@ import math
 from .contracts import timestamp
 from .identity import identity
 
-STRATEGY_VERSION = 'omnia.trading.strategy.v1'
+STRATEGY_VERSION = 'omnia.trading.strategy.v2'
 ACTIONS = ('SKIP', 'BUY', 'HOLD', 'HOLD_BAG', 'PROFIT', 'TP', 'SL')
 
 
@@ -28,10 +28,16 @@ class StrategyPolicy:
     profit_trigger_ratio: float = .25
     take_profit_ratio: float = .50
     bag_fraction: float = .20
+    require_risk_reports: bool = False
+    require_ownership: bool = False
 
     def __post_init__(self):
         for name, value in asdict(self).items():
-            _number(value, name, positive=name not in {'max_tax_ratio'})
+            if name in {'require_risk_reports', 'require_ownership'}:
+                if type(value) is not bool:
+                    raise ValueError('invalid_strategy_requirement:' + name)
+            else:
+                _number(value, name, positive=name not in {'max_tax_ratio'})
         for name in ('min_buy_share', 'max_top_10_holder_ratio', 'max_tax_ratio'):
             if getattr(self, name) > 1:
                 raise ValueError('invalid_strategy_ratio:' + name)

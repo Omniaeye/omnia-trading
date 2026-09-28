@@ -62,3 +62,23 @@ class PipelineTests(unittest.TestCase):
         second = process(item, self.ledger, backend)
         self.assertNotEqual(first['observation_hash'], second['observation_hash'])
         self.assertEqual(second['disposition'], 'review')
+
+    def test_unavailable_fields_remain_accounted_for_without_inference(self):
+        item = event()
+        item['fields']['holder_count'] = datapoint(None, 'count')
+        item['fields']['slot'] = datapoint(42, 'count')
+        result = process(item, self.ledger, Backend())
+        self.assertEqual(result['disposition'], 'candidate')
+        self.assertEqual(result['unavailable_fields'], {'holder_count': 'not_reported', 'slot': 'not_applicable'})
+        assessed = {key for batch in result['assessment_batches'].values() for key in batch['fields']}
+        self.assertEqual(assessed | set(result['unavailable_fields']), set(item['fields']))
+
+    def test_all_null_fields_cannot_be_a_candidate(self):
+        item = event()
+        for field in item['fields'].values():
+            field['value'] = None
+        backend = Backend()
+        result = process(item, self.ledger, backend)
+        self.assertEqual(result['disposition'], 'review')
+        self.assertIn('no_reported_fields', result['reasons'])
+        self.assertEqual(backend.calls, 0)

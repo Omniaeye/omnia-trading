@@ -9,6 +9,7 @@ from .features import derive_metrics
 from .policy import POLICY_VERSION, Policy, evaluate
 from .questions import QUESTIONS, TASK_VERSION
 from ._engine.ledger import digest, probability
+from .availability import reported_observation
 
 MAX_FIELDS_PER_ASSESSMENT = 4
 
@@ -18,7 +19,7 @@ def _utcnow():
 
 
 def _valid_until(item, policy):
-    oldest = min(timestamp(item['observed_at']), *(timestamp(f['observed_at']) for f in item['fields'].values()))
+    oldest = min([timestamp(item['observed_at']), *(timestamp(f['observed_at']) for f in item['fields'].values())])
     try:
         return (oldest + timedelta(seconds=policy.max_age_seconds)).isoformat()
     except OverflowError:
@@ -48,13 +49,14 @@ def _batches(item):
 
 def process(event, ledger, backend, *, min_probability=.8, max_bytes=65536, policy=None, now=None):
     item = normalize(event, max_bytes)
+    reported, unavailable = reported_observation(item)
     policy = policy or Policy()
     floor = probability(min_probability)
     started_at = _utcnow() if now is None else now
     disposition, reasons = evaluate(item, policy, started_at)
     records, failures, batch_map = {}, {}, {}
     if disposition != 'skip':
-        batches = list(_batches(item))
+        batches = list(_batches(reported))
         batch_map = {name: {'group': group, 'fields': list(fields), 'part': index, 'part_count': count}
                      for name, group, fields, index, count in batches}
         try:
@@ -93,12 +95,15 @@ def process(event, ledger, backend, *, min_probability=.8, max_bytes=65536, poli
               'evidence': list(dict.fromkeys(field['evidence'] for field in item['fields'].values())),
               'evaluation_started_at': started_at.astimezone(timezone.utc).isoformat(),
               'evaluated_at': evaluated_at.astimezone(timezone.utc).isoformat(),
-              'clock_mode': 'realtime' if now is None else 'replay', 'valid_until': _valid_until(item, policy),
+              'clock_mode': 'realtime' if now is None else 'replay', 'valid_until': _valid_until(reported, policy),
               'policy': {'version': POLICY_VERSION, 'configuration': asdict(policy), 'min_answer_probability': floor},
               'catalog_version': CATALOG_VERSION, 'catalog_sha256': CATALOG_SHA256,
               'disposition': disposition, 'reasons': reasons, 'groups': records, 'group_failures': failures,
               'assessment_batches': batch_map,
-              'deterministic_metrics': derive_metrics(item, reasons),
+              'reported_parameter_count': len(reported['fields']), 'unavailable_fields': unavailable,
+              'data_coverage': {key: ('reported' if key in reported['fields'] else 'not_reported')
+                                for key in ('market_cap', 'liquidity', 'is_honeypot')},
+              'deterministic_metrics': derive_metrics(reported, reasons),
               'field_notes': {key: BY_KEY[key]['note'] for key in item['fields']},
               'notes': ['Catalog support does not establish collection coverage or independent verification.',
                         'Candidate is a data-policy result, not a trading signal or a security guarantee.',

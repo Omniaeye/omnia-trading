@@ -4,7 +4,7 @@
 Bounded observation
   -> structural normalization and asset identity
   -> executable field semantics and deterministic policy
-  -> stable batches of up to four supplied fields
+  -> availability partition -> batches of up to four reported fields
   -> typed local answers and probability gates
   -> current freshness recheck (or explicit replay clock)
   -> durable final assessment
@@ -14,7 +14,12 @@ Bounded observation
 
 `contracts.py` validates shape and bounded scalars while preserving raw values. `identity.py` normalizes EVM addresses and checks Solana address length after Base58 decoding. Network binding remains the adapter's responsibility.
 
-`parameters.json` is an executable, fingerprinted catalog. `validation.py` checks types, units, bounds, windows, chain applicability, event times and comparable field relationships. Optional absent fields are not invented. Supplied nulls and ambiguous source scales remain explicit review conditions.
+EVM token contracts remain 20-byte addresses. The identity's `pool` may be a
+20-byte address or an opaque 32-byte pool identifier. The latter is not an
+address and does not establish which protocol owns the pool. For example,
+[Uniswap v4 defines PoolId as bytes32](https://github.com/Uniswap/v4-core/blob/main/src/types/PoolId.sol).
+
+`parameters.json` is an executable, fingerprinted catalog. `validation.py` checks types, units, bounds, windows, chain applicability, event times and comparable field relationships. Optional absent fields are not invented. Supplied nulls are recorded as not reported; non-applicable fields are identified by chain. Reported ambiguous source scales remain review conditions.
 
 Comparisons require compatible units, observation times, source evidence and windows. Examples include circulating supply exceeding total supply, a largest-holder share exceeding the top-ten share, and unique buyer counts exceeding buy counts within the same source window. The library does not equate price multiplied by total supply with circulating market cap or infer individual trades from aggregate changes.
 
@@ -24,7 +29,37 @@ Comparisons require compatible units, observation times, source evidence and win
 
 ## Model boundary
 
-`pipeline.py` sorts each populated family and partitions it into batches of at most four fields. Each field is covered once by the declared batch plan. Small families retain their original names; split families include a part suffix. The model receives bounded identity/source/time context and field-clock offsets, values, units and windows.
+### Independent strategy-fact validation
+
+`strategy_facts.assess_facts()` validates recorded observations independently of
+model inference. It retains every supplied field, separating eligible values
+from quarantined values with explicit reasons. It uses the supplied capture
+clock for replay and the current clock otherwise.
+
+The result contains three checks:
+
+| Check | Rule | Missing or ambiguous evidence |
+|---|---|---|
+| Risk | A valid rejecting report takes precedence; all four valid reports are required for `clear`. | `unknown` unless a valid rejecting report exists. |
+| Flow | Compare buys and sells from the same capture, evidence and configured window. | `unknown`. |
+| Ownership | Compare a validated top-ten share with the configured concentration limit. | `unknown`. |
+
+Flow direction and entry eligibility are distinct. A 55/45 split is supportive
+in direction, but does not meet a 60% entry threshold. Neither statement is a
+prediction. Explicit percentage units can be normalized; unknown source scales
+cannot. Zero total activity has no buy share.
+
+This validation function makes no model calls, proposes no action, and is not
+wired into `strategy.decide()`. Its results are intended for side-by-side
+comparison before any change to the strategy's model gates. The existing model
+answers, data-policy gates and seven-action strategy remain separate.
+
+`tools/replay_strategy_facts.py` compares a frozen sample with expected labels
+and previously recorded native answers. It matches observation IDs, records
+input hashes, refuses to overwrite an output directory, and retains item errors.
+Agreement with arithmetic rules is reported separately from native-model quality.
+
+`pipeline.py` sorts each populated family and partitions it into batches of at most four fields. Each reported, applicable field is covered once by the declared batch plan. Other supplied fields are retained in unavailable_fields and the original observation fingerprint. Small families retain their original names; split families include a part suffix. The model receives bounded identity/source/time context and field-clock offsets, values, units and windows.
 
 Every source string remains untrusted data. Typed questions ask about evidence quality, with closed choices `usable`, `inconsistent` and `insufficient`. A usable answer must also pass the configured maximum-answer-probability gate. This probability is distinct from the upstream entropy-based confidence and requires task-specific calibration.
 

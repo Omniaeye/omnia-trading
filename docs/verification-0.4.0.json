@@ -1,0 +1,25 @@
+{
+  "version": "0.4.0",
+  "checked_at": "2026-09-28T19:40:51.169381+00:00",
+  "checks": {
+    "unit_and_contract_tests": {
+      "passed": 139,
+      "failed": 0
+    },
+    "ruff": "passed",
+    "runtime_snapshot": "passed",
+    "compileall": "passed",
+    "wheel_and_sdist": "passed"
+  },
+  "scope": "Contract and software behavior checks; no order execution or financial performance claim.",
+  "sha256": {
+    "src/omnia_trading/availability.py": "2bbf84a563f2a4908fca1c6ab36f0c6c73d1e20f315f9c23fb8eb9df4f62a2e6",
+    "src/omnia_trading/policy.py": "ccd285a711ecdd4ddff38103d85823247a0af1abbefa4733a2140b8ed8f459f0",
+    "src/omnia_trading/strategy.py": "3aa7aa5a5770b374d2efb1649e1bfcb520200ca3d87adbafe690aeb32a8ba192",
+    "src/omnia_trading/config.py": "1f61bfe47db04a71ab49da20ec9a996623eeefa0463742de6d5baca30d9d27bc",
+    "src/omnia_trading/parameters.json": "2124f65b7ca99a6c9bc60a148b2b54190a5b16cc5c87cf0560fcd1e160002662",
+    "src/omnia_trading/pipeline.py": "d25245877c0f96a2f4c2bbe820a5e1801858b0f8297e31335177760652c43737",
+    "src/omnia_trading/strategy_contracts.py": "4e41c77a5349a2bbc1a3a824dde427b76cfd1958074d3039c14d2cd7c57cf336"
+  },
+  "hash_scope": "Git blob bytes for the source files in this release"
+}
