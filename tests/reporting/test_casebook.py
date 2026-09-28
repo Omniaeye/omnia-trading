@@ -8,7 +8,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from omnia_trading.casebook import _csv, _validate_series, validate_native_records, verify
+from omnia_trading.casebook import _csv, _validate_series, _verify_parameter_sources, validate_native_records, verify
 
 WINDOW = Path(__file__).resolve().parents[2] / 'examples/market-window-2026-09-28'
 
@@ -85,6 +85,31 @@ class CasebookTests(unittest.TestCase):
             path = Path(folder) / 'export.csv'
             _csv(path, ['value'], [{'value': '=1+1'}, {'value': '@command'}, {'value': -12.5}])
             self.assertEqual(path.read_text().splitlines(), ['value', "'=1+1", "'@command", '-12.5'])
+
+    def test_public_source_namespace_preserves_archived_fingerprint(self):
+        for row in self.samples:
+            self.assertEqual(row['event']['source'], 'omnia.market.rank')
+            self.assertEqual(row['projection'], 'omnia.public-source.v1')
+            self.assertRegex(row['archived_event_sha256'], r'^[a-f0-9]{64}$')
+
+    def test_integer_flag_conversion_requires_explicit_source_contract(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'raw').mkdir()
+            raw = b'{"flag":0}'
+            (root / 'raw/capture.json').write_bytes(raw)
+            raw_hash = hashlib.sha256(raw).hexdigest()
+            observed = '2026-09-28T00:00:00Z'
+            samples = [{'raw_hash': raw_hash, 'event': {'id': 'capture:token', 'observed_at': observed,
+                        'fields': {'is_renounced': {'value': False, 'unit': 'boolean'}}},
+                        'mappings': {'is_renounced': {'path': '/flag', 'source_value': 0}}}]
+            receipts = [{'capture_id': 'capture', 'raw_sha256': raw_hash, 'received_at': observed}]
+            with self.assertRaisesRegex(ValueError, 'parameter_source_value_mismatch'):
+                _verify_parameter_sources(root, samples, receipts)
+            samples[0]['mappings']['is_renounced'].update({
+                'transform': 'explicit_source_contract', 'source_contract_verified': True,
+                'contract_reason': 'provider_integer_flag_not_independent_security_verdict'})
+            _verify_parameter_sources(root, samples, receipts)
 
 
 if __name__ == '__main__':

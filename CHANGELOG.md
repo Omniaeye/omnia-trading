@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1
+
+- Standardize public market and security source namespaces.
+- Bind projected observations to archived source hashes and regenerate the verified casebook.
+- Verify declared integer-to-boolean source transformations during export.
+
 ## 0.5.0
 
 - Published the complete 15-minute market window with contract records, all native answers and per-network price results.

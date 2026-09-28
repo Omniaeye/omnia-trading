@@ -2,7 +2,7 @@
   "observation": {
     "event": {
       "id": "fe8ad944-154e-4481-bd56-8ab821bfbfe1:0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
-      "source": "gmgn.market_rank",
+      "source": "omnia.market.rank",
       "observed_at": "2026-09-28T19:12:39.012894Z",
       "identity": {
         "chain": "robinhood",
@@ -1079,7 +1079,9 @@
       "trans_symbol_zhcn": "outside_trading_catalog"
     },
     "contract_error": null,
-    "network_binding": "provider namespace; not independently RPC verified"
+    "network_binding": "provider namespace; not independently RPC verified",
+    "archived_event_sha256": "169f41d003a2141df2ccab1735207376db556162c2ec27a5edde2af5e2a6821b",
+    "projection": "omnia.public-source.v1"
   },
   "native_decision": {
     "index": 11,
@@ -1547,5 +1549,5 @@
   "price_series_ids": [
     "73cba868a1e65f14ba5f"
   ],
-  "observation_sha256": "169f41d003a2141df2ccab1735207376db556162c2ec27a5edde2af5e2a6821b"
+  "observation_sha256": "a0eb0f5053ba703863b8700e26131714374b2db20afb470712a77466a72407a7"
 }

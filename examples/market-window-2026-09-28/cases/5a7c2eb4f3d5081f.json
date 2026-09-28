@@ -2,7 +2,7 @@
   "observation": {
     "event": {
       "id": "6211f86d-6ba6-4eb3-a4e2-2f80b0dffff7:0x3ee4df61bd4f867e349beae8bfe07bc31b4850fb",
-      "source": "gmgn.market_rank",
+      "source": "omnia.market.rank",
       "observed_at": "2026-09-28T19:14:02.894344Z",
       "identity": {
         "chain": "bsc",
@@ -1079,7 +1079,9 @@
       "trans_symbol_zhcn": "outside_trading_catalog"
     },
     "contract_error": null,
-    "network_binding": "provider namespace; not independently RPC verified"
+    "network_binding": "provider namespace; not independently RPC verified",
+    "archived_event_sha256": "991583c18e34b18251365de556ffadecfb0bd64748bac93f2f70c68b65784d52",
+    "projection": "omnia.public-source.v1"
   },
   "native_decision": {
     "index": 32,
@@ -1544,5 +1546,5 @@
   "price_series_ids": [
     "e6cae2dc30d5ac3adabe"
   ],
-  "observation_sha256": "991583c18e34b18251365de556ffadecfb0bd64748bac93f2f70c68b65784d52"
+  "observation_sha256": "df97b6005196ef63620d83e7b53dba40a47881a4adf37bd81fd5980a979b8a06"
 }

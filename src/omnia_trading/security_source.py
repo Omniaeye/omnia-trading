@@ -1,6 +1,6 @@
 # Copyright 2026 OMNIA EYE Corporation.
 # SPDX-License-Identifier: Apache-2.0
-"""Pure adapter for archived GMGN token-security responses, without network I/O."""
+"""Pure adapter for archived OMNIA token-security observations, without network I/O."""
 from copy import deepcopy
 from decimal import Decimal, InvalidOperation
 import hashlib
@@ -13,8 +13,8 @@ from .identity import address, identity
 from .strategy_facts import RISK_FLAGS
 from .validation import field_issues
 
-VERSION = 'omnia.trading.gmgn-security.v1'
-REFERENCE = 'https://github.com/GMGNAI/gmgn-skills/blob/main/skills/gmgn-token/SKILL.md'
+VERSION = 'omnia.trading.security.v2'
+REFERENCE = 'https://github.com/Omniaeye/omnia-trading/blob/main/docs/SECURITY_SOURCE.md'
 # Only this endpoint documents these values as fractions. Ranking has a
 # different contract; identical names do not authorize a cross-endpoint alias.
 RATIOS = ('buy_tax', 'sell_tax', 'top_10_holder_rate', 'dev_team_hold_rate', 'creator_balance_rate')
@@ -137,7 +137,7 @@ def adapt_security(raw, metadata):
                 continue
             reason = ','.join(issues)
         unprojected[key] = {'value': deepcopy(value), 'reason': reason}
-    observation = normalize({'id': 'security:' + capture_id, 'source': 'gmgn.token_security',
+    observation = normalize({'id': 'security:' + capture_id, 'source': 'omnia.market.security',
                              'identity': asset, 'observed_at': metadata['received_at'], 'fields': fields}) if fields else None
     return {'schema': VERSION, 'status': 'projected' if observation else 'insufficient',
             'observation': observation, 'source_payload': payload, 'source_sha256': raw_hash,

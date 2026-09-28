@@ -35,7 +35,9 @@ fields. An empty projection has status `insufficient` and observation `None`.
 | `renounced_mint`, `renounced_freeze_account` | Strict boolean | Solana only |
 | `is_wash_trading` | Strict boolean | Only when returned |
 
-Mappings follow the endpoint's [field reference](https://github.com/GMGNAI/gmgn-skills/blob/main/skills/gmgn-token/SKILL.md).
+Mappings follow the reviewed OMNIA archive contract in the table above.
+The public namespace is `omnia.market.security`; original transport provenance
+and response hashes remain in the private capture archive.
 Boolean honeypot values also occurred in bounded local CLI captures. The integer
 alias `honeypot` is not substituted for a null `is_honeypot`. Ranking's similarly
 named tax fields do not inherit this endpoint's fraction contract.

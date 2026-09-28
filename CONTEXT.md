@@ -1,3 +1,11 @@
+## Public source namespaces — 0.5.1
+
+Public rank/security records use OMNIA namespaces. The casebook was regenerated
+from source-verified captures and carries archived-event hashes before projection.
+No raw capture was rewritten. Current tracked text has no legacy provider names.
+155 tests, Ruff, runtime snapshot verification and the complete 757-file casebook
+verification passed locally. Native model answers and price trajectories retained.
+
 # OMNIA Trading
 
 ## Domain

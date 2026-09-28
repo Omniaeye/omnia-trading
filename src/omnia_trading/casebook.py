@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 """Publish and verify a complete capture window without rerunning inference."""
 import argparse
+from copy import deepcopy
 from collections import Counter
 import csv
 import hashlib
@@ -149,7 +150,14 @@ def _verify_parameter_sources(capture, samples, receipts):
             for part in mapping['path'].split('/')[1:]:
                 key = part.replace('~1', '/').replace('~0', '~')
                 value = value[int(key)] if isinstance(value, list) else value[key]
-            if digest(value) != digest(mapping['source_value']) or digest(value) != digest(field['value']):
+            projected = value
+            if (mapping.get('transform') == 'explicit_source_contract'
+                    and mapping.get('source_contract_verified') is True
+                    and mapping.get('contract_reason') == 'provider_integer_flag_not_independent_security_verdict'
+                    and name in {'is_renounced', 'is_open_source', 'is_honeypot', 'renounced_mint', 'renounced_freeze_account'}
+                    and field['unit'] == 'boolean' and type(value) is int and value in (0, 1)):
+                projected = bool(value)
+            if digest(value) != digest(mapping['source_value']) or digest(projected) != digest(field['value']):
                 raise ValueError('parameter_source_value_mismatch')
 
 
@@ -253,6 +261,12 @@ def publish(capture: Path, report_path: Path, output: Path):
     _verify_parameter_sources(capture, samples, receipts)
     _verify_report_sources(capture, manifest, samples, report)
     validate_native_records(samples, decisions, calls)
+    # Namespace projection follows original-byte validation. Archived inputs are never rewritten.
+    samples = deepcopy(samples)
+    for entry in samples:
+        entry['archived_event_sha256'] = digest(entry['event'])
+        entry['event']['source'] = 'omnia.market.rank'
+        entry['projection'] = 'omnia.public-source.v1'
     native = _index(decisions, 'observation_id')
     summary = dict(report['summary'])
     summary['native_task_metrics'] = _metrics(decisions)

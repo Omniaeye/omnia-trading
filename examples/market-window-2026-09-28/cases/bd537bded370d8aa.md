@@ -64,7 +64,7 @@ Values retain their original units; null means not reported.
 
 ## Provenance
 
-- Observation hash: `d8f1c55d7657bb807ef02658a8ec58cf62516578cca6ec0fdb8cd61c7e345800`
+- Observation hash: `f21c3181df0f46a3a7512ba2b2a7217c0b4765feecadf177f6207574669a1e0a`
 - Source capture hash: `30dc928145c2c911ad40fdba8c574ac1b40e6cfb699cb529e0ea16fd29620ab2`
 - Every field timestamp, evidence reference and source mapping is included in the complete record.
 - Reference labels follow task rules. Model answers and acceptance gates are retained unchanged.

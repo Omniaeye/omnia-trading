@@ -2,7 +2,7 @@
   "observation": {
     "event": {
       "id": "5bf8b136-181b-4bf0-97f5-5e72f86f8c2d:Akx3xogrZjMrt81cd1tvmWKkqL3Q5VviqcuqNS2Epump",
-      "source": "gmgn.trenches",
+      "source": "omnia.market.rank",
       "observed_at": "2026-09-28T19:14:17.862022Z",
       "identity": {
         "chain": "solana",
@@ -738,7 +738,9 @@
       "trans_symbol_zhcn": "outside_trading_catalog"
     },
     "contract_error": null,
-    "network_binding": "provider namespace; not independently RPC verified"
+    "network_binding": "provider namespace; not independently RPC verified",
+    "archived_event_sha256": "dda94d01c22b94d52559223f9b8e47e565256c7c06e28f1142e6a6abcfe90a9f",
+    "projection": "omnia.public-source.v1"
   },
   "native_decision": {
     "index": 56,
@@ -1161,5 +1163,5 @@
   "price_series_ids": [
     "aa3ce229915e7e3ac18d"
   ],
-  "observation_sha256": "dda94d01c22b94d52559223f9b8e47e565256c7c06e28f1142e6a6abcfe90a9f"
+  "observation_sha256": "e026b2f2d991d4c29c5b49bcf996f3db8376864740be9c5b6f2c0ee12f96ba7d"
 }
