@@ -1,0 +1,26 @@
+{
+  "id": "937e9287e2f7684684e9",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x0eb3a705fc54725037cc9e008bdede697f62f335",
+    "pool": null
+  },
+  "name": "ATOM",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:17.494949+00:00",
+      "price": 1.73852,
+      "evidence": "capture:c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0:rank:99",
+      "capture_id": "c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

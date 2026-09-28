@@ -1,0 +1,179 @@
+{
+  "id": "efedf33dcfe4de3e2554",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "7UGrjz5XN6769DqXzfe98RyN3m3oFApwArQRAwo26HjN",
+    "pool": null
+  },
+  "name": "r/opt",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:13:45.640151+00:00",
+      "price": 1.13709e-05,
+      "evidence": "capture:4d31b656-3ffe-4768-bef6-377adf019420:rank:62",
+      "capture_id": "4d31b656-3ffe-4768-bef6-377adf019420"
+    },
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 3.77498e-06,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:49",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    },
+    {
+      "at": "2026-09-28T19:14:17.246316+00:00",
+      "price": 4.25341e-06,
+      "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:44",
+      "capture_id": "7a923cde-d765-4388-a15c-4f47fde0a3b5"
+    },
+    {
+      "at": "2026-09-28T19:14:30.874732+00:00",
+      "price": 4.61543e-06,
+      "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:41",
+      "capture_id": "fa585070-b1ae-4f9d-afbd-aa986f487793"
+    },
+    {
+      "at": "2026-09-28T19:14:46.892387+00:00",
+      "price": 4.61543e-06,
+      "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:40",
+      "capture_id": "7d9e3e65-8bda-4696-b6d1-7a86825bd98c"
+    },
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 4.54006e-06,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:38",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    },
+    {
+      "at": "2026-09-28T19:15:16.098308+00:00",
+      "price": 4.54006e-06,
+      "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:37",
+      "capture_id": "ab2becb9-3f94-4a57-b9e8-472ad0998012"
+    },
+    {
+      "at": "2026-09-28T19:15:30.340579+00:00",
+      "price": 4.4165e-06,
+      "evidence": "capture:564db5fc-5586-41d3-88fb-a9a955708f1d:rank:39",
+      "capture_id": "564db5fc-5586-41d3-88fb-a9a955708f1d"
+    },
+    {
+      "at": "2026-09-28T19:15:47.323285+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:65003429-a569-4442-8d4f-b2c93db69061:rank:36",
+      "capture_id": "65003429-a569-4442-8d4f-b2c93db69061"
+    },
+    {
+      "at": "2026-09-28T19:16:00.259696+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:4236f8d5-90c4-4c9b-a73e-d6443ae3bf32:rank:33",
+      "capture_id": "4236f8d5-90c4-4c9b-a73e-d6443ae3bf32"
+    },
+    {
+      "at": "2026-09-28T19:16:15.455827+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:acc657c6-9a43-46bf-986e-7b907c831cba:rank:35",
+      "capture_id": "acc657c6-9a43-46bf-986e-7b907c831cba"
+    },
+    {
+      "at": "2026-09-28T19:16:30.624202+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:0d391072-ec81-4bb7-9be0-0d6bbb801c70:rank:38",
+      "capture_id": "0d391072-ec81-4bb7-9be0-0d6bbb801c70"
+    },
+    {
+      "at": "2026-09-28T19:16:45.311485+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:72cccbac-c3fe-4991-8f62-08c53849b146:rank:39",
+      "capture_id": "72cccbac-c3fe-4991-8f62-08c53849b146"
+    },
+    {
+      "at": "2026-09-28T19:17:00.368914+00:00",
+      "price": 4.37262e-06,
+      "evidence": "capture:1232cf18-7088-40a1-9f55-ad9ae22b44f5:rank:39",
+      "capture_id": "1232cf18-7088-40a1-9f55-ad9ae22b44f5"
+    },
+    {
+      "at": "2026-09-28T19:17:15.914647+00:00",
+      "price": 4.35825e-06,
+      "evidence": "capture:9792e199-c0c2-4272-ac95-24501e4a3f79:rank:40",
+      "capture_id": "9792e199-c0c2-4272-ac95-24501e4a3f79"
+    },
+    {
+      "at": "2026-09-28T19:17:32.965607+00:00",
+      "price": 4.35825e-06,
+      "evidence": "capture:0f04cfe5-88a0-4a83-ae8d-85c5cb3cdc89:rank:37",
+      "capture_id": "0f04cfe5-88a0-4a83-ae8d-85c5cb3cdc89"
+    },
+    {
+      "at": "2026-09-28T19:17:46.087880+00:00",
+      "price": 4.35825e-06,
+      "evidence": "capture:ee91a1c6-bc99-4c7a-9cdc-bd6cb5478a9b:rank:41",
+      "capture_id": "ee91a1c6-bc99-4c7a-9cdc-bd6cb5478a9b"
+    },
+    {
+      "at": "2026-09-28T19:18:07.749963+00:00",
+      "price": 4.35825e-06,
+      "evidence": "capture:b0fb1b47-4973-472f-9619-8480bc7d294e:rank:44",
+      "capture_id": "b0fb1b47-4973-472f-9619-8480bc7d294e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 18,
+    "first_at": "2026-09-28T19:13:45.640151+00:00",
+    "last_at": "2026-09-28T19:18:07.749963+00:00",
+    "max_gap_seconds": 21.662083,
+    "market": {
+      "first_price_usd": 1.13709e-05,
+      "last_price_usd": 4.35825e-06,
+      "peak_price_usd": 1.13709e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.38328100678046595,
+      "return_ratio": -0.616718993219534,
+      "max_drawdown_ratio": 0.6680139654732695,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -61.671899321953404,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -66.80139654732695,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -66.80139654732695,
+      "final_equity_usd": 33.198603452673055,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:13:45.640151+00:00",
+          "action": "BUY",
+          "price": 1.13709e-05,
+          "quantity": 8794378.633177673,
+          "evidence": "capture:4d31b656-3ffe-4768-bef6-377adf019420:rank:62",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:14:00.595194+00:00",
+          "action": "SL",
+          "price": 3.77498e-06,
+          "sold_quantity": 8794378.633177673,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -66.80139654732695,
+          "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:49",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

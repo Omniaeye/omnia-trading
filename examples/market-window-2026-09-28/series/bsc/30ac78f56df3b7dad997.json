@@ -1,0 +1,26 @@
+{
+  "id": "30ac78f56df3b7dad997",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x5c9ff301ec2d882b635813739cc07330788d7322",
+    "pool": null
+  },
+  "name": "MILAN",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:33.270377+00:00",
+      "price": 0.000197316,
+      "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:92",
+      "capture_id": "1cb6d037-a95b-477e-be82-4cc75b729c8b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "e8240db1764bbdc80baa",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x6a2608dabe09bc1128eec7275b92dfb939d5db3f",
+    "pool": null
+  },
+  "name": "TOSHI",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:53.320509+00:00",
+      "price": 0.000120775,
+      "evidence": "capture:5f09420c-1544-46ff-a2e4-39235f8f73a9:rank:88",
+      "capture_id": "5f09420c-1544-46ff-a2e4-39235f8f73a9"
+    },
+    {
+      "at": "2026-09-28T19:27:02.865937+00:00",
+      "price": 0.000120775,
+      "evidence": "capture:bd21661a-974d-4bab-9276-4e2f7e7d279a:rank:91",
+      "capture_id": "bd21661a-974d-4bab-9276-4e2f7e7d279a"
+    },
+    {
+      "at": "2026-09-28T19:27:17.494949+00:00",
+      "price": 0.000120775,
+      "evidence": "capture:c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0:rank:89",
+      "capture_id": "c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0"
+    },
+    {
+      "at": "2026-09-28T19:27:33.270377+00:00",
+      "price": 0.000120775,
+      "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:87",
+      "capture_id": "1cb6d037-a95b-477e-be82-4cc75b729c8b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 4,
+    "first_at": "2026-09-28T19:26:53.320509+00:00",
+    "last_at": "2026-09-28T19:27:33.270377+00:00",
+    "max_gap_seconds": 15.775428,
+    "market": {
+      "first_price_usd": 0.000120775,
+      "last_price_usd": 0.000120775,
+      "peak_price_usd": 0.000120775,
+      "peak_multiple": 1.0,
+      "final_multiple": 1.0,
+      "return_ratio": 0.0,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.0,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.0,
+      "gross_profit_usd": 0.0,
+      "final_equity_usd": 100.0,
+      "open_quantity": 827985.924239288,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:26:53.320509+00:00",
+          "action": "BUY",
+          "price": 0.000120775,
+          "quantity": 827985.924239288,
+          "evidence": "capture:5f09420c-1544-46ff-a2e4-39235f8f73a9:rank:88",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:27:02.865937+00:00",
+          "action": "HOLD",
+          "price": 0.000120775,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 827985.924239288,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:bd21661a-974d-4bab-9276-4e2f7e7d279a:rank:91",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:17.494949+00:00",
+          "action": "HOLD",
+          "price": 0.000120775,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 827985.924239288,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0:rank:89",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:33.270377+00:00",
+          "action": "HOLD",
+          "price": 0.000120775,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 827985.924239288,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:87",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

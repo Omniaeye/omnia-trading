@@ -1,0 +1,131 @@
+{
+  "id": "100d10dff71ed8c86460",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0xc31ae677e52d8c4d3def6b00affc9c3c19577777",
+    "pool": null
+  },
+  "name": "PAID",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:32.687411+00:00",
+      "price": 0.00013203,
+      "evidence": "capture:d1fef60a-e7ad-4594-a8e8-74ee96c47ae4:rank:95",
+      "capture_id": "d1fef60a-e7ad-4594-a8e8-74ee96c47ae4"
+    },
+    {
+      "at": "2026-09-28T19:26:53.320509+00:00",
+      "price": 0.00013203,
+      "evidence": "capture:5f09420c-1544-46ff-a2e4-39235f8f73a9:rank:99",
+      "capture_id": "5f09420c-1544-46ff-a2e4-39235f8f73a9"
+    },
+    {
+      "at": "2026-09-28T19:27:02.865937+00:00",
+      "price": 0.000132095,
+      "evidence": "capture:bd21661a-974d-4bab-9276-4e2f7e7d279a:rank:83",
+      "capture_id": "bd21661a-974d-4bab-9276-4e2f7e7d279a"
+    },
+    {
+      "at": "2026-09-28T19:27:17.494949+00:00",
+      "price": 0.000132095,
+      "evidence": "capture:c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0:rank:97",
+      "capture_id": "c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0"
+    },
+    {
+      "at": "2026-09-28T19:27:33.270377+00:00",
+      "price": 0.000132095,
+      "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:97",
+      "capture_id": "1cb6d037-a95b-477e-be82-4cc75b729c8b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 5,
+    "first_at": "2026-09-28T19:26:32.687411+00:00",
+    "last_at": "2026-09-28T19:27:33.270377+00:00",
+    "max_gap_seconds": 20.633098,
+    "market": {
+      "first_price_usd": 0.00013203,
+      "last_price_usd": 0.000132095,
+      "peak_price_usd": 0.000132095,
+      "peak_multiple": 1.000492312353253,
+      "final_multiple": 1.000492312353253,
+      "return_ratio": 0.0004923123532530485,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.04923123532530486,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.04923123532530486,
+      "gross_profit_usd": 0.04923123532530486,
+      "final_equity_usd": 100.04923123532531,
+      "open_quantity": 757403.6203893054,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:26:32.687411+00:00",
+          "action": "BUY",
+          "price": 0.00013203,
+          "quantity": 757403.6203893054,
+          "evidence": "capture:d1fef60a-e7ad-4594-a8e8-74ee96c47ae4:rank:95",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:26:53.320509+00:00",
+          "action": "HOLD",
+          "price": 0.00013203,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 757403.6203893054,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:5f09420c-1544-46ff-a2e4-39235f8f73a9:rank:99",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:02.865937+00:00",
+          "action": "HOLD",
+          "price": 0.000132095,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 757403.6203893054,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:bd21661a-974d-4bab-9276-4e2f7e7d279a:rank:83",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:17.494949+00:00",
+          "action": "HOLD",
+          "price": 0.000132095,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 757403.6203893054,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:c5d9da1a-7d95-4d7f-8cef-ffb660ac56d0:rank:97",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:33.270377+00:00",
+          "action": "HOLD",
+          "price": 0.000132095,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 757403.6203893054,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:97",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

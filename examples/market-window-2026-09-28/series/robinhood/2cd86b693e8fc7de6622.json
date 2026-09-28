@@ -1,0 +1,26 @@
+{
+  "id": "2cd86b693e8fc7de6622",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x67e1cdab841957688cd355ff90c0d8139ea32fe6",
+    "pool": null
+  },
+  "name": "BUNDOG",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:22:15.632268+00:00",
+      "price": 6.1672e-06,
+      "evidence": "capture:13e6d33e-e854-4b87-b3da-49aedec6950e:rank:99",
+      "capture_id": "13e6d33e-e854-4b87-b3da-49aedec6950e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

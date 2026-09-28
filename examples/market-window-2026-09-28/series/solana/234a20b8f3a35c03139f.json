@@ -1,0 +1,83 @@
+{
+  "id": "234a20b8f3a35c03139f",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "3a8aELD8pk8vNxquhX76CBEwc99uj2joRFEtYK4fpump",
+    "pool": null
+  },
+  "name": "LUMI",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:15.715818+00:00",
+      "price": 1.64994e-05,
+      "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:45",
+      "capture_id": "d04c9116-4617-4b61-8b98-5489321cd1cc"
+    },
+    {
+      "at": "2026-09-28T19:27:31.150305+00:00",
+      "price": 2.27475e-05,
+      "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:31",
+      "capture_id": "7cad37e8-83d3-4438-8055-245db6707e2e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:27:15.715818+00:00",
+    "last_at": "2026-09-28T19:27:31.150305+00:00",
+    "max_gap_seconds": 15.434487,
+    "market": {
+      "first_price_usd": 1.64994e-05,
+      "last_price_usd": 2.27475e-05,
+      "peak_price_usd": 2.27475e-05,
+      "peak_multiple": 1.378686497690825,
+      "final_multiple": 1.378686497690825,
+      "return_ratio": 0.37868649769082513,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 37.86864976908251,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 30.29491981526601,
+      "unrealized_profit_usd": 7.573729953816502,
+      "gross_profit_usd": 37.86864976908251,
+      "final_equity_usd": 137.8686497690825,
+      "open_quantity": 1212165.2908590615,
+      "final_action": "PROFIT",
+      "events": [
+        {
+          "at": "2026-09-28T19:27:15.715818+00:00",
+          "action": "BUY",
+          "price": 1.64994e-05,
+          "quantity": 6060826.454295307,
+          "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:45",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:27:31.150305+00:00",
+          "action": "PROFIT",
+          "price": 2.27475e-05,
+          "sold_quantity": 4848661.163436246,
+          "remaining_quantity": 1212165.2908590615,
+          "realized_profit_usd": 30.29491981526601,
+          "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:31",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

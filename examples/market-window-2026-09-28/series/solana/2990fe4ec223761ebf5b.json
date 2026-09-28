@@ -1,0 +1,26 @@
+{
+  "id": "2990fe4ec223761ebf5b",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "FoQq16ZcyvC7kgFAoxLhrAYverC1UqqJenys4L2spump",
+    "pool": null
+  },
+  "name": "COUNTRY",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:23:45.375171+00:00",
+      "price": 5.70429e-06,
+      "evidence": "capture:1b404fa0-870b-4e7c-bafd-c3ef241c5093:rank:86",
+      "capture_id": "1b404fa0-870b-4e7c-bafd-c3ef241c5093"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

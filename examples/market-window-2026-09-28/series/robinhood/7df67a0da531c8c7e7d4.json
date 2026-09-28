@@ -1,0 +1,26 @@
+{
+  "id": "7df67a0da531c8c7e7d4",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x1ec871553be07dc68ec1661c32eca7e2e46e1e18",
+    "pool": null
+  },
+  "name": "STONKS",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:25:30.354898+00:00",
+      "price": 0.000196066,
+      "evidence": "capture:d70b1f6a-3ec3-4ec2-8c88-db476beae4f9:rank:97",
+      "capture_id": "d70b1f6a-3ec3-4ec2-8c88-db476beae4f9"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

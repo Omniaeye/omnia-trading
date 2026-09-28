@@ -1,0 +1,26 @@
+{
+  "id": "deb020e7357fa35b1e21",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x79f03ae1e2ed220d3721feaf5e2403d379f31e18",
+    "pool": null
+  },
+  "name": "SAMA",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:20:45.464282+00:00",
+      "price": 3.86857e-05,
+      "evidence": "capture:26559b75-812f-4386-982b-eba5073faf44:rank:61",
+      "capture_id": "26559b75-812f-4386-982b-eba5073faf44"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

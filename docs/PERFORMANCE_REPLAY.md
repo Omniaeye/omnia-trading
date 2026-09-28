@@ -42,7 +42,7 @@ account snapshot or execution receipt is fabricated to produce an action.
 ## Private report
 
 ```bash
-python tools/build_performance_report.py \
+omnia-trading-report \
   --capture-dir /private/five-minute-capture \
   --output-dir /private/performance-review
 ```
@@ -55,3 +55,7 @@ unverified launch prices and unrelated candle history are not mixed in.
 The output contains `index.html` and `report.json`. Serve it on a local-only
 HTTP server to use filters, rankings, the individual timeline and model details.
 Source strings are rendered as text, not HTML. The output directory must be new.
+
+## Published window
+
+[28 September 2026](../examples/market-window-2026-09-28/README.md) includes all contracts, native inputs/answers and per-series records. Verify it with `omnia-trading-casebook verify examples/market-window-2026-09-28`.

@@ -1,0 +1,83 @@
+{
+  "id": "c90d6634502f5a27219b",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0xa603f6606099d9b23f6762c78f740950d263860b",
+    "pool": null
+  },
+  "name": "Fuelbot ",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:16:00.473367+00:00",
+      "price": 1.04518e-05,
+      "evidence": "capture:cd404827-1073-4901-b09c-82ef1488855b:rank:72",
+      "capture_id": "cd404827-1073-4901-b09c-82ef1488855b"
+    },
+    {
+      "at": "2026-09-28T19:16:15.518445+00:00",
+      "price": 9.89604e-06,
+      "evidence": "capture:c193221c-c80a-4a3b-ad88-59f12dcb1689:rank:13",
+      "capture_id": "c193221c-c80a-4a3b-ad88-59f12dcb1689"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:16:00.473367+00:00",
+    "last_at": "2026-09-28T19:16:15.518445+00:00",
+    "max_gap_seconds": 15.045078,
+    "market": {
+      "first_price_usd": 1.04518e-05,
+      "last_price_usd": 9.89604e-06,
+      "peak_price_usd": 1.04518e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.9468263839721388,
+      "return_ratio": -0.05317361602786123,
+      "max_drawdown_ratio": 0.05317361602786123,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -5.317361602786123,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": -5.317361602786123,
+      "gross_profit_usd": -5.317361602786123,
+      "final_equity_usd": 94.68263839721388,
+      "open_quantity": 9567729.960389597,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:16:00.473367+00:00",
+          "action": "BUY",
+          "price": 1.04518e-05,
+          "quantity": 9567729.960389597,
+          "evidence": "capture:cd404827-1073-4901-b09c-82ef1488855b:rank:72",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:16:15.518445+00:00",
+          "action": "HOLD",
+          "price": 9.89604e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 9567729.960389597,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:c193221c-c80a-4a3b-ad88-59f12dcb1689:rank:13",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

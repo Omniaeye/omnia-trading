@@ -13,6 +13,36 @@ OMNIA Trading evaluates market observations and turns them into position decisio
 
 The Python package combines **102 source parameter definitions**, typed model assessments, position snapshots and a persistent decision ledger. Every result identifies the observation, position, policy and evidence used.
 
+## Market results
+
+**28 September 2026 · 15 minutes · Robinhood Chain, BSC and Solana**
+
+| Captures | Ranking series | Reached 2x | Finished at 2x or above |
+| ---: | ---: | ---: | ---: |
+| **789** | **607** | **25** | **12** |
+
+| Token | Network | Peak | Final |
+| --- | --- | ---: | ---: |
+| RADAR | Solana | **7.014x** | 2.453x |
+| p/xmr | Solana | **6.333x** | 4.120x |
+| CATTO | BSC | **5.445x** | 2.685x |
+| DOA | Solana | **4.720x** | 1.076x |
+| Pumpdog | Solana | **4.082x** | 1.117x |
+| XPAD | Solana | **3.995x** | 3.995x |
+| LBX | Robinhood | **3.866x** | 1.356x |
+| MESUB | Solana | **3.656x** | 2.856x |
+
+Multiples are relative to each series' first captured price. Peak and final refer to captured quotes within this window. **568 series** contain at least two quotes.
+
+[**Explore every contract and result →**](examples/market-window-2026-09-28/README.md)
+
+- **60 contract records:** every supplied parameter, unit, timestamp and source mapping.
+- **180 native JEV/LAYA responses:** exact inputs, questions, answer distributions and acceptance gates.
+- **621 series:** every captured quote in the report, including single-quote and assessment-only records.
+- **14,077 exit-policy events:** BUY, HOLD, HOLD BAG, PROFIT, TP and SL with price, quantity and source references.
+
+Price trajectories, model assessments and exit-policy calculations have separate records. The complete window includes all outcomes and can be verified locally without model downloads.
+
 ## Work with the data you have
 
 OMNIA evaluates the information a source actually provides. A token does not need all 102 parameters. Missing values stay **not reported**; the engine evaluates applicable data and records coverage with the decision.
@@ -34,8 +64,8 @@ Operators can require security, ownership, capitalization or liquidity coverage 
 | Decision | Trigger | Result |
 | --- | --- | --- |
 | **SKIP** | Entry conditions fail, evidence requires attention or a position exceeds exposure limits | No position change proposed; reason codes identify the condition |
-| **BUY** | No open position; data, flow, ownership, risk and available budget pass policy | Entry notional in USD |
-| **HOLD** | An open position remains within exit limits and risk assessment passes | Keep the current position |
+| **BUY** | No open position; required data, flow, reported risk and available budget pass policy | Entry notional in USD |
+| **HOLD** | An open position remains within exit limits and applicable checks pass | Keep the current position |
 | **HOLD BAG** | Partial profit has been recorded and the remaining quantity is within the configured residual allowance | Keep the residual position; TP and SL remain active |
 | **PROFIT** | The partial-profit threshold is reached for the first time | Reduce quantity to the configured residual allocation |
 | **TP** | Return from average entry reaches the take-profit threshold | Propose closing the remaining quantity |
@@ -65,7 +95,7 @@ Entry, exposure and exit rules
 Decision + sizing + evidence
 ```
 
-The original data API returns `candidate`, `review` or `skip`. The strategy API adds the seven position decisions. A data candidate is not automatically a BUY.
+The data API returns `candidate`, `review` or `skip`. The strategy API adds the seven position decisions. A data candidate is not automatically a BUY.
 
 JEV/LAYA evaluates three specific strategy questions:
 
@@ -90,30 +120,18 @@ An action needs a reason that can be checked against its inputs. OMNIA records t
 `supportive` means comparable buy counts exceed sell counts. It does not mean an entry passed. For example, 55 buys and 45 sells produce a 55% buy share: buy-dominant flow, below the default 60% entry minimum. Counts describe activity; they do not establish net capital inflow.
 
 ```python
-from datetime import datetime
+from omnia_trading.contracts import timestamp
 from omnia_trading.decision_notes import explain_observation
 
 notes = explain_observation(
     observation,
-    now=datetime.fromisoformat(observation["observed_at"]),
+    now=timestamp(observation["observed_at"]),
 )
 for note in notes["notes"]:
     print(note["code"], note["values"], note["evidence"])
 ```
 
 Every note carries its origin, values and evidence references. The report retains the observation hash and a hash of its notes. [Decision reasons](docs/DECISION_REASONS.md) documents the contract and interpretation.
-
-## Decision records and market outcomes
-
-The private report connects each token to its recorded quotes, entry precheck, native model answers and decision reasons. Filter by Robinhood, BSC or Solana; inspect each contract and pool; rank observed returns and identify the first captured 2x, 3x, 5x or 10x milestone.
-
-The quote replay calculates an independent $100 entry with the configured partial-profit, take-profit and stop-loss rules. It shows cash proceeds, remaining quantity and final gross P&L separately. Native model answers retain their own record; quote calculations do not become model decisions or execution receipts.
-
-- [Quote performance and exits](docs/PERFORMANCE_REPLAY.md)
-- [Source validation and task facts](docs/FACTS_REPLAY.md)
-- [Security observation adapter](docs/SECURITY_SOURCE.md)
-
-Recorded windows use frozen cohorts and retain all outcomes, including model disagreements and unavailable data. A 2x price observation is a market outcome, not proof of an entry or a fill.
 
 ## Parameters
 
@@ -161,10 +179,18 @@ Python 3.10 or newer:
 ```bash
 git clone https://github.com/Omniaeye/omnia-trading.git
 cd omnia-trading
+python -m pip install -e .
+# Add the local model runtime when running new inference:
 python -m pip install '.[local]'
 ```
 
-Select the pinned English checkpoint:
+Verify the included capture window first; this command needs no provider key or model download:
+
+```bash
+omnia-trading-casebook verify examples/market-window-2026-09-28
+```
+
+For native inference, select the pinned English checkpoint:
 
 ```bash
 export OMNIA_LAYA_REVISION=55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851
@@ -230,5 +256,20 @@ The application owns fills and position updates. A repeated decision is not an a
 | [Research](docs/RESEARCH.md) | Research and runtime foundations |
 
 OMNIA Trading uses the attributed [OMNIA LAYA](https://github.com/Omniaeye/omnia-laya) integration. [OMNIA MCP](https://github.com/Omniaeye/omnia-mcp) and [OMNIA Chronicle](https://github.com/Omniaeye/omnia-chronicle) are separate components in the OMNIA ecosystem.
+
+## Repository guide
+
+| Location | Responsibility |
+| --- | --- |
+| `src/omnia_trading/` | Input contracts, policies, typed inference and position decisions |
+| `src/omnia_trading/reporting.py` | Build an inspection report from an archived capture |
+| `src/omnia_trading/casebook.py` | Export and verify published capture windows |
+| `examples/market-window-2026-09-28/` | Contract records, native answers, trajectories and reproducible results |
+| `tests/contracts/` | Input types, units, source adapters and policy requirements |
+| `tests/strategy/` | Entry rules, position lifecycle, coverage and decision reasons |
+| `tests/runtime/` | Inference records, cache, recovery and stream handling |
+| `tests/reporting/` | Capture integrity, model binding, price arithmetic and published results |
+
+[Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md) · [Contributing](CONTRIBUTING.md) · [Example guide](examples/README.md)
 
 &copy; 2026 OMNIA EYE Corporation. [Apache-2.0](LICENSE) &middot; [Third-party notices](THIRD_PARTY_NOTICES.md) &middot; [Security](SECURITY.md)

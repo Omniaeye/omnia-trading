@@ -122,6 +122,17 @@ def _model_checks(item, ledger, backend, policy, context, floor, max_bytes):
     return records, failures
 
 
+def _price_exit_reached(item, context, policy):
+    """Avoid additional inference when a validated position already meets an exit."""
+    position = context['position']
+    if position is None:
+        return False
+    with localcontext() as decimal_context:
+        decimal_context.prec = 50
+        pnl = Decimal(str(item['fields']['price']['value'])) / Decimal(str(position['average_entry_price_usd'])) - 1
+    return pnl <= -Decimal(str(policy.stop_loss_ratio)) or pnl >= Decimal(str(policy.take_profit_ratio))
+
+
 def _action(item, assessment, context, policy, checks, failures):
     position = context['position']
     if assessment['disposition'] != 'candidate':
@@ -184,11 +195,13 @@ def decide(event, context, ledger, backend, *, strategy_policy=None, data_policy
                          min_probability=floor, max_bytes=max_bytes)
     issues = _guards(item, context, data_policy, started)
     checks, failures = {}, {}
+    price_exit = False
     if assessment['disposition'] == 'candidate' and not issues:
         if not context['position']:
             issues.extend(_entry_reasons(item, assessment, context, strategy_policy))
-        # Exit thresholds do not depend on the additional strategy-model answers.
-        if not issues:
+        price_exit = _price_exit_reached(item, context, strategy_policy)
+        # The data assessment remains required; strategy inference must not delay a price exit.
+        if not issues and not price_exit:
             checks, failures = _model_checks(item, ledger, backend, strategy_policy, context, floor, max_bytes)
     evaluated = _now(now)
     issues.extend(_guards(item, context, data_policy, evaluated))
@@ -212,6 +225,7 @@ def decide(event, context, ledger, backend, *, strategy_policy=None, data_policy
         'evidence': list(dict.fromkeys([*assessment['evidence'], context['evidence']])),
         'strategy_policy': asdict(strategy_policy), 'min_answer_probability': floor,
         'strategy_checks': checks, 'strategy_failures': failures,
+        'strategy_check_mode': 'price_exit' if price_exit else 'coverage_gated',
         'strategy_coverage': _task_coverage(item, context),
         'evaluated_at': evaluated.isoformat(), 'valid_until': expiry.isoformat(),
         'clock_mode': 'realtime' if now is None else 'replay', 'execution_authorized': False,

@@ -1,0 +1,83 @@
+{
+  "id": "5b04916b5a3d1fd6ba36",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "Bd31GuanWN9apY3jntXTxECongj2B1ZSFKPYdd8JJd9",
+    "pool": null
+  },
+  "name": "KAI",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:12:40.365643+00:00",
+      "price": 5.38946e-06,
+      "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:64",
+      "capture_id": "3af1faa1-2074-484e-893e-ed2c676e1576"
+    },
+    {
+      "at": "2026-09-28T19:12:45.490977+00:00",
+      "price": 5.45152e-06,
+      "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:63",
+      "capture_id": "ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:12:40.365643+00:00",
+    "last_at": "2026-09-28T19:12:45.490977+00:00",
+    "max_gap_seconds": 5.125334,
+    "market": {
+      "first_price_usd": 5.38946e-06,
+      "last_price_usd": 5.45152e-06,
+      "peak_price_usd": 5.45152e-06,
+      "peak_multiple": 1.011515068299978,
+      "final_multiple": 1.011515068299978,
+      "return_ratio": 0.011515068299978105,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 1.1515068299978106,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 1.1515068299978106,
+      "gross_profit_usd": 1.1515068299978106,
+      "final_equity_usd": 101.15150682999781,
+      "open_quantity": 18554734.61163085,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:12:40.365643+00:00",
+          "action": "BUY",
+          "price": 5.38946e-06,
+          "quantity": 18554734.61163085,
+          "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:64",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:12:45.490977+00:00",
+          "action": "HOLD",
+          "price": 5.45152e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 18554734.61163085,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:63",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

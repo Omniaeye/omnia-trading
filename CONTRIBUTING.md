@@ -16,3 +16,5 @@ Core contract tests run without model downloads. Record checkpoint, hardware,
 input provenance and measured outcomes separately for inference evaluations.
 Changes to `_engine` originate in the shared OMNIA Laya integration and require
 an explicit snapshot refresh and updated hashes.
+
+See [test responsibilities](tests/README.md) before adding a regression. Published market windows are immutable: put later evaluations in a new dated directory and retain both favorable and unfavorable outcomes.

@@ -1,0 +1,26 @@
+{
+  "id": "0062566a3ddb928a09f4",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "AF9D78NdSJeH6xgwApKULZJsQFoaierDr61Um8VM75QJ",
+    "pool": null
+  },
+  "name": "artcoin",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:18:07.749963+00:00",
+      "price": 6.10936e-06,
+      "evidence": "capture:b0fb1b47-4973-472f-9619-8480bc7d294e:rank:90",
+      "capture_id": "b0fb1b47-4973-472f-9619-8480bc7d294e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

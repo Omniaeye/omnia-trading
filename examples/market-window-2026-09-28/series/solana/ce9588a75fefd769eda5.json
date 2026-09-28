@@ -1,0 +1,243 @@
+{
+  "id": "ce9588a75fefd769eda5",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "Dw5b32W2vDzjqSwSKHTGYm3auESxx5NX52BAz5wBpump",
+    "pool": null
+  },
+  "name": "GTA6",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:12:40.365643+00:00",
+      "price": 0.000559141,
+      "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:3",
+      "capture_id": "3af1faa1-2074-484e-893e-ed2c676e1576"
+    },
+    {
+      "at": "2026-09-28T19:12:45.490977+00:00",
+      "price": 0.000568861,
+      "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:3",
+      "capture_id": "ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf"
+    },
+    {
+      "at": "2026-09-28T19:13:00.884337+00:00",
+      "price": 0.000581571,
+      "evidence": "capture:5867894f-39b4-4bcd-bd87-86394c63aab4:rank:3",
+      "capture_id": "5867894f-39b4-4bcd-bd87-86394c63aab4"
+    },
+    {
+      "at": "2026-09-28T19:13:15.565374+00:00",
+      "price": 0.000592109,
+      "evidence": "capture:ca31b3d4-ad60-4333-98b3-6d940a196f86:rank:3",
+      "capture_id": "ca31b3d4-ad60-4333-98b3-6d940a196f86"
+    },
+    {
+      "at": "2026-09-28T19:13:30.833894+00:00",
+      "price": 0.000594995,
+      "evidence": "capture:2beb38a4-bfac-4502-bbc3-8c8c0f943007:rank:2",
+      "capture_id": "2beb38a4-bfac-4502-bbc3-8c8c0f943007"
+    },
+    {
+      "at": "2026-09-28T19:13:45.640151+00:00",
+      "price": 0.000611349,
+      "evidence": "capture:4d31b656-3ffe-4768-bef6-377adf019420:rank:2",
+      "capture_id": "4d31b656-3ffe-4768-bef6-377adf019420"
+    },
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 0.000618931,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:2",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    },
+    {
+      "at": "2026-09-28T19:14:17.246316+00:00",
+      "price": 0.000630442,
+      "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:2",
+      "capture_id": "7a923cde-d765-4388-a15c-4f47fde0a3b5"
+    },
+    {
+      "at": "2026-09-28T19:14:30.874732+00:00",
+      "price": 0.000639344,
+      "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:2",
+      "capture_id": "fa585070-b1ae-4f9d-afbd-aa986f487793"
+    },
+    {
+      "at": "2026-09-28T19:14:46.892387+00:00",
+      "price": 0.000647176,
+      "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:1",
+      "capture_id": "7d9e3e65-8bda-4696-b6d1-7a86825bd98c"
+    },
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 0.000661504,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:1",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    },
+    {
+      "at": "2026-09-28T19:15:16.098308+00:00",
+      "price": 0.000673095,
+      "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:1",
+      "capture_id": "ab2becb9-3f94-4a57-b9e8-472ad0998012"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 12,
+    "first_at": "2026-09-28T19:12:40.365643+00:00",
+    "last_at": "2026-09-28T19:15:16.098308+00:00",
+    "max_gap_seconds": 16.651122,
+    "market": {
+      "first_price_usd": 0.000559141,
+      "last_price_usd": 0.000673095,
+      "peak_price_usd": 0.000673095,
+      "peak_multiple": 1.2038019032766332,
+      "final_multiple": 1.2038019032766332,
+      "return_ratio": 0.20380190327663325,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 20.380190327663325,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 20.380190327663325,
+      "gross_profit_usd": 20.380190327663325,
+      "final_equity_usd": 120.38019032766333,
+      "open_quantity": 178845.7652005487,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:12:40.365643+00:00",
+          "action": "BUY",
+          "price": 0.000559141,
+          "quantity": 178845.7652005487,
+          "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:3",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:12:45.490977+00:00",
+          "action": "HOLD",
+          "price": 0.000568861,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:3",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:13:00.884337+00:00",
+          "action": "HOLD",
+          "price": 0.000581571,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:5867894f-39b4-4bcd-bd87-86394c63aab4:rank:3",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:13:15.565374+00:00",
+          "action": "HOLD",
+          "price": 0.000592109,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ca31b3d4-ad60-4333-98b3-6d940a196f86:rank:3",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:13:30.833894+00:00",
+          "action": "HOLD",
+          "price": 0.000594995,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:2beb38a4-bfac-4502-bbc3-8c8c0f943007:rank:2",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:13:45.640151+00:00",
+          "action": "HOLD",
+          "price": 0.000611349,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:4d31b656-3ffe-4768-bef6-377adf019420:rank:2",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:14:00.595194+00:00",
+          "action": "HOLD",
+          "price": 0.000618931,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:2",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:14:17.246316+00:00",
+          "action": "HOLD",
+          "price": 0.000630442,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:2",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:14:30.874732+00:00",
+          "action": "HOLD",
+          "price": 0.000639344,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:2",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:14:46.892387+00:00",
+          "action": "HOLD",
+          "price": 0.000647176,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:1",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:15:00.432009+00:00",
+          "action": "HOLD",
+          "price": 0.000661504,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:1",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:15:16.098308+00:00",
+          "action": "HOLD",
+          "price": 0.000673095,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 178845.7652005487,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:1",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "6fe55726ffa8924eb01c",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "3pEnLWyukwgM2VdHTFWqpFV2CHpU1LAE8qPNjVvwAtRt",
+    "pool": null
+  },
+  "name": "City",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:51.267717+00:00",
+      "price": 7.42439e-06,
+      "evidence": "capture:4cc162c2-aa4a-403b-a901-4bb5058380d6:rank:74",
+      "capture_id": "4cc162c2-aa4a-403b-a901-4bb5058380d6"
+    },
+    {
+      "at": "2026-09-28T19:27:00.453239+00:00",
+      "price": 3.9033e-06,
+      "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:63",
+      "capture_id": "4273fbb8-5342-4e37-8d61-ced6b88e542d"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:26:51.267717+00:00",
+    "last_at": "2026-09-28T19:27:00.453239+00:00",
+    "max_gap_seconds": 9.185522,
+    "market": {
+      "first_price_usd": 7.42439e-06,
+      "last_price_usd": 3.9033e-06,
+      "peak_price_usd": 7.42439e-06,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.525740161818008,
+      "return_ratio": -0.4742598381819921,
+      "max_drawdown_ratio": 0.4742598381819921,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -47.42598381819921,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -47.42598381819921,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -47.42598381819921,
+      "final_equity_usd": 52.57401618180079,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:26:51.267717+00:00",
+          "action": "BUY",
+          "price": 7.42439e-06,
+          "quantity": 13469120.021981604,
+          "evidence": "capture:4cc162c2-aa4a-403b-a901-4bb5058380d6:rank:74",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:27:00.453239+00:00",
+          "action": "SL",
+          "price": 3.9033e-06,
+          "sold_quantity": 13469120.021981604,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -47.42598381819921,
+          "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:63",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

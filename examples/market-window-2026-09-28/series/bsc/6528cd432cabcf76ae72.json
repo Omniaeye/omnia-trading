@@ -1,0 +1,99 @@
+{
+  "id": "6528cd432cabcf76ae72",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x3aec6d579c902c1fe8035a038e3335f3c5e3ffff",
+    "pool": null
+  },
+  "name": "BWHEEL",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:20:33.351338+00:00",
+      "price": 0.00015038,
+      "evidence": "capture:5752259a-2bcb-4e27-ac90-6ef5a52d1cf7:rank:93",
+      "capture_id": "5752259a-2bcb-4e27-ac90-6ef5a52d1cf7"
+    },
+    {
+      "at": "2026-09-28T19:20:47.599416+00:00",
+      "price": 0.00015038,
+      "evidence": "capture:1ab71e23-e150-479b-a1fa-e2a362332d1e:rank:95",
+      "capture_id": "1ab71e23-e150-479b-a1fa-e2a362332d1e"
+    },
+    {
+      "at": "2026-09-28T19:21:02.616817+00:00",
+      "price": 0.00015038,
+      "evidence": "capture:ec0d171f-d990-484a-94d1-c335d7f6e8fb:rank:98",
+      "capture_id": "ec0d171f-d990-484a-94d1-c335d7f6e8fb"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 3,
+    "first_at": "2026-09-28T19:20:33.351338+00:00",
+    "last_at": "2026-09-28T19:21:02.616817+00:00",
+    "max_gap_seconds": 15.017401,
+    "market": {
+      "first_price_usd": 0.00015038,
+      "last_price_usd": 0.00015038,
+      "peak_price_usd": 0.00015038,
+      "peak_multiple": 1.0,
+      "final_multiple": 1.0,
+      "return_ratio": 0.0,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.0,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.0,
+      "gross_profit_usd": 0.0,
+      "final_equity_usd": 100.0,
+      "open_quantity": 664982.045484772,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:20:33.351338+00:00",
+          "action": "BUY",
+          "price": 0.00015038,
+          "quantity": 664982.045484772,
+          "evidence": "capture:5752259a-2bcb-4e27-ac90-6ef5a52d1cf7:rank:93",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:20:47.599416+00:00",
+          "action": "HOLD",
+          "price": 0.00015038,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 664982.045484772,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:1ab71e23-e150-479b-a1fa-e2a362332d1e:rank:95",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:21:02.616817+00:00",
+          "action": "HOLD",
+          "price": 0.00015038,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 664982.045484772,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ec0d171f-d990-484a-94d1-c335d7f6e8fb:rank:98",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

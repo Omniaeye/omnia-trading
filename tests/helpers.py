@@ -27,3 +27,14 @@ class Backend:
         self.calls += 1
         return {'answers': {'quality': {'type': 'choice', 'choice': self.choice,
                 'probabilities': {key: .9 if key == self.choice else .05 for key in ('usable', 'inconsistent', 'insufficient')}}}}
+
+
+def ledger_request():
+    return {"id": "event-A", "state": "Market observation recorded", "evidence": ["capture:market-1"],
+            "questions": {"route": {"type": "choice", "instructions": "Which route?",
+                                      "criteria": {"keep": "Retain evidence", "review": "Needs context"}}}}
+
+
+def ledger_prediction(state, questions):
+    return {"answers": {"route": {"type": "choice", "choice": "keep",
+                                  "probabilities": {"keep": .9, "review": .1}, "confidence": .53}}}

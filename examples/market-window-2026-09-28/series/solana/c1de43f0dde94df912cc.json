@@ -1,0 +1,26 @@
+{
+  "id": "c1de43f0dde94df912cc",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "AUxE3g2UQ6YApyAPRdXGx56FCs7gpW4BzCSEgH4zpump",
+    "pool": null
+  },
+  "name": "wdog ",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:24:48.687179+00:00",
+      "price": 7.39457e-06,
+      "evidence": "capture:feb72cbd-a170-4ba3-8a11-eb1df1686719:rank:49",
+      "capture_id": "feb72cbd-a170-4ba3-8a11-eb1df1686719"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

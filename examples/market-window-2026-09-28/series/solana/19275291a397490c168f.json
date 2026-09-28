@@ -1,0 +1,26 @@
+{
+  "id": "19275291a397490c168f",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "G3fgAabbgArMinMgE5iGumkmGbsrAzC2bhngbAPTpump",
+    "pool": null
+  },
+  "name": "Honko",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:19:30.814098+00:00",
+      "price": 5.29885e-06,
+      "evidence": "capture:b25d90dc-c8db-4388-8a2b-d06541e5320f:rank:88",
+      "capture_id": "b25d90dc-c8db-4388-8a2b-d06541e5320f"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

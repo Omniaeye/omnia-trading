@@ -1,0 +1,26 @@
+{
+  "id": "5110978ae4a741686ec2",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x41ca1a94f5262c4a84fafdaa23b9499aa5b9fcd0",
+    "pool": null
+  },
+  "name": "DEBT",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:30.577698+00:00",
+      "price": 3.80352e-05,
+      "evidence": "capture:ff6b3949-9c3c-4cdf-b48c-d4010666c140:rank:89",
+      "capture_id": "ff6b3949-9c3c-4cdf-b48c-d4010666c140"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

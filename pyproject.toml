@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "omnia-trading"
-version = "0.4.0"
+version = "0.5.0"
 description = "Evidence-linked trading decisions with local typed inference"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -18,6 +18,8 @@ local = ["laya @ git+https://github.com/Omniaeye/omnia-laya.git@256eaf39550291de
 
 [project.scripts]
 omnia-trading = "omnia_trading.cli:main"
+omnia-trading-report = "omnia_trading.reporting:main"
+omnia-trading-casebook = "omnia_trading.casebook:main"
 
 [project.urls]
 Repository = "https://github.com/Omniaeye/omnia-trading"
@@ -27,9 +29,9 @@ Documentation = "https://github.com/Omniaeye/omnia-trading/tree/main/docs"
 where = ["src"]
 
 [tool.setuptools.package-data]
-omnia_trading = ["*.json"]
+omnia_trading = ["*.json", "templates/*.html"]
 
 [tool.ruff]
 line-length = 140
 [tool.ruff.lint]
-select = ["E9", "F63", "F7", "F82", "F401", "F811"]
+select = ["E9", "F"]

@@ -1,0 +1,99 @@
+{
+  "id": "b4e5e76a6d9a69e06c7e",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "95iWWUfkSwbqr1NaEXo6aKiNE7aPXKVd5EyDcyjkpump",
+    "pool": null
+  },
+  "name": "TikTok",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:00.453239+00:00",
+      "price": 0.000330648,
+      "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:21",
+      "capture_id": "4273fbb8-5342-4e37-8d61-ced6b88e542d"
+    },
+    {
+      "at": "2026-09-28T19:27:15.715818+00:00",
+      "price": 0.000333946,
+      "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:16",
+      "capture_id": "d04c9116-4617-4b61-8b98-5489321cd1cc"
+    },
+    {
+      "at": "2026-09-28T19:27:31.150305+00:00",
+      "price": 0.000340206,
+      "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:10",
+      "capture_id": "7cad37e8-83d3-4438-8055-245db6707e2e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 3,
+    "first_at": "2026-09-28T19:27:00.453239+00:00",
+    "last_at": "2026-09-28T19:27:31.150305+00:00",
+    "max_gap_seconds": 15.434487,
+    "market": {
+      "first_price_usd": 0.000330648,
+      "last_price_usd": 0.000340206,
+      "peak_price_usd": 0.000340206,
+      "peak_multiple": 1.0289068737751326,
+      "final_multiple": 1.0289068737751326,
+      "return_ratio": 0.028906873775132468,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 2.8906873775132467,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 2.8906873775132467,
+      "gross_profit_usd": 2.8906873775132467,
+      "final_equity_usd": 102.89068737751325,
+      "open_quantity": 302436.42786286323,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:27:00.453239+00:00",
+          "action": "BUY",
+          "price": 0.000330648,
+          "quantity": 302436.42786286323,
+          "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:21",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:27:15.715818+00:00",
+          "action": "HOLD",
+          "price": 0.000333946,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 302436.42786286323,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:16",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:27:31.150305+00:00",
+          "action": "HOLD",
+          "price": 0.000340206,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 302436.42786286323,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:10",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

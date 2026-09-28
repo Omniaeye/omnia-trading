@@ -1,0 +1,99 @@
+{
+  "id": "e5cae6c89b8e45ac0ac9",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x7a8cda6a1cab3e5146cd13cb623a3bb284fb4ad1",
+    "pool": null
+  },
+  "name": "STELX",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:24:00.467430+00:00",
+      "price": 0.000278993,
+      "evidence": "capture:4a231962-827e-445d-ab7d-bb974bfc841b:rank:95",
+      "capture_id": "4a231962-827e-445d-ab7d-bb974bfc841b"
+    },
+    {
+      "at": "2026-09-28T19:24:15.505143+00:00",
+      "price": 0.000278993,
+      "evidence": "capture:b7273a78-8f87-4dcc-877e-f47f549e0fe8:rank:96",
+      "capture_id": "b7273a78-8f87-4dcc-877e-f47f549e0fe8"
+    },
+    {
+      "at": "2026-09-28T19:24:31.344409+00:00",
+      "price": 0.000281205,
+      "evidence": "capture:85f4db1c-c852-45c3-99aa-4320f3839031:rank:99",
+      "capture_id": "85f4db1c-c852-45c3-99aa-4320f3839031"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 3,
+    "first_at": "2026-09-28T19:24:00.467430+00:00",
+    "last_at": "2026-09-28T19:24:31.344409+00:00",
+    "max_gap_seconds": 15.839266,
+    "market": {
+      "first_price_usd": 0.000278993,
+      "last_price_usd": 0.000281205,
+      "peak_price_usd": 0.000281205,
+      "peak_multiple": 1.007928514335485,
+      "final_multiple": 1.007928514335485,
+      "return_ratio": 0.00792851433548512,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.792851433548512,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.792851433548512,
+      "gross_profit_usd": 0.792851433548512,
+      "final_equity_usd": 100.7928514335485,
+      "open_quantity": 358431.9319839566,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:24:00.467430+00:00",
+          "action": "BUY",
+          "price": 0.000278993,
+          "quantity": 358431.9319839566,
+          "evidence": "capture:4a231962-827e-445d-ab7d-bb974bfc841b:rank:95",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:24:15.505143+00:00",
+          "action": "HOLD",
+          "price": 0.000278993,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 358431.9319839566,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:b7273a78-8f87-4dcc-877e-f47f549e0fe8:rank:96",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:24:31.344409+00:00",
+          "action": "HOLD",
+          "price": 0.000281205,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 358431.9319839566,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:85f4db1c-c852-45c3-99aa-4320f3839031:rank:99",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

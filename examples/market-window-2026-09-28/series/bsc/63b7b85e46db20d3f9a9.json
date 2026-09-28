@@ -1,0 +1,26 @@
+{
+  "id": "63b7b85e46db20d3f9a9",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x8c5cfe14cf4fa710b7d2245a9e7d989980c37777",
+    "pool": null
+  },
+  "name": "MARTIANS",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:17.917162+00:00",
+      "price": 0.000744974,
+      "evidence": "capture:3b80c987-c82b-4a3e-8f0b-d3017a78edcb:rank:99",
+      "capture_id": "3b80c987-c82b-4a3e-8f0b-d3017a78edcb"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

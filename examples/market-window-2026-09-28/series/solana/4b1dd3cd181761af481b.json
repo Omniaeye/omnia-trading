@@ -1,0 +1,26 @@
+{
+  "id": "4b1dd3cd181761af481b",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "DBrbyyYBukDRskqAHkv7NEuRBMo3w1tAZ4Yyadxfpump",
+    "pool": null
+  },
+  "name": "DOGCOIN",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 4.25751e-06,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:42",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

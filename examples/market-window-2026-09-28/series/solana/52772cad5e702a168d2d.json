@@ -1,0 +1,113 @@
+{
+  "id": "52772cad5e702a168d2d",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "HpSdozkc6ypvBf9hpPvCaZ6cJBarutL8kTuQx2HjqkeJ",
+    "pool": null
+  },
+  "name": "BEND",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 1.08255e-05,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:47",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    },
+    {
+      "at": "2026-09-28T19:14:17.246316+00:00",
+      "price": 6.39702e-06,
+      "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:28",
+      "capture_id": "7a923cde-d765-4388-a15c-4f47fde0a3b5"
+    },
+    {
+      "at": "2026-09-28T19:14:30.874732+00:00",
+      "price": 5.22432e-06,
+      "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:23",
+      "capture_id": "fa585070-b1ae-4f9d-afbd-aa986f487793"
+    },
+    {
+      "at": "2026-09-28T19:14:46.892387+00:00",
+      "price": 5.14136e-06,
+      "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:22",
+      "capture_id": "7d9e3e65-8bda-4696-b6d1-7a86825bd98c"
+    },
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 4.974e-06,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:21",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    },
+    {
+      "at": "2026-09-28T19:15:16.098308+00:00",
+      "price": 4.43636e-06,
+      "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:21",
+      "capture_id": "ab2becb9-3f94-4a57-b9e8-472ad0998012"
+    },
+    {
+      "at": "2026-09-28T19:15:30.340579+00:00",
+      "price": 4.31836e-06,
+      "evidence": "capture:564db5fc-5586-41d3-88fb-a9a955708f1d:rank:20",
+      "capture_id": "564db5fc-5586-41d3-88fb-a9a955708f1d"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 7,
+    "first_at": "2026-09-28T19:14:00.595194+00:00",
+    "last_at": "2026-09-28T19:15:30.340579+00:00",
+    "max_gap_seconds": 16.651122,
+    "market": {
+      "first_price_usd": 1.08255e-05,
+      "last_price_usd": 4.31836e-06,
+      "peak_price_usd": 1.08255e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.39890628608378365,
+      "return_ratio": -0.6010937139162164,
+      "max_drawdown_ratio": 0.6010937139162164,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -60.109371391621636,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -40.9078564500485,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -40.9078564500485,
+      "final_equity_usd": 59.0921435499515,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:14:00.595194+00:00",
+          "action": "BUY",
+          "price": 1.08255e-05,
+          "quantity": 9237448.61669207,
+          "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:47",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:14:17.246316+00:00",
+          "action": "SL",
+          "price": 6.39702e-06,
+          "sold_quantity": 9237448.61669207,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -40.9078564500485,
+          "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:28",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

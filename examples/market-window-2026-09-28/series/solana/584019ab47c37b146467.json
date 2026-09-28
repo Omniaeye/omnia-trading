@@ -1,0 +1,173 @@
+{
+  "id": "584019ab47c37b146467",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "4gNtnJBued8iGufYCHXfbC94d7skbDnESqtyAWd6BTWw",
+    "pool": null
+  },
+  "name": "OI",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:12:40.365643+00:00",
+      "price": 1.06569e-05,
+      "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:14",
+      "capture_id": "3af1faa1-2074-484e-893e-ed2c676e1576"
+    },
+    {
+      "at": "2026-09-28T19:12:45.490977+00:00",
+      "price": 8.92569e-06,
+      "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:14",
+      "capture_id": "ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf"
+    },
+    {
+      "at": "2026-09-28T19:13:00.884337+00:00",
+      "price": 8.12678e-06,
+      "evidence": "capture:5867894f-39b4-4bcd-bd87-86394c63aab4:rank:13",
+      "capture_id": "5867894f-39b4-4bcd-bd87-86394c63aab4"
+    },
+    {
+      "at": "2026-09-28T19:13:15.565374+00:00",
+      "price": 8.36392e-06,
+      "evidence": "capture:ca31b3d4-ad60-4333-98b3-6d940a196f86:rank:12",
+      "capture_id": "ca31b3d4-ad60-4333-98b3-6d940a196f86"
+    },
+    {
+      "at": "2026-09-28T19:13:30.833894+00:00",
+      "price": 7.1781e-06,
+      "evidence": "capture:2beb38a4-bfac-4502-bbc3-8c8c0f943007:rank:12",
+      "capture_id": "2beb38a4-bfac-4502-bbc3-8c8c0f943007"
+    },
+    {
+      "at": "2026-09-28T19:13:45.640151+00:00",
+      "price": 7.16545e-06,
+      "evidence": "capture:4d31b656-3ffe-4768-bef6-377adf019420:rank:13",
+      "capture_id": "4d31b656-3ffe-4768-bef6-377adf019420"
+    },
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 7.6831e-06,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:13",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    },
+    {
+      "at": "2026-09-28T19:14:17.246316+00:00",
+      "price": 3.93595e-06,
+      "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:12",
+      "capture_id": "7a923cde-d765-4388-a15c-4f47fde0a3b5"
+    },
+    {
+      "at": "2026-09-28T19:14:30.874732+00:00",
+      "price": 3.96526e-06,
+      "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:14",
+      "capture_id": "fa585070-b1ae-4f9d-afbd-aa986f487793"
+    },
+    {
+      "at": "2026-09-28T19:14:46.892387+00:00",
+      "price": 4.10189e-06,
+      "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:13",
+      "capture_id": "7d9e3e65-8bda-4696-b6d1-7a86825bd98c"
+    },
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 4.26812e-06,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:13",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    },
+    {
+      "at": "2026-09-28T19:15:16.098308+00:00",
+      "price": 4.23637e-06,
+      "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:13",
+      "capture_id": "ab2becb9-3f94-4a57-b9e8-472ad0998012"
+    },
+    {
+      "at": "2026-09-28T19:15:30.340579+00:00",
+      "price": 4.22173e-06,
+      "evidence": "capture:564db5fc-5586-41d3-88fb-a9a955708f1d:rank:13",
+      "capture_id": "564db5fc-5586-41d3-88fb-a9a955708f1d"
+    },
+    {
+      "at": "2026-09-28T19:15:47.323285+00:00",
+      "price": 4.27494e-06,
+      "evidence": "capture:65003429-a569-4442-8d4f-b2c93db69061:rank:13",
+      "capture_id": "65003429-a569-4442-8d4f-b2c93db69061"
+    },
+    {
+      "at": "2026-09-28T19:16:00.259696+00:00",
+      "price": 3.78484e-06,
+      "evidence": "capture:4236f8d5-90c4-4c9b-a73e-d6443ae3bf32:rank:14",
+      "capture_id": "4236f8d5-90c4-4c9b-a73e-d6443ae3bf32"
+    },
+    {
+      "at": "2026-09-28T19:16:15.455827+00:00",
+      "price": 3.49939e-06,
+      "evidence": "capture:acc657c6-9a43-46bf-986e-7b907c831cba:rank:16",
+      "capture_id": "acc657c6-9a43-46bf-986e-7b907c831cba"
+    },
+    {
+      "at": "2026-09-28T19:16:30.624202+00:00",
+      "price": 3.4094e-06,
+      "evidence": "capture:0d391072-ec81-4bb7-9be0-0d6bbb801c70:rank:19",
+      "capture_id": "0d391072-ec81-4bb7-9be0-0d6bbb801c70"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 17,
+    "first_at": "2026-09-28T19:12:40.365643+00:00",
+    "last_at": "2026-09-28T19:16:30.624202+00:00",
+    "max_gap_seconds": 16.982706,
+    "market": {
+      "first_price_usd": 1.06569e-05,
+      "last_price_usd": 3.4094e-06,
+      "peak_price_usd": 1.06569e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.3199241805778416,
+      "return_ratio": -0.6800758194221584,
+      "max_drawdown_ratio": 0.6800758194221584,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -68.00758194221584,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -16.244968048869747,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -16.244968048869747,
+      "final_equity_usd": 83.75503195113025,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:12:40.365643+00:00",
+          "action": "BUY",
+          "price": 1.06569e-05,
+          "quantity": 9383591.851288836,
+          "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:14",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:12:45.490977+00:00",
+          "action": "SL",
+          "price": 8.92569e-06,
+          "sold_quantity": 9383591.851288836,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -16.244968048869747,
+          "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:14",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

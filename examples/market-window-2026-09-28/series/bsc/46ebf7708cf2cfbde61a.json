@@ -1,0 +1,26 @@
+{
+  "id": "46ebf7708cf2cfbde61a",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0xf225e70162837a811c77dc2bb413a5c06e97ffff",
+    "pool": null
+  },
+  "name": "SpaceXcoin",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:19:17.488471+00:00",
+      "price": 3.80434e-05,
+      "evidence": "capture:b87f439a-4825-4a6f-b17c-0b78464d9310:rank:45",
+      "capture_id": "b87f439a-4825-4a6f-b17c-0b78464d9310"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

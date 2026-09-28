@@ -1,0 +1,26 @@
+{
+  "id": "07596c228bf09d2b5d15",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "9PnSovNipeoxbBbLUbsZVKPvjPBYhMqVoeJV1qVmj9Xb",
+    "pool": null
+  },
+  "name": "DOA",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:00.340634+00:00",
+      "price": 7.22141e-06,
+      "evidence": "capture:5b3728c5-aff9-43f3-bbb5-25b251825caa:rank:82",
+      "capture_id": "5b3728c5-aff9-43f3-bbb5-25b251825caa"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

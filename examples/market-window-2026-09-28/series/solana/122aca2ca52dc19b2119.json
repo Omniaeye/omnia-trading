@@ -1,0 +1,89 @@
+{
+  "id": "122aca2ca52dc19b2119",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "6JgM8JgSzG4JLxzPgx18Hx7TA1BZRUQXQykVYusTpump",
+    "pool": null
+  },
+  "name": "Pillys",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:00.453239+00:00",
+      "price": 1.37465e-05,
+      "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:52",
+      "capture_id": "4273fbb8-5342-4e37-8d61-ced6b88e542d"
+    },
+    {
+      "at": "2026-09-28T19:27:15.715818+00:00",
+      "price": 8.75458e-06,
+      "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:37",
+      "capture_id": "d04c9116-4617-4b61-8b98-5489321cd1cc"
+    },
+    {
+      "at": "2026-09-28T19:27:31.150305+00:00",
+      "price": 7.81925e-06,
+      "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:25",
+      "capture_id": "7cad37e8-83d3-4438-8055-245db6707e2e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 3,
+    "first_at": "2026-09-28T19:27:00.453239+00:00",
+    "last_at": "2026-09-28T19:27:31.150305+00:00",
+    "max_gap_seconds": 15.434487,
+    "market": {
+      "first_price_usd": 1.37465e-05,
+      "last_price_usd": 7.81925e-06,
+      "peak_price_usd": 1.37465e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.5688175171861929,
+      "return_ratio": -0.43118248281380717,
+      "max_drawdown_ratio": 0.43118248281380717,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -43.118248281380716,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -36.31411632051795,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -36.31411632051795,
+      "final_equity_usd": 63.68588367948205,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:27:00.453239+00:00",
+          "action": "BUY",
+          "price": 1.37465e-05,
+          "quantity": 7274578.983741316,
+          "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:52",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:27:15.715818+00:00",
+          "action": "SL",
+          "price": 8.75458e-06,
+          "sold_quantity": 7274578.983741316,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -36.31411632051795,
+          "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:37",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

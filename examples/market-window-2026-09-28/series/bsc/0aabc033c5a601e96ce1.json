@@ -1,0 +1,26 @@
+{
+  "id": "0aabc033c5a601e96ce1",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x38860d2ee327244229242c02e600a6154cec7777",
+    "pool": null
+  },
+  "name": "\u592a\u7a7a\u5154",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:33.270377+00:00",
+      "price": 1.41177e-05,
+      "evidence": "capture:1cb6d037-a95b-477e-be82-4cc75b729c8b:rank:80",
+      "capture_id": "1cb6d037-a95b-477e-be82-4cc75b729c8b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

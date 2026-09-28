@@ -1,0 +1,6 @@
+{
+  "frozen_at": "2026-09-28T19:18:28.201336+00:00",
+  "selection": "First available cohort, deterministic hash order, 20 per chain; no reselection after model answers or end-of-window prices.",
+  "label_origin": "deterministic task contract oracle; not human semantic annotations",
+  "sample_sha256": "f0f357865b346bbff8087a9606ee06e83583d987a8163bd268c9c3cfbc98ce00"
+}

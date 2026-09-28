@@ -1,0 +1,99 @@
+{
+  "id": "2b2db00d7e98a1c500a1",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "6ge79bBZfZ9uLBYkA6bU7gSysLSpHSm9PEW6AgLB2Hrw",
+    "pool": null
+  },
+  "name": "LAMBO",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:20:45.683165+00:00",
+      "price": 9.40916e-06,
+      "evidence": "capture:17963a37-fd65-46b6-8e1c-350082721f8c:rank:56",
+      "capture_id": "17963a37-fd65-46b6-8e1c-350082721f8c"
+    },
+    {
+      "at": "2026-09-28T19:21:00.690136+00:00",
+      "price": 8.55653e-06,
+      "evidence": "capture:f2ff842d-38e9-4cbe-a281-98c17d5a5672:rank:50",
+      "capture_id": "f2ff842d-38e9-4cbe-a281-98c17d5a5672"
+    },
+    {
+      "at": "2026-09-28T19:21:15.372716+00:00",
+      "price": 7.83657e-06,
+      "evidence": "capture:a923b968-a768-495e-ae33-6de2042c551f:rank:44",
+      "capture_id": "a923b968-a768-495e-ae33-6de2042c551f"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 3,
+    "first_at": "2026-09-28T19:20:45.683165+00:00",
+    "last_at": "2026-09-28T19:21:15.372716+00:00",
+    "max_gap_seconds": 15.006971,
+    "market": {
+      "first_price_usd": 9.40916e-06,
+      "last_price_usd": 7.83657e-06,
+      "peak_price_usd": 9.40916e-06,
+      "peak_multiple": 1.0,
+      "final_multiple": 0.8328660581816018,
+      "return_ratio": -0.16713394181839825,
+      "max_drawdown_ratio": 0.16713394181839825,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -16.713394181839824,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -16.713394181839824,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -16.713394181839824,
+      "final_equity_usd": 83.28660581816017,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:20:45.683165+00:00",
+          "action": "BUY",
+          "price": 9.40916e-06,
+          "quantity": 10627941.282750001,
+          "evidence": "capture:17963a37-fd65-46b6-8e1c-350082721f8c:rank:56",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:21:00.690136+00:00",
+          "action": "HOLD",
+          "price": 8.55653e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 10627941.282750001,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:f2ff842d-38e9-4cbe-a281-98c17d5a5672:rank:50",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:21:15.372716+00:00",
+          "action": "SL",
+          "price": 7.83657e-06,
+          "sold_quantity": 10627941.282750001,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -16.713394181839824,
+          "evidence": "capture:a923b968-a768-495e-ae33-6de2042c551f:rank:44",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "332d6c4d3045857b64ff",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x9bde9528206bd498f8843020e294bfb793f4d680",
+    "pool": null
+  },
+  "name": "BINGHAM",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:27:30.577698+00:00",
+      "price": 1.13503e-05,
+      "evidence": "capture:ff6b3949-9c3c-4cdf-b48c-d4010666c140:rank:95",
+      "capture_id": "ff6b3949-9c3c-4cdf-b48c-d4010666c140"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "805b7c911b5c4448737b",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "DSsBjz7aNxadyg2Fx9aGE6QxKKoj7HaKmm7LbmvZpump",
+    "pool": null
+  },
+  "name": "Pumpcat",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:00.340634+00:00",
+      "price": 6.09435e-06,
+      "evidence": "capture:5b3728c5-aff9-43f3-bbb5-25b251825caa:rank:45",
+      "capture_id": "5b3728c5-aff9-43f3-bbb5-25b251825caa"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

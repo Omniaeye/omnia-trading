@@ -1,0 +1,26 @@
+{
+  "id": "c827cb4913fd2160e1a9",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "AtfUWNGbNdwRVzVCmU3K9GwDdcQzzJ83QKQ7qrJFpump",
+    "pool": null
+  },
+  "name": "SpaceX",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:51.267717+00:00",
+      "price": 0.000152188,
+      "evidence": "capture:4cc162c2-aa4a-403b-a901-4bb5058380d6:rank:89",
+      "capture_id": "4cc162c2-aa4a-403b-a901-4bb5058380d6"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "65c5215b693c85440854",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+    "pool": null
+  },
+  "name": "EMBER",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:24:31.056437+00:00",
+      "price": 0.00996521,
+      "evidence": "capture:971b5dda-397d-4fe7-b49e-94713bb088df:rank:98",
+      "capture_id": "971b5dda-397d-4fe7-b49e-94713bb088df"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

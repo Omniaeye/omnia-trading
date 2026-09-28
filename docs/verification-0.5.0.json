@@ -1,0 +1,29 @@
+{
+  "version": "0.5.0",
+  "checked_at": "2026-09-28T20:08:04.356762+00:00",
+  "checks": {
+    "software_tests": 153,
+    "ruff": "passed",
+    "runtime_snapshot": "passed",
+    "package_build": "passed",
+    "installed_wheel_report": "passed",
+    "installed_wheel_casebook": "passed"
+  },
+  "casebook": {
+    "files_verified": 757,
+    "observations": 60,
+    "native_calls": 180,
+    "source_parameter_values": 4020,
+    "series_recomputed": 621,
+    "decision_events": 14077
+  },
+  "scope": "Software regression and archived evidence verification. Recorded native responses are preserved; no new inference or order execution.",
+  "source_sha256": {
+    "src/omnia_trading/casebook.py": "fb5e146a6772a353f91382348eae53ac12e0c440dc37a4a5f298bb6ad07f3de0",
+    "src/omnia_trading/capture_archive.py": "9e329b5bef85aac7d95b5de36169394c28e5e8cf50b88a75c57dfb768eb307a8",
+    "src/omnia_trading/reporting.py": "722a6ab7b2fceddf8c1734d917fdceb4f073f920906da57ea899497a4ab17aa0",
+    "src/omnia_trading/strategy.py": "ebb283f95dc8e3aed1bcf3c71531effd95434f839acf1087c8c82946d1dd1282"
+  },
+  "casebook_manifest_sha256": "cb3a9d8b7baa06e32048a09c05152108bbb623dc10138dd2bb6278e4401c335d",
+  "hash_scope": "LF-normalized source bytes; exact casebook manifest bytes"
+}

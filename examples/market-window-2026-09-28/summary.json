@@ -1,0 +1,99 @@
+{
+  "series_count": 621,
+  "rank_series_count": 607,
+  "price_series_with_two_quotes": 568,
+  "evaluated_observations": 60,
+  "observed_2x": 25,
+  "final_2x": 12,
+  "entry_gates": {
+    "SKIP": 60
+  },
+  "scenario_events": {
+    "BUY": 568,
+    "TP": 41,
+    "PROFIT": 53,
+    "HOLD_BAG": 479,
+    "HOLD": 12813,
+    "SL": 123
+  },
+  "executed_orders": 0,
+  "actual_profit_usd": null,
+  "capture_start": "2026-09-28T19:12:37.193133+00:00",
+  "capture_end": "2026-09-28T19:27:37.193134+00:00",
+  "capture_duration_seconds": 900,
+  "fees_slippage_included": false,
+  "issues": [],
+  "policy": {
+    "entry_budget_usd": 100,
+    "max_position_usd": 500,
+    "max_portfolio_exposure_usd": 5000,
+    "min_buy_share": 0.6,
+    "flow_window_seconds": 300,
+    "max_top_10_holder_ratio": 0.5,
+    "max_tax_ratio": 0.05,
+    "stop_loss_ratio": 0.1,
+    "profit_trigger_ratio": 0.25,
+    "take_profit_ratio": 0.5,
+    "bag_fraction": 0.2
+  },
+  "native_task_metrics": {
+    "risk": {
+      "answered": 60,
+      "agreement": 0,
+      "accepted": 5,
+      "accepted_wrong": 5
+    },
+    "flow": {
+      "answered": 60,
+      "agreement": 43,
+      "accepted": 0,
+      "accepted_wrong": 0
+    },
+    "ownership": {
+      "answered": 60,
+      "agreement": 39,
+      "accepted": 0,
+      "accepted_wrong": 0
+    }
+  },
+  "native_model": {
+    "backend": "laya.local",
+    "laya_version": "0.3.20",
+    "runtime_sha256": "759b16a75931cfa0c1a80d2c0a38081849b270a38695530d270b4c5df99a0b3a",
+    "integration_sha256": "b17f01ba34cea30a0ec8cdf713df78596379f2b81af0a12f9993dd666e573cb1",
+    "configuration": {
+      "revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+      "model": "english",
+      "device": "cpu",
+      "threads": 4,
+      "max_len": 512,
+      "head_max_len": 192
+    },
+    "dependencies": {
+      "torch": "2.14.0",
+      "transformers": "5.17.0",
+      "numpy": "2.4.6"
+    },
+    "precision": {
+      "LAYA_CPU_AMP": "",
+      "LAYA_CUDA_AMP": "",
+      "LAYA_MPS_AMP_MIN_ROWS": ""
+    }
+  },
+  "capture_count": 789,
+  "observation_count": 60,
+  "native_call_count": 180,
+  "source_parameter_values": 4020,
+  "observations_by_chain": {
+    "robinhood": 20,
+    "bsc": 20,
+    "solana": 20
+  },
+  "captures_by_chain": {
+    "robinhood": 122,
+    "solana": 545,
+    "bsc": 122
+  },
+  "model_evaluation_scope": "Three native tasks per observation; full strategy and account execution were not run.",
+  "price_basis": "First captured quote of each series; peak and last observed quote within this window."
+}

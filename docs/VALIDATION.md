@@ -1,5 +1,32 @@
 # Validation
 
+## Version 0.5.0
+
+153 software regressions passed. Lint, runtime fingerprints, package build and
+installed-wheel report/casebook commands passed. [Verification receipt](verification-0.5.0.json).
+
+The repository includes a frozen 15-minute market window with 60 observations,
+180 native responses and 621 report series. [Inspect the full window](../examples/market-window-2026-09-28/README.md).
+
+Run `omnia-trading-casebook verify examples/market-window-2026-09-28` to check
+file hashes, native request bindings, every price trajectory and all 14,077
+exit-policy events. No model call is made by this command.
+
+The four software suites cover contracts, strategy, runtime and reporting.
+CI runs Python 3.10 and 3.12 on Windows and Linux. The native task results belong
+to their recorded checkpoint and capture; software checks do not revise them.
+
+New regressions cover frozen-cohort replacement, duplicate records, mismatched
+native input or questions, modified answers, export path traversal, spreadsheet
+formula injection and avoiding extra strategy inference at TP/SL.
+
+## Version 0.4.0
+
+139 software tests passed. Coverage-aware policies allow missing optional reports
+without treating missing data as a positive risk assessment.
+[Receipt](verification-0.4.0.json) · [Four-platform CI](https://github.com/Omniaeye/omnia-trading/actions/runs/36474433741).
+
+
 ## Version 0.2.0
 
 Executed on Windows with Python 3.14.5. [Machine-readable receipt](verification-0.2.0.json)

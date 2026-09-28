@@ -1,0 +1,83 @@
+{
+  "id": "ed3118807aaaa4c5ee34",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "5oGmZzTm683RPZ4MLn5wXwFU78vx1ixYWJxAqDVxtnet",
+    "pool": null
+  },
+  "name": "Catdano",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:12:40.365643+00:00",
+      "price": 5.06285e-06,
+      "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:85",
+      "capture_id": "3af1faa1-2074-484e-893e-ed2c676e1576"
+    },
+    {
+      "at": "2026-09-28T19:12:45.490977+00:00",
+      "price": 5.23744e-06,
+      "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:83",
+      "capture_id": "ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:12:40.365643+00:00",
+    "last_at": "2026-09-28T19:12:45.490977+00:00",
+    "max_gap_seconds": 5.125334,
+    "market": {
+      "first_price_usd": 5.06285e-06,
+      "last_price_usd": 5.23744e-06,
+      "peak_price_usd": 5.23744e-06,
+      "peak_multiple": 1.0344845294646297,
+      "final_multiple": 1.0344845294646297,
+      "return_ratio": 0.034484529464629605,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 3.4484529464629605,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 3.4484529464629605,
+      "gross_profit_usd": 3.4484529464629605,
+      "final_equity_usd": 103.44845294646296,
+      "open_quantity": 19751720.868680682,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:12:40.365643+00:00",
+          "action": "BUY",
+          "price": 5.06285e-06,
+          "quantity": 19751720.868680682,
+          "evidence": "capture:3af1faa1-2074-484e-893e-ed2c676e1576:rank:85",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:12:45.490977+00:00",
+          "action": "HOLD",
+          "price": 5.23744e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 19751720.868680682,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ac0279d6-7dd1-44b6-bf3e-910bf7b8eddf:rank:83",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

@@ -124,3 +124,23 @@ Inputs must be semantically valid, share source evidence and observation time, a
 Version 0.4 uses strategy.v2 and data-policy.v3. Missing optional data no longer blocks an assessment by default. Set the three data-policy requirements and `StrategyPolicy(require_risk_reports=True, require_ownership=True)` to require those inputs. Supplied nulls are tracked as unavailable rather than interpreted by the model. Each consumer should select its policy explicitly when upgrading.
 
 `reported_parameter_count` counts fields sent through the batch plan. `unavailable_fields` maps supplied fields to `not_reported` or `not_applicable`. `strategy_coverage` identifies complete, partial, not-reported and not-required-for-position tasks; `strategy_checks` contains only actual model records. No native risk answer is requested when any of its four required reports is absent.
+
+## Report and casebook API
+
+```python
+from pathlib import Path
+from omnia_trading.casebook import verify
+from omnia_trading.reporting import build
+
+receipt = verify(Path("examples/market-window-2026-09-28"))
+# For a separately captured archive:
+# build(Path("capture"), Path("new-report"))
+```
+
+`build` requires a new output directory and never overwrites an earlier report.
+`verify` raises `ValueError` on inconsistent records or hashes; missing files
+raise filesystem errors. It returns verified file, observation, native-call,
+series and event counts. Original source files are read only.
+
+Strategy results include `strategy_check_mode`: `price_exit` means TP/SL avoided
+additional strategy inference; `coverage_gated` applies to the other paths.

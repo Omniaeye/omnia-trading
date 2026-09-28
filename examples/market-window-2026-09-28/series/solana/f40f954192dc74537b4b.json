@@ -1,0 +1,169 @@
+{
+  "id": "f40f954192dc74537b4b",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "6Y852xQ6PMeVVJSjNATMVdgh6hL2LMpsZjJ8KjGiR8ig",
+    "pool": null
+  },
+  "name": "DOA",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:24:00.852400+00:00",
+      "price": 7.22486e-06,
+      "evidence": "capture:5205c587-4734-452c-b758-46c4814dded1:rank:84",
+      "capture_id": "5205c587-4734-452c-b758-46c4814dded1"
+    },
+    {
+      "at": "2026-09-28T19:24:15.655418+00:00",
+      "price": 1.28942e-05,
+      "evidence": "capture:5b9df0f6-51c0-4dbb-9de7-7df7a46bfee0:rank:52",
+      "capture_id": "5b9df0f6-51c0-4dbb-9de7-7df7a46bfee0"
+    },
+    {
+      "at": "2026-09-28T19:24:31.056437+00:00",
+      "price": 2.40938e-05,
+      "evidence": "capture:971b5dda-397d-4fe7-b49e-94713bb088df:rank:38",
+      "capture_id": "971b5dda-397d-4fe7-b49e-94713bb088df"
+    },
+    {
+      "at": "2026-09-28T19:24:48.687179+00:00",
+      "price": 3.27102e-05,
+      "evidence": "capture:feb72cbd-a170-4ba3-8a11-eb1df1686719:rank:25",
+      "capture_id": "feb72cbd-a170-4ba3-8a11-eb1df1686719"
+    },
+    {
+      "at": "2026-09-28T19:25:01.877958+00:00",
+      "price": 3.41012e-05,
+      "evidence": "capture:fd6d01ae-d246-439e-ac58-27ae75880eb9:rank:23",
+      "capture_id": "fd6d01ae-d246-439e-ac58-27ae75880eb9"
+    },
+    {
+      "at": "2026-09-28T19:25:15.488701+00:00",
+      "price": 2.7372e-05,
+      "evidence": "capture:b8fee87c-9981-475c-930b-99c255910a9f:rank:21",
+      "capture_id": "b8fee87c-9981-475c-930b-99c255910a9f"
+    },
+    {
+      "at": "2026-09-28T19:25:30.900173+00:00",
+      "price": 1.89914e-05,
+      "evidence": "capture:7f757769-25c3-429a-81d0-c6b2ee45ee15:rank:17",
+      "capture_id": "7f757769-25c3-429a-81d0-c6b2ee45ee15"
+    },
+    {
+      "at": "2026-09-28T19:25:45.342895+00:00",
+      "price": 2.75579e-05,
+      "evidence": "capture:0ca3656d-ce8c-444b-8f77-acf34c08a1f4:rank:15",
+      "capture_id": "0ca3656d-ce8c-444b-8f77-acf34c08a1f4"
+    },
+    {
+      "at": "2026-09-28T19:26:00.340634+00:00",
+      "price": 2.96863e-05,
+      "evidence": "capture:5b3728c5-aff9-43f3-bbb5-25b251825caa:rank:14",
+      "capture_id": "5b3728c5-aff9-43f3-bbb5-25b251825caa"
+    },
+    {
+      "at": "2026-09-28T19:26:16.031602+00:00",
+      "price": 1.95038e-05,
+      "evidence": "capture:bb8d4bfc-85e1-4d55-a2ff-e47193bcce5f:rank:12",
+      "capture_id": "bb8d4bfc-85e1-4d55-a2ff-e47193bcce5f"
+    },
+    {
+      "at": "2026-09-28T19:26:32.771713+00:00",
+      "price": 1.53725e-05,
+      "evidence": "capture:2fed7296-b3d1-4ba6-8398-799ee55f1f2b:rank:12",
+      "capture_id": "2fed7296-b3d1-4ba6-8398-799ee55f1f2b"
+    },
+    {
+      "at": "2026-09-28T19:26:51.267717+00:00",
+      "price": 6.47034e-06,
+      "evidence": "capture:4cc162c2-aa4a-403b-a901-4bb5058380d6:rank:11",
+      "capture_id": "4cc162c2-aa4a-403b-a901-4bb5058380d6"
+    },
+    {
+      "at": "2026-09-28T19:27:00.453239+00:00",
+      "price": 9.40321e-06,
+      "evidence": "capture:4273fbb8-5342-4e37-8d61-ced6b88e542d:rank:11",
+      "capture_id": "4273fbb8-5342-4e37-8d61-ced6b88e542d"
+    },
+    {
+      "at": "2026-09-28T19:27:15.715818+00:00",
+      "price": 8.31377e-06,
+      "evidence": "capture:d04c9116-4617-4b61-8b98-5489321cd1cc:rank:10",
+      "capture_id": "d04c9116-4617-4b61-8b98-5489321cd1cc"
+    },
+    {
+      "at": "2026-09-28T19:27:31.150305+00:00",
+      "price": 7.77079e-06,
+      "evidence": "capture:7cad37e8-83d3-4438-8055-245db6707e2e:rank:11",
+      "capture_id": "7cad37e8-83d3-4438-8055-245db6707e2e"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 15,
+    "first_at": "2026-09-28T19:24:00.852400+00:00",
+    "last_at": "2026-09-28T19:27:31.150305+00:00",
+    "max_gap_seconds": 18.496004,
+    "market": {
+      "first_price_usd": 7.22486e-06,
+      "last_price_usd": 7.77079e-06,
+      "peak_price_usd": 3.41012e-05,
+      "peak_multiple": 4.719980733190678,
+      "final_multiple": 1.0755627098656584,
+      "return_ratio": 0.0755627098656583,
+      "max_drawdown_ratio": 0.8102606359893494,
+      "milestones": {
+        "2": {
+          "at": "2026-09-28T19:24:31.056437+00:00",
+          "price": 2.40938e-05,
+          "evidence": "capture:971b5dda-397d-4fe7-b49e-94713bb088df:rank:38"
+        },
+        "3": {
+          "at": "2026-09-28T19:24:31.056437+00:00",
+          "price": 2.40938e-05,
+          "evidence": "capture:971b5dda-397d-4fe7-b49e-94713bb088df:rank:38"
+        },
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 7.5562709865658295,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 78.46989422632412,
+      "unrealized_profit_usd": 0.0,
+      "gross_profit_usd": 78.46989422632412,
+      "final_equity_usd": 178.4698942263241,
+      "open_quantity": 0.0,
+      "final_action": "TP",
+      "events": [
+        {
+          "at": "2026-09-28T19:24:00.852400+00:00",
+          "action": "BUY",
+          "price": 7.22486e-06,
+          "quantity": 13841098.651046526,
+          "evidence": "capture:5205c587-4734-452c-b758-46c4814dded1:rank:84",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:24:15.655418+00:00",
+          "action": "TP",
+          "price": 1.28942e-05,
+          "sold_quantity": 13841098.651046526,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": 78.46989422632412,
+          "evidence": "capture:5b9df0f6-51c0-4dbb-9de7-7df7a46bfee0:rank:52",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

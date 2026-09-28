@@ -1,0 +1,26 @@
+{
+  "id": "cf201d8370f628426211",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0xd8d1c08a8ba4fc64bac744f74290b89adcb6bf25",
+    "pool": null
+  },
+  "name": "seedcoin",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:00.522113+00:00",
+      "price": 2.9064e-05,
+      "evidence": "capture:a33301e4-8f37-4fb5-af69-629635c54fe6:rank:58",
+      "capture_id": "a33301e4-8f37-4fb5-af69-629635c54fe6"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

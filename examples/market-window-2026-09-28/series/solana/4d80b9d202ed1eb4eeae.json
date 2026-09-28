@@ -1,0 +1,26 @@
+{
+  "id": "4d80b9d202ed1eb4eeae",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "HHrJwqKNvad3ycshZ7LuaNftYfyyUZSuSN52hcYJyrM8",
+    "pool": null
+  },
+  "name": "Reggie",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:21:30.402460+00:00",
+      "price": 4.63533e-06,
+      "evidence": "capture:d926629b-2050-4e50-a602-1638c6205870:rank:96",
+      "capture_id": "d926629b-2050-4e50-a602-1638c6205870"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

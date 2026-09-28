@@ -1,0 +1,26 @@
+{
+  "id": "1057b1ddef254da92f02",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x6f48538fc1b79af9e7f56890e0da0582d763a272",
+    "pool": null
+  },
+  "name": "AVM",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:25:45.483791+00:00",
+      "price": 3.45618e-05,
+      "evidence": "capture:ebb21e05-3dc6-4a8f-a800-fa79ba147200:rank:98",
+      "capture_id": "ebb21e05-3dc6-4a8f-a800-fa79ba147200"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

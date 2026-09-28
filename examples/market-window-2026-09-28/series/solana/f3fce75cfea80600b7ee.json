@@ -1,0 +1,26 @@
+{
+  "id": "f3fce75cfea80600b7ee",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "D4SjUtPFJ5H6WZnBdkXpbnqFf6K6NxSw23hm8CDW9xGa",
+    "pool": null
+  },
+  "name": "DOTS",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:17:46.087880+00:00",
+      "price": 4.35369e-06,
+      "evidence": "capture:ee91a1c6-bc99-4c7a-9cdc-bd6cb5478a9b:rank:73",
+      "capture_id": "ee91a1c6-bc99-4c7a-9cdc-bd6cb5478a9b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

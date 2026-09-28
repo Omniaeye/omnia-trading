@@ -1,0 +1,83 @@
+{
+  "id": "51b082e08c6565688b0f",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x7638d07e58e875a8b6e91cf50dbcac270e664b73",
+    "pool": null
+  },
+  "name": "Schr\u00f6dinger ",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:21:45.420062+00:00",
+      "price": 4.95574e-05,
+      "evidence": "capture:ec22b61b-732a-44d2-be85-c577051928eb:rank:94",
+      "capture_id": "ec22b61b-732a-44d2-be85-c577051928eb"
+    },
+    {
+      "at": "2026-09-28T19:22:00.489634+00:00",
+      "price": 4.95574e-05,
+      "evidence": "capture:d6c64542-18c5-48a0-a6c9-f0e2a9c54b41:rank:93",
+      "capture_id": "d6c64542-18c5-48a0-a6c9-f0e2a9c54b41"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:21:45.420062+00:00",
+    "last_at": "2026-09-28T19:22:00.489634+00:00",
+    "max_gap_seconds": 15.069572,
+    "market": {
+      "first_price_usd": 4.95574e-05,
+      "last_price_usd": 4.95574e-05,
+      "peak_price_usd": 4.95574e-05,
+      "peak_multiple": 1.0,
+      "final_multiple": 1.0,
+      "return_ratio": 0.0,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.0,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.0,
+      "gross_profit_usd": 0.0,
+      "final_equity_usd": 100.0,
+      "open_quantity": 2017862.1154459273,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:21:45.420062+00:00",
+          "action": "BUY",
+          "price": 4.95574e-05,
+          "quantity": 2017862.1154459273,
+          "evidence": "capture:ec22b61b-732a-44d2-be85-c577051928eb:rank:94",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:22:00.489634+00:00",
+          "action": "HOLD",
+          "price": 4.95574e-05,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 2017862.1154459273,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:d6c64542-18c5-48a0-a6c9-f0e2a9c54b41:rank:93",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "49b067f04d5e9564b3e7",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "68U457cJxhAQ9gz1QivaD6sHtDpe1gXtcehnpiiGSpmA",
+    "pool": null
+  },
+  "name": "SCAT",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:23:31.092727+00:00",
+      "price": 6.8038e-06,
+      "evidence": "capture:0e687519-8b01-4d7e-b48c-e2ec34135d17:rank:62",
+      "capture_id": "0e687519-8b01-4d7e-b48c-e2ec34135d17"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

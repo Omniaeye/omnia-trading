@@ -1,0 +1,26 @@
+{
+  "id": "bfa4cfbc56ac63215a7a",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "3gzcjJR1RAwTLg7dno3UgjYE2TfAJPve7hpDJfNmEAMh",
+    "pool": null
+  },
+  "name": "DUMP",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:16:30.624202+00:00",
+      "price": 3.4566e-05,
+      "evidence": "capture:0d391072-ec81-4bb7-9be0-0d6bbb801c70:rank:99",
+      "capture_id": "0d391072-ec81-4bb7-9be0-0d6bbb801c70"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "cf5b58e895c424e256bb",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "snSekSZEHCjoSsKk5J2GYyNSoQSvskSp4RpUQuNpump",
+    "pool": null
+  },
+  "name": "Felon",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 7.02176e-06,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:88",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    },
+    {
+      "at": "2026-09-28T19:15:16.098308+00:00",
+      "price": 7.62075e-06,
+      "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:64",
+      "capture_id": "ab2becb9-3f94-4a57-b9e8-472ad0998012"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:15:00.432009+00:00",
+    "last_at": "2026-09-28T19:15:16.098308+00:00",
+    "max_gap_seconds": 15.666299,
+    "market": {
+      "first_price_usd": 7.02176e-06,
+      "last_price_usd": 7.62075e-06,
+      "peak_price_usd": 7.62075e-06,
+      "peak_multiple": 1.085304823861824,
+      "final_multiple": 1.085304823861824,
+      "return_ratio": 0.08530482386182382,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 8.530482386182381,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 8.530482386182381,
+      "gross_profit_usd": 8.530482386182381,
+      "final_equity_usd": 108.53048238618238,
+      "open_quantity": 14241443.740600647,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:15:00.432009+00:00",
+          "action": "BUY",
+          "price": 7.02176e-06,
+          "quantity": 14241443.740600647,
+          "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:88",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:15:16.098308+00:00",
+          "action": "HOLD",
+          "price": 7.62075e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 14241443.740600647,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:ab2becb9-3f94-4a57-b9e8-472ad0998012:rank:64",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

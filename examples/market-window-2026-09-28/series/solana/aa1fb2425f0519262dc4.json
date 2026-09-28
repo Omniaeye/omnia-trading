@@ -1,0 +1,26 @@
+{
+  "id": "aa1fb2425f0519262dc4",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "GDxfw3KERBgEefhzFqih9N5vFqTCe93qkg5jUBivt76s",
+    "pool": null
+  },
+  "name": "Anal",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:15:47.323285+00:00",
+      "price": 7.13245e-06,
+      "evidence": "capture:65003429-a569-4442-8d4f-b2c93db69061:rank:93",
+      "capture_id": "65003429-a569-4442-8d4f-b2c93db69061"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

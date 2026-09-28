@@ -1,0 +1,262 @@
+{
+  "id": "2dbd69d0e89e9223758d",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump",
+    "pool": "5CFo7aAjGe4Ki3g8KgfC85WNCENvtaHGSi8Gu8guyqit"
+  },
+  "name": "pump",
+  "source": "trenches",
+  "points": [],
+  "evaluations": [
+    {
+      "at": "2026-09-28T19:15:17.194576Z",
+      "observation_id": "6e82d191-1d45-469b-840a-f3b2c7c82c6f:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump",
+      "gate": "SKIP",
+      "reasons": [
+        "ambiguous_unit:bot_degen_count",
+        "ambiguous_unit:bot_degen_rate",
+        "ambiguous_unit:burn_status",
+        "ambiguous_unit:buy_tax",
+        "unknown_event_time:complete_timestamp",
+        "ambiguous_unit:creator",
+        "ambiguous_unit:creator_balance_rate",
+        "ambiguous_unit:creator_token_status",
+        "ambiguous_unit:dev_team_hold_rate",
+        "ambiguous_unit:dev_token_burn_amount",
+        "ambiguous_unit:dev_token_burn_ratio",
+        "ambiguous_unit:end_live_timestamp",
+        "unknown_event_time:end_live_timestamp",
+        "ambiguous_unit:entrapment_ratio",
+        "ambiguous_unit:is_token_live",
+        "ambiguous_unit:is_wash_trading",
+        "ambiguous_unit:launchpad",
+        "ambiguous_unit:launchpad_status",
+        "invalid_kind:launchpad_status",
+        "ambiguous_unit:liquidity",
+        "ambiguous_unit:market_cap",
+        "unknown_event_time:open_timestamp",
+        "ambiguous_unit:price",
+        "ambiguous_unit:rat_trader_amount_rate",
+        "ambiguous_unit:renounced_freeze_account",
+        "invalid_kind:renounced_freeze_account",
+        "ambiguous_unit:renounced_mint",
+        "invalid_kind:renounced_mint",
+        "ambiguous_unit:rug_ratio",
+        "ambiguous_unit:sell_tax",
+        "ambiguous_unit:start_live_timestamp",
+        "unknown_event_time:start_live_timestamp",
+        "invalid_kind:telegram",
+        "ambiguous_unit:telegram_dup",
+        "ambiguous_unit:top70_sniper_hold_rate",
+        "ambiguous_unit:top_10_holder_rate",
+        "ambiguous_unit:total_supply",
+        "invalid_kind:twitter",
+        "ambiguous_unit:twitter_change_flag",
+        "ambiguous_unit:twitter_del_post_token_count",
+        "ambiguous_unit:twitter_dup",
+        "ambiguous_unit:twitter_rename_count",
+        "invalid_kind:website",
+        "ambiguous_unit:website_dup",
+        "missing_usd_value:market_cap",
+        "missing_usd_value:liquidity",
+        "missing_risk_flag:is_honeypot"
+      ],
+      "risk_reasons": [
+        "missing_field:is_honeypot",
+        "missing_field:transfer_paused",
+        "missing_field:sell_simulation_success",
+        "ambiguous_unit:is_wash_trading"
+      ],
+      "facts": {
+        "risk": "unknown",
+        "flow": "unknown",
+        "ownership": "unknown"
+      },
+      "decision_notes": {
+        "schema": "omnia.trading.decision-notes.v1",
+        "observation_id": "6e82d191-1d45-469b-840a-f3b2c7c82c6f:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump",
+        "observation_hash": "b2241a05f5d153b4fc32138815bac6d6705683ae284387f7b7281d90aa6e3403",
+        "notes": [
+          {
+            "code": "FLOW_EVIDENCE_INCOMPLETE",
+            "task": "flow",
+            "level": "review",
+            "text": "Comparable activity counts are unavailable.",
+            "origin": "rule",
+            "values": {
+              "reasons": [
+                "missing_field:buys",
+                "missing_field:sells"
+              ]
+            },
+            "evidence": []
+          },
+          {
+            "code": "OWNERSHIP_EVIDENCE_INCOMPLETE",
+            "task": "ownership",
+            "level": "review",
+            "text": "Holder concentration is missing or its scale is unverified.",
+            "origin": "rule",
+            "values": {
+              "ratio": null,
+              "limit": 0.5
+            },
+            "evidence": [
+              "capture:6e82d191-1d45-469b-840a-f3b2c7c82c6f:token:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump"
+            ]
+          },
+          {
+            "code": "RISK_EVIDENCE_INCOMPLETE",
+            "task": "risk",
+            "level": "review",
+            "text": "The required risk reports are not complete.",
+            "origin": "rule",
+            "values": {
+              "reasons": [
+                "missing_field:is_honeypot",
+                "missing_field:transfer_paused",
+                "missing_field:sell_simulation_success",
+                "ambiguous_unit:is_wash_trading"
+              ]
+            },
+            "evidence": [
+              "capture:6e82d191-1d45-469b-840a-f3b2c7c82c6f:token:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump"
+            ]
+          },
+          {
+            "code": "MARKET_CAP_USD_UNVERIFIED",
+            "task": "market",
+            "level": "review",
+            "text": "A validated USD value is unavailable for market_cap.",
+            "origin": "rule",
+            "values": {},
+            "evidence": [
+              "capture:6e82d191-1d45-469b-840a-f3b2c7c82c6f:token:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump"
+            ]
+          },
+          {
+            "code": "LIQUIDITY_USD_UNVERIFIED",
+            "task": "market",
+            "level": "review",
+            "text": "A validated USD value is unavailable for liquidity.",
+            "origin": "rule",
+            "values": {},
+            "evidence": [
+              "capture:6e82d191-1d45-469b-840a-f3b2c7c82c6f:token:Gn9ikwyTJ7uKms5bggqQQ7CnzkN1i2RuksvUBD1Qpump"
+            ]
+          },
+          {
+            "code": "SOURCE_FIELDS_REQUIRE_REVIEW",
+            "task": "data",
+            "level": "review",
+            "text": "Some supplied values cannot support a verified fact.",
+            "origin": "rule",
+            "values": {
+              "eligible": 9,
+              "quarantined": 39
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "risk",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "clear",
+              "rule_choice": "unknown",
+              "answer_probability": 0.6836,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_RULE_DISAGREEMENT",
+            "task": "risk",
+            "level": "review",
+            "text": "The native answer differs from the source-bound rule result.",
+            "origin": "comparison",
+            "values": {
+              "model_choice": "clear",
+              "rule_choice": "unknown",
+              "answer_probability": 0.6836,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "flow",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "unknown",
+              "rule_choice": "unknown",
+              "answer_probability": 0.3809,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "ownership",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "within_limit",
+              "rule_choice": "unknown",
+              "answer_probability": 0.5456,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_RULE_DISAGREEMENT",
+            "task": "ownership",
+            "level": "review",
+            "text": "The native answer differs from the source-bound rule result.",
+            "origin": "comparison",
+            "values": {
+              "model_choice": "within_limit",
+              "rule_choice": "unknown",
+              "answer_probability": 0.5456,
+              "record_status": "review"
+            },
+            "evidence": []
+          }
+        ],
+        "notes_hash": "414ab5033ee754c98848dca8fbda243d9b3fc8177b5b53ff425399622af93628",
+        "execution_authorized": false
+      },
+      "native_laya": {
+        "risk": {
+          "choice": "clear",
+          "probability": 0.6836,
+          "status": "review"
+        },
+        "flow": {
+          "choice": "unknown",
+          "probability": 0.3809,
+          "status": "review"
+        },
+        "ownership": {
+          "choice": "within_limit",
+          "probability": 0.5456,
+          "status": "review"
+        }
+      },
+      "full_strategy_executed": false
+    }
+  ],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 0,
+    "market": null,
+    "scenario": null
+  }
+}

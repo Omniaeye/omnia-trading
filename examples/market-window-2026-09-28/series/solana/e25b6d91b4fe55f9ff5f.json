@@ -1,0 +1,383 @@
+{
+  "id": "e25b6d91b4fe55f9ff5f",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt",
+    "pool": null
+  },
+  "name": "BRAD",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:14:00.595194+00:00",
+      "price": 6.36434e-06,
+      "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:86",
+      "capture_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc"
+    },
+    {
+      "at": "2026-09-28T19:14:17.246316+00:00",
+      "price": 6.83174e-06,
+      "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:78",
+      "capture_id": "7a923cde-d765-4388-a15c-4f47fde0a3b5"
+    },
+    {
+      "at": "2026-09-28T19:14:30.874732+00:00",
+      "price": 5.63129e-06,
+      "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:70",
+      "capture_id": "fa585070-b1ae-4f9d-afbd-aa986f487793"
+    },
+    {
+      "at": "2026-09-28T19:14:46.892387+00:00",
+      "price": 5.78498e-06,
+      "evidence": "capture:7d9e3e65-8bda-4696-b6d1-7a86825bd98c:rank:65",
+      "capture_id": "7d9e3e65-8bda-4696-b6d1-7a86825bd98c"
+    },
+    {
+      "at": "2026-09-28T19:15:00.432009+00:00",
+      "price": 5.72782e-06,
+      "evidence": "capture:797f9a41-958a-44ba-ac57-3b9cacf5d06b:rank:63",
+      "capture_id": "797f9a41-958a-44ba-ac57-3b9cacf5d06b"
+    }
+  ],
+  "evaluations": [
+    {
+      "at": "2026-09-28T19:14:00.595194Z",
+      "observation_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt",
+      "gate": "SKIP",
+      "reasons": [
+        "ambiguous_unit:price_change_percent",
+        "ambiguous_unit:price_change_percent1m",
+        "ambiguous_unit:price_change_percent5m",
+        "ambiguous_unit:price_change_percent1h",
+        "ambiguous_unit:liquidity",
+        "ambiguous_unit:total_supply",
+        "ambiguous_unit:initial_liquidity",
+        "unknown_event_time:open_timestamp",
+        "ambiguous_unit:pool_type",
+        "invalid_kind:pool_type",
+        "ambiguous_unit:pool_type_str",
+        "invalid_kind:pool_type_str",
+        "ambiguous_unit:launchpad",
+        "ambiguous_unit:launchpad_status",
+        "ambiguous_unit:exchange",
+        "ambiguous_unit:twitter_username",
+        "ambiguous_unit:website",
+        "ambiguous_unit:telegram",
+        "invalid_kind:telegram",
+        "ambiguous_unit:burn_ratio",
+        "ambiguous_unit:burn_status",
+        "ambiguous_unit:dev_token_burn_amount",
+        "ambiguous_unit:dev_token_burn_ratio",
+        "ambiguous_unit:creator",
+        "ambiguous_unit:creator_token_status",
+        "ambiguous_unit:hot_level",
+        "invalid_kind:hot_level",
+        "ambiguous_unit:is_show_alert",
+        "ambiguous_unit:twitter_change_flag",
+        "invalid_kind:twitter_change_flag",
+        "ambiguous_unit:twitter_rename_count",
+        "ambiguous_unit:twitter_del_post_token_count",
+        "ambiguous_unit:twitter_create_token_count",
+        "ambiguous_unit:rat_trader_amount_rate",
+        "ambiguous_unit:bluechip_owner_percentage",
+        "ambiguous_unit:rug_ratio",
+        "ambiguous_unit:sniper_count",
+        "ambiguous_unit:bundler_rate",
+        "ambiguous_unit:entrapment_ratio",
+        "ambiguous_unit:is_og",
+        "ambiguous_unit:gas_fee",
+        "ambiguous_unit:is_token_live",
+        "ambiguous_unit:start_live_timestamp",
+        "unknown_event_time:start_live_timestamp",
+        "ambiguous_unit:end_live_timestamp",
+        "unknown_event_time:end_live_timestamp",
+        "ambiguous_unit:dev_team_hold_rate",
+        "ambiguous_unit:top70_sniper_hold_rate",
+        "ambiguous_unit:buy_tax",
+        "invalid_kind:buy_tax",
+        "ambiguous_unit:sell_tax",
+        "invalid_kind:sell_tax",
+        "ambiguous_unit:is_honeypot",
+        "invalid_kind:is_honeypot",
+        "ambiguous_unit:lock_percent",
+        "ambiguous_unit:bot_degen_rate",
+        "ambiguous_unit:twitter_dup",
+        "ambiguous_unit:telegram_dup",
+        "ambiguous_unit:website_dup",
+        "ambiguous_unit:rank",
+        "ambiguous_unit:square_mentions",
+        "ambiguous_unit:visiting_count",
+        "ambiguous_unit:launch_quote_address",
+        "ambiguous_unit:migrated_pool_exchange",
+        "invalid_kind:migrated_pool_exchange",
+        "missing_usd_value:liquidity",
+        "missing_risk_flag:is_honeypot",
+        "below_policy_limit:market_cap"
+      ],
+      "risk_reasons": [
+        "missing_field:transfer_paused",
+        "missing_field:sell_simulation_success",
+        "ambiguous_unit:is_honeypot",
+        "invalid_kind:is_honeypot"
+      ],
+      "facts": {
+        "risk": "unknown",
+        "flow": "supportive",
+        "ownership": "within_limit"
+      },
+      "decision_notes": {
+        "schema": "omnia.trading.decision-notes.v1",
+        "observation_id": "2c78112b-48e7-4f74-8c2e-1cb8642a79dc:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt",
+        "observation_hash": "c422e121c063ad830cf287691af9888039e3b6dd940dfec41f6645520d26f986",
+        "notes": [
+          {
+            "code": "FLOW_BUY_DOMINANT",
+            "task": "flow",
+            "level": "info",
+            "text": "Buy counts exceed sell counts in the same source window.",
+            "origin": "rule",
+            "values": {
+              "buys": 37,
+              "sells": 11,
+              "buy_share": 0.7708333333333334,
+              "window_seconds": 300
+            },
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "ENTRY_BUY_SHARE_MET",
+            "task": "entry",
+            "level": "pass",
+            "text": "Buy share meets the entry minimum.",
+            "origin": "rule",
+            "values": {
+              "buys": 37,
+              "sells": 11,
+              "buy_share": 0.7708333333333334,
+              "window_seconds": 300,
+              "required_buy_share": 0.6
+            },
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "OWNERSHIP_WITHIN_LIMIT",
+            "task": "ownership",
+            "level": "pass",
+            "text": "Top-ten holder share is within the configured limit.",
+            "origin": "rule",
+            "values": {
+              "ratio": 0.1667,
+              "limit": 0.5
+            },
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "RISK_EVIDENCE_INCOMPLETE",
+            "task": "risk",
+            "level": "review",
+            "text": "The required risk reports are not complete.",
+            "origin": "rule",
+            "values": {
+              "reasons": [
+                "missing_field:transfer_paused",
+                "missing_field:sell_simulation_success",
+                "ambiguous_unit:is_honeypot",
+                "invalid_kind:is_honeypot"
+              ]
+            },
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "MARKET_CAP_BELOW_MIN",
+            "task": "market",
+            "level": "block",
+            "text": "market_cap is below the configured USD minimum.",
+            "origin": "rule",
+            "values": {
+              "value_usd": 6364.34,
+              "minimum_usd": 30000
+            },
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "LIQUIDITY_USD_UNVERIFIED",
+            "task": "market",
+            "level": "review",
+            "text": "A validated USD value is unavailable for liquidity.",
+            "origin": "rule",
+            "values": {},
+            "evidence": [
+              "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:token:23ZFzrMZiUqiJjFX15Fp39iutz5DJNdgRYjNBEAPJngt"
+            ]
+          },
+          {
+            "code": "SOURCE_FIELDS_REQUIRE_REVIEW",
+            "task": "data",
+            "level": "review",
+            "text": "Some supplied values cannot support a verified fact.",
+            "origin": "rule",
+            "values": {
+              "eligible": 20,
+              "quarantined": 54
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "risk",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "clear",
+              "rule_choice": "unknown",
+              "answer_probability": 0.7288,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_RULE_DISAGREEMENT",
+            "task": "risk",
+            "level": "review",
+            "text": "The native answer differs from the source-bound rule result.",
+            "origin": "comparison",
+            "values": {
+              "model_choice": "clear",
+              "rule_choice": "unknown",
+              "answer_probability": 0.7288,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "flow",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "supportive",
+              "rule_choice": "supportive",
+              "answer_probability": 0.5904,
+              "record_status": "review"
+            },
+            "evidence": []
+          },
+          {
+            "code": "MODEL_ANSWER_REQUIRES_REVIEW",
+            "task": "ownership",
+            "level": "review",
+            "text": "The native answer did not pass its recorded acceptance gate.",
+            "origin": "model_record",
+            "values": {
+              "model_choice": "within_limit",
+              "rule_choice": "within_limit",
+              "answer_probability": 0.6116,
+              "record_status": "review"
+            },
+            "evidence": []
+          }
+        ],
+        "notes_hash": "e206eefe70e559f69d68e4d5707eddada9d5704655b8a227678a852602425347",
+        "execution_authorized": false
+      },
+      "native_laya": {
+        "risk": {
+          "choice": "clear",
+          "probability": 0.7288,
+          "status": "review"
+        },
+        "flow": {
+          "choice": "supportive",
+          "probability": 0.5904,
+          "status": "review"
+        },
+        "ownership": {
+          "choice": "within_limit",
+          "probability": 0.6116,
+          "status": "review"
+        }
+      },
+      "full_strategy_executed": false
+    }
+  ],
+  "performance": {
+    "status": "observed",
+    "quote_count": 5,
+    "first_at": "2026-09-28T19:14:00.595194+00:00",
+    "last_at": "2026-09-28T19:15:00.432009+00:00",
+    "max_gap_seconds": 16.651122,
+    "market": {
+      "first_price_usd": 6.36434e-06,
+      "last_price_usd": 5.72782e-06,
+      "peak_price_usd": 6.83174e-06,
+      "peak_multiple": 1.073440451012988,
+      "final_multiple": 0.8999864872084143,
+      "return_ratio": -0.10001351279158562,
+      "max_drawdown_ratio": 0.17571658172003032,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": -10.00135127915856,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": -11.518083571902192,
+      "unrealized_profit_usd": -0.0,
+      "gross_profit_usd": -11.518083571902192,
+      "final_equity_usd": 88.4819164280978,
+      "open_quantity": 0.0,
+      "final_action": "SL",
+      "events": [
+        {
+          "at": "2026-09-28T19:14:00.595194+00:00",
+          "action": "BUY",
+          "price": 6.36434e-06,
+          "quantity": 15712548.355367564,
+          "evidence": "capture:2c78112b-48e7-4f74-8c2e-1cb8642a79dc:rank:86",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:14:17.246316+00:00",
+          "action": "HOLD",
+          "price": 6.83174e-06,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 15712548.355367564,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:7a923cde-d765-4388-a15c-4f47fde0a3b5:rank:78",
+          "reason": "conditional_exit_policy"
+        },
+        {
+          "at": "2026-09-28T19:14:30.874732+00:00",
+          "action": "SL",
+          "price": 5.63129e-06,
+          "sold_quantity": 15712548.355367564,
+          "remaining_quantity": 0.0,
+          "realized_profit_usd": -11.518083571902192,
+          "evidence": "capture:fa585070-b1ae-4f9d-afbd-aa986f487793:rank:70",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

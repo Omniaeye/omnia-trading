@@ -1,6 +1,7 @@
-include README.md CHANGELOG.md SECURITY.md CONTRIBUTING.md THIRD_PARTY_NOTICES.md .env.example
+include CONTEXT.md README.md CHANGELOG.md SECURITY.md CONTRIBUTING.md THIRD_PARTY_NOTICES.md .env.example
 recursive-include docs *.md *.json
-recursive-include examples *.jsonl
+recursive-include examples *.jsonl *.json *.md *.csv
 recursive-include tests *.py *.jsonl *.md
 recursive-include tools *.py
+recursive-include src/omnia_trading/templates *.html
 recursive-include assets *.png

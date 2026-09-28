@@ -88,3 +88,26 @@ The data pipeline feeds the position-aware strategy in strategy.py. strategy_con
 Collection, wallet keys, transaction signing and execution remain external. Both data and strategy results declare execution_authorized: false. The execution adapter owns account serialization, capital reservations, quotes, submission and reconciliation. See [Strategy](STRATEGY.md) for rule precedence and position lifecycle.
 
 Contract fixtures demonstrate implementation behavior. Neither the presence of 102 catalog definitions nor a single successful local inference establishes provider coverage, calibration, financial performance or production capacity.
+
+## Reporting and published windows
+
+`reporting.build()` owns archive validation, report assembly and the installed
+HTML template. It verifies a frozen sample when supplied and binds native calls
+to source fields and question hashes when recorded calls are available. The
+`omnia-trading-report` command exposes it without checkout-specific imports.
+
+`casebook.publish()` exports an immutable window to a new directory.
+`casebook.verify()` checks published file hashes, the complete native cohort,
+request/answer bindings, summary counts and every quote replay. No provider,
+model or database is required to inspect a published window.
+
+`tests/contracts`, `tests/strategy`, `tests/runtime` and `tests/reporting` test
+these responsibilities separately. The shared `_engine` remains fingerprinted.
+See [ADR 0001](adr/0001-capture-casebooks.md).
+
+## Price-exit precedence
+
+After data assessment and position guards pass, a reached TP/SL skips additional
+strategy inference. The final clock and data policy are still rechecked before
+recording the decision. `strategy_check_mode=price_exit` explains why no extra
+risk/flow/ownership answers were requested. Other decisions use `coverage_gated`.

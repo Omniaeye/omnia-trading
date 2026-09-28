@@ -1,0 +1,83 @@
+{
+  "id": "be851a92aa81753b35e3",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0x5fd86da9b05abe396fe9d02a4a213a7c00556503",
+    "pool": null
+  },
+  "name": "MRNAB",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:15:17.739331+00:00",
+      "price": 198.503,
+      "evidence": "capture:08cc1e53-32bc-48e9-9abe-0b7caf40b440:rank:94",
+      "capture_id": "08cc1e53-32bc-48e9-9abe-0b7caf40b440"
+    },
+    {
+      "at": "2026-09-28T19:15:32.749915+00:00",
+      "price": 198.503,
+      "evidence": "capture:81e75e19-4c52-4e91-ba7d-af89c6539b19:rank:95",
+      "capture_id": "81e75e19-4c52-4e91-ba7d-af89c6539b19"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "observed",
+    "quote_count": 2,
+    "first_at": "2026-09-28T19:15:17.739331+00:00",
+    "last_at": "2026-09-28T19:15:32.749915+00:00",
+    "max_gap_seconds": 15.010584,
+    "market": {
+      "first_price_usd": 198.503,
+      "last_price_usd": 198.503,
+      "peak_price_usd": 198.503,
+      "peak_multiple": 1.0,
+      "final_multiple": 1.0,
+      "return_ratio": 0.0,
+      "max_drawdown_ratio": 0.0,
+      "milestones": {
+        "2": null,
+        "3": null,
+        "5": null,
+        "10": null
+      },
+      "hold_100_usd_profit": 0.0,
+      "reference_notional_usd": 100.0
+    },
+    "scenario": {
+      "mode": "conditional_first_quote_entry",
+      "entry_budget_usd": 100.0,
+      "fees_slippage_included": false,
+      "model_decision": false,
+      "orders_executed": false,
+      "realized_profit_usd": 0.0,
+      "unrealized_profit_usd": 0.0,
+      "gross_profit_usd": 0.0,
+      "final_equity_usd": 100.0,
+      "open_quantity": 0.5037707238681531,
+      "final_action": "HOLD",
+      "events": [
+        {
+          "at": "2026-09-28T19:15:17.739331+00:00",
+          "action": "BUY",
+          "price": 198.503,
+          "quantity": 0.5037707238681531,
+          "evidence": "capture:08cc1e53-32bc-48e9-9abe-0b7caf40b440:rank:94",
+          "reason": "conditional_first_quote_entry"
+        },
+        {
+          "at": "2026-09-28T19:15:32.749915+00:00",
+          "action": "HOLD",
+          "price": 198.503,
+          "sold_quantity": 0.0,
+          "remaining_quantity": 0.5037707238681531,
+          "realized_profit_usd": 0.0,
+          "evidence": "capture:81e75e19-4c52-4e91-ba7d-af89c6539b19:rank:95",
+          "reason": "conditional_exit_policy"
+        }
+      ]
+    }
+  }
+}

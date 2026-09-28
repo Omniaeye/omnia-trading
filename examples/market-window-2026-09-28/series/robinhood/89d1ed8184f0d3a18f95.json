@@ -1,0 +1,26 @@
+{
+  "id": "89d1ed8184f0d3a18f95",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x54babe7eab0516889aae26563a537c0a756f6ec3",
+    "pool": null
+  },
+  "name": "RECORD",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:12:39.012894+00:00",
+      "price": 0.000685226,
+      "evidence": "capture:fe8ad944-154e-4481-bd56-8ab821bfbfe1:rank:97",
+      "capture_id": "fe8ad944-154e-4481-bd56-8ab821bfbfe1"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

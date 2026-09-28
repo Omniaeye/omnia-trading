@@ -1,0 +1,26 @@
+{
+  "id": "d8855d628010690fb385",
+  "identity": {
+    "chain": "robinhood",
+    "network_id": "provider.robinhood",
+    "contract": "0x941ae714ec6d8130c7b75d67160ca08f1e7d11dd",
+    "pool": null
+  },
+  "name": "DELL",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:18:02.849542+00:00",
+      "price": 543.81,
+      "evidence": "capture:53a348cd-74d6-4031-ba2b-02d70c63e42b:rank:98",
+      "capture_id": "53a348cd-74d6-4031-ba2b-02d70c63e42b"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

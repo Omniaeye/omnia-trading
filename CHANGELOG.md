@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0
+
+- Published the complete 15-minute market window with contract records, all native answers and per-network price results.
+- Added an offline casebook verifier covering file integrity, native inputs, answer bindings and every exit-policy event.
+- Moved report generation and its template into the installed package.
+- Organized tests by contracts, strategy, runtime and reporting.
+- Removed additional strategy inference from already-triggered TP/SL paths.
+- Bound frozen report samples and native calls to their recorded evidence.
+
+
 ## 0.4.0
 
 - Coverage-aware strategy decisions with configurable data requirements.

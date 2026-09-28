@@ -1,0 +1,26 @@
+{
+  "id": "d54dcfb0298c0ef45f96",
+  "identity": {
+    "chain": "bsc",
+    "network_id": "provider.bsc",
+    "contract": "0xb994882a1b9bd98a71dd6ea5f61577c42848b0e8",
+    "pool": null
+  },
+  "name": "WoD",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:26:06.431923+00:00",
+      "price": 0.00543954,
+      "evidence": "capture:a3278748-b5f3-45be-a966-ab473520d9c2:rank:99",
+      "capture_id": "a3278748-b5f3-45be-a966-ab473520d9c2"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}

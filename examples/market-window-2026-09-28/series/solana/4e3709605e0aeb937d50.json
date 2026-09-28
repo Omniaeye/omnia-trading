@@ -1,0 +1,26 @@
+{
+  "id": "4e3709605e0aeb937d50",
+  "identity": {
+    "chain": "solana",
+    "network_id": "provider.solana",
+    "contract": "HcpDqDR1QMFkV1KYCcYyRRSCL63TkvbGLXf3PxhChfVD",
+    "pool": null
+  },
+  "name": "HIVE",
+  "source": "market_rank",
+  "points": [
+    {
+      "at": "2026-09-28T19:22:00.569928+00:00",
+      "price": 4.46459e-06,
+      "evidence": "capture:263cda40-4b31-4b2d-b168-fa4310edb46d:rank:86",
+      "capture_id": "263cda40-4b31-4b2d-b168-fa4310edb46d"
+    }
+  ],
+  "evaluations": [],
+  "performance": {
+    "status": "insufficient_quotes",
+    "quote_count": 1,
+    "market": null,
+    "scenario": null
+  }
+}
