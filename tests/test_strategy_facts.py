@@ -2,12 +2,13 @@
 # SPDX-License-Identifier: Apache-2.0
 """Source-bound strategy facts must not depend on model confidence."""
 from copy import deepcopy
-from datetime import datetime, timedelta
+from datetime import timedelta
 import json
 from pathlib import Path
 import unittest
 
 from omnia_trading.identity import identity
+from omnia_trading.contracts import timestamp
 from omnia_trading.strategy_facts import assess_facts
 
 
@@ -15,7 +16,7 @@ class StrategyFactsTests(unittest.TestCase):
     def setUp(self):
         path = Path(__file__).resolve().parents[1] / 'examples/strategy.jsonl'
         self.event = json.loads(path.read_text())['observation']
-        self.now = datetime.fromisoformat(self.event['observed_at'])
+        self.now = timestamp(self.event['observed_at'])
 
     def assess(self):
         return assess_facts(self.event, now=self.now)

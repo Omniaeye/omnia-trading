@@ -3,13 +3,13 @@
 """Compare immutable capture samples, expected labels and recorded native inference."""
 import argparse
 from collections import Counter
-from datetime import datetime
 import hashlib
 import json
 from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
+from omnia_trading.contracts import timestamp
 from omnia_trading.strategy_facts import assess_facts
 
 
@@ -51,7 +51,7 @@ def main():
         event, identifier = row['event'], row['event']['id']
         result = {'observation_id': identifier}
         try:
-            facts = assess_facts(event, now=datetime.fromisoformat(event['observed_at']))
+            facts = assess_facts(event, now=timestamp(event['observed_at']))
             result['facts'] = facts
             counts['normalized_observations'] += 1
             counts['fields'] += len(event['fields'])

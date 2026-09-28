@@ -3,7 +3,6 @@
 """Build a private, static report from hash-verified archived ranking captures."""
 import argparse
 from collections import Counter
-from datetime import datetime
 import hashlib
 import json
 import math
@@ -17,7 +16,7 @@ from omnia_trading.performance import summarize_quotes
 from omnia_trading.strategy_contracts import StrategyPolicy
 from omnia_trading.strategy_facts import assess_facts
 from omnia_trading.policy import Policy, evaluate
-from omnia_trading.contracts import normalize
+from omnia_trading.contracts import normalize, timestamp
 from omnia_trading.decision_notes import explain_observation
 
 
@@ -87,15 +86,15 @@ def build(source, output):
         if key not in groups:
             groups[key] = {'id': hashlib.sha256(key.encode()).hexdigest()[:20], 'identity': event['identity'],
                            'name': str(entry['name'])[:100], 'source': entry['endpoint'], 'points': [], 'evaluations': []}
-        facts = assess_facts(event, now=datetime.fromisoformat(event['observed_at']))
-        disposition, reasons = evaluate(event, Policy(), datetime.fromisoformat(event['observed_at']))
+        facts = assess_facts(event, now=timestamp(event['observed_at']))
+        disposition, reasons = evaluate(event, Policy(), timestamp(event['observed_at']))
         # This is the existing entry precheck, not a fabricated account snapshot
         # or a call to the full position strategy.
         gate = 'SKIP' if disposition != 'observe' or facts['checks']['risk']['choice'] == 'reject' else 'NEEDS_CONTEXT'
         record = native.get(event['id'], {})
         if record and record.get('identity') != event['identity']:
             raise ValueError('native_identity_mismatch')
-        notes = explain_observation(event, now=datetime.fromisoformat(event['observed_at']),
+        notes = explain_observation(event, now=timestamp(event['observed_at']),
                                     native_checks=record.get('task_checks', {}))
         if any(note['level'] == 'block' for note in notes['notes']):
             gate = 'SKIP'
